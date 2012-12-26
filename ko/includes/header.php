@@ -1,4 +1,9 @@
-<!doctype html>
+<? 
+
+// version for download link
+  $fx_version="17.0.1";
+
+?><!doctype html>
 <html class="windows no-js" lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">

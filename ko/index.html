@@ -1,0 +1,224 @@
+<? 
+	$Htitle="Mozilla - Mozilla 프로젝트";
+	$Hid="home";
+	$extra_css='<link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/home-min.css" />';
+
+	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/header.php";
+?>
+
+<hgroup id="main-feature" class="huge">
+    <h1>We are <img src="http://www.mozilla.org/media/img/home/title-wordmark.png" alt="Mozilla" height="92" width="348"></h1>
+  <h2>웹으로 세상을 바꾸고 있습니다!</h2>
+</hgroup>
+
+<section id="firefox-promo" class="billboard">
+  <h3>새로운 디자인: </h3>
+    <a href="/firefox/" id="firefox-promo-link">
+  <img src="http://www.mozilla.org/media/img/home/firefox.png" id="promo-logo" alt="Firefox">
+  </a>
+  <ul class="features">
+        <li><small>비영리 <br> 웹브라우저</small></li>
+        <li><small>사용자로부터 <br> 혁신</small></li>
+        <li><small>빠르고<br> 보안 강화</small></li>
+  </ul>
+
+<aside id="download" class="download-button download-button-small">
+    <noscript>
+<div class="download download-dumb">
+  <h4>Firefox 무료 다운로드— 한국어</h4>
+  <ul>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko" class="button-white">윈도</a></li>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko" class="button-white">리눅스</a></li>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko" class="button-white">맥 OS X</a></li>
+          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">안드로이드</a></li>
+      </ul>
+</div>  </noscript>
+  
+    <div class="unrecognized-download">
+    
+<div class="download download-dumb">
+  <h4>Firefox 무료 다운로드— 한국어</h4>
+  <ul>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko" class="button-white">윈도</a></li>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko" class="button-white">리눅스</a></li>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko" class="button-white">맥 OS X</a></li>
+          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">안드로이드</a></li>
+   </ul>
+</div>  </div>
+  
+    <ul class="download-list">
+        <li class="os_windows">
+      <a class="download-link download-firefox"
+         href="/ko/products/download.html?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko">
+                  <span class="download-content">
+            <span class="download-title">Firefox</span>
+            무료 다운로드                      </span>
+              </a>
+    </li>
+        <li class="os_linux">
+      <a class="download-link download-firefox"
+         href="/ko/products/download.html?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko">
+                  <span class="download-content">
+            <span class="download-title">Firefox</span>
+            무료 다운로드                      </span>
+              </a>
+    </li>
+        <li class="os_osx">
+      <a class="download-link download-firefox"
+         href="/ko/products/download.html?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko">
+                  <span class="download-content">
+            <span class="download-title">Firefox</span>
+            무료 다운로드                      </span>
+              </a>
+    </li>
+        <li class="os_android">
+      <a class="download-link download-firefox"
+         href="https://market.android.com/details?id=org.mozilla.firefox">
+                  <span class="download-content">
+            <span class="download-title">Firefox</span>
+            무료 다운로드                      </span>
+              </a>
+    </li>
+      </ul>
+  
+          <p class="unsupported-download">
+      Your system doesn't meet the <a href="/ko/firefox/<?=$fx_version?>/requirements">requirements</a> to run Firefox.
+    </p>
+  
+    <small class="download-other">
+    <a href="/ko/firefox/all.html">언어별 버전</a> |
+    <a href="/ko/firefox/notes">기능 소개</a> |
+    <a href="/ko/legal/privacy/firefox.html">개인 정보 보호</a>
+  </small>
+  
+</aside>
+</section>
+
+<section id="home-promo" class="pager pager-with-tabs pager-auto-rotate pager-no-history">
+
+  <div class="pager-content">
+  
+    <div class="pager-page default-page" id="promo-storyvideo">
+      <script>// <![CDATA[
+        document.getElementById('promo-storyvideo').id = 'page-promo-storyvideo';
+      // ]]></script>
+      <a href="https://donate.mozilla.org/Mozilla-Story7?WT.mc_id=mostoryvideo&amp;WT.mc_ev=click" class="container">
+        <img src="http://www.mozilla.org/media/img/home/promo-storyvideo.jpg" alt="">
+        <div>
+          <h3>더 나은 웹을 만들어 주세요!</h3>
+          <h4>Mozilla가 어떻게 웹을 멋진 곳으로 만들고 있는지 동영상으로 살펴 보실 수 있습니다.</h4>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="pager-page" id="promo-android">
+      <script>// <![CDATA[
+      document.getElementById('promo-android').id = 'page-promo-android';
+      // ]]></script>
+      <a href="/ko/firefox/fx/?WT.mc_id=moandroid&amp;WT.mc_ev=click#mobile" class="container">
+        <img src="http://www.mozilla.org/media/img/home/promo-android.jpg" alt="">
+        <div>
+                    <h3>빠름 스마트 안전!</h3>
+          <h4>모바일용 웹 브라우저를 체험해 보십시오.</h4>
+          <p class="go">Firefox for Android 다운로드</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="pager-page" id="promo-firefoxos">
+      <script>// <![CDATA[
+      document.getElementById('promo-firefoxos').id = 'page-promo-firefoxos';
+      // ]]></script>
+      <a href="/ko/firefoxos/" class="container">
+        <img src="http://www.mozilla.org/media/img/home/promo-firefoxos.jpg" alt="">
+        <div>
+          <h3>Firefox OS!</h3>
+          <h4>오픈 웹 모바일 기기를 위한 운영 체제입니다</h4>
+          <p class="go">더 자세히 보기</p>
+        </div>
+      </a>
+    </div>
+
+
+  </div>
+
+  <ul class="pager-tabs">
+    <li><a href="#p1">●</a></li>
+    <li><a href="#p2">●</a></li>
+    <li><a href="#p3">●</a></li>
+  </ul>
+
+</section>
+
+<div id="main-content">
+
+    <section id="home-news">
+    <h3>새로운 뉴스</h3>
+    <ul>
+<?
+	$xml_source = file_get_contents("http://www.mozilla.or.kr/community/feed");
+        $x = simplexml_load_string($xml_source);
+	$i=1;
+        foreach($x->channel->item as $item) {
+	if($i>6)  echo '
+	<li>
+	   <h4><a href="'.$item->link.'">'.$item->title.'</a></h4>
+	</li>';
+	$i++;
+        }
+
+?>
+    </ul>
+    <a href="http://www.mozilla.or.kr/community/" id="all-news">뉴스 더 보기 »</a>
+  </section>
+  
+  <section id="home-promos">
+    <h3>주요 프로젝트</h3>
+     <ul>
+      <li>
+        <h4><a href="/ko/firefoxos/">Firefox OS</a></h4>
+        <p>새로운 모바일 웹 운영 체제가 옵니다.</p>
+      </li>
+      <li>
+        <h4><a href="https://affiliates.mozilla.org/">Firefox 홍보</a></h4>
+        <p>Firefox를 알리는데 동참해 주십시오.</p>
+      </li>
+      <li>
+        <h4><a href="/ko/apps/">Firefox Marketplace</a></h4>
+        <p>웹 개발자가 만든 웹앱을 배포할 수 있습니다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="home-about">
+    <h3>참여하기</h3>
+    <ul>
+      <li id="about-volunteer"><a href="/ko/contribute/">
+        <h4>자원 봉사</h4>
+        <p>Mozilla Project의 다양한 영역을 알려드립니다.</p>
+      </a></li>
+      <li id="about-work"><a href="http://careers.mozilla.org/">
+        <h4>채용 정보</h4>
+        <p>웹을 멋지게 만드는 직장으로 초대합니다.</p>
+      </a></li>
+      <li id="about-find"><a href="/ko/about/mozilla-spaces/">
+        <h4>연락처</h4>
+        <p>전 세계 Mozilla 공간을 소개합니다.</p>
+      </a></li>
+      <li id="about-join"><a href="https://donate.mozilla.org/page/contribute/join-mozilla">
+        <h4>기부하기</h4>
+        <p>비영리 재단 활동에 직접 기부해 주십시오.</p>
+      </a></li>
+      <li id="about-learn"><a href="/ko/about/">
+        <h4>더 자세히 보기</h4>
+        <p>Mozilla에 대한 더 상세한 정보를 보십시오.</p>
+      </a></li>
+    </ul>
+  </section>
+
+</div>
+<?
+	$extra_js='<script src="http://www.mozilla.org/media/js/pager-min.js"></script>';
+	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
+?>
