@@ -1,0 +1,451 @@
+<?php
+    // The $body_* variables are for compatibility with pre-existing css
+    $page_title = 'Firefox 다운로드';
+    $body_id    = 'download';
+    $body_class = 'darkbg';
+    $extra_headers = <<<EXTRA_HEADERS
+
+    <link rel="stylesheet" href="/style/kampyle/k_button.css" media="screen" />
+    <link rel="stylesheet" href="/style/covehead/download-page.css" media="screen" />
+    <meta name="WT.ad" content="Support - Download Help;Tour;About;Mobile;Newsletter;Twitter;Facebook;Connect" />
+    <meta name="WT.si_n" content="DownloadFirefox">
+    <meta name="WT.si_x" content="1">
+    <meta name="WT.si_cs" content="1">
+    <meta name="WT.z_convert" content="DownloadFirefox">
+    <meta name="robots" content="noindex">
+EXTRA_HEADERS;
+    require_once "{$config['file_root']}/includes/regions.php";
+    require_once "{$config['file_root']}/includes/email/prefs.php";
+    $form = new EmailPrefs();
+    @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
+?>
+
+<div id="download-sidebar-contents" style="display: none;">
+  <form action="/<?=$lang?>/newsletter/" method="post" id="newsletter-form">
+    <input type="hidden" name="mozilla-and-you" value="Y" />
+
+    <div id="form-column1">
+        <h3>월간 <em>뉴스레터</em></h3>
+        <p>Firefox에 대한 새 소식 및 사용팁을 매월 메일로 보내 드립니다. 등록하세요!</p>
+    </div>
+    <div id="form-column2">
+    <div class="field required email-field">
+      <input name="email" type="email" class="email" value="<?= $form->get('email') ?>" placeholder="이메일주소">
+    </div>
+
+    <div class="field country-field">
+      <select class="country" name="country">
+        <option value="">국가선택</option>
+        <?php 
+            $country = $form->get('country');
+            if (!$country) {
+                $country = 'ko';
+            }
+            echo regionsAsOptions($lang, $country);
+        ?>
+      </select>
+    </div>
+
+    <div class="field format-field">
+      <?php
+          $html_format = 'checked="checked"';
+          $text_format = '';
+          if ($form->get('format') == 'text') {
+              $text_format = 'checked="checked"';
+              $html_format = '';
+          }
+      ?>
+      <div class="field-radios">
+        <span class="radio-wrapper"><input type="radio" name="format" id="html-format" class="html-format" value="html" <?= $html_format?>></span>
+        <label for="html-format">HTML</label>
+        <label for="text-format">
+            <span class="radio-wrapper"><input type="radio" name="format" id="text-format" class="text-format" value="text" <?= $text_format?>></span>
+            텍스트
+        </label>
+      </div>
+    </div>
+
+    <div class="field privacy-field">
+      <label for="privacy-check" class="privacy-check-label">
+        <input type="checkbox" name="privacy" id="privacy-check" class="privacy-check">
+        <span class="title"><a href="/en-US/privacy-policy">Mozilla 개인정보 정책</a> 동의</span>
+      </label>
+    </div>
+    </div>
+    <div id="form-column3">
+
+      <input onclick="dcsMultiTrack(
+                        'DCS.dcssip', 'www.mozilla.org',
+                        'DCS.dcsuri', '/en-us/newsletter',
+                        'WT.ti', 'Link: Mozilla Newsletter',
+                        'WT.dl', 99,
+                        'WT.z_convert', 'newsletter',
+                        'WT.si_n', 'newsletter',
+                        'WT.si_x', '2');"
+             name="submit" 
+             type="submit" 
+             value="Get Newsletter »" 
+             class="button">
+        <p class="disclaimer">Mozilla 관련 정보만 보내드립니다.</p>
+    </div>
+
+  </form>
+</div>
+
+
+	<div id="download-message">
+
+<noscript id="download-noscript">
+	<div id="main-feature">
+		<h2>Firefox를 선택해 주셔서 감사합니다!</h2>
+	</div>
+
+	<div id="content">
+		<h3>Firefox 다운로드 (한국어)</h3>
+    <?php 
+      $_temp_locales = $firefoxDetails->has_transition_download_page;
+      // This will make all links go directly to download.mozilla.org
+      $firefoxDetails->has_transition_download_page = array();
+      echo $firefoxDetails->getDownloadBlockForLocale('ko', array('include_js' => false)); 
+    ?>
+
+    <?php 
+      $firefoxDetails->has_transition_download_page = $_temp_locales;
+      unset($_temp_locales);
+    ?>
+	</div> <!-- end #content  -->
+</noscript>
+<div id="download-fallback">
+	<div id="main-feature-fallback">
+		<h2>Firefox를 선택해 주셔서 감사합니다!</h2>
+	</div>
+
+    <script src="/js/download.js"></script>
+	<div id="content-fallback">
+		<h3>무료 다운로드 (한국어)</h3>
+    <?php 
+      $_temp_locales = $firefoxDetails->has_transition_download_page;
+      // This will make all links go directly to download.mozilla.org
+      $firefoxDetails->has_transition_download_page = array();
+      echo $firefoxDetails->getDownloadBlockForLocale('ko', array('include_js' => true, 'download_parent_override' => 'content-fallback')); 
+    ?>
+
+    <?php 
+      $firefoxDetails->has_transition_download_page = $_temp_locales;
+      unset($_temp_locales);
+    ?>
+	</div> <!-- end #content  -->
+</div>
+
+<script>// <![CDATA[
+
+    /**
+     * Over-ride this function that's originally setup in /js/download.js
+     * We don't want to spawn the pop-up download hack if we're already
+     * on the download page, since it will result in two downloads (the
+     * href is already a direct link).
+     *
+     */
+    function init_download() {
+    }
+
+	function parseGETVars()
+	{
+		// validate query according to RFC 3986
+		var qs = location.search.substring(1);
+		if (qs.match(/[^a-zA-Z0-9\-\._~%!$&'()*+,;=:@\/\?]/))
+			return false;
+
+		var nv = qs.split('&');
+		var url = {};
+		for(i = 0; i < nv.length; i++) {
+			var eq = nv[i].indexOf('=');
+			url[nv[i].substring(0,eq).toLowerCase()] = unescape(nv[i].substring(eq + 1));
+		}
+
+		return url;
+	}
+
+	function validateDownloadVar(value)
+	{
+		// validate download vars to prevent XSS
+		if (value.match(/[^\-\.A-Za-z0-9]/))
+			return false;
+
+		return true;
+	}
+
+	var download_url = '';
+
+	function initDownload()
+	{
+		// 1. Grab vars from URL (PRODUCT, OS, and LANG)
+		var get = parseGETVars();
+
+		var product = (get['product'])    ? get['product']    : null;
+		var os      = (get['os'])      ? get['os']      : null;
+		var lang    = (get['lang'])    ? get['lang']    : null;
+
+		var div = document.getElementById('download-message');
+
+
+		if ( !os || !lang
+			|| !validateDownloadVar(product)
+			|| !validateDownloadVar(os)
+			|| !validateDownloadVar(lang)
+		) {
+			// No vars were specified, just display the fallback content.
+		    document.getElementById('download-fallback').style.display = 'block';
+            return;
+		}
+
+		var product_split = product.split('-');
+		var product_version = product_split[1];
+		var promotion_msg = '';
+
+		// Check for known unsupported platforms and redirect to the
+		// unsupported platform page.
+		if (gPlatformUnsupported) {
+			var uri = location.protocol + '//' + location.host + '/<?=$lang?>/firefox/unsupported-systems.html' + location.search;
+			window.location = uri;
+			return;
+		}
+
+
+        promotion_msg = '<p id="download-thanks">Thanks for downloading Firefox! As a non-profit, we’re free to innovate on your behalf without any pressure to compromise. You’re going to love the difference.';
+
+		switch (os) {
+			case 'win' :
+				var at_least_xp = /Windows NT (5\.[1-9]|[6-9]\.|[1-9][0-9]+\.)/.test(navigator.userAgent);
+				if (jQuery.browser.msie && at_least_xp) {
+					document.body.className += ' win-download';
+
+					promotion_msg +=
+						'<ol class="install-steps">' +
+						'<li class="one">' +
+						'<p>Start the process by clicking Run. ' +
+                        'Your download should begin automatically. If not, ' +
+                        'click here'.link(download_url) +
+						'. It could take a few minutes, but it’s worth the wait.</li>' +
+						'<li class="two">' +
+						'<p>Click Run to launch the Mozilla Firefox setup wizard.</p>' +
+						'<p class="note">Then, just follow the steps (we’ve made the process as painless as possible).</p>' +
+						'</li>' +
+						'<li class="three">' +
+						'<p>Now you’re ready to leap boldly into a new era of Web surfing.</p>' +
+						'<p class="note">Double-click on the Firefox icon whenever you want to go online.</p>' +
+						'</li>' +
+						'</ol>';
+				} else {
+					document.body.className += ' default-download';
+				}
+				break;
+			case 'osx' :
+				document.body.className += ' osx-download';
+
+				promotion_msg +=
+					'<ol class="install-steps">' +
+					'<li class="one">' +
+					'<p>Your download should begin automatically. If not, ' +
+                    'click here'.link(download_url) +
+					'. It could take a few minutes, but it’s worth the wait.</li>' +
+					'</li>' +
+					'<li class="two">' +
+					'<p>When prompted, drag the Firefox icon into the image of your Applications folder.</p>' +
+					'</li>' +
+					'<li class="three">' +
+					'<p>Drag the Firefox icon from the Applications folder into the dock. ' +
+					'Then, just click on Firefox whenever you want to use the web!</p>' +
+					'</li>' +
+					'</ol>';
+					break;
+            default:
+                promotion_msg += '<p class="manual-download">Your download should automatically begin in a few seconds, but if not, ';
+                var link_text = 'click here';
+                promotion_msg += link_text.link(download_url) + '.</p>';
+                document.body.className += ' default-download';
+		}
+
+		// 2. Build download.mozilla.org URL out of those vars.
+		download_url = "http://download.mozilla.org/?product=";
+		download_url += product + '&os=' + os + '&lang=' + lang;
+
+		// 4. display the download URL as a manual fall-back link
+		var msg = '<div id="main-feature" class="main-feature-firefox">';
+		msg += '<h2>Welcome to the only browser <em>that puts you first.</em></h2>';
+
+		// 5. display a promotional box with content based on the PRODUCT variable
+		msg += '</div>';
+		msg += '<div id="content">';
+
+		if (promotion_msg != '') {
+			msg += '<div id="content-msg">';
+			msg += promotion_msg;
+			msg += '</div>';
+		}
+
+		// 3. Display sidebar
+		msg += '<div id="download-sidebar">';
+        msg += document.getElementById('download-sidebar-contents').innerHTML;
+        document.getElementById('download-sidebar-contents').innerHTML = "";
+		msg += '</div>';
+		msg += '</div>';
+
+
+		div.innerHTML = msg;
+	}
+
+    initDownload();
+
+    function downloadURL() {
+        // Only start the download if we're not in IE.
+        if (download_url.length != 0 && navigator.appVersion.indexOf('MSIE') == -1) {
+            // 5. automatically start the download of the file at the constructed download.mozilla.org URL
+
+            window.location = download_url;
+        }
+    }
+
+    // If we're in Safari, call via setTimeout() otherwise use onload.
+    if ( navigator.appVersion.indexOf('Safari') != -1 ) {
+        window.setTimeout(downloadURL, 2500);
+    } else {
+        window.onload = downloadURL;
+    }
+
+    $(document).ready(function() {
+
+        var cookieName = 'Firefox8WhatsNewSurvey';
+        var cookieDays = 30;
+
+        var surveyProbability = 0.0025;
+
+        var setCookie = function(name, value, path, expire)
+        {
+            if (expire) {
+                var expdate = new Date();
+                expdate.setDate(expdate.getDate() + expire);
+                expire = ';expires=' + expdate.toUTCString();
+            } else {
+                expire = '';
+            }
+
+            if (path) {
+                path = ';path=' + path;
+            } else {
+                path = '';
+            }
+
+            document.cookie = name + '=' + escape(value) + expire + path;
+        };
+
+        var getCookie = function(name)
+        {
+            if (document.cookie.length === 0) {
+                return null;
+            }
+
+            var start = document.cookie.indexOf(name + '=');
+
+            if (start === -1) {
+                return null;
+            }
+
+            start += name.length + 1;
+            end    = document.cookie.indexOf(';', start);
+            if (end === -1) {
+                end = document.cookie.length;
+            }
+
+            return unescape(document.cookie.substring(start, end));
+        };
+
+        var showSurvey = getCookie(cookieName);
+
+        if (showSurvey === null) {
+            // no cookie set, show survey with probability
+            showSurvey = (Math.random() < surveyProbability) ? 'yes' : 'no';
+            // survey is only ever displayed once, set cookie to hide it
+            setCookie(cookieName, 'no', '/', cookieDays);
+        } else {
+            // make sure it stays hidden even if you edit the cookie value
+            showSurvey = 'no';
+            setCookie(cookieName, 'no', '/', cookieDays);
+        }
+
+        if (showSurvey == 'yes') {
+            var $survey = $('<div id="survey-box"><h3>Have a second? <span>Help Us Out</span></h3>'
+                + '<iframe src="http://www.surveygizmo.com/s3/iframe/666789/249c2dc6780e" frameborder="0" width="500" height="210" style="overflow:hidden" ALLOWTRANSPARENCY="true"></iframe>'
+                + '<style>#download-sidebar { display: none; }</style>'
+                + '</div>'
+            );
+
+            var $feature = $('#main-feature');
+
+            $feature.after($survey);
+        }
+    });
+
+// ]]></script>
+
+</div> <!-- end #download_message -->
+
+<div class="footer-links">
+    <a href="/firefox/central/">기능 살펴보기</a> &nbsp;|&nbsp;
+    <a href="/firefox/features/">데스크톱</a> &nbsp;|&nbsp;
+    <a href="/mobile/">모바일</a> &nbsp;|&nbsp;
+    <a href="https://addons.mozilla.org/">부가기능</a> &nbsp;|&nbsp;
+    <a href="http://support.mozilla.org/">도움말</a> &nbsp;|&nbsp;
+    <a href="/firefox/about/">소개</a>
+    <div class="footer-privacy">
+        <a href="/{$lang}/privacy-policy.html">개인정보 보호 정책</a> &nbsp;|&nbsp;
+        <a href="/en-US/about/legal.html">법적 고지</a>
+    </div>
+</div>
+
+
+<? if (isset($_GET['extra']) && $_GET['extra'] == 'xpcamp') { ?>
+<!-- measure tag (Bug 660249) -->
+<IFRAME
+SRC="https://media.mozilla.com/ipixel?spacedesc=1121943_1061349_1x1_1061349_1061349&db_afcr=123&target=_blank&group=Mozilla&event=DownLoad&revenue=REVENUE&random=CACHEBUSTER"
+     WIDTH="1" HEIGHT="1" SCROLLING="No" FRAMEBORDER="0" MARGINHEIGHT="0" MARGINWIDTH="0">
+<![if lt IE 5]>
+<SCRIPT
+SRC="https://media.mozilla.com/jpixel?spacedesc=1121943_1061349_1x1_1061349_1061349&db_afcr=123&target=_blank&group=Mozilla&event=DownLoad&revenue=REVENUE&random=CACHEBUSTER"></SCRIPT>
+<![endif]>
+</IFRAME>
+
+<? } ?>
+
+<?php
+$extra_footers = <<<EXTRA_FOOTERS
+<script>
+
+// Check for input placeholder attribute support and workaround if it is missing
+
+function supports_input_placeholder() {
+  var i = document.createElement('input');
+  return 'placeholder' in i;
+}
+
+$(document).ready(function() {
+    if(!supports_input_placeholder()){
+        $("input").each(
+            function(){
+                if($(this).val()=="" && $(this).attr("placeholder")!=""){
+                    $(this).val($(this).attr("placeholder"));
+                    $(this).focus(function(){
+                        if($(this).val()==$(this).attr("placeholder")) $(this).val("");
+                    });
+                    $(this).blur(function(){
+                        if($(this).val()=="") $(this).val($(this).attr("placeholder"));
+                    });
+                }
+        });
+    }
+});
+</script>
+    
+EXTRA_FOOTERS;
+    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
+?>
