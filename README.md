@@ -15,7 +15,7 @@ Mozilla.or.kr 웹 사이트
 - 중복 작업을 막기 위해, 자신이 특정 디렉토리의 작업을 시작하기로 했다면 새로운 이슈를 만들어서 작업을 진행해 주십시오. - 작성 방법은 https://github.com/mozillakr/mozilla.or.kr/issues/1 를 참고하세요.
 - Github 특성상 레포지터리를 forking 한후, 작업 결과를 pull request 하셔도 됩니다.
 
-** 서버 위치 **
+**서버 위치**
 - 스테이지: http://stage.mozilla.or.kr/ko/
 - 실서버: http://www.mozilla.or.kr/ko/
 
