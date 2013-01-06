@@ -1,17 +1,17 @@
     <form class="billboard" id="footer-email-form" method="post"
       action="https://donate.mozilla.org/page/s/sign-up-for-mozilla"
       onSubmit="dcsMultiTrack('DCS.dcsuri', '/button/newsletter.html', 'WT.ti', 'Newsletter%20Button%20Click');">
-  <h3>Mozilla ¼Ò½Ä ±¸µ¶</h3>
+  <h3>Mozilla ì†Œì‹ êµ¬ë…</h3>
 
   <div class="form-contents">
     <div class="field field-email">
-      <input name="email" type="email" id="id_email" value="" placeholder="abc@def.com" title="ÀÌ¸ÞÀÏ ÁÖ¼Ò">
+      <input name="email" type="email" id="id_email" value="" placeholder="abc@def.com" title="ì´ë©”ì¼ ì£¼ì†Œ">
     </div>
 
     <div id="form-details">
       <!-- This is bad, but a quick fix because we are pushing live in an hour -->
       <div class="field field-country">
-        <select id="country" name="country" title="±¹°¡">
+        <select id="country" name="country" title="êµ­ê°€">
           <option value=""></option>
           <option value="AF">Afghanistan</option>
           <option value="AL">Albania</option>
@@ -122,7 +122,7 @@
           <option value="KZ">Kazakhstan</option>
           <option value="KE">Kenya</option>
           <option value="KI">Kiribati</option>
-          <option value="KR" selected="selected">´ëÇÑ¹Î±¹</option>
+          <option value="KR" selected="selected">ëŒ€í•œë¯¼êµ­</option>
           <option value="XK">Kosovo</option>
           <option value="KW">Kuwait</option>
           <option value="KG">Kyrgyzstan</option>
@@ -250,14 +250,14 @@
       <div class="field field-privacy">
         <label for="id_privacy" class="privacy-check-label">
           <input required aria-required="true" type="checkbox" name="custom-314" id="id_privacy" />
-          <span class="title"><a href="/en-US/privacy-policy">°³ÀÎÁ¤º¸ Á¤Ã¥(¿µ¹®)</a>À» ÀÐ¾úÀ¸¸ç ÀÌ¿¡ µ¿ÀÇÇÕ´Ï´Ù.</span>
+          <span class="title"><a href="/en-US/privacy-policy">ê°œì¸ì •ë³´ ì •ì±…(ì˜ë¬¸)</a>ì„ ì½ì—ˆìœ¼ë©° ì´ì— ë™ì˜í•©ë‹ˆë‹¤.</span>
         </label>
       </div>
     </div>
   </div>
 
   <div class="form-submit">
-    <input type="submit" id="footer_email_submit" value="µî·ÏÇÏ±â ¡í" class="button">
-    <p class="form-details"><small>Mozilla¿Í °ü·ÃµÈ Á¤º¸¸¸ º¸³»µå¸³´Ï´Ù.</small></p>
+    <input type="submit" id="footer_email_submit" value="ë“±ë¡í•˜ê¸° â‰«" class="button">
+    <p class="form-details"><small>Mozillaì™€ ê´€ë ¨ëœ ì •ë³´ë§Œ ë³´ë‚´ë“œë¦½ë‹ˆë‹¤.</small></p>
   </div>
 </form>
