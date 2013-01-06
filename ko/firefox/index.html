@@ -95,14 +95,14 @@
         <?=download_button_desktop("large", $fx_version)?> 	
   
         <figure id="firefox-screenshot">
-          <img class="platform-img js" src="" data-src="http://www.mozilla.org/media/img/firefox/fx/existing-screen.jpg" alt="Firefox screenshot"><noscript><img class="platform-img win" src="http://www.mozilla.org/media/img/firefox/fx/existing-screen.jpg" alt="Firefox screenshot"></noscript>
+          <img class="platform-img js" src="http://www.mozilla.org/media/img/firefox/fx/existing-screen.jpg" data-src="http://www.mozilla.org/media/img/firefox/fx/existing-screen.jpg" alt="Firefox screenshot"><noscript><img class="platform-img win" src="http://www.mozilla.org/media/img/firefox/fx/existing-screen.jpg" alt="Firefox screenshot"></noscript>
         </figure>
         <ul class="sub-features">
           <li id="features">
-            <a class="link" href="/ko/firefox/features/">편리하고 혁신적인 기능 소개&nbsp;»</a>
+            <a class="link" href="/ko/firefox/features/">주요 기능 소개&nbsp;»</a>
           </li>
           <li id="customize">
-            <a class="link" href="/ko/firefox/customize/">부가 기능을 통한 맞춤 웹브라우저&nbsp;»</a>
+            <a class="link" href="/ko/firefox/customize/">맞춤 브라우저 기능&nbsp;»</a>
           </li>
           <li id="playstore">
             <a class="link" href="https://market.android.com/details?id=org.mozilla.firefox">Android용 Firefox 다운로드하기&nbsp;»</a>
@@ -120,7 +120,7 @@
 </div>
 
 <?
-	$extra_js='<script src="/media/js/firefox-resp-min.js?build="'.$build_code.'"></script>
+	$extra_js='<script src="/media/js/firefox-resp-min.js?build='.$build_code.'"></script>
       <script src="/media/js/firefox_fx-min.js?build='.$build_code.'"></script>"';
 	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
 ?>

@@ -1,29 +1,29 @@
 <?
-// ´Ù¿î·Îµå ¹öÆ° ¸¸µé±â 
+// ë‹¤ìš´ë¡œë“œ ë²„íŠ¼ ë§Œë“¤ê¸° 
 
 function download_button_desktop($button, $fx_version) {
 ?>
 <aside id="download" class="download-button download-button-<?=$button?>">
     <noscript>
 <div class="download download-dumb">
-  <h4>Firefox ¹«·á ´Ù¿î·Îµå- ÇÑ±¹¾î</h4>
+  <h4>Firefox ë¬´ë£Œ ë‹¤ìš´ë¡œë“œ- í•œêµ­ì–´</h4>
   <ul>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko" class="button-white">À©µµ</a></li>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko" class="button-white">¸®´ª½º</a></li>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko" class="button-white">¸Æ OS X</a></li>
-          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">¾Èµå·ÎÀÌµå</a></li>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko" class="button-white">ìœˆë„</a></li>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko" class="button-white">ë¦¬ëˆ…ìŠ¤</a></li>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko" class="button-white">ë§¥ OS X</a></li>
+          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">ì•ˆë“œë¡œì´ë“œ</a></li>
       </ul>
 </div>  </noscript>
   
     <div class="unrecognized-download">
     
 <div class="download download-dumb">
-  <h4>Firefox ¹«·á ´Ù¿î·Îµå- ÇÑ±¹¾î</h4>
+  <h4>Firefox ë¬´ë£Œ ë‹¤ìš´ë¡œë“œ- í•œêµ­ì–´</h4>
   <ul>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko" class="button-white">À©µµ</a></li>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko" class="button-white">¸®´ª½º</a></li>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko" class="button-white">¸Æ OS X</a></li>
-          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">¾Èµå·ÎÀÌµå</a></li>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko" class="button-white">ìœˆë„</a></li>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko" class="button-white">ë¦¬ëˆ…ìŠ¤</a></li>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko" class="button-white">ë§¥ OS X</a></li>
+          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">ì•ˆë“œë¡œì´ë“œ</a></li>
    </ul>
 </div>  </div>
   
@@ -33,7 +33,7 @@ function download_button_desktop($button, $fx_version) {
          href="/ko/products/download.html?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko">
                   <span class="download-content">
             <span class="download-title">Firefox</span>
-            ¹«·á ´Ù¿î·Îµå                      </span>
+            ë¬´ë£Œ ë‹¤ìš´ë¡œë“œ                      </span>
               </a>
     </li>
         <li class="os_linux">
@@ -41,7 +41,7 @@ function download_button_desktop($button, $fx_version) {
          href="/ko/products/download.html?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko">
                   <span class="download-content">
             <span class="download-title">Firefox</span>
-            ¹«·á ´Ù¿î·Îµå                      </span>
+            ë¬´ë£Œ ë‹¤ìš´ë¡œë“œ                      </span>
               </a>
     </li>
         <li class="os_osx">
@@ -49,7 +49,7 @@ function download_button_desktop($button, $fx_version) {
          href="/ko/products/download.html?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko">
                   <span class="download-content">
             <span class="download-title">Firefox</span>
-            ¹«·á ´Ù¿î·Îµå                      </span>
+            ë¬´ë£Œ ë‹¤ìš´ë¡œë“œ                      </span>
               </a>
     </li>
         <li class="os_android">
@@ -57,19 +57,19 @@ function download_button_desktop($button, $fx_version) {
          href="https://market.android.com/details?id=org.mozilla.firefox">
                   <span class="download-content">
             <span class="download-title">Firefox</span>
-            ¹«·á ´Ù¿î·Îµå                      </span>
+            ë¬´ë£Œ ë‹¤ìš´ë¡œë“œ                      </span>
               </a>
     </li>
       </ul>
   
           <p class="unsupported-download">
-      Firefox ¼³Ä¡ <a href="/ko/firefox/<?=$fx_version?>/requirements">¿ä±¸ »çÇ×</a>¿¡ ¸ÂÁö ¾Ê½À´Ï´Ù.
+      Firefox ì„¤ì¹˜ <a href="/ko/firefox/<?=$fx_version?>/requirements">ìš”êµ¬ ì‚¬í•­</a>ì— ë§ì§€ ì•ŠìŠµë‹ˆë‹¤.
     </p>
   
     <small class="download-other">
-    <a href="/ko/firefox/all.html">¾ğ¾îº° ¹öÀü</a> |
-    <a href="/ko/firefox/notes">±â´É ¼Ò°³</a> |
-    <a href="/ko/legal/privacy/firefox.html">°³ÀÎ Á¤º¸ º¸È£</a>
+    <a href="/ko/firefox/all.html">ì–¸ì–´ë³„ ë²„ì „</a> |
+    <a href="/ko/firefox/notes">ê¸°ëŠ¥ ì†Œê°œ</a> |
+    <a href="/ko/legal/privacy/firefox.html">ê°œì¸ ì •ë³´ ë³´í˜¸</a>
   </small>
   
 </aside>
@@ -81,18 +81,18 @@ function download_button_mobile($button) {
     <noscript>
     
 <div class="download download-dumb">
-  <h4>Firefox ´Ù¿î·Îµå - ÇÑ±¹¾î ¹öÀü</h4>
+  <h4>Firefox ë‹¤ìš´ë¡œë“œ - í•œêµ­ì–´ ë²„ì „</h4>
   <ul>
-          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">Android¿ë</a></li>
+          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">Androidìš©</a></li>
       </ul>
 </div>  </noscript>
   
     <div class="unrecognized-download">
     
 <div class="download download-dumb">
-  <h4>Firefox ´Ù¿î·Îµå - ÇÑ±¹¾î ¹öÀü</h4>
+  <h4>Firefox ë‹¤ìš´ë¡œë“œ - í•œêµ­ì–´ ë²„ì „</h4>
   <ul>
-          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">Android¿ë</a></li>
+          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">Androidìš©</a></li>
       </ul>
 </div>  </div>
   
@@ -101,9 +101,9 @@ function download_button_mobile($button) {
       <a class="download-link download-firefox-mobile"
          href="https://market.android.com/details?id=org.mozilla.firefox">
           <span class="download-content-wrapper">          <span class="download-content">
-            <span class="download-title">Firefox Android¿ë</span>
-            ¹«·á ´Ù¿î·Îµå              <span class="download-info">
-    Google Play ½ºÅä¾î·Î ÀÌµ¿
+            <span class="download-title">Firefox Androidìš©</span>
+            ë¬´ë£Œ ë‹¤ìš´ë¡œë“œ              <span class="download-info">
+    Google Play ìŠ¤í† ì–´ë¡œ ì´ë™
   </span>
           </span>
         </span>
@@ -113,9 +113,9 @@ function download_button_mobile($button) {
   
   
   <small class="download-other">
-  <a href="/ko/firefox/mobile/platforms">Áö¿ø ´Ü¸»±â</a> |
-  <a href="/ko/mobile/notes">±â´É ¼Ò°³</a> |
-  <a href="/ko/legal/privacy/firefox.html">°³ÀÎ Á¤º¸ Á¤Ã¥</a>
+  <a href="/ko/firefox/mobile/platforms">ì§€ì› ë‹¨ë§ê¸°</a> |
+  <a href="/ko/mobile/notes">ê¸°ëŠ¥ ì†Œê°œ</a> |
+  <a href="/ko/legal/privacy/firefox.html">ê°œì¸ ì •ë³´ ì •ì±…</a>
 </small>
 
 </aside>
