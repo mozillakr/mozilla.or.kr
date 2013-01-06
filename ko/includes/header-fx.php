@@ -8,7 +8,6 @@
     <!--[if lte IE 8]>
     <script src="http://www.mozilla.org/media/js/libs/html5shiv.js"></script>
     <![endif]-->
-      <link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/firefox_fx-min.css?build=<?=$build_code?>" />
      <?=$extra_css?>
     <link rel="stylesheet" media="screen,projection,tv" href="/media/css/ko.css">
     <link rel="shortcut icon" href="http://www.mozilla.org/media/img/favicon.ico">
