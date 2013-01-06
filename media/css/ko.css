@@ -38,3 +38,11 @@ nav.menu-bar,
 ul.links h4 a:after {
 	font-family: 'Open Sans Light', 'Apple SD Gothic Neo', "나눔고딕", "맑은 고딕", "Malgun Gothic", AppleGothic, "Lucida Grande", Tahoma, Verdana, "돋움", Dotum, sans-serif;
 }
+
+/* override contribute-min.css */
+#contribute #welcome p {
+	font-family: 'Open Sans Light', 'Apple SD Gothic Neo', "나눔고딕", "맑은 고딕", "Malgun Gothic", AppleGothic, "Lucida Grande", Tahoma, Verdana, "돋움", Dotum, sans-serif;
+}
+#contribute #opportunities nav li {
+	font-family: 'Open Sans', 'Apple SD Gothic Neo', "나눔고딕", "맑은 고딕", "Malgun Gothic", AppleGothic, "Lucida Grande", Tahoma, Verdana, "돋움", Dotum, sans-serif;
+}
