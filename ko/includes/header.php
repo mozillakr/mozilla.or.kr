@@ -1,5 +1,6 @@
 <? 
-
+// css/js build code 
+  $build_code ="d03da81";
 // version for download link
   $fx_version="17.0.1";
 
@@ -13,11 +14,11 @@
     <!--[if lte IE 8]>
     <script src="http://www.mozilla.org/media/js/libs/html5shiv.js"></script>
     <![endif]-->
-      <link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/responsive-min.css?build=56e9bb3" />
+      <link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/responsive-min.css?build=<?=$build_code?>" />
      <?=$extra_css?>
     <link rel="stylesheet" media="screen,projection,tv" href="/media/css/ko.css">
     <link rel="shortcut icon" href="http://www.mozilla.org/media/img/favicon.ico">
-    <script src="http://www.mozilla.org/media/js/site-min.js?build=56e9bb3"></script>
+    <script src="http://www.mozilla.org/media/js/site-min.js?build=<?=$build_code?>"></script>
 </head>
 
   <body id="<?=$Hid?>" class="html-ltr sand">

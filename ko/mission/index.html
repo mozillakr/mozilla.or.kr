@@ -1,7 +1,7 @@
 <?
 	$Htitle="Mozilla 사명";
 	$Hid="mission";
-	$extra_css='<link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/mission-min.css?build=d03da81" />';
+	$extra_css='<link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/mission-min.css?build='.$build_code.'" />';
 
 	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/header.php";
 ?>
@@ -133,6 +133,6 @@
 <?
   include $_SERVER['DOCUMENT_ROOT']."/ko/includes/newsletter.php";
   
-	$extra_js='<script src="http://www.mozilla.org/media/js/video-min.js?build=d03da81"></script><script src="http://www.mozilla.org/media/js/mosaic-min.js?build=d03da81"></script>';
+	$extra_js='<script src="http://www.mozilla.org/media/js/video-min.js?build='.$build_code.'"></script><script src="http://www.mozilla.org/media/js/mosaic-min.js?build='.$build_code.'"></script>';
 	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
 ?>

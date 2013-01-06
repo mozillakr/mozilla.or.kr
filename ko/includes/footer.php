@@ -3,14 +3,14 @@
       <div class="row">
 
           <div class="footer-logo">
-              <a href="http://www.mozilla.or.kr/"><img src="http://www.mozilla.org/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+              <a href="/"><img src="http://www.mozilla.org/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
           </div>
 
           <div class="footer-license">
               <p>
                 ©1998–2012 일부 콘텐츠는mozilla.org 공헌자에 의해 만들어졌으며, 이 콘텐츠는 <a href="/foundation/licensing/website-content.html">Creative Commons license</a>에서 사용 가능합니다.</p>
               <p>
-                <a href="http://www.mozilla.or.kr/ko/contribute/page/">공헌자 홈페이지</a>
+                <a href="/ko/contribute/page/">공헌자 홈페이지</a>
               </p>
           </div>
           <ul class="footer-nav">
@@ -32,7 +32,7 @@
     <script src="/ko/tabzilla/tabzilla.js"></script>
     </div><!-- close #outer-wrapper -->
 
-      <script src="http://www.mozilla.org/media/js/mozorg-resp-min.js?build=56e9bb3"></script>
+      <script src="http://www.mozilla.org/media/js/mozorg-resp-min.js?build=<?=$build_code?>"></script>
       <?=$extra_js?>
 </body>
 </html>
