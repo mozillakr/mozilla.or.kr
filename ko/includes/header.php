@@ -14,8 +14,8 @@
     <script src="http://www.mozilla.org/media/js/libs/html5shiv.js"></script>
     <![endif]-->
       <link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/responsive-min.css?build=56e9bb3" />
-    <link rel="stylesheet" media="screen,projection,tv" href="/media/css/ko.css">
      <?=$extra_css?>
+    <link rel="stylesheet" media="screen,projection,tv" href="/media/css/ko.css">
     <link rel="shortcut icon" href="http://www.mozilla.org/media/img/favicon.ico">
     <script src="http://www.mozilla.org/media/js/site-min.js?build=56e9bb3"></script>
 </head>

@@ -1,3 +1,4 @@
+/* override responsive-min.css */
 .button,.button:link,.button:visited, 
 .button-green,.button-green:link,.button-green:visited, 
 .button-negative,.button-negative:link,.button-negative:visited, 
@@ -25,5 +26,15 @@ nav.menu-bar,
 .table thead th,.table thead td, 
 .sidebar nav, 
 .sidebar .reference .more {
+	font-family: 'Open Sans Light', 'Apple SD Gothic Neo', "나눔고딕", "맑은 고딕", "Malgun Gothic", AppleGothic, "Lucida Grande", Tahoma, Verdana, "돋움", Dotum, sans-serif;
+}
+
+/* override mission-min.css */
+#main-content {
+	font-family: 'Open Sans', 'Apple SD Gothic Neo', "나눔고딕", "맑은 고딕", "Malgun Gothic", AppleGothic, "Lucida Grande", Tahoma, Verdana, "돋움", Dotum, sans-serif;
+}
+#main-content .title-banner, 
+#main-content .lede, 
+ul.links h4 a:after {
 	font-family: 'Open Sans Light', 'Apple SD Gothic Neo', "나눔고딕", "맑은 고딕", "Malgun Gothic", AppleGothic, "Lucida Grande", Tahoma, Verdana, "돋움", Dotum, sans-serif;
 }
