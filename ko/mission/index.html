@@ -86,19 +86,29 @@
   
   <div class="video">
     <div id="welcome-video" class="mozilla-video-control mozilla-video-shadow">
-    <script src="http://embed.flowplayer.org/5.2.1/embed.min.js">
-      <div class="flowplayer" style="width: 460px; height: 259px;border: 0px;">
-      <video>
-         <source type="video/webm" src="/media/video/brand/Mozilla_2011_Story-ko.webm"/>
-         <source type="video/mp4" src="/media/video/brand/Mozilla_2011_Story-ko.mp4"/>
-         <source type="video/ogg" src="/media/video/brand/Mozilla_2011_Story-ko.ogv"/>
+      <video 
+        width="460"
+        height="259"
+        poster="http://www.mozilla.org/media/img/mission/poster-mission.jpg"
+        controls="controls">
+        <source src="/media/video/brand/Mozilla_2011_Story-ko.webm" type="video/webm">
+        <source src="/media/video/brand/Mozilla_2011_Story-ko.mp4" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
+        <source src="/media/video/brand/Mozilla_2011_Story-ko.ogv" type="video/mp4">
+        <object type="application/x-shockwave-flash"
+          style="width: 460px; height: 259px;"
+          data="http://www.mozilla.org/media/flash/playerWithControls.swf?flv=brand/Mozilla_2011_Story.mp4&amp;autoplay=false&amp;msg=Play%20Video">
+          <param name="movie" value="http://www.mozilla.org/media/flash/playerWithControls.swf?flv=brand/Mozilla_2011_Story.mp4&amp;autoplay=false&amp;msg=Play%20Video">
+          <param name="wmode" value="transparent">
+    
+          <div class="video-player-no-flash">
+          현재 동영상은 오픈 동영상 코덱을 지원하지 않기 때문에 <a href="http://www.adobe.com/go/getflashplayer">Adobe 플래시 플레이어</a>를 사용하십시오.
+          </div>
+        </object>
       </video>
-      </div>
-    </script>    
     </div>
     <p class="caption">Mozilla가 어떤 사람들이며 어떻게 시작되었는지, 어떻게 사람들을 위해서 웹을 더 좋은 곳으로 만드려고 하는지를 비디오를 통해서 살펴보세요.</p>
   </div>
-  
+ 
   <ul class="links">
     <li>
       <h4><a href="/ko/contribute/">참여하기</a></h4>
