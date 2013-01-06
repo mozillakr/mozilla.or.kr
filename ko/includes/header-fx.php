@@ -43,7 +43,7 @@
     </li>
     <li id="nav-main-releases" class=""><a href="/ko/firefox/channel/" tabindex="0" aria-owns="nav-main-releases-submenu" aria-haspopup="true">제품 채널</a>
       <ul aria-expanded="false" id="nav-main-releases-submenu" class="submenu">
-        <li class="first"><a href="/en-US/firefox/channel/" tabindex="-1">채널 소개</a></li>
+        <li class="first"><a href="/ko/firefox/channel/" tabindex="-1">채널 소개</a></li>
         <li><a href="/ko/firefox/aurora/" tabindex="-1">Firefox Aurora</a></li>
         <li><a href="/ko/firefox/beta/" tabindex="-1">Firefox Beta</a></li>
         <li><a href="/ko/firefox/" tabindex="-1">Firefox</a></li>

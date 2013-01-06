@@ -75,7 +75,54 @@ function download_button_desktop($button, $fx_version) {
 </aside>
 <? }
 
-function download_button_mobile($button) { 
+function download_button_mobile($button, $version) { 
+
+	if($version=="_aurora") {
+?>
+<aside id="aurora-download-mobile" class="download-button download-button-small">
+    <noscript>
+    
+<div class="download download-dumb">
+  <h4>Firefox 다운로드 — 한국어</h4>
+  <ul>
+          <li><a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/fennec-<?=$fx_aurora_version?>.multi.android-arm.apk" class="button-white">Android용</a></li>
+      </ul>
+</div>  </noscript>
+  
+    <div class="unrecognized-download">
+    
+<div class="download download-dumb">
+  <h4>Firefox 다운로드 — 한국어</h4>
+  <ul>
+          <li><a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/fennec-<?=$fx_aurora_version?>.multi.android-arm.apk" class="button-white">Android용</a></li>
+      </ul>
+</div>  </div>
+  
+    <ul class="download-list">
+        <li class="">
+      <a class="download-link download-firefox-mobile"
+         href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/fennec-<?=$fx_aurora_version?>.multi.android-arm.apk">
+                  <span class="download-content">
+            <span class="download-title">다운로드</span>
+              <span class="download-subtitle">(Android용)</span>
+                      </span>
+              </a>
+    </li>
+      </ul>
+  
+          <p class="unsupported-download">
+      현재 단말기는 Firefox 설치를 위한 <a href="http://www.mozilla.org/en-US/firefox/<?=$fx_aurora_version?>/requirements">요구 사항</a>에 맞지 않습니다.
+    </p>
+  
+    <small class="download-other">
+    <a href="/ko/firefox/all.html">운영체제 및 언어버전</a> |
+    <a href="/ko/firefox/notes">기능 소개</a> |
+    <a href="/ko/legal/privacy/firefox.html">개인 정보 정책</a>
+  </small>
+</aside>
+
+<?
+	} else {
 ?>
 <aside id="primary-download-mobile" class="download-button download-button-mobile-button">
     <noscript>
@@ -83,7 +130,7 @@ function download_button_mobile($button) {
 <div class="download download-dumb">
   <h4>Firefox 다운로드 - 한국어 버전</h4>
   <ul>
-          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">Android용</a></li>
+          <li><a href="https://market.android.com/details?id=org.mozilla.firefox<?=$version?>" class="button-white">Android용</a></li>
       </ul>
 </div>  </noscript>
   
@@ -92,14 +139,14 @@ function download_button_mobile($button) {
 <div class="download download-dumb">
   <h4>Firefox 다운로드 - 한국어 버전</h4>
   <ul>
-          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">Android용</a></li>
+          <li><a href="https://market.android.com/details?id=org.mozilla.firefox<?=$version?>" class="button-white">Android용</a></li>
       </ul>
 </div>  </div>
   
     <ul class="download-list">
         <li class="">
       <a class="download-link download-firefox-mobile"
-         href="https://market.android.com/details?id=org.mozilla.firefox">
+         href="https://market.android.com/details?id=org.mozilla.firefox<?=$version?>">
           <span class="download-content-wrapper">          <span class="download-content">
             <span class="download-title">Firefox Android용</span>
             무료 다운로드              <span class="download-info">
@@ -119,4 +166,6 @@ function download_button_mobile($button) {
 </small>
 
 </aside>
-<? } ?>
+<? }
+ } 
+?>
