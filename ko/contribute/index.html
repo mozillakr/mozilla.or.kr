@@ -1,0 +1,541 @@
+<?
+	require $_SERVER['DOCUMENT_ROOT']."/ko/includes/common.inc";
+
+	$Htitle="Mozilla - 참여하기";
+	$Hid="contribute";
+	$extra_css='<link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/contribute-min.css?build='.$build_code.'">';
+
+	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/header.php";
+?>
+<h1 id="main-feature" class="large">참여하기</h1>
+
+<section id="welcome" class="container">
+  <div id="welcome-video" class="mozilla-video-control mozilla-video-shadow">
+    <video
+      width="640"
+      height="360"
+      poster="http://www.mozilla.org/media/img/contribute/poster-brand.jpg"
+      controls="controls">
+      <source src="//videos-cdn.mozilla.net/brand/Mozilla_Firefox_Manifesto_v0.2_640.webm" type="video/webm" />
+      <source src="//videos-cdn.mozilla.net/brand/Mozilla_Firefox_Manifesto_v0.2_640.theora.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;" />
+      <source src="//videos-cdn.mozilla.net/brand/Mozilla_Firefox_Manifesto_v0.2_640.mp4" type="video/mp4" />
+      <object type="application/x-shockwave-flash"
+        style="width: 640px; height: 388px;"
+        data="http://www.mozilla.org/media/flash/playerWithControls.swf?flv=brand/Mozilla_Firefox_Manifesto_v0.2_640.mp4&amp;autoplay=false&amp;msg=Play%20Video">
+        <param name="movie" value="http://www.mozilla.org/media/flash/playerWithControls.swf?flv=brand/Mozilla_Firefox_Manifesto_v0.2_640.mp4&amp;autoplay=false&amp;msg=Play%20Video" />
+        <param name="wmode" value="transparent" />
+
+        <div class="video-player-no-flash">
+        이 동영상을 보기 위해서는 오픈 비디오를 지원하는 브라우저나 <a href="http://www.adobe.com/go/getflashplayer">Adobe Flash Player</a>가 필요합니다.
+        </div>
+      </object>
+    </video>
+  </div>
+  <p>
+    참여하기 위해서 C++ 구루(이게 무슨 뜻인지 알 필요도 없습니다!)일 필요는 없습니다.<br><b>웹을 사랑하는 마음만 있으면 됩니다.</b>
+  </p>
+</section>
+
+
+<form class="billboard" action="#help-form" id="help-form" method="post">
+  <input type="hidden" name="contribute-form" value="Y" />
+
+  
+  <h4 id="submit-wait" style="display:none">
+    데이터를 전송중입니다. 잠시만 기다려주세요...
+  </h4>
+
+    <div id="form-content">
+    <fieldset>
+      <div class="row">
+        <div class="form-column-1">
+          <h3>참여를 원하세요?</h3>
+        </div>
+        <div class="form-column-2">
+          <div class="field field-email">
+            <input type="email" required="true" placeholder="abc@def.com" name="email" id="id_email" title="이메일 주소" />
+          </div>
+        </div>
+        <div class="form-column-3">
+          <div class="field field-interest">
+            <select required="true" name="interest" id="id_interest">
+<option value="" selected="selected">관심있는 분야가 있으세요?</option>
+<option value="support">사용자 돕기</option>
+<option value="qa">테스트와 품질보증</option>
+<option value="coding">코딩</option>
+<option value="marketing">마케팅</option>
+<option value="localization">지역화와 번역</option>
+<option value="webdev">웹 개발</option>
+<option value="addons">부가기능</option>
+<option value="design">시각 디자인</option>
+<option value="documentation">문서화와 저술</option>
+<option value="education">교육</option>
+<option value="other">기타</option>
+<option value="suggestions">Firefox에대한 의견이 있습니다.</option>
+<option value="issues">Firefox를 사용하는데 도움이 필요해요.</option>
+</select>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row" id="form-details">
+        <div class="form-column-1">
+          <p>메모를 남겨주시면 바로 시작할 수 있도록 도와드립니다.</p>
+        </div>
+        <div class="form-column-2">
+          <div class="field field-comments">
+            <textarea rows="" name="comments" required="true" placeholder="제 관심 분야는요..." cols="" id="id_comments" title="메모 남기기"></textarea>
+          </div>
+        </div>
+        <div class="form-column-3">
+          <div class="field field-privacy ">
+            <label for="id_privacy" class="privacy-check-label"><input required="true" type="checkbox" name="privacy" id="id_privacy" /> <span class="title"><a href="/en-US/privacy-policy">개인정보 정책(영문)</a>을 읽었으며 이에 동의합니다.</a></span></label>
+          </div>
+            <div class="field field-newsletter">
+              <label for="id_newsletter">
+                <input type="checkbox" name="newsletter" id="id_newsletter" />
+                이메일로 정기적인 참여관련 소식을 받고 싶습니다.
+              </label>
+            </div>
+            <div class="field field-captcha">
+            <script type="text/javascript">var RecaptchaOptions = {
+  "lang": "en", 
+  "theme": "clean"
+}</script><script type="text/javascript" src="https://www.google.com/recaptcha/api/challenge?k=6LcZT9ASAAAAAHyMzr6fz3dkFP4eek-F4UdFQkir"></script>
+<noscript>
+  <iframe src="https://www.google.com/recaptcha/api/noscript?k=6LcZT9ASAAAAAHyMzr6fz3dkFP4eek-F4UdFQkir" height="300" width="500" frameborder="0"></iframe><br />
+  <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+  <input type='hidden' name='recaptcha_response_field' value='manual_challenge' />
+</noscript>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-submit">
+      <input type="submit" class="button" id="form-submit" value="전송&nbsp;»">
+    </div>
+  </div>
+</form>
+
+  <section id="opportunities">
+
+    <h1 class="container">참여 기회</h1>
+
+    <div class="pager pager-with-tabs">
+
+      <nav class="container">
+        <h5>정렬:</h5>
+        <ul class="pager-tabs">
+          <li><a href="#interest" class="button-white">관심사</a></li>
+          <li><a href="#location" class="button-white">지역</a></li>
+          <li><a href="#newsletter" class="button-white">뉴스레터</a></li>
+        </ul>
+      </nav>
+
+      <div class="pager-content container">
+
+        <div class="interest-content default-page" id="interest">
+          <script>// <![CDATA[
+          document.getElementById('interest').id = 'page-interest';
+          // ]]></script>
+          <section>
+
+            <ul class="contribute-options">
+              <li class="row">
+                <img src="http://www.mozilla.org/media/img/contribute/sumo.png" alt="" />
+                <h3 id="support">사용자 돕기</h3>
+                <div class="content">
+                  <p>다른 사람으로 하여금 Mozilla 제품을 사용할 수 있게 해주는 우리의 지원 프로그램은 여러분과 같은 열정적인 분들에게 달려있습니다. <a href="https://support.mozilla.org/kb/superheroes-wanted">Firefox 사용자 도와주기</a>와 <a href="http://support.mozillamessaging.com/kb/superheroes-wanted">Thunderbird 사용자 도와주기</a>에서 보다 자세한 내용을 확인하세요.</p>
+                </div>
+              </li>
+              <li class="row">
+                <img src="http://www.mozilla.org/media/img/contribute/qmo.png" alt="" />
+                <h3 id="qa">품질 보증</h3>
+                <div class="content">
+                  <p>품질 보증 시험은 Mozilla 활동을 시작하는 가장 쉬운 방법이면서 코드와 도구에 대해서 익힐 수 있는 가장 좋은 방법입니다. Firefox <a href="http://quality.mozilla.org/teams/desktop-firefox/">버그 사냥</a>이나 <a href="http://quality.mozilla.org/teams/web-qa/">Mozilla 웹사이트 테스트</a>, <a href="http://quality.mozilla.org/">다른 테스트 기회</a>를 통해서 우리를 도와주세요.</p>
+                </div>
+              </li>
+              <li class="row">
+                <img src="http://www.mozilla.org/media/img/contribute/dinohead.png" alt="" />
+                <h3 id="coding">코딩</h3>
+                <div class="content">
+                  <p>개발자는 새로운 기능을 추가하거나 제품을 작고 빠르게 개선하거나 다른 사람을 위해서 개발을 쉽게 만들어주는 활동을 통해서 <a href="https://developer.mozilla.org/en/Introduction">Mozilla에 도움</a>을 줄 수 있습니다. <a href="http://www.whatcanidoformozilla.org/">가장 선호하는 언어</a>를 알려주시면 적합한 프로젝트를 찾아드립니다.</p>
+                </div>
+              </li>
+              <li class="row">
+                <img src="http://www.mozilla.org/media/img/contribute/firefox.png" alt="" />
+                <h3 id="marketing">홍보</h3>
+                <div class="content">
+                  <p>Firefox와 다른 Mozilla 제품이 보다 더 나은 인터넷을 만든다는 사실을 사람들이 알게 도와주세요. <a href="https://affiliates.mozilla.org">제휴 프로그램</a>을 통해서 Firefox를 세상에 알리고 <a href="https://wiki.mozilla.org/MarketingGuide">마케팅 가이드</a>를 통해서 참여할수 있는 더 많은 방법을 살펴보세요.</p>
+                </div>
+              </li>
+              <li class="row">
+                <img src="http://www.mozilla.org/media/img/contribute/localization.png" alt="" />
+                <h3 id="l10n">지역화</h3>
+                <div class="content">
+                  <p><a href="https://wiki.mozilla.org/L10n">여러분이 사용하는 언어</a>로 Firefox나 Thunderbird, 다른 제품을 사용할 수 있도록 도와주고 Mozilla에 참여하세요. 또한 웹사이트의 <a href="https://wiki.mozilla.org/L10n:Web_parts">콘텐츠를 번역</a>해서 Mozilla가 더 좋은 인터넷을 만들고 있다는 사실을 세상에 알려주세요.</p>
+                </div>
+              </li>
+              <li class="row">
+                <img src="http://www.mozilla.org/media/img/contribute/web.png" alt="" />
+                <h3 id="l10n">웹 개발</h3>
+                <div class="content">
+                  <p>우리의 웹사이트는 웨 개발자들이 참여할 수 있도록 열려있습니다. 시작하기 위한 <a href="https://wiki.mozilla.org/Webdev/GetInvolved">웹사이트 프로젝트를 찾아</a>보세요. 웹기술은 또한 <a href="https://wiki.mozilla.org/Gaia/Hacking">새로운 Firefox OS를 만드는데</a>에도 기여할 수 있습니다.</p>
+                </div>
+              </li>
+              <li class="row">
+                <img src="http://www.mozilla.org/media/img/contribute/addons.png" alt="" />
+                <h3 id="addons">부가기능</h3>
+                <div class="content">
+                  <p>Mozilla의 제품은 작은 수정이나 주요한 추가 기능을 만들 수 있는 막강한 확장기능 시스템을 가지고 있습니다. <a href="https://addons.mozilla.org/developers/docs/getting-started">부가기능을 만드는 방법</a>을 통해서 더 자세히 알아보세요. 경험이 많은 개발자 분들은 <a href="https://wiki.mozilla.org/AMO:Editors/Applying">AMO 편집자가 되는 방법</a>에 대해서 알아보세요.</p>
+                </div>
+              </li>
+              <li class="row">
+                <img src="http://www.mozilla.org/media/img/contribute/creativecollective.png" alt="" />
+                <h3 id="design">시각 디자인</h3>
+                <div class="content">
+                  <p>우리는 예술가들이 Mozilla로부터 받은 영감으로 세상을 뒤덮을 수 있기를 바랍니다. 참여할 수 있는 더 많은 정보를 <a href="https://blog.mozilla.org/creative/">Creative 팀 블로그</a>에서 확인해 보세요.</p>
+                </div>
+              </li>
+              <li class="row">
+                <img src="http://www.mozilla.org/media/img/contribute/mdn.png" alt="" />
+                <h3 id="docs">문서화와 저술</h3>
+                <div class="content">
+                  <p>Mozilla Developer Network은 Mozilla 기술과 정보의 허브입니다. 새로운 콘텐츠를 작성하거나 지금 존재하는 콘텐츠를 수정, 다른 언어로 콘텐츠를 번역해서 <a href="https://developer.mozilla.org/docs/Project:How_to_Help">우리의 문서가 더 좋아지도록</a> 도와주세요.</p>
+                </div>
+              </li>
+              <li class="row">
+                <img src="http://www.mozilla.org/media/img/contribute/webmaker.png" alt="" />
+                <h3 id="education">교육</h3>
+                <div class="content">
+                  <p>웹이 어떻게 작동하는지 다른 사람들에게 알려줌으로써 웹메이커 세대를 만들어주세요. <a href="https://webmaker.org/">Mozilla의 Webmaker 프로젝트</a>에 대해서 살펴보시고 지금 당장 여러분의 커뮤니티에 이벤트를 만들어서 다른사람들에게 알려주는 일을 시작해보세요.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="location-content" id="location">
+          <script>// <![CDATA[
+          document.getElementById('location').id = 'page-location';
+          // ]]></script>
+          <section>
+            <ul>
+              <li class="row">
+                <a href="/contribute/local/northamerica.html">
+                  <img src="http://www.mozilla.org/media/img/contribute/local/map-th-northamerica.png" alt="">
+                  <h3>미국과 캐나다</h3>
+                </a>
+              </li>
+              <li class="row">
+                <a href="/contribute/local/europe.html">
+                  <img src="http://www.mozilla.org/media/img/contribute/local/map-th-europe.png" alt="">
+                  <h3>유럽</h3>
+                </a>
+              </li>
+              <li class="row">
+                <a href="/contribute/local/latinamerica.html">
+                  <img src="http://www.mozilla.org/media/img/contribute/local/map-th-latinamerica.png" alt="">
+                  <h3>라틴 아메리카</h3>
+                </a>
+              </li>
+              <li class="row">
+                <a href="/contribute/local/africamideast.html">
+                  <img src="http://www.mozilla.org/media/img/contribute/local/map-th-africamideast.png" alt="">
+                  <h3>아프리카와 중동</h3>
+                </a>
+              </li>
+              <li class="row">
+                <a href="/contribute/local/asia.html">
+                  <img src="http://www.mozilla.org/media/img/contribute/local/map-th-asia.png" alt="">
+                  <h3>아시아와 남태평양</h3>
+                </a>
+              </li>
+              <li class="row">
+                <a href="/contribute/local/southpole.html">
+                  <img src="http://www.mozilla.org/media/img/contribute/local/map-th-southpole.png" alt="">
+                  <h3>남극</h3>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+
+
+                  <div class="newsletter-content" id="newsletter">
+            <script>// <![CDATA[
+            document.getElementById('newsletter').id = 'page-newsletter';
+            // ]]></script>
+            <section>
+                              <form action="#newsletter" method="post" id="newsletter-form">
+                  <input type="hidden" name="newsletter-form" value="Y" />
+                  <p>커뮤니티 뉴스와 참여기회에 대한 정보가 가득한 주간 뉴스레터를 구독하세요.</p>
+                  
+                  <div class="field field-email"><input type="email" required="true" placeholder="abc@def.com" name="newsletter-email" id="id_newsletter-email" title="이메일 주소"></div>
+                  <div class="field field-country"><select name="newsletter-country" id="id_newsletter-country" title="국가">
+<option value="af">Afghanistan</option>
+<option value="al">Albania</option>
+<option value="dz">Algeria</option>
+<option value="as">American Samoa</option>
+<option value="ad">Andorra</option>
+<option value="ao">Angola</option>
+<option value="ai">Anguilla</option>
+<option value="aq">Antarctica</option>
+<option value="ag">Antigua and Barbuda</option>
+<option value="ar">Argentina</option>
+<option value="am">Armenia</option>
+<option value="aw">Aruba</option>
+<option value="au">Australia</option>
+<option value="at">Austria</option>
+<option value="az">Azerbaijan</option>
+<option value="bs">Bahamas</option>
+<option value="bh">Bahrain</option>
+<option value="bd">Bangladesh</option>
+<option value="bb">Barbados</option>
+<option value="by">Belarus</option>
+<option value="be">Belgium</option>
+<option value="bz">Belize</option>
+<option value="bj">Benin</option>
+<option value="bm">Bermuda</option>
+<option value="bt">Bhutan</option>
+<option value="bo">Bolivia</option>
+<option value="ba">Bosnia and Herzegovina</option>
+<option value="bw">Botswana</option>
+<option value="bv">Bouvet Island</option>
+<option value="br">Brazil</option>
+<option value="io">British Indian Ocean Territory</option>
+<option value="vg">British Virgin Islands</option>
+<option value="bn">Brunei Darussalam</option>
+<option value="bg">Bulgaria</option>
+<option value="bf">Burkina Faso</option>
+<option value="bi">Burundi</option>
+<option value="kh">Cambodia</option>
+<option value="cm">Cameroon</option>
+<option value="ca">Canada</option>
+<option value="cv">Cape Verde</option>
+<option value="ky">Cayman Islands</option>
+<option value="cf">Central African Republic</option>
+<option value="td">Chad</option>
+<option value="cl">Chile</option>
+<option value="cn">China</option>
+<option value="cx">Christmas Island</option>
+<option value="cc">Cocos (Keeling) Islands</option>
+<option value="co">Colombia</option>
+<option value="km">Comoros</option>
+<option value="cg">Congo-Brazzaville</option>
+<option value="cd">Congo-Kinshasa</option>
+<option value="ck">Cook Islands</option>
+<option value="cr">Costa Rica</option>
+<option value="hr">Croatia</option>
+<option value="cu">Cuba</option>
+<option value="cy">Cyprus</option>
+<option value="cz">Czech Republic</option>
+<option value="dk">Denmark</option>
+<option value="dj">Djibouti</option>
+<option value="dm">Dominica</option>
+<option value="do">Dominican Republic</option>
+<option value="ec">Ecuador</option>
+<option value="eg">Egypt</option>
+<option value="sv">El Salvador</option>
+<option value="gq">Equatorial Guinea</option>
+<option value="er">Eritrea</option>
+<option value="ee">Estonia</option>
+<option value="et">Ethiopia</option>
+<option value="fk">Falkland Islands (Malvinas)</option>
+<option value="fo">Faroe Islands</option>
+<option value="fj">Fiji</option>
+<option value="fi">Finland</option>
+<option value="fr">France</option>
+<option value="gf">French Guiana</option>
+<option value="pf">French Polynesia</option>
+<option value="tf">French Southern Territories</option>
+<option value="ga">Gabon</option>
+<option value="gm">Gambia</option>
+<option value="ge">Georgia</option>
+<option value="de">Germany</option>
+<option value="gh">Ghana</option>
+<option value="gi">Gibraltar</option>
+<option value="gr">Greece</option>
+<option value="gl">Greenland</option>
+<option value="gd">Grenada</option>
+<option value="gp">Guadeloupe</option>
+<option value="gu">Guam</option>
+<option value="gt">Guatemala</option>
+<option value="gg">Guernsey</option>
+<option value="gn">Guinea</option>
+<option value="gw">Guinea-Bissau</option>
+<option value="gy">Guyana</option>
+<option value="ht">Haiti</option>
+<option value="hm">Heard Island and McDonald Islands</option>
+<option value="hn">Honduras</option>
+<option value="hk">Hong Kong</option>
+<option value="hu">Hungary</option>
+<option value="is">Iceland</option>
+<option value="in">India</option>
+<option value="id">Indonesia</option>
+<option value="ir">Iran</option>
+<option value="iq">Iraq</option>
+<option value="ie">Ireland</option>
+<option value="im">Isle of Man</option>
+<option value="il">Israel</option>
+<option value="it">Italy</option>
+<option value="ci">Ivory Coast</option>
+<option value="jm">Jamaica</option>
+<option value="jp">Japan</option>
+<option value="je">Jersey</option>
+<option value="jo">Jordan</option>
+<option value="kz">Kazakhstan</option>
+<option value="ke">Kenya</option>
+<option value="ki">Kiribati</option>
+<option value="kw">Kuwait</option>
+<option value="kg">Kyrgyzstan</option>
+<option value="la">Laos</option>
+<option value="lv">Latvia</option>
+<option value="lb">Lebanon</option>
+<option value="ls">Lesotho</option>
+<option value="lr">Liberia</option>
+<option value="ly">Libya</option>
+<option value="li">Liechtenstein</option>
+<option value="lt">Lithuania</option>
+<option value="lu">Luxembourg</option>
+<option value="mo">Macao</option>
+<option value="mk">Macedonia, F.Y.R. of</option>
+<option value="mg">Madagascar</option>
+<option value="mw">Malawi</option>
+<option value="my">Malaysia</option>
+<option value="mv">Maldives</option>
+<option value="ml">Mali</option>
+<option value="mt">Malta</option>
+<option value="mh">Marshall Islands</option>
+<option value="mq">Martinique</option>
+<option value="mr">Mauritania</option>
+<option value="mu">Mauritius</option>
+<option value="yt">Mayotte</option>
+<option value="mx">Mexico</option>
+<option value="fm">Micronesia</option>
+<option value="md">Moldova</option>
+<option value="mc">Monaco</option>
+<option value="mn">Mongolia</option>
+<option value="me">Montenegro</option>
+<option value="ms">Montserrat</option>
+<option value="ma">Morocco</option>
+<option value="mz">Mozambique</option>
+<option value="mm">Myanmar</option>
+<option value="na">Namibia</option>
+<option value="nr">Nauru</option>
+<option value="np">Nepal</option>
+<option value="nl">Netherlands</option>
+<option value="an">Netherlands Antilles</option>
+<option value="nc">New Caledonia</option>
+<option value="nz">New Zealand</option>
+<option value="ni">Nicaragua</option>
+<option value="ne">Niger</option>
+<option value="ng">Nigeria</option>
+<option value="nu">Niue</option>
+<option value="nf">Norfolk Island</option>
+<option value="kp">North Korea</option>
+<option value="mp">Northern Mariana Islands</option>
+<option value="no">Norway</option>
+<option value="ps">Occupied Palestinian Territory</option>
+<option value="om">Oman</option>
+<option value="pk">Pakistan</option>
+<option value="pw">Palau</option>
+<option value="pa">Panama</option>
+<option value="pg">Papua New Guinea</option>
+<option value="py">Paraguay</option>
+<option value="pe">Peru</option>
+<option value="ph">Philippines</option>
+<option value="pn">Pitcairn</option>
+<option value="pl">Poland</option>
+<option value="pt">Portugal</option>
+<option value="pr">Puerto Rico</option>
+<option value="qa">Qatar</option>
+<option value="re">Reunion</option>
+<option value="ro">Romania</option>
+<option value="ru">Russian Federation</option>
+<option value="rw">Rwanda</option>
+<option value="bl">Saint Barthélemy</option>
+<option value="sh">Saint Helena</option>
+<option value="kn">Saint Kitts and Nevis</option>
+<option value="lc">Saint Lucia</option>
+<option value="mf">Saint Martin</option>
+<option value="pm">Saint Pierre and Miquelon</option>
+<option value="vc">Saint Vincent and the Grenadines</option>
+<option value="ws">Samoa</option>
+<option value="sm">San Marino</option>
+<option value="st">Sao Tome and Principe</option>
+<option value="sa">Saudi Arabia</option>
+<option value="sn">Senegal</option>
+<option value="rs">Serbia</option>
+<option value="sc">Seychelles</option>
+<option value="sl">Sierra Leone</option>
+<option value="sg">Singapore</option>
+<option value="sk">Slovakia</option>
+<option value="si">Slovenia</option>
+<option value="sb">Solomon Islands</option>
+<option value="so">Somalia</option>
+<option value="za">South Africa</option>
+<option value="gs">South Georgia and the South Sandwich Islands</option>
+<option value="kr" selected="selected">대한민국</option>
+<option value="es">Spain</option>
+<option value="lk">Sri Lanka</option>
+<option value="sd">Sudan</option>
+<option value="sr">Suriname</option>
+<option value="sj">Svalbard and Jan Mayen</option>
+<option value="sz">Swaziland</option>
+<option value="se">Sweden</option>
+<option value="ch">Switzerland</option>
+<option value="sy">Syria</option>
+<option value="tw">Taiwan</option>
+<option value="tj">Tajikistan</option>
+<option value="tz">Tanzania</option>
+<option value="th">Thailand</option>
+<option value="tl">Timor-Leste</option>
+<option value="tg">Togo</option>
+<option value="tk">Tokelau</option>
+<option value="to">Tonga</option>
+<option value="tt">Trinidad and Tobago</option>
+<option value="tn">Tunisia</option>
+<option value="tr">Turkey</option>
+<option value="tm">Turkmenistan</option>
+<option value="tc">Turks and Caicos Islands</option>
+<option value="tv">Tuvalu</option>
+<option value="ae">U.A.E.</option>
+<option value="vi">U.S. Virgin Islands</option>
+<option value="ug">Uganda</option>
+<option value="ua">Ukraine</option>
+<option value="gb">United Kingdom</option>
+<option value="us">United States</option>
+<option value="um">United States Minor Outlying Islands</option>
+<option value="uy">Uruguay</option>
+<option value="uz">Uzbekistan</option>
+<option value="vu">Vanuatu</option>
+<option value="va">Vatican City</option>
+<option value="ve">Venezuela</option>
+<option value="vn">Vietnam</option>
+<option value="wf">Wallis and Futuna</option>
+<option value="eh">Western Sahara</option>
+<option value="ye">Yemen</option>
+<option value="zm">Zambia</option>
+<option value="zw">Zimbabwe</option>
+<option value="ax">Åland Islands</option>
+</select></div>
+                  <div class="field field-format"><label for="id_newsletter-fmt_0"><input checked="checked" type="radio" id="id_newsletter-fmt_0" value="H" name="newsletter-fmt" /> HTML</label><label for="id_newsletter-fmt_1"><input type="radio" id="id_newsletter-fmt_1" value="T" name="newsletter-fmt" /> 텍스트</label></div>
+                  <div class="field field-privacy"><label for="id_newsletter-privacy" class="privacy-check-label"><input required="true" type="checkbox" name="newsletter-privacy" id="id_newsletter-privacy" /> <span class="title"><a href="/en-US/privacy-policy">개인정보 정책(영문)</a>을 읽었으며 이에 동의합니다.</span></label></div>
+                  <div class="field field-submit"><input name="test-submit" type="submit" value="등록" class="button-blue" /></div>
+                  <small>Mozilla와 관련된 정보만 보내드립니다.</small>
+                </form>
+              </section>
+          </div>
+        
+      </div>
+
+    </div>
+
+
+  </section>
+<?
+	$extra_js='<script src="http://www.mozilla.org/media/js/contribute-min.js?build='.$build_code.'"></script>';
+	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
+?>
