@@ -1,0 +1,25 @@
+<?
+	require $_SERVER['DOCUMENT_ROOT']."/ko/includes/common.inc";
+
+	$Htitle="Mozilla - 사이트 기여방법";
+	$Hid="contribute-page";
+	$extra_css='<link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/contribute-page-min.css?build='.$build_code.'">';
+
+	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/header.php";
+?>
+<h1 id="main-feature">사이트 기여방법</h1>
+
+<section id="main-content">
+
+  <p>Mozilla의 웹사이트는 방문자가 만들고 수정할 수 있는 오픈된 프로젝트로 운영됩니다.</p>
+  <p><a href="https://wiki.mozilla.org/Webdev/GetInvolved">웹 개발(영문)</a>이나 <a href="https://wiki.mozilla.org/L10n">번역(영문)</a>, <a href="http://wiki.mozilla.org/Design">디자인(영문)</a>, <a href="https://developer.mozilla.org/ko/docs/Project:How_to_Help">저술</a>, <a href="https://quality.mozilla.org/teams/web-qa/">테스트(영문)</a>에 관심이 있으시다면 참여를 기다리겠습니다.</p>
+  <p>궁금한 점이 있으신가요? 위의 링크를 살펴보시거나 아래의 서식을 통해서 관심있는 분야에 대해서 알려주세요.</p>
+
+</section>
+
+<?php include('../help_form.html'); ?>
+
+<?
+	$extra_js='<script src="http://www.mozilla.org/media/js/contribute-min.js?build='.$build_code.'"></script>';
+	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
+?>

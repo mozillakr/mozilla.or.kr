@@ -36,86 +36,7 @@
   </p>
 </section>
 
-
-<form class="billboard" action="#help-form" id="help-form" method="post">
-  <input type="hidden" name="contribute-form" value="Y" />
-
-  
-  <h4 id="submit-wait" style="display:none">
-    데이터를 전송중입니다. 잠시만 기다려주세요...
-  </h4>
-
-    <div id="form-content">
-    <fieldset>
-      <div class="row">
-        <div class="form-column-1">
-          <h3>참여를 원하세요?</h3>
-        </div>
-        <div class="form-column-2">
-          <div class="field field-email">
-            <input type="email" required="true" placeholder="abc@def.com" name="email" id="id_email" title="이메일 주소" />
-          </div>
-        </div>
-        <div class="form-column-3">
-          <div class="field field-interest">
-            <select required="true" name="interest" id="id_interest">
-<option value="" selected="selected">관심있는 분야가 있으세요?</option>
-<option value="support">사용자 돕기</option>
-<option value="qa">테스트와 품질보증</option>
-<option value="coding">코딩</option>
-<option value="marketing">마케팅</option>
-<option value="localization">지역화와 번역</option>
-<option value="webdev">웹 개발</option>
-<option value="addons">부가기능</option>
-<option value="design">시각 디자인</option>
-<option value="documentation">문서화와 저술</option>
-<option value="education">교육</option>
-<option value="other">기타</option>
-<option value="suggestions">Firefox에대한 의견이 있습니다.</option>
-<option value="issues">Firefox를 사용하는데 도움이 필요해요.</option>
-</select>
-          </div>
-        </div>
-      </div>
-
-      <div class="form-row" id="form-details">
-        <div class="form-column-1">
-          <p>메모를 남겨주시면 바로 시작할 수 있도록 도와드립니다.</p>
-        </div>
-        <div class="form-column-2">
-          <div class="field field-comments">
-            <textarea rows="" name="comments" required="true" placeholder="제 관심 분야는요..." cols="" id="id_comments" title="메모 남기기"></textarea>
-          </div>
-        </div>
-        <div class="form-column-3">
-          <div class="field field-privacy ">
-            <label for="id_privacy" class="privacy-check-label"><input required="true" type="checkbox" name="privacy" id="id_privacy" /> <span class="title"><a href="/en-US/privacy-policy">개인정보 정책(영문)</a>을 읽었으며 이에 동의합니다.</a></span></label>
-          </div>
-            <div class="field field-newsletter">
-              <label for="id_newsletter">
-                <input type="checkbox" name="newsletter" id="id_newsletter" />
-                이메일로 정기적인 참여관련 소식을 받고 싶습니다.
-              </label>
-            </div>
-            <div class="field field-captcha">
-            <script type="text/javascript">var RecaptchaOptions = {
-  "lang": "en", 
-  "theme": "clean"
-}</script><script type="text/javascript" src="https://www.google.com/recaptcha/api/challenge?k=6LcZT9ASAAAAAHyMzr6fz3dkFP4eek-F4UdFQkir"></script>
-<noscript>
-  <iframe src="https://www.google.com/recaptcha/api/noscript?k=6LcZT9ASAAAAAHyMzr6fz3dkFP4eek-F4UdFQkir" height="300" width="500" frameborder="0"></iframe><br />
-  <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
-  <input type='hidden' name='recaptcha_response_field' value='manual_challenge' />
-</noscript>
-          </div>
-        </div>
-      </div>
-    </fieldset>
-    <div class="form-submit">
-      <input type="submit" class="button" id="form-submit" value="전송&nbsp;»">
-    </div>
-  </div>
-</form>
+<?php include('help_form.html'); ?>
 
   <section id="opportunities">
 
@@ -145,49 +66,49 @@
                 <img src="http://www.mozilla.org/media/img/contribute/sumo.png" alt="" />
                 <h3 id="support">사용자 돕기</h3>
                 <div class="content">
-                  <p>다른 사람으로 하여금 Mozilla 제품을 사용할 수 있게 해주는 우리의 지원 프로그램은 여러분과 같은 열정적인 분들에게 달려있습니다. <a href="https://support.mozilla.org/kb/superheroes-wanted">Firefox 사용자 도와주기</a>와 <a href="http://support.mozillamessaging.com/kb/superheroes-wanted">Thunderbird 사용자 도와주기</a>에서 보다 자세한 내용을 확인하세요.</p>
+                  <p>다른 사람으로 하여금 Mozilla 제품을 사용할 수 있게 해주는 우리의 지원 프로그램은 여러분과 같은 열정적인 분들에게 달려있습니다. <a href="https://support.mozilla.org/ko/kb/superheroes-wanted">Firefox 사용자 도와주기</a>와 <a href="https://support.mozillamessaging.com/ko/kb/superheroes-wanted">Thunderbird 사용자 도와주기</a>에서 보다 자세한 내용을 확인하세요.</p>
                 </div>
               </li>
               <li class="row">
                 <img src="http://www.mozilla.org/media/img/contribute/qmo.png" alt="" />
                 <h3 id="qa">품질 보증</h3>
                 <div class="content">
-                  <p>품질 보증 시험은 Mozilla 활동을 시작하는 가장 쉬운 방법이면서 코드와 도구에 대해서 익힐 수 있는 가장 좋은 방법입니다. Firefox <a href="http://quality.mozilla.org/teams/desktop-firefox/">버그 사냥</a>이나 <a href="http://quality.mozilla.org/teams/web-qa/">Mozilla 웹사이트 테스트</a>, <a href="http://quality.mozilla.org/">다른 테스트 기회</a>를 통해서 우리를 도와주세요.</p>
+                  <p>품질 보증 시험은 Mozilla 활동을 시작하는 가장 쉬운 방법이면서 코드와 도구에 대해서 익힐 수 있는 가장 좋은 방법입니다. Firefox <a href="http://quality.mozilla.org/teams/desktop-firefox/">버그 사냥(영문)</a>이나 <a href="http://quality.mozilla.org/teams/web-qa/">Mozilla 웹사이트 테스트(영문)</a>, <a href="http://quality.mozilla.org/">다른 다양한 테스트 기회(영문)</a>를 통해서 우리를 도와주세요.</p>
                 </div>
               </li>
               <li class="row">
                 <img src="http://www.mozilla.org/media/img/contribute/dinohead.png" alt="" />
                 <h3 id="coding">코딩</h3>
                 <div class="content">
-                  <p>개발자는 새로운 기능을 추가하거나 제품을 작고 빠르게 개선하거나 다른 사람을 위해서 개발을 쉽게 만들어주는 활동을 통해서 <a href="https://developer.mozilla.org/en/Introduction">Mozilla에 도움</a>을 줄 수 있습니다. <a href="http://www.whatcanidoformozilla.org/">가장 선호하는 언어</a>를 알려주시면 적합한 프로젝트를 찾아드립니다.</p>
+                  <p>개발자는 새로운 기능을 추가하거나 제품을 작고 빠르게 개선하거나 다른 사람을 위해서 개발을 쉽게 만들어주는 활동을 통해서 <a href="https://developer.mozilla.org/en-US/docs/Introduction">Mozilla에 도움(영문)</a>을 줄 수 있습니다. <a href="http://www.whatcanidoformozilla.org/">가장 선호하는 언어(영문)</a>를 알려주시면 적합한 프로젝트를 찾아드립니다.</p>
                 </div>
               </li>
               <li class="row">
                 <img src="http://www.mozilla.org/media/img/contribute/firefox.png" alt="" />
                 <h3 id="marketing">홍보</h3>
                 <div class="content">
-                  <p>Firefox와 다른 Mozilla 제품이 보다 더 나은 인터넷을 만든다는 사실을 사람들이 알게 도와주세요. <a href="https://affiliates.mozilla.org">제휴 프로그램</a>을 통해서 Firefox를 세상에 알리고 <a href="https://wiki.mozilla.org/MarketingGuide">마케팅 가이드</a>를 통해서 참여할수 있는 더 많은 방법을 살펴보세요.</p>
+                  <p>Firefox와 다른 Mozilla 제품이 보다 더 나은 인터넷을 만든다는 사실을 사람들이 알게 도와주세요. <a href="https://affiliates.mozilla.org/ko/new">제휴 프로그램</a>을 통해서 Firefox를 세상에 알리고 <a href="https://wiki.mozilla.org/MarketingGuide">마케팅 가이드(영문)</a>를 통해서 참여할수 있는 더 많은 방법을 살펴보세요.</p>
                 </div>
               </li>
               <li class="row">
                 <img src="http://www.mozilla.org/media/img/contribute/localization.png" alt="" />
                 <h3 id="l10n">지역화</h3>
                 <div class="content">
-                  <p><a href="https://wiki.mozilla.org/L10n">여러분이 사용하는 언어</a>로 Firefox나 Thunderbird, 다른 제품을 사용할 수 있도록 도와주고 Mozilla에 참여하세요. 또한 웹사이트의 <a href="https://wiki.mozilla.org/L10n:Web_parts">콘텐츠를 번역</a>해서 Mozilla가 더 좋은 인터넷을 만들고 있다는 사실을 세상에 알려주세요.</p>
+                  <p><a href="https://wiki.mozilla.org/L10n">여러분이 사용하는 언어(영문)</a>로 Firefox나 Thunderbird, 다른 제품을 사용할 수 있도록 도와주고 Mozilla에 참여하세요. 또한 웹사이트의 <a href="https://wiki.mozilla.org/L10n:Web_parts">콘텐츠를 번역(영문)</a>해서 Mozilla가 더 좋은 인터넷을 만들고 있다는 사실을 세상에 알려주세요.</p>
                 </div>
               </li>
               <li class="row">
                 <img src="http://www.mozilla.org/media/img/contribute/web.png" alt="" />
                 <h3 id="l10n">웹 개발</h3>
                 <div class="content">
-                  <p>우리의 웹사이트는 웨 개발자들이 참여할 수 있도록 열려있습니다. 시작하기 위한 <a href="https://wiki.mozilla.org/Webdev/GetInvolved">웹사이트 프로젝트를 찾아</a>보세요. 웹기술은 또한 <a href="https://wiki.mozilla.org/Gaia/Hacking">새로운 Firefox OS를 만드는데</a>에도 기여할 수 있습니다.</p>
+                  <p>우리의 웹사이트는 웨 개발자들이 참여할 수 있도록 열려있습니다. <a href="https://wiki.mozilla.org/Webdev/GetInvolved">웹사이트 프로젝트를 찾아(영문)</a>서 시작해보세요. 웹기술은 또한 <a href="https://wiki.mozilla.org/Gaia/Hacking">새로운 Firefox OS를 만드는데(영문)</a>에도 기여할 수 있습니다.</p>
                 </div>
               </li>
               <li class="row">
                 <img src="http://www.mozilla.org/media/img/contribute/addons.png" alt="" />
                 <h3 id="addons">부가기능</h3>
                 <div class="content">
-                  <p>Mozilla의 제품은 작은 수정이나 주요한 추가 기능을 만들 수 있는 막강한 확장기능 시스템을 가지고 있습니다. <a href="https://addons.mozilla.org/developers/docs/getting-started">부가기능을 만드는 방법</a>을 통해서 더 자세히 알아보세요. 경험이 많은 개발자 분들은 <a href="https://wiki.mozilla.org/AMO:Editors/Applying">AMO 편집자가 되는 방법</a>에 대해서 알아보세요.</p>
+                  <p>Mozilla의 제품은 작은 수정이나 주요한 추가 기능을 만들 수 있는 막강한 확장기능 시스템을 가지고 있습니다. <a href="https://addons.mozilla.org/ko/developers/docs/getting-started">부가기능을 만드는 방법</a>을 통해서 더 자세히 알아보세요. 경험이 많은 개발자 분들은 <a href="https://wiki.mozilla.org/AMO:Editors/Applying">AMO 편집자가 되는 방법(영문)</a>에 대해서 알아보세요.</p>
                 </div>
               </li>
               <li class="row">
@@ -201,14 +122,14 @@
                 <img src="http://www.mozilla.org/media/img/contribute/mdn.png" alt="" />
                 <h3 id="docs">문서화와 저술</h3>
                 <div class="content">
-                  <p>Mozilla Developer Network은 Mozilla 기술과 정보의 허브입니다. 새로운 콘텐츠를 작성하거나 지금 존재하는 콘텐츠를 수정, 다른 언어로 콘텐츠를 번역해서 <a href="https://developer.mozilla.org/docs/Project:How_to_Help">우리의 문서가 더 좋아지도록</a> 도와주세요.</p>
+                  <p>Mozilla Developer Network은 Mozilla 기술과 정보의 허브입니다. 새로운 콘텐츠를 작성하거나 지금 존재하는 콘텐츠를 수정, 다른 언어로 콘텐츠를 번역해서 <a href="https://developer.mozilla.org/ko/docs/Project%3AHow_to_Help">우리의 문서가 더 좋아지도록</a> 도와주세요.</p>
                 </div>
               </li>
               <li class="row">
                 <img src="http://www.mozilla.org/media/img/contribute/webmaker.png" alt="" />
                 <h3 id="education">교육</h3>
                 <div class="content">
-                  <p>웹이 어떻게 작동하는지 다른 사람들에게 알려줌으로써 웹메이커 세대를 만들어주세요. <a href="https://webmaker.org/">Mozilla의 Webmaker 프로젝트</a>에 대해서 살펴보시고 지금 당장 여러분의 커뮤니티에 이벤트를 만들어서 다른사람들에게 알려주는 일을 시작해보세요.</p>
+                  <p>웹이 어떻게 작동하는지 다른 사람들에게 알려줌으로써 웹메이커 세대를 만들어주세요. <a href="https://webmaker.org/">Mozilla의 Webmaker 프로젝트(영문)</a>에 대해서 살펴보시고 지금 당장 여러분의 커뮤니티에 이벤트를 만들어서 다른사람들에게 알려주는 일을 시작해보세요.</p>
                 </div>
               </li>
             </ul>
@@ -222,37 +143,37 @@
           <section>
             <ul>
               <li class="row">
-                <a href="/contribute/local/northamerica.html">
+                <a href="http://www.mozilla.org/contribute/local/northamerica.html">
                   <img src="http://www.mozilla.org/media/img/contribute/local/map-th-northamerica.png" alt="">
                   <h3>미국과 캐나다</h3>
                 </a>
               </li>
               <li class="row">
-                <a href="/contribute/local/europe.html">
+                <a href="http://www.mozilla.org/contribute/local/europe.html">
                   <img src="http://www.mozilla.org/media/img/contribute/local/map-th-europe.png" alt="">
                   <h3>유럽</h3>
                 </a>
               </li>
               <li class="row">
-                <a href="/contribute/local/latinamerica.html">
+                <a href="http://www.mozilla.org/contribute/local/latinamerica.html">
                   <img src="http://www.mozilla.org/media/img/contribute/local/map-th-latinamerica.png" alt="">
                   <h3>라틴 아메리카</h3>
                 </a>
               </li>
               <li class="row">
-                <a href="/contribute/local/africamideast.html">
+                <a href="http://www.mozilla.org/contribute/local/africamideast.html">
                   <img src="http://www.mozilla.org/media/img/contribute/local/map-th-africamideast.png" alt="">
                   <h3>아프리카와 중동</h3>
                 </a>
               </li>
               <li class="row">
-                <a href="/contribute/local/asia.html">
+                <a href="http://www.mozilla.org/contribute/local/asia.html">
                   <img src="http://www.mozilla.org/media/img/contribute/local/map-th-asia.png" alt="">
                   <h3>아시아와 남태평양</h3>
                 </a>
               </li>
               <li class="row">
-                <a href="/contribute/local/southpole.html">
+                <a href="http://www.mozilla.org/contribute/local/southpole.html">
                   <img src="http://www.mozilla.org/media/img/contribute/local/map-th-southpole.png" alt="">
                   <h3>남극</h3>
                 </a>

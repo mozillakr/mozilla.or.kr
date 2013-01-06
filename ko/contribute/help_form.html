@@ -1,0 +1,79 @@
+<form class="billboard" action="#help-form" id="help-form" method="post">
+  <input type="hidden" name="contribute-form" value="Y" />
+
+  
+  <h4 id="submit-wait" style="display:none">
+    데이터를 전송중입니다. 잠시만 기다려주세요...
+  </h4>
+
+    <div id="form-content">
+    <fieldset>
+      <div class="row">
+        <div class="form-column-1">
+          <h3>참여를 원하세요?</h3>
+        </div>
+        <div class="form-column-2">
+          <div class="field field-email">
+            <input type="email" required="true" placeholder="abc@def.com" name="email" id="id_email" title="이메일 주소" />
+          </div>
+        </div>
+        <div class="form-column-3">
+          <div class="field field-interest">
+            <select required="true" name="interest" id="id_interest">
+<option value="" selected="selected">관심있는 분야가 있으세요?</option>
+<option value="support">사용자 돕기</option>
+<option value="qa">테스트와 품질보증</option>
+<option value="coding">코딩</option>
+<option value="marketing">마케팅</option>
+<option value="localization">지역화와 번역</option>
+<option value="webdev">웹 개발</option>
+<option value="addons">부가기능</option>
+<option value="design">시각 디자인</option>
+<option value="documentation">문서화와 저술</option>
+<option value="education">교육</option>
+<option value="other">기타</option>
+<option value="suggestions">Firefox에대한 의견이 있습니다.</option>
+<option value="issues">Firefox를 사용하는데 도움이 필요해요.</option>
+</select>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row" id="form-details">
+        <div class="form-column-1">
+          <p>메모를 남겨주시면 바로 시작할 수 있도록 도와드립니다.</p>
+        </div>
+        <div class="form-column-2">
+          <div class="field field-comments">
+            <textarea rows="" name="comments" required="true" placeholder="제 관심 분야는요..." cols="" id="id_comments" title="메모 남기기"></textarea>
+          </div>
+        </div>
+        <div class="form-column-3">
+          <div class="field field-privacy ">
+            <label for="id_privacy" class="privacy-check-label"><input required="true" type="checkbox" name="privacy" id="id_privacy" /> <span class="title"><a href="/en-US/privacy-policy">개인정보 정책(영문)</a>을 읽었으며 이에 동의합니다.</a></span></label>
+          </div>
+            <div class="field field-newsletter">
+              <label for="id_newsletter">
+                <input type="checkbox" name="newsletter" id="id_newsletter" />
+                이메일로 정기적인 참여관련 소식을 받고 싶습니다.
+              </label>
+            </div>
+            <div class="field field-captcha">
+            <script type="text/javascript">var RecaptchaOptions = {
+  "lang": "en", 
+  "theme": "clean"
+}</script><script type="text/javascript" src="https://www.google.com/recaptcha/api/challenge?k=6LcZT9ASAAAAAHyMzr6fz3dkFP4eek-F4UdFQkir"></script>
+<noscript>
+  <iframe src="https://www.google.com/recaptcha/api/noscript?k=6LcZT9ASAAAAAHyMzr6fz3dkFP4eek-F4UdFQkir" height="300" width="500" frameborder="0"></iframe><br />
+  <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+  <input type='hidden' name='recaptcha_response_field' value='manual_challenge' />
+</noscript>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-submit">
+      <input type="submit" class="button" id="form-submit" value="전송&nbsp;»">
+    </div>
+  </div>
+</form>
