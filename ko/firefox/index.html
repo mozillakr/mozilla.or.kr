@@ -1,0 +1,126 @@
+<? 
+ 	require $_SERVER['DOCUMENT_ROOT']."/ko/includes/common.inc";
+	
+	$Htitle="Mozilla Firefox - 함께 만들어 나가는 파이어폭스 웹 브라우저";
+	$Hid="firefox-fx";
+	$extra_css='<meta name="og:image" content="http://www.mozilla.org/media/img/firefox/firefox-100.jpg">';
+
+	include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/header-fx.php";
+	include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/download.php";
+?>
+
+<div id="main-pager" class="pager pager-with-tabs">
+
+  <ul class="pager-tabs">
+    <li><a href="#mobile">모바일</a></li>
+    <li><a href="#desktop">데스크톱</a></li>
+  </ul>
+
+  <div class="billboard">
+  <div class="pager-content">
+
+    <div class="pager-page mobile-content default-page" id="mobile">
+      <script>// <![CDATA[
+      document.getElementById('mobile').id = 'page-mobile';
+      // ]]></script>
+      <section>
+        <hgroup>
+          <h1>Firefox 안드로이드용</h1>
+          <h2>빠름 똑똑함 안전</h2>
+        </hgroup>
+        <div id="download-column">
+          <?=download_button_mobile("small")?> 
+        </div>
+        <div id="photo-column">
+          <img src="http://www.mozilla.org/media/img/firefox/fx/mobile-phone.jpg" alt="Firefox on Android" />
+          <span id="phone-screen"></span>
+        </div>
+        <ul class="sub-features">
+          <li id="supported">
+            <a class="link" href="/ko/firefox/mobile/platforms/">지원 단말기 목록 보기&nbsp;»</a>
+          </li>
+          <li id="firefox-mobile">
+            <a class="link" href="/ko/firefox/mobile/features/">Android용 기능 보기&nbsp;»</a>
+          </li>
+          <li id="playstore-mobile">
+            <a class="link" href="https://market.android.com/details?id=org.mozilla.firefox">Google Play 스토어로 이동&nbsp;»</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="pager-page desktop-content" id="desktop">
+      <script>// <![CDATA[
+      document.getElementById('desktop').id = 'page-desktop';
+      // ]]></script>
+      <section id="up-to-date">
+        <hgroup>
+          <h1>Firefox 최신 버전입니다!</h1>
+          <h2>더 빠르고 효과적으로 웹을 사용할 수 있는 새로운 기능을 소개해 드립니다.</h2>
+        </hgroup>
+        <div id="video-player" class="mozilla-video-control mozilla-video-shadow">
+          <video
+            controls="controls"
+            poster="/media/img/firefox/video/poster-newtab.jpg"
+            height="360"
+            width="640">
+            <source src="http://videos.mozilla.org/serv/marketing/Firefox/Firefox%20Tabs_1.webm">
+          </video>
+        </div>
+        <ul class="sub-features">
+          <li id="new-copy"><div class="wrap">
+            <h4>다운로드 하기</h4>
+            <p>언어별/운영체제별 다운로드 링크입니다!</p>
+            
+          <?=download_button_desktop("small", $fx_version)?> 			
+          </div></li>
+          <li id="beta-promo"><div class="wrap">
+            <h4>Firefox 베타 테스트</h4>
+            <p>Firefox에서 새로 탑재되는 신기능 및 혁신을 미리 체험 해 보십시오. 
+            <a href="/ko/firefox/beta/">더 자세히 보기&nbsp;»</a></p>
+          </div></li>
+          <li id="android-promo"><div class="wrap">
+            <h4>Firefox Android용</h4><span class="icon"></span>
+            <p>모바일용 웹 브라우저의 새로운 혁신이 시작되었습니다. 
+            <a href="https://market.android.com/details?id=org.mozilla.firefox">Google Play에서 다운로드&nbsp;»</a></p>
+          </div></li>
+        </ul>
+      </section>
+      <section id="out-of-date">
+        <hgroup>
+          <h1>새로운 디자인</h1>
+          <h2>최신 Firefox를 사용해 보시면 더 빠르고 유연하고 안전합니다.</h2>
+        </hgroup>
+        
+        <?=download_button_desktop("large", $fx_version)?> 	
+  
+        <figure id="firefox-screenshot">
+          <img class="platform-img js" src="" data-src="http://www.mozilla.org/media/img/firefox/fx/existing-screen.jpg" alt="Firefox screenshot"><noscript><img class="platform-img win" src="http://www.mozilla.org/media/img/firefox/fx/existing-screen.jpg" alt="Firefox screenshot"></noscript>
+        </figure>
+        <ul class="sub-features">
+          <li id="features">
+            <a class="link" href="/ko/firefox/features/">편리하고 혁신적인 기능 소개&nbsp;»</a>
+          </li>
+          <li id="customize">
+            <a class="link" href="/ko/firefox/customize/">부가 기능을 통한 맞춤 웹브라우저&nbsp;»</a>
+          </li>
+          <li id="playstore">
+            <a class="link" href="https://market.android.com/details?id=org.mozilla.firefox">Android용 Firefox 다운로드하기&nbsp;»</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="up-to-date">
+      </section>
+    </div>
+
+  </div>
+  </div>
+
+</div>
+
+<?
+	$extra_js='<script src="/media/js/firefox-resp-min.js?build="'.$build_code.'"></script>
+      <script src="/media/js/firefox_fx-min.js?build='.$build_code.'"></script>"';
+	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
+?>

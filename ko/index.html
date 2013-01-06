@@ -1,9 +1,12 @@
-<? 
+<?
+ 	require $_SERVER['DOCUMENT_ROOT']."/ko/includes/common.inc";
+	
 	$Htitle="Mozilla - Mozilla 프로젝트";
 	$Hid="home";
 	$extra_css='<link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/home-min.css" />';
 
 	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/header.php";
+	include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/download.php";
 ?>
 
 <hgroup id="main-feature" class="huge">
@@ -17,81 +20,12 @@
   <img src="http://www.mozilla.org/media/img/home/firefox.png" id="promo-logo" alt="Firefox">
   </a>
   <ul class="features">
-        <li><small>비영리 <br> 웹브라우저</small></li>
-        <li><small>사용자로부터 <br> 혁신</small></li>
+        <li><small>비영리<br> 웹브라우저</small></li>
+        <li><small>사용자로부터<br> 기술 혁신</small></li>
         <li><small>빠르고<br> 보안 강화</small></li>
   </ul>
 
-<aside id="download" class="download-button download-button-small">
-    <noscript>
-<div class="download download-dumb">
-  <h4>Firefox 무료 다운로드— 한국어</h4>
-  <ul>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko" class="button-white">윈도</a></li>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko" class="button-white">리눅스</a></li>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko" class="button-white">맥 OS X</a></li>
-          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">안드로이드</a></li>
-      </ul>
-</div>  </noscript>
-  
-    <div class="unrecognized-download">
-    
-<div class="download download-dumb">
-  <h4>Firefox 무료 다운로드— 한국어</h4>
-  <ul>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko" class="button-white">윈도</a></li>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko" class="button-white">리눅스</a></li>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko" class="button-white">맥 OS X</a></li>
-          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">안드로이드</a></li>
-   </ul>
-</div>  </div>
-  
-    <ul class="download-list">
-        <li class="os_windows">
-      <a class="download-link download-firefox"
-         href="/ko/products/download.html?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko">
-                  <span class="download-content">
-            <span class="download-title">Firefox</span>
-            무료 다운로드                      </span>
-              </a>
-    </li>
-        <li class="os_linux">
-      <a class="download-link download-firefox"
-         href="/ko/products/download.html?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko">
-                  <span class="download-content">
-            <span class="download-title">Firefox</span>
-            무료 다운로드                      </span>
-              </a>
-    </li>
-        <li class="os_osx">
-      <a class="download-link download-firefox"
-         href="/ko/products/download.html?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko">
-                  <span class="download-content">
-            <span class="download-title">Firefox</span>
-            무료 다운로드                      </span>
-              </a>
-    </li>
-        <li class="os_android">
-      <a class="download-link download-firefox"
-         href="https://market.android.com/details?id=org.mozilla.firefox">
-                  <span class="download-content">
-            <span class="download-title">Firefox</span>
-            무료 다운로드                      </span>
-              </a>
-    </li>
-      </ul>
-  
-          <p class="unsupported-download">
-      Your system doesn't meet the <a href="/ko/firefox/<?=$fx_version?>/requirements">requirements</a> to run Firefox.
-    </p>
-  
-    <small class="download-other">
-    <a href="/ko/firefox/all.html">언어별 버전</a> |
-    <a href="/ko/firefox/notes">기능 소개</a> |
-    <a href="/ko/legal/privacy/firefox.html">개인 정보 보호</a>
-  </small>
-  
-</aside>
+  <?=download_button_desktop("small", $fx_version)?>
 </section>
 
 <section id="home-promo" class="pager pager-with-tabs pager-auto-rotate pager-no-history">
@@ -119,7 +53,7 @@
       <a href="/ko/firefox/fx/?WT.mc_id=moandroid&amp;WT.mc_ev=click#mobile" class="container">
         <img src="http://www.mozilla.org/media/img/home/promo-android.jpg" alt="">
         <div>
-                    <h3>빠름 스마트 안전!</h3>
+                    <h3>빠름 똑똑함 안전!</h3>
           <h4>모바일용 웹 브라우저를 체험해 보십시오.</h4>
           <p class="go">Firefox for Android 다운로드</p>
         </div>
@@ -219,6 +153,6 @@
 
 </div>
 <?
-	$extra_js='<script src="http://www.mozilla.org/media/js/pager-min.js"></script>';
+	$extra_js='<script src="http://www.mozilla.org/media/js/pager-min.js?build="'.$build_code.'"></script>';
 	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
 ?>
