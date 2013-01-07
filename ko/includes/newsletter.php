@@ -250,7 +250,7 @@
       <div class="field field-privacy">
         <label for="id_privacy" class="privacy-check-label">
           <input required aria-required="true" type="checkbox" name="custom-314" id="id_privacy" />
-          <span class="title"><a href="/en-US/privacy-policy">개인정보 정책(영문)</a>을 읽었으며 이에 동의합니다.</span>
+          <span class="title"><a href="/en-US/privacy-policy">개인 정보 보호 정책(영문)</a>을 읽었으며 이에 동의합니다.</span>
         </label>
       </div>
     </div>
