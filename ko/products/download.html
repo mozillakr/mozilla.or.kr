@@ -26,7 +26,7 @@ EXTRA_HEADERS;
 
     <div id="form-column1">
         <h3>월간 <em>뉴스레터</em></h3>
-        <p>Firefox에 대한 새 소식 및 사용팁을 매월 메일로 보내 드립니다. 등록하세요!</p>
+        <p>최신 팁과 사용법을 이메일로 받고 싶으세요? 지금 등록하세요!</p>
     </div>
     <div id="form-column2">
     <div class="field required email-field">
@@ -68,7 +68,7 @@ EXTRA_HEADERS;
     <div class="field privacy-field">
       <label for="privacy-check" class="privacy-check-label">
         <input type="checkbox" name="privacy" id="privacy-check" class="privacy-check">
-        <span class="title"><a href="/en-US/privacy-policy">Mozilla 개인정보 정책</a> 동의</span>
+        <span class="title"><a href="/en-US/privacy-policy">Mozilla 개인 정보 보호 정책</a>에 동의합니다</span>
       </label>
     </div>
     </div>
@@ -84,9 +84,9 @@ EXTRA_HEADERS;
                         'WT.si_x', '2');"
              name="submit" 
              type="submit" 
-             value="Get Newsletter »" 
+             value="뉴스레터 받아보기 »" 
              class="button">
-        <p class="disclaimer">Mozilla 관련 정보만 보내드립니다.</p>
+        <p class="disclaimer">Mozilla 관련 정보만 보내드릴 것입니다.</p>
     </div>
 
   </form>
@@ -212,7 +212,7 @@ EXTRA_HEADERS;
 		}
 
 
-        promotion_msg = '<p id="download-thanks">Thanks for downloading Firefox! As a non-profit, we’re free to innovate on your behalf without any pressure to compromise. You’re going to love the difference.';
+        promotion_msg = '<p id="download-thanks">Firefox를 다운로드해 주셔서 감사합니다! 이익을 추구하지 않기 때문에 저희는 어떠한 타협도 하지 않고 여러분 대신 혁신을 해 나가고 있습니다. 이런 점이 분명 마음에 드실 겁니다.';
 
 		switch (os) {
 			case 'win' :
@@ -223,17 +223,17 @@ EXTRA_HEADERS;
 					promotion_msg +=
 						'<ol class="install-steps">' +
 						'<li class="one">' +
-						'<p>Start the process by clicking Run. ' +
-                        'Your download should begin automatically. If not, ' +
-                        'click here'.link(download_url) +
-						'. It could take a few minutes, but it’s worth the wait.</li>' +
+						'<p>실행을 클릭하면 설치 작업을 시작합니다. ' +
+                        '다운로드가 자동으로 시작됩니다. 자동으로 되지 않으면 ' +
+                        '이곳을 클릭하세요'.link(download_url) +
+						'. 몇 분 정도 걸릴 수 있지만 기다릴 만한 가치가 충분합니다.</li>' +
 						'<li class="two">' +
-						'<p>Click Run to launch the Mozilla Firefox setup wizard.</p>' +
-						'<p class="note">Then, just follow the steps (we’ve made the process as painless as possible).</p>' +
+						'<p>실행을 클릭하면 Mozilla Firefox 설정 마법사가 실행됩니다.</p>' +
+						'<p class="note">이제 안내에 따라주세요. (가능한 쉽게 만들었습니다)</p>' +
 						'</li>' +
 						'<li class="three">' +
-						'<p>Now you’re ready to leap boldly into a new era of Web surfing.</p>' +
-						'<p class="note">Double-click on the Firefox icon whenever you want to go online.</p>' +
+						'<p>이제 웹 서핑의 새 시대로 힘차게 도약할 준비가 끝났습니다.</p>' +
+						'<p class="note">온라인 세계로 향하고 싶을땐 언제든 Firefox 아이콘을 더블 클릭하세요.</p>' +
 						'</li>' +
 						'</ol>';
 				} else {
@@ -246,22 +246,22 @@ EXTRA_HEADERS;
 				promotion_msg +=
 					'<ol class="install-steps">' +
 					'<li class="one">' +
-					'<p>Your download should begin automatically. If not, ' +
-                    'click here'.link(download_url) +
-					'. It could take a few minutes, but it’s worth the wait.</li>' +
+					'<p>다운로드가 자동으로 시작됩니다. 자동으로 되지 않으면 ' +
+                    '이곳을 클릭하세요'.link(download_url) +
+					'. 몇 분 정도 걸릴 수 있지만 기다릴 만한 가치가 충분합니다.</li>' +
 					'</li>' +
 					'<li class="two">' +
-					'<p>When prompted, drag the Firefox icon into the image of your Applications folder.</p>' +
+					'<p>프롬프트가 나타나면 Firefox 아이콘을 어플리케이션 폴더 이미지에 드래그해서 갖다 놓으세요.</p>' +
 					'</li>' +
 					'<li class="three">' +
-					'<p>Drag the Firefox icon from the Applications folder into the dock. ' +
-					'Then, just click on Firefox whenever you want to use the web!</p>' +
+					'<p>어플리케이션 폴더의 Firefox 아이콘을 독에 드래그해서 갖다 놓으세요. ' +
+					'이제 웹 사이트에 접속할 때 Firefox를 클릭하기만 하면 됩니다!</p>' +
 					'</li>' +
 					'</ol>';
 					break;
             default:
-                promotion_msg += '<p class="manual-download">Your download should automatically begin in a few seconds, but if not, ';
-                var link_text = 'click here';
+                promotion_msg += '<p class="manual-download">다운로드가 곧 자동으로 시작됩니다. 자동으로 되지 않으면 ';
+                var link_text = '이곳을 클릭하세요';
                 promotion_msg += link_text.link(download_url) + '.</p>';
                 document.body.className += ' default-download';
 		}
@@ -272,7 +272,7 @@ EXTRA_HEADERS;
 
 		// 4. display the download URL as a manual fall-back link
 		var msg = '<div id="main-feature" class="main-feature-firefox">';
-		msg += '<h2>Welcome to the only browser <em>that puts you first.</em></h2>';
+		msg += '<h2>사용자를 가장 소중히 여기는 <em>단 하나의 브라우저를 지금 만나셨습니다.</em></h2>';
 
 		// 5. display a promotional box with content based on the PRODUCT variable
 		msg += '</div>';
@@ -374,7 +374,7 @@ EXTRA_HEADERS;
         }
 
         if (showSurvey == 'yes') {
-            var $survey = $('<div id="survey-box"><h3>Have a second? <span>Help Us Out</span></h3>'
+            var $survey = $('<div id="survey-box"><h3>잠깐 시간 되세요? <span>저희를 좀 도와주세요</span></h3>'
                 + '<iframe src="http://www.surveygizmo.com/s3/iframe/666789/249c2dc6780e" frameborder="0" width="500" height="210" style="overflow:hidden" ALLOWTRANSPARENCY="true"></iframe>'
                 + '<style>#download-sidebar { display: none; }</style>'
                 + '</div>'
