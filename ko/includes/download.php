@@ -130,7 +130,7 @@ function download_button_mobile($button, $version) {
 <div class="download download-dumb">
   <h4>Firefox 다운로드 - 한국어</h4>
   <ul>
-          <li><a href="https://market.android.com/details?id=org.mozilla.firefox<?=$version?>" class="button-white">안드로이드</a></li>
+          <li><a href="https://market.android.com/details?id=org.mozilla.firefox<?=$version?>" class="button-white">Android</a></li>
       </ul>
 </div>  </noscript>
   
@@ -139,7 +139,7 @@ function download_button_mobile($button, $version) {
 <div class="download download-dumb">
   <h4>Firefox 다운로드 - 한국어</h4>
   <ul>
-          <li><a href="https://market.android.com/details?id=org.mozilla.firefox<?=$version?>" class="button-white">안드로이드</a></li>
+          <li><a href="https://market.android.com/details?id=org.mozilla.firefox<?=$version?>" class="button-white">Android</a></li>
       </ul>
 </div>  </div>
   
