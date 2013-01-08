@@ -14,7 +14,7 @@
     <script src="http://www.mozilla.org/media/js/site-min.js?build=<?=$build_code?>"></script>
 </head>
 
-  <body id="<?=$Hid?>" class="html-ltr sand">
+  <body id="<?=$Hid?>" class="html-ltr sky">
     <div id="outer-wrapper">
     <div id="wrapper">
 
@@ -24,7 +24,7 @@
         <nav id="nav-main" role="navigation">
   <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">주요 메뉴</span>
   <ul id="nav-main-menu" class="has-submenus">
-    <li class="first" id="nav-main-features"><a href="/ko/firefox/fx/#desktop" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">데스크톱</a>
+    <li class="first" id="nav-main-features"><a href="/ko/firefox/#desktop" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">데스크톱</a>
       <ul aria-expanded="false" id="nav-main-features-submenu" class="submenu">
         <li class="first"><a href="/ko/firefox/features/" tabindex="-1">주요 기능</a></li>
         <li><a href="/ko/firefox/customize/" tabindex="-1">맞춤 기능</a></li>
@@ -33,7 +33,7 @@
         <li class="last"><a href="/ko/firefox/security/" tabindex="-1">정보 보호 및 보안</a></li>
       </ul>
     </li>
-    <li id="nav-main-mobile"><a href="/ko/firefox/fx/" tabindex="0" aria-owns="nav-main-mobile-submenu" aria-haspopup="true">모바일</a>
+    <li id="nav-main-mobile"><a href="/ko/firefox/" tabindex="0" aria-owns="nav-main-mobile-submenu" aria-haspopup="true">모바일</a>
       <ul aria-expanded="false" id="nav-main-mobile-submenu" class="submenu">
         <li class="first"><a href="/ko/firefox/mobile/features/" tabindex="-1">주요 기능</a></li>
         <li><a href="https://addons.mozilla.org/ko/mobile/?browse=featured" tabindex="-1">맞춤 기능</a></li>

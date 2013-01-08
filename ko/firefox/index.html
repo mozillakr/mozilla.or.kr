@@ -1,7 +1,7 @@
 <? 
  	require $_SERVER['DOCUMENT_ROOT']."/ko/includes/common.inc";
 	
-	$Htitle="Mozilla Firefox - 함께 만들어 나가는 파이어폭스 웹 브라우저";
+	$Htitle="Mozilla Firefox 웹 브라우저 — Firefox의 다양한 기능을 접하세요 — 모바일, 부가기능 그 외 많은 것들이 있습니다 — mozilla.or.kr";
 	$Hid="firefox-fx";
 	$extra_css='<link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/firefox_fx-min.css?build='.$build_code.'" /><meta name="og:image" content="http://www.mozilla.org/media/img/firefox/firefox-100.jpg">';
 
@@ -25,14 +25,14 @@
       // ]]></script>
       <section>
         <hgroup>
-          <h1>Firefox 안드로이드용</h1>
-          <h2>빠름 똑똑함 안전</h2>
+          <h1>안드로이드용 Firefox</h1>
+          <h2>빠르고 똑똑하고 안전합니다</h2>
         </hgroup>
         <div id="download-column">
-          <?=download_button_mobile("small")?> 
+          <?=download_button_mobile("large")?> 
         </div>
         <div id="photo-column">
-          <img src="http://www.mozilla.org/media/img/firefox/fx/mobile-phone.jpg" alt="Firefox on Android" />
+          <img src="http://www.mozilla.org/media/img/firefox/fx/mobile-phone.jpg" alt="안드로이드용 Firefox" />
           <span id="phone-screen"></span>
         </div>
         <ul class="sub-features">
@@ -40,10 +40,10 @@
             <a class="link" href="/ko/firefox/mobile/platforms/">지원 단말기 목록 보기&nbsp;»</a>
           </li>
           <li id="firefox-mobile">
-            <a class="link" href="/ko/firefox/mobile/features/">Android용 기능 보기&nbsp;»</a>
+            <a class="link" href="/ko/firefox/mobile/features/">안드로이드용 Firefox에 대해 알아보기&nbsp;»</a>
           </li>
           <li id="playstore-mobile">
-            <a class="link" href="https://market.android.com/details?id=org.mozilla.firefox">Google Play 스토어로 이동&nbsp;»</a>
+            <a class="link" href="https://market.android.com/details?id=org.mozilla.firefox">Google Play 스토어에서 안드로이드용 Firefox 무료로 받기&nbsp;»</a>
           </li>
         </ul>
       </section>
@@ -55,8 +55,8 @@
       // ]]></script>
       <section id="up-to-date">
         <hgroup>
-          <h1>Firefox 최신 버전입니다!</h1>
-          <h2>더 빠르고 효과적으로 웹을 사용할 수 있는 새로운 기능을 소개해 드립니다.</h2>
+          <h1>만세! Firefox가 최신 버전입니다.</h1>
+          <h2>Firefox 신기능이 어떻게 웹 서핑을 더 빠르고 효율적으로 만들어 주는지 알아봅시다.</h2>
         </hgroup>
         <div id="video-player" class="mozilla-video-control mozilla-video-shadow">
           <video
@@ -69,43 +69,43 @@
         </div>
         <ul class="sub-features">
           <li id="new-copy"><div class="wrap">
-            <h4>다운로드 하기</h4>
-            <p>언어별/운영체제별 다운로드 링크입니다!</p>
+            <h4>하나 더 필요하세요?</h4>
+            <p>그럼 제대로 찾아오셨습니다!</p>
             
-          <?=download_button_desktop("small", $fx_version)?> 			
-          </div></li>
+          <?=download_button_desktop("small", $fx_version)?>
+          </div></li> 
           <li id="beta-promo"><div class="wrap">
-            <h4>Firefox 베타 테스트</h4>
-            <p>Firefox에서 새로 탑재되는 신기능 및 혁신을 미리 체험 해 보십시오. 
+            <h4>Firefox 베타버전 써보기</h4>
+            <p>곧 나올 Firefox 새 버전에 탑재될 기능과 혁신을 미리 체험해 보십시오. 
             <a href="/ko/firefox/beta/">더 자세히 보기&nbsp;»</a></p>
           </div></li>
           <li id="android-promo"><div class="wrap">
-            <h4>Firefox Android용</h4><span class="icon"></span>
-            <p>모바일용 웹 브라우저의 새로운 혁신이 시작되었습니다. 
-            <a href="https://market.android.com/details?id=org.mozilla.firefox">Google Play에서 다운로드&nbsp;»</a></p>
+            <h4>안드로이드용 Firefox</h4><span class="icon"></span>
+            <p>쾌적한 모바일 웹 브라우저를 이용해 보십시오. 
+            <a href="https://market.android.com/details?id=org.mozilla.firefox">Google Play 스토어 가기&nbsp;»</a></p>
           </div></li>
         </ul>
       </section>
       <section id="out-of-date">
         <hgroup>
           <h1>새로운 디자인</h1>
-          <h2>최신 Firefox를 사용해 보시면 더 빠르고 유연하고 안전합니다.</h2>
+          <h2>Firefox 최신 버전을 사용해 보십시오. 빠르고 호환성이 좋으며 보다 안전합니다.</h2>
         </hgroup>
         
         <?=download_button_desktop("large", $fx_version)?> 	
   
         <figure id="firefox-screenshot">
-          <img class="platform-img js" src="http://www.mozilla.org/media/img/firefox/fx/existing-screen.jpg" data-src="http://www.mozilla.org/media/img/firefox/fx/existing-screen.jpg" alt="Firefox screenshot"><noscript><img class="platform-img win" src="http://www.mozilla.org/media/img/firefox/fx/existing-screen.jpg" alt="Firefox screenshot"></noscript>
-        </figure>
+	  <img class="platform-img js" src="" data-src="/media/img/firefox/fx/existing-screen.jpg" alt="Firefox 스크린샷"><noscript><img class="platform-img win" src="http://www.mozilla.org/media/img/firefox/fx/existing-screen.jpg" alt="Firefox 스크린샷"></noscript>
+	</figure>
         <ul class="sub-features">
           <li id="features">
-            <a class="link" href="/ko/firefox/features/">주요 기능 소개&nbsp;»</a>
+            <a class="link" href="/ko/firefox/features/">Firefox 최신 버전의 기능 알아보기&nbsp;»</a>
           </li>
           <li id="customize">
-            <a class="link" href="/ko/firefox/customize/">맞춤 브라우저 기능&nbsp;»</a>
+            <a class="link" href="/ko/firefox/customize/">부가 기능으로 나만의 Firefox 만들기&nbsp;»</a>
           </li>
           <li id="playstore">
-            <a class="link" href="https://market.android.com/details?id=org.mozilla.firefox">Android용 Firefox 다운로드하기&nbsp;»</a>
+            <a class="link" href="https://market.android.com/details?id=org.mozilla.firefox">Google Play 스토어에서 안드로이드용 Firefox 무료로 받기&nbsp;»</a>
           </li>
         </ul>
       </section>
@@ -121,6 +121,22 @@
 
 <?
 	$extra_js='<script src="http://www.mozilla.org/media/js/firefox-resp-min.js?build='.$build_code.'"></script>
-      <script src="http://www.mozilla.org/media/js/firefox_fx-min.js?build='.$build_code.'"></script>';
+	<script src="http://www.mozilla.org/media/js/firefox_fx-min.js?build='.$build_code.'"></script>
+	<script>
+	   $(document).ready(function() {
+  	      var latestVersion = parseInt("17.0.1".split(".")[0], 10);
+	      var isFirefox = (/\sFirefox/.test(window.navigator.userAgent));
+	      var isMobile = (/\sMobile/.test(window.navigator.userAgent));
+
+	      // If Firefox is the latest version and not mobile,
+	      // hide the out-of-date messaging and show up-to-date
+	   if(isFirefox && !isMobile) {
+	      if (latestVersion <= getFirefoxMasterVersion()) {
+	         $("#out-of-date").hide();
+	         $("#up-to-date").show();
+	         }
+	      }
+	   });
+	</script>';
 	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
 ?>
