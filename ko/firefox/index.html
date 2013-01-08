@@ -121,6 +121,22 @@
 
 <?
 	$extra_js='<script src="http://www.mozilla.org/media/js/firefox-resp-min.js?build='.$build_code.'"></script>
-      <script src="http://www.mozilla.org/media/js/firefox_fx-min.js?build='.$build_code.'"></script><script>$(document).ready(function(){var latestVersion = parseInt('17.0.1'.split('.')[0], 10);var isFirefox = (/\sFirefox/.test(window.navigator.userAgent));var isMobile = (/\sMobile/.test(window.navigator.userAgent));if(isFirefox && !isMobile) {if (latestVersion <= getFirefoxMasterVersion()){$('#out-of-date').hide();$('#up-to-date').show();}}});</script>';
+	<script src="http://www.mozilla.org/media/js/firefox_fx-min.js?build='.$build_code.'"></script>
+	<script>
+	   $(document).ready(function() {
+  	      var latestVersion = parseInt("17.0.1".split(".")[0], 10);
+	      var isFirefox = (/\sFirefox/.test(window.navigator.userAgent));
+	      var isMobile = (/\sMobile/.test(window.navigator.userAgent));
+
+	      // If Firefox is the latest version and not mobile,
+	      // hide the out-of-date messaging and show up-to-date
+	   if(isFirefox && !isMobile) {
+	      if (latestVersion <= getFirefoxMasterVersion()) {
+	         $("#out-of-date").hide();
+	         $("#up-to-date").show();
+	         }
+	      }
+	   });
+	</script>';
 	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
 ?>
