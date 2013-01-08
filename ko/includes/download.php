@@ -124,7 +124,7 @@ function download_button_mobile($button, $version) {
 <?
 	} else {
 ?>
-<aside id="primary-download-mobile" class="download-button download-button-mobile-button">
+<aside id="primary-download-mobile" class="download-button download-button-mobile-button-<?=$button?>">
     <noscript>
     
 <div class="download download-dumb">
