@@ -95,7 +95,7 @@
         <?=download_button_desktop("large", $fx_version)?> 	
   
         <figure id="firefox-screenshot">
-	  <img class="platform-img js" src="" data-src="http://www.mozilla.org/media/img/firefox/fx/existing-screen.jpg" alt="Firefox 스크린샷"><noscript><img class="platform-img win" src="http://www.mozilla.org/media/img/firefox/fx/existing-screen.jpg" alt="Firefox 스크린샷"></noscript>
+	  <img class="platform-img js" src="" data-src="/media/img/firefox/fx/existing-screen.jpg" alt="Firefox 스크린샷"><noscript><img class="platform-img win" src="http://www.mozilla.org/media/img/firefox/fx/existing-screen.jpg" alt="Firefox 스크린샷"></noscript>
 	</figure>
         <ul class="sub-features">
           <li id="features">
@@ -120,23 +120,7 @@
 </div>
 
 <?
-	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
 	$extra_js='<script src="http://www.mozilla.org/media/js/firefox-resp-min.js?build='.$build_code.'"></script>
-      <script src="http://www.mozilla.org/media/js/firefox_fx-min.js?build='.$build_code.'"></script>';
+      <script src="http://www.mozilla.org/media/js/firefox_fx-min.js?build='.$build_code.'"></script><script>$(document).ready(function(){var latestVersion = parseInt('17.0.1'.split('.')[0], 10);var isFirefox = (/\sFirefox/.test(window.navigator.userAgent));var isMobile = (/\sMobile/.test(window.navigator.userAgent));/*If Firefox is the latest version and not mobile,hide the out-of-date messaging and show up-to-date*/if(isFirefox && !isMobile) {if (latestVersion <= getFirefoxMasterVersion()) {$('#out-of-date').hide();$('#up-to-date').show();} } });</script>';
+	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
 ?>
-<script>
-$(document).ready(function() {
-  var latestVersion = parseInt('17.0.1'.split('.')[0], 10);
-  var isFirefox = (/\sFirefox/.test(window.navigator.userAgent));
-  var isMobile = (/\sMobile/.test(window.navigator.userAgent));
-
-  // If Firefox is the latest version and not mobile,
-  // hide the out-of-date messaging and show up-to-date
-  if(isFirefox && !isMobile) {
-    if (latestVersion <= getFirefoxMasterVersion()) {
-      $('#out-of-date').hide();
-      $('#up-to-date').show();
-    }
-  }
-});
-</script>
