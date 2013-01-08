@@ -9,7 +9,7 @@
     <script src="http://www.mozilla.org/media/js/libs/html5shiv.js"></script>
     <![endif]-->
      <?=$extra_css?>
-    <link rel="stylesheet" media="screen,projection,tv" href="/media/css/ko.css">
+<!--    <link rel="stylesheet" media="screen,projection,tv" href="/media/css/ko.css"> -->
     <link rel="shortcut icon" href="http://www.mozilla.org/media/img/favicon.ico">
     <script src="http://www.mozilla.org/media/js/site-min.js?build=<?=$build_code?>"></script>
 </head>
