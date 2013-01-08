@@ -8,10 +8,10 @@ function download_button_desktop($button, $fx_version) {
 <div class="download download-dumb">
   <h4>Firefox 무료 다운로드- 한국어</h4>
   <ul>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko" class="button-white">윈도</a></li>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko" class="button-white">리눅스</a></li>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko" class="button-white">맥 OS X</a></li>
-          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">안드로이드</a></li>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko" class="button-white">Windows</a></li>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko" class="button-white">Linux</a></li>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko" class="button-white">Mac OS X</a></li>
+          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">Android</a></li>
       </ul>
 </div>  </noscript>
   
@@ -20,10 +20,10 @@ function download_button_desktop($button, $fx_version) {
 <div class="download download-dumb">
   <h4>Firefox 무료 다운로드- 한국어</h4>
   <ul>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko" class="button-white">윈도</a></li>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko" class="button-white">리눅스</a></li>
-          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko" class="button-white">맥 OS X</a></li>
-          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">안드로이드</a></li>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko" class="button-white">Windows</a></li>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko" class="button-white">Linux</a></li>
+          <li><a href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko" class="button-white">Mac OS X</a></li>
+          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">Android</a></li>
    </ul>
 </div>  </div>
   
