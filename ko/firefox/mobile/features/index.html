@@ -1,89 +1,92 @@
 <?
 	require $_SERVER['DOCUMENT_ROOT']."/ko/includes/common.inc";
-	
-	$Htitle="Mozilla Firefox Web Browser — Frequently Asked Questions — mozilla.org";
-	$Hid="mobile-faq";
-	$Hnavigation="FAQ";
-	$extra_css='<link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/firefox_faq-min.css?build='.$build_code.'" />';
-	
+	$Htitle="Mozilla Firefox Web Browser — Mozilla Firefox Mobile Browser — mozilla.org";
+	$Hid="mobile-features";
+	$Hnavigation="주요 기능";
+	$extra_css='<link rel="stylesheet" media="screen,projection,tv" href="/media/css/mobile_features-min.css?build='.$build_code.'" />';
 	include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/header-mobile.php";
 	include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/download.php";
 ?>
 
     
     
+    
 <div id="main-feature">
   
 
-  <?=download_button_mobile("small")?> 
+
+<aside id="download-mobile" class="download-button download-button-mobile-small">
+    <noscript>
+    
+<div class="download download-dumb">
+  <h4>Download Firefox — en-US</h4>
+  <ul>
+          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">Android</a></li>
+      </ul>
+</div>  </noscript>
+  
+    <div class="unrecognized-download">
+    
+<div class="download download-dumb">
+  <h4>Download Firefox — en-US</h4>
+  <ul>
+          <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">Android</a></li>
+      </ul>
+</div>  </div>
+  
+    <ul class="download-list">
+        <li class="">
+      <a class="download-link download-firefox-mobile"
+         href="https://market.android.com/details?id=org.mozilla.firefox">
+                  <span class="download-content">
+            <span class="download-title">Get Firefox for Android</span>
+                                  </span>
+              </a>
+    </li>
+      </ul>
+  
+  
+  <small class="download-other">
+  <a href="/en-US/firefox/mobile/platforms">Supported Devices</a> |
+  <a href="/en-US/mobile/notes">What’s New</a> |
+  <a href="/en-US/legal/privacy/firefox.html">Privacy</a>
+</small>
+
+</aside>
   <hgroup>
-    <h1 class="large">Mobile FAQ</h1>
+    <h1 class="large">Mobile features</h1>
+    <h2>All the awesomeness of Firefox, packed into a mobile device.</h2>
   </hgroup>
 </div>
 
 <div id="main-content">
+  <div class="col1">
+    <section id="fast">
+      <h2>Fast</h2>
+      <p>Get to the Web quickly with speedy start up and page load times.</p>
+      <p>The <a href="http://support.mozilla.org/kb/use-awesome-screen-search-firefox-android">Awesome Screen</a> gets to know you as you browse so you can search easier and get to your destination faster.</p>
+    </section>
+    
+    <section id="safe">
+      <h2>Safe</h2>
+      <p class="icon privacy"><span class="img"></span>Control your privacy and how much data you share on the Web with features like Do Not Track. <a class="more" href="http://support.mozilla.org/kb/configure-mobile-privacy-and-security-settings">Learn more</a></p>
+      <p>Enjoy the latest in security preferences to easily customize the settings for your passwords, private data, cookies, images and add-ons.</p>
+    </section>
+  </div>
+  
+  <div class="col2">
+    <section id="smart">
+      <h2>Smart</h2>
+      <p class="icon html5"><span class="img"></span>Experience the unlimited possibilities of the mobile Web with full support for HTML5 and Web APIs. <a class="more" href="https://developer.mozilla.org/en/Mobile">Learn more</a></p>
+      <p class="icon sync"><span class="img"></span><a href="http://support.mozilla.org/kb/how-do-i-set-up-firefox-sync">Sync</a> your desktop history, bookmarks and passwords to all your devices for a painless browsing experience on mobile.</p>
+      <p class="icon addons"><span class="img"></span>Personalize features and functionality with add-ons. <a class="more" href="http://addons.mozilla.org/mobile/">Get add-ons</a></p>
+      <p>Effortlessly switch between <a href="http://support.mozilla.org/kb/tabs-quickly-switch-websites-firefox-mobile">tabs</a> with live thumbnail images that show you updated snapshots of your sites.</p>
+    </section>
 
-  <ul class="expander-list">
-    <li class="expander">
-      <h2 class="expander-header">About Firefox for Android</h2>
-      <div class="expander-content">
-        <dl class="faq">
-        
-        <dt>Who makes Firefox?</dt> <dd>Mozilla is a global, nonprofit organization dedicated to making the Web better. We emphasize principle over profit, and believe that the Web is a shared public resource to be cared for, not a commodity to be sold. We work with a worldwide community to create open source products like Mozilla Firefox, and to innovate for the benefit of the individual and the betterment of the Web. The result is great products built by passionate people and better choices for everyone.</dd>          
-        <dt>How is Firefox for Android different from other mobile browsers?</dt> <dd>Firefox for Android is built on the same technology platform as Firefox for the desktop, making it fast, easy to use and secure. Firefox also uses Sync technology to bring your desktop history, bookmarks, passwords and form data to your mobile devices. Firefox for Android is the only mobile browser that offers user-centric, innovative features while still fiercely safeguarding your privacy and data, for instance with <a href="http://support.mozilla.org/kb/how-do-i-turn-do-not-track-feature-mobile">Do Not Track</a>.</dd>        
-        <dt>Is Firefox available for my platform or device?</dt> <dd>Firefox for Android works with Android phones version 2.2 (Froyo) and above. <a href="/firefox/mobile/platforms">Visit our list of supported platforms and devices</a>.</dd>        
-        <dt>Is Firefox available in my language?</dt> <dd>Firefox is currently available in more than 10 languages and we're working on adding more. Check the <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox">Google Play Store</a> to see if yours is supported.</dd>        
-        <dt>Does Firefox for Android support Flash content?</dt> <dd>Yes, Firefox for Android supports Flash on phones with Android version 2.2 and above.</dd>          
-        </dl>
-      </div>
-    </li>
-    <li class="expander">
-      <h2 class="expander-header">Downloading Firefox</h2>
-      <div class="expander-content">
-        <dl class="faq">
-        <dt>Where can I download Firefox for Android?</dt> <dd>In the <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox">Google Play Store</a>.</dd>  
-        
-        <dt>What are the permissions that Firefox requests access to?</dt> <dd>Learn how Firefox uses <a href="http://mzl.la/FirefoxPermissions">the permissions it requests</a> while respecting your privacy and personal data.</dd>  
-        </dl>
-      </div>
-    </li>
-    <li class="expander">
-      <h2 class="expander-header">Using Firefox</h2>
-      <div class="expander-content">
-        <dl class="faq">
-        <dt>How do I&hellip;</dt> <dd> <ul> <li>&hellip;<a href="http://support.mozilla.org/kb/getting-started-firefox-mobile">start browsing the Web?</a></li> <li>&hellip;<a href="http://support.mozilla.org/kb/use-bookmarks-firefox-android">bookmark a website?</a></li> <li>&hellip;<a href="http://support.mozilla.org/kb/tabs-quickly-switch-websites-firefox-mobile">use tabs?</a></li> <li>&hellip;<a href="http://support.mozilla.org/kb/how-do-i-watch-flash-videos-firefox-android">play Flash content?</a></li> </ul> </dd>        
-        <dt>Why do some websites not display properly?</dt> <dd>While we continue to make small modifications to improve the browser experience, our team and thousands of volunteer contributors around the world are working to help sites make the small adjustments necessary to support our implementation of open standards so that all Web pages render beautifully. We are confident these efforts will be successful, just as they were when Firefox Desktop initially entered the market.</dd>            
-        </dl>
-      </div>
-    </li>
-    <li class="expander">
-      <h2 class="expander-header">Features</h2>
-      <div class="expander-content">
-        <dl class="faq">
-          <dt>How do I use the start page?</dt> <dd>Your personalized start page helps you get to your favorite parts of the Web effortlessly with easily accessible thumbnail links to your top sites and tabs from your last browsing session.</dd>          
-          <dt>What does the Awesome Screen do? <dd>The Awesome Screen gets you to where you want to go quickly with less typing by giving you a list of your most often visited sites along with the ability to browse through your bookmarks, history and open tabs from across your devices. <a href="http://support.mozilla.org/kb/use-awesome-screen-search-firefox-android">Learn more</a>.</dd>          
-          <dt>What is Firefox Sync?</dt> <dd>Firefox Sync brings your desktop data to all your devices so you can securely access your history, bookmarks, tabs and passwords from anywhere. <a href="http://support.mozilla.org/kb/how-do-i-set-up-firefox-sync">Learn how to set up Sync</a>.</dd>          
-          <dt>What are add-ons and how can I get them?</dt> <dd>Add-ons let you customize the look, features and functionality of Firefox. <a href="https://support.mozilla.org/kb/getting-started-firefox-mobile#w_how-do-i-find-and-install-add-ons">Find out how to add them to your Firefox</a>.</dd>          
-        </dl>
-      </div>
-    </li>
-    <li class="expander">
-      <h2 class="expander-header">Privacy and Security</h2>
-      <div class="expander-content">
-        <dl class="faq">
-        
-          <dt>How will Firefox keep me safe while I browse?</dt> <dd>Mozilla was the first to implement the Do No Track privacy feature. Firefox also features customizable security settings to manage passwords, history, private data, cookies, site options and add-ons. <a href="https://support.mozilla.org/kb/configure-mobile-privacy-and-security-settings">Learn more</a>.</dd>          
-          <dt>What is Do Not Track?</dt> <dd>Firefox for Android is the first mobile browser to offer the Do Not Track privacy feature to give you more control over the way your online behavior is tracked and used. Do Not Track lets you tell websites that you want to opt out of behavioral tracking. Learn how to turn it on <a href="https://support.mozilla.org/kb/how-do-i-turn-do-not-track-feature">for desktop</a> and <a href="https://support.mozilla.org/kb/how-do-i-turn-do-not-track-feature-mobile">for mobile</a>.</dd>          
-          <dt>What is Master Password and how do I use it?</dt> <dd>The Master Password protects usernames and passwords that you save in Firefox. <a href="https://support.mozilla.org/kb/use-master-password-protect-passwords-firefox-andr">Learn how to enable this feature</a>.</dd>          
-        </dl>
-      </div>
-    </li>
-    <li class="expander">
-      <h2 class="expander-header">Developer Questions</h2>
-      <div class="expander-content">
-      <p>Are you a developer with questions? <a href="https://developer.mozilla.org/en/Mozilla/Firefox_for_Android">Learn more on Mozilla's Developer Network</a></p>      </div>
-    </li>
-  </ul>
+    <section id="get">
+      <p><a href="https://market.android.com/details?id=org.mozilla.firefox">Get Firefox for Android free from the Google Play Store</a></p>
+    </section>
+  </div>
 
 </div>
 
@@ -94,7 +97,7 @@
           onsubmit="dcsMultiTrack('DCS.dcsuri','/signmeup.button','WT.ti','Sign%20Me%20Up','WT.dl','26');">
       <input type="hidden" name="newsletter-footer" value="Y">
       <input type="hidden" name="newsletter" value="mozilla-and-you">
-      <input type="hidden" name="source_url" value="http://www.mozilla.org/en-US/firefox/mobile/faq/">
+      <input type="hidden" name="source_url" value="https://www.mozilla.org/en-US/firefox/mobile/features/">
 
       <h3>Get Firefox news</h3>
 
@@ -387,7 +390,6 @@
     </div><!-- close #wrapper -->
 
 <?
-	$extra_js='<script src="http://www.mozilla.org/media/js/firefox-resp-min.js?build='.$build_code.'"></script>
-	<script src="http://www.mozilla.org/media/js/firefox_faq-min.js?build='.$build_code.'"></script>';
+	$extra_js='<script src="http://www.mozilla.org/media/js/firefox-resp-min.js?build='.$build_code.'"></script>';
 	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
 ?>
