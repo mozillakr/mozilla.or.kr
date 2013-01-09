@@ -3,6 +3,7 @@
 	
 	$Htitle="Mozilla Firefox 웹 브라우저 — Firefox의 다양한 기능을 접하세요 — 모바일, 부가기능 그 외 많은 것들이 있습니다 — mozilla.or.kr";
 	$Hid="firefox-fx";
+	$Fxnewsurl="/ko/firefox/fx/";
 	$extra_css='<link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/firefox_fx-min.css?build='.$build_code.'" /><meta name="og:image" content="http://www.mozilla.org/media/img/firefox/firefox-100.jpg">';
 
 	include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/header-fx.php";
@@ -120,6 +121,7 @@
 </div>
 
 <?
+	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/fxnews.php";
 	$extra_js='<script src="http://www.mozilla.org/media/js/firefox-resp-min.js?build='.$build_code.'"></script>
 	<script src="http://www.mozilla.org/media/js/firefox_fx-min.js?build='.$build_code.'"></script>
 	<script>
