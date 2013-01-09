@@ -1,25 +1,32 @@
 <!doctype html>
 <html class="windows no-js" lang="ko" dir="ltr">
   <head>
-    <meta charset="utf-8">
+        <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title><?=$Htitle?></title>
+
     <link href="http://www.mozilla.org/tabzilla/media/css/tabzilla.css" rel="stylesheet">
+
     <!--[if lte IE 8]>
-    <script src="http://www.mozilla.org/media/js/libs/html5shiv.js"></script>
+    <script src="/media/js/libs/html5shiv.js"></script>
     <![endif]-->
+
      <?=$extra_css?>
+
+    <meta name="og:image" content="http://www.mozilla.org/media/img/firefox/firefox-100.jpg">
+
     <link rel="stylesheet" media="screen,projection,tv" href="/media/css/ko.css">
-    <link rel="shortcut icon" href="http://www.mozilla.org/media/img/favicon.ico">
-    <script src="http://www.mozilla.org/media/js/site-min.js?build=<?=$build_code?>"></script>
-</head>
+    <link rel="shortcut icon" type="image/icon" href="http://www.mozilla.org/media/img/firefox/favicon.ico">
+    <script src="http://www.mozilla.org/media/js/site-min.js?build=d03da81"></script>
+  </head>
 
   <body id="<?=$Hid?>" class="html-ltr sky">
     <div id="outer-wrapper">
     <div id="wrapper">
 
           <header id="masthead">
-        <a href="/ko" id="tabzilla">Mozilla</a>
+        <a href="/ko/" id="tabzilla">Mozilla</a>
 
         <nav id="nav-main" role="navigation">
   <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">주요 메뉴</span>
@@ -59,9 +66,9 @@
       <li id="nav-main-support"><a href="https://support.mozilla.org/" tabindex="0" aria-owns="nav-main-support-submenu" aria-haspopup="true">도움말</a>
       <ul aria-expanded="false" id="nav-main-support-submenu" class="submenu">
         <li class="first"><a href="https://support.mozilla.org/products/firefox" tabindex="-1">데스크톱용</a></li>
-		<li><a href="https://support.mozilla.org/products/mobile" tabindex="-1">모바일용</a></li>
+        <li><a href="https://support.mozilla.org/products/mobile" tabindex="-1">모바일용</a></li>
         <li class="last"><a href="http://forums.mozilla.or.kr" tabindex="-1">사용자 포럼</a></li>
-      </ul>
+	  </ul>
     </li>
     <li class="last" id="nav-main-about"><a href="/ko/about/" tabindex="0" aria-owns="nav-main-about-submenu" aria-haspopup="true">소개</a>
       <ul aria-expanded="false" id="nav-main-about-submenu" class="submenu">
@@ -76,6 +83,11 @@
 </nav>
 
         <h2><img src="http://www.mozilla.org/media/img/firefox/template/header-logo.png" alt="Mozilla Firefox" height="70" width="185" data-inverse-src="http://www.mozilla.org/media/img/firefox/template/header-logo-inverse.png"></h2>
-        
-      </header>
 
+          <nav class="breadcrumbs">
+    <a href="/ko/">홈</a> >
+    <a href="/ko/firefox/fx/#mobile">모바일</a> >
+    <span><?=$Hnavigation?></span>
+  </nav>
+
+      </header>
