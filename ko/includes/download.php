@@ -122,9 +122,12 @@ function download_button_mobile($button, $version) {
 </aside>
 
 <?
-	} else {
+		} else {
+
+			if($button=="large") {
+
 ?>
-<aside id="primary-download-mobile" class="download-button download-button-mobile-<?=$button?>">
+<aside id="primary-download-mobile" class="download-button download-button-mobile-large">
     <noscript>
     
 <div class="download download-dumb">
@@ -145,15 +148,20 @@ function download_button_mobile($button, $version) {
   
     <ul class="download-list">
         <li class="">
-			<a class="download-link download-firefox-mobile"
-				href="https://market.android.com/details?id=org.mozilla.firefox">
-                  <span class="download-content">
-            <span class="download-title">안드로이드용 Firefox 받기</span>
-                                  </span>
-              </a>
+      <a class="download-link download-firefox-mobile"
+         href="https://market.android.com/details?id=org.mozilla.firefox<?=$version?>">
+          <span class="download-content-wrapper">          <span class="download-content">
+            <span class="download-title">안드로이드용 Firefox</span>
+            무료 다운로드              <span class="download-info">
+    Google Play 스토어로 이동
+  </span>
+          </span>
+        </span>
+      </a>
     </li>
       </ul>  
-  
+
+
   <small class="download-other">
   <a href="/ko/firefox/mobile/platforms">지원 단말기</a> |
   <a href="/ko/mobile/notes">변경내역</a> |
@@ -161,6 +169,49 @@ function download_button_mobile($button, $version) {
 </small>
 
 </aside>
+
+<?			} else {
+?>
+<aside id="primary-download-mobile" class="download-button download-button-mobile-small">
+    <noscript>
+    
+<div class="download download-dumb">
+  <h4>Firefox 다운로드 - 한국어</h4>
+  <ul>
+		  <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">Android</a></li>
+  		</ul>
+</div>  </noscript>
+  
+    <div class="unrecognized-download">
+    
+<div class="download download-dumb">
+  <h4>Firefox 다운로드 - 한국어</h4>
+  <ul>
+		  <li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-white">Android</a></li>
+	  </ul>
+</div>  </div>
+  
+    <ul class="download-list">
+        <li class="">
+      <a class="download-link download-firefox-mobile"
+         href="https://market.android.com/details?id=org.mozilla.firefox">
+                <span class="download-content">
+            <span class="download-title">안드로이드용 Firefox 받기</span>
+                                  </span>
+              </a>
+    </li>
+      </ul>
+
+  <small class="download-other">
+  <a href="/ko/firefox/mobile/platforms">지원 단말기</a> |
+  <a href="/ko/mobile/notes">변경내역</a> |
+  <a href="/ko/legal/privacy/firefox.html">개인정보 정책</a>
+</small>
+
+</aside>
+
+
 <? }
+ }
  } 
 ?>
