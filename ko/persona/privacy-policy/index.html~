@@ -38,7 +38,7 @@
 
   <h4>수집, 사용 및 전송 데이터의 공개</h4>
   <h5>계정 정보</h5>
-  <p>여러분이 Mozilla 페르소나에 접근하기 전, 등록이 반드시 필요합니다. 등록하기 위해서는 아래의 개인 정보와 잠재적 개인정보가 요구됩니다: 이메일 주소, 비밀번호. 여러분의 계정명과 이메일 주소는 Mozilla에서 SSL을 통하여 암호화 된 후 전송됩니다. Your email address is used by us to provide you the services, such as allowing us to help you recover your account if you lose your password. Your password is transferred to Mozilla using SSL encryption but is only retained by Mozilla's servers in a hash format (which means a low level of encryption is applied).</p>
+  <p>Personal Information and Potentially Personal Information from you: your email address, and password. Your username and email address are  transferred to Mozilla using encryption called SSL. Your email address is used by us to provide you the services, such as allowing us to help you recover your account if you lose your password. Your password is transferred to Mozilla using SSL encryption but is only retained by Mozilla's servers in a hash format (which means a low level of encryption is applied).</p>
 
   <p>Once you have registered, your password is used to help prevent unauthorized access to your account. </p>
 
