@@ -23,7 +23,7 @@
                     <ul class="footer-nav">
             <li><a href="http://twitter.com/mozillakr">Twitter</a></li>
             <li><a href="http://facebook.com/mozillakr">Facebook</a></li>
-            <li><a href="https://affiliates.mozilla.org/">Firefox 제휴</a></li>
+            <li><a href="https://affiliates.mozilla.org/ko/">Firefox 제휴</a></li>
           </ul>
           
       </div>
