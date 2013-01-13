@@ -1,0 +1,84 @@
+<? 
+ 	require $_SERVER['DOCUMENT_ROOT']."/ko/includes/common.inc";
+	
+	$Htitle="Mozilla Firefox 웹 브라우저 — 더욱 빨라진 성능 향상 — mozilla.or.kr";
+	$Hid="firefox-security";
+	$Fxnewsurl="/ko/firefox/fx/";
+	$extra_css='<link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/firefox-min.css?build='.$build_code.'" /><link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/video-min.css?build='.$build_code.'" /><meta name="og:image" content="http://www.mozilla.org/media/img/firefox/firefox-100.jpg">';
+
+	include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/header-fx.php";
+	include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/download.php";
+?>
+
+<div id="main-feature" class="stacked">
+  <h1>더욱 빨라진 <span class="large">성능 향상</span></h1>
+
+  <?=download_button_desktop("small", $fx_version)?>
+
+</div>
+
+<nav class="menu-bar billboard">
+  <ul>
+    <li><a href="#web">웹을 더 빠르게</a></li>
+    <li><a href="#hardware">하드웨어 가속</a></li>
+  </ul>
+</nav>
+
+<section id="web" class="container divider">
+<div class="row">
+  <div class="span3">
+    <h2>웹을 더 <span>빠르게</span></h2>
+    <p>안전벨트를 꽉 매세요! 더 빨라진 시작 시간과 신속한 그래픽 렌더링, 그리고 개선된 페이지 로드 속도로 인해, Firefox는 여러분이 바로 알아차릴만한 두드러진 성능 향상으로 가득 차 있습니다.</p>
+    <p>메일이나 비디오, 게임과 같은 웹 어플리케이션은 점점 더 굉장해지고 있습니다. 하지만 부드럽게 작동하기 위해서는 더 많은 파워가 필요합니다. 이러한 요구사항을 충족시키기 위해서 JägerMonkey라는 굉장히 많은 성능이 개선된 자바스크립트 엔진을 내놓게 되었습니다.</p>
+  </div>
+  <figure id="video-wrapper" class="span7">
+    <div id="video-player" class="mozilla-video-control mozilla-video-shadow">
+      <video
+        id="video"
+        width="640"
+        height="360"
+        poster="http://www.mozilla.org/media/img/firefox/video/poster-runfield.jpg"
+        controls="controls">
+
+        <source src="http://videos-cdn.mozilla.net/serv/mozhacks/demos/screencasts/runfield/screencast.webm" type="video/webm" />
+        <source src="http://videos-cdn.mozilla.net/serv/mozhacks/demos/screencasts/runfield/screencast.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;" />
+        <source src="http://videos-cdn.mozilla.net/serv/mozhacks/demos/screencasts/runfield/screencast.mp4" type="video/mp4" />
+
+        <object type="application/x-shockwave-flash"
+          style="width: 640px; height: 388px;"
+          data="/includes/flash/playerWithControls.swf?flv=serv/mozhacks/demos/screencasts/runfield/screencast.mp4&amp;autoplay=false&amp;msg=Play%20Video">
+
+          <param name="movie" value="/includes/flash/playerWithControls.swf?flv=serv/mozhacks/demos/screencasts/runfield/screencast.mp4&amp;autoplay=false&amp;msg=Play%20Video" />
+          <param name="wmode" value="transparent" />
+
+          <div class="video-player-no-flash">
+            이 동영상을 보기 위해서는 공개 비디오 포맷을 지원하는 브라우저나 <a href="http://www.adobe.com/go/getflashplayer">Adobe Flash Player</a>가 필요합니다.
+          </div>
+
+        </object>
+
+      </video>
+    </div>
+    <figcaption>Runfield는 자바스크립트와 캔바스로 만들어진 웹기반의 게임입니다. <a href="https://developer.mozilla.org/ko/demos/detail/runfield">직접 경험해 보세요 »</a></figcaption>
+  </figure>
+</div>
+</section>
+
+<section id="hardware" class="container divider-last">
+<div class="row">
+  <div class="span3">
+    <h2>하드웨어 가속</h2>
+    <p>여러분이 Windows 7에서든, Vista에서든, XP에서든 또는 Mac OS X에서든 Firefox를 쓰면, 여러분은 비디오를 보는 것이나 게임을 하는 것과 같은, 많은 일반적인 작업에도 하드웨어 가속을 느낄 수 있습니다.</p>
+  </div>
+  <div class="span7">
+    <img height="300" width="620" alt="Hardware Acceleration screenshot" src="http://www.mozilla.org/media/img/firefox/performance/hardware-accel.png">
+  </div>
+</div>
+</section>
+
+<?
+	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/fxnews.php";
+	$extra_js='<script src="http://www.mozilla.org/media/js/firefox-min.js?build='.$build_code.'"></script>
+	<script src="http://www.mozilla.org/media/js/video-min.js?build='.$build_code.'"></script>';
+	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
+?>
