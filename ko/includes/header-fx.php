@@ -22,7 +22,6 @@
         <a href="/ko" id="tabzilla">Mozilla</a>
 
         <nav id="nav-main" role="navigation">
-  <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">주요 메뉴</span>
   <ul id="nav-main-menu" class="has-submenus">
     <li class="first" id="nav-main-features"><a href="/ko/firefox/fx/#desktop" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">데스크톱</a>
       <ul aria-expanded="false" id="nav-main-features-submenu" class="submenu">
