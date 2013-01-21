@@ -1,0 +1,154 @@
+<?
+	require $_SERVER['DOCUMENT_ROOT']."/ko/includes/common.inc";
+
+	$Htitle="Mozilla Firefox 웹 브라우저 — 안전한 웹서핑 — mozilla.or.kr";
+	$Hid="firefox-security";
+	$Fxnewsurl="/ko/firefox/security/";
+	$extra_css='<link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox_security-min.css?build='.build_code.'" /><meta name="og:image" content="//mozorg.cdn.mozilla.net/media/img/firefox/firefox-100.jpg">';
+
+	include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/header_fx.php";
+	include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/download.php";
+?>
+
+    
+    
+
+<div id="main-feature" class="stacked">
+  <h1>Firefox로 즐기는 <span class="large">안전한 웹서핑</span></h1>
+  
+
+<?=download_button_desktop("small", $fx_version)?>
+</div>
+
+<nav class="menu-bar billboard">
+  <ul>
+    <li><a href="#privacy">개인 정보 보호</a></li>
+    <li><a href="#secure">안전한 웹서핑</a></li>
+    <li><a href="#control">쉽고 간편한 설정</a></li>
+    <li><a href="#mission">사명 실천의 일환</a></li>
+  </ul>
+</nav>
+
+<section id="privacy" class="billboard">
+<div class="row">
+  <div class="span3">
+    <h2>개인 정보 보호</h2>
+    <p>When you browse, you leave a trail of data that potentially contains all sorts of personal information. We believe this info belongs to you and you alone (and least of all to overzealous advertisers), and have built in features to ensure that’s the case.</p>
+    <p class="top-link"><a href="#main-feature">Return to Top</a></p>
+  </div>
+  <div class="section-image span4">
+     <img class="platform-img js" src="" data-src="//mozorg.cdn.mozilla.net/media/img/firefox/security/screenshot-privacy.jpg" alt="Private Browsing screenshot"><noscript><img class="platform-img win" src="//mozorg.cdn.mozilla.net/media/img/firefox/security/screenshot-privacy.jpg" alt="Private Browsing screenshot"></noscript>
+  </div>
+  <ul class="section-list span3">
+    <li>
+      <h4>추적 방지 기능</h4>
+      <p>Many sites track your online behavior and sell that data to advertisers. Firefox lets you tell sites that you want to opt out of behavioral tracking. <a href="http://support.mozilla.org/kb/how-do-i-stop-websites-tracking-me">Learn how</a>.</p>
+    </li>
+    <li>
+      <h4>사생활 보호 모드</h4>
+      <p>Sometimes it’s nice to go undercover, so turn this feature on and protect your browsing history. <a href="http://support.mozilla.org/kb/Private%20Browsing">Learn how</a>.</p>
+    </li>
+    <li>
+      <h4>최근 방문기록 삭제</h4>
+      <p>Clear all your private data or just your most recent activity with a few quick clicks. <a href="http://support.mozilla.org/kb/Clear%20Recent%20History">Learn how</a>.</p>
+    </li>
+    <li>
+      <h4>현재 사이트 기억 안함</h4>
+      <p>Having second thoughts about having visited a certain site? Remove every trace of ever having been there! <a href="http://support.mozilla.org/kb/Clear%20Recent%20History#w_how-do-i-remove-a-single-website-from-my-history">Learn how</a>.</p>
+    </li>
+    <li>
+      <h4>콘텐트 보안 정책</h4>
+      <p>Firefox lets sites explicitly tell it which content is legitimate, thus protecting you from cross-site scripting attacks.</p>
+    </li>
+  </ul>
+</div>
+</section>
+
+<section id="secure" class="billboard">
+<div class="row">
+  <div class="span3">
+    <h3>안전한 웹서핑</h3>
+    <p>Whether it’s buying a gift, paying your bills or simply signing in to Facebook, it’s important keep your personal info out of the hands of any online bad guys who might be snooping around. Fortunately, Firefox is packed with advanced security features to help you stay safe.</p>
+    <p class="top-link"><a href="#main-feature">Return to Top</a></p>
+  </div>
+  <div class="section-image span4">
+     <img class="platform-img js" src="" data-src="//mozorg.cdn.mozilla.net/media/img/firefox/security/screenshot-anti-malware.jpg" alt="Anti-Malware screenshot"><noscript><img class="platform-img win" src="//mozorg.cdn.mozilla.net/media/img/firefox/security/screenshot-anti-malware.jpg" alt="Anti-Malware screenshot"></noscript>
+  </div>
+  <ul class="section-list span3">
+    <li>
+      <h4>Instant Website ID</h4>
+      <p>A color-coded system makes it easy to check on suspicious sites and avoid Web forgeries. <a href="http://support.mozilla.org/kb/Site%20Identity%20Button">Learn more</a>.</p>
+    </li>
+    <li>
+      <h4>Anti-Phishing & Anti-Malware</h4>
+      <p>Firefox protects you from trojan horses and spyware, and warns you away from fraudulent sites.</p>
+    </li>
+    <li>
+      <h4>Secure Software Installation</h4>
+      <p>A secure connection is required before you can install add-ons and other 3rd party software.</p>
+    </li>
+    <li>
+      <h4>Anti-Virus Integration</h4>
+      <p>Firefox integrates elegantly with your computer’s anti-virus software whenever you download.</p>
+    </li>
+  </ul>
+</div>
+</section>
+
+<section id="control" class="billboard">
+<div class="row">
+  <div class="span3">
+    <h3>쉽고 간편한 <span>설정</span></h3>
+    <p>The online world is always changing, which is why we give you easy-to-use tools to let you adapt and make smart choices as you go.</p>
+    <p class="top-link"><a href="#main-feature">Return to Top</a></p>
+  </div>
+  <div class="section-image span4">
+     <img class="platform-img js" src="" data-src="//mozorg.cdn.mozilla.net/media/img/firefox/security/screenshot-plugins.jpg" alt="Plugins screenshot"><noscript><img class="platform-img win" src="//mozorg.cdn.mozilla.net/media/img/firefox/security/screenshot-plugins.jpg" alt="Plugins screenshot"></noscript>
+  </div>
+  <ul class="section-list span3">
+    <li>
+      <h4>Plugin Check</h4>
+      <p>Outdated 3rd party plugins can be a major risk, so we made it easy to find out what to update. <a href="/en-US/plugincheck/">Check your plugins.</a></p>
+    </li>
+    <li>
+      <h4>Parental Controls</h4>
+      <p>Enforce parental control settings you’ve entered on Windows 7 to stop unwanted downloads and more.</p>
+    </li>
+    <li>
+      <h4>Customized Security Settings</h4>
+      <p>Control the level of scrutiny you’d like Firefox to give a site with a variety of customized settings. <a href="http://support.mozilla.org/kb/Options%20window%20-%20Security%20panel">Learn how</a>.</p>
+    </li>
+  </ul>
+</div>
+</section>
+
+<section id="mission" class="billboard">
+<div class="row">
+  <div class="span3">
+    <h3><span>사명</span> 실천의 일환</h3>
+    <p>Mozilla is a non-profit organization with the goal of making the Web better for everyone. We’re not trying to make money off our users – we just want you to have the best possible experience online, and that includes keeping you and your personal information safe and private.</p>
+    <p class="top-link"><a href="#main-feature">Return to Top</a></p>
+  </div>
+  <div class="section-image span4">
+    <img alt="Communtity icon" src="//mozorg.cdn.mozilla.net/media/img/firefox/security/community.png">
+  </div>
+  <ul class="section-list span3">
+    <li>
+      <h4>Commitment to Your Privacy</h4>
+      <p>Firefox adheres to a strict privacy policy that prevents us from tracking who you are or what you do online. <a href="/en-US/legal/privacy/firefox.html">Read the policy.</a></p>
+    </li>
+    <li>
+      <h4>The Mission Matters</h4>
+      <p>Our mission guides the way we make Firefox, meaning we always make decisions based on your needs first. <a href="http://www.mozilla.org/about/mission.html">Learn more.</a></p>
+    </li>
+  </ul>
+</div>
+</section>
+
+
+          
+<?
+	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/fxnews.php";
+	$extra_js='<script src="//mozorg.cdn.mozilla.net/media/js/firefox-min.js?build='.$build_code.'"></script>';
+	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
+?>
