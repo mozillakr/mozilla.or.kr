@@ -21,6 +21,9 @@
           <header id="masthead">
         <a href="/ko" id="tabzilla">Mozilla</a>
 
+<?php
+if (!isset($show_navigation) || $show_navigation != false) {
+?>
         <nav id="nav-main" role="navigation">
   <ul id="nav-main-menu" class="has-submenus">
     <li class="first" id="nav-main-features"><a href="/ko/firefox/fx/#desktop" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">데스크톱</a>
@@ -73,8 +76,17 @@
     </li>
   </ul>
 </nav>
+<?php
+}
 
+if (isset($custom_logo)) {
+  echo($custom_logo);
+} else {
+?>
         <h2><img src="http://www.mozilla.org/media/img/firefox/template/header-logo.png" alt="Mozilla Firefox" height="70" width="185" data-inverse-src="http://www.mozilla.org/media/img/firefox/template/header-logo-inverse.png"></h2>
+<?php
+}
+?>
         
       </header>
 
