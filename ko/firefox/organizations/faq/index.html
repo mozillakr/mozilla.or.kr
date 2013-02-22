@@ -1,0 +1,83 @@
+<?
+ 	require $_SERVER['DOCUMENT_ROOT']."/ko/includes/common.inc";
+	
+	$Htitle="Firefox 연장 지원 버전 FAQ - mozilla.or.kr";
+	$Hid="organizations-faq";
+	
+	$extra_css='<link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox_organizations-min.css?build='.$build_code.'" />';
+
+	$show_navigation = false;
+	$custom_logo = '<h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/organizations/title.png" alt="Firefox ESR" height="68" width="299"></h2>';
+
+	include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/header-fx.php";
+	include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/download.php";
+?>
+<div id="main-feature" class="stacked">
+  <h1>Mozilla Firefox <span class="large">ESR 개요</span></h1>
+</div>
+
+<div id="main-content">
+<div class="row">
+  <div class="main-column">
+  <h4>Mozilla가 무엇인가요?</h4>
+<p>Mozilla는 웹을 더 좋은 곳으로 만들기위해 노력하는 전 세계에서 활동하는 비영리 단체입니다. 우리는 이익보다는 원칙을 중요시하며 웹은 공유되어야 하는 공공재이고 사고파는 상품이 아니라고 생각합니다. 우리는 Mozilla Firefox와 같은 오픈소스 제품을 만들기 위해서 전세계에 퍼져있는 커뮤니티와 같이 일하고 개개인의 이익을 위하고 웹을 더욱 향상시키기 위한 새로운 혁신을 추구합니다. 그 결과는 열정적인 사람들이 만드는 제품과 모두를 위한 더 나은 웹의 선택권입니다. 더 자세한 정보는 <a href="http://www.mozilla.or.kr/firefox/">mozilla.or.kr/firefox</a>를 방문해 보세요.</p>
+
+<h4>Mozilla Firefox ESR은 무엇인가요?</h4>
+<p>Mozilla는 학교나 대학교, 기업, 다른 연장 지원 버전(ESR)을 필요로 하는 조직을 포함한 대규모 배포를 필요로하는 사용자를 위해서 공식 데스크탑용 Firefox를 기반으로 하는 연장 지원 버전을 제공하고 있습니다. <a href="https://wiki.mozilla.org/Enterprise/Firefox/ExtendedSupport:Proposal">연장 지원 버전에 대한 자세한 내용</a>을 확인해보세요.</p>
+
+<h4>Mozilla Firefox ESR의 업데이트 주기는 어떻게 되나요?</h4>
+<p>출시 주기는 어림잡아 1년 단위로 관리되고 사이에 Firefox 출시에 맞춰 보안업데이트가 포함된 포인트 릴리즈가 있습니다. 또한 ESR은 새 버전이 나올때 이전버전을 종료하기 전데 두 사이클(12주)을 겹치게 해서 새 버전을 배포하기 전에 테스트와 확인을 거치도록 되어 있습니다.</p>
+
+<p><img src="//mozorg.cdn.mozilla.net/media/img/firefox/organizations/release-overview.png" alt="Firefox ESR 출시 개요" id="release-overview" /></p>
+
+<p>포인트 릴리즈를 통해서 관리되는 ESR은 높은 위험도를 가지고 있는 보안 취약점이 있을 때에만 행해지고 드물지만 직접적인 보안 위험이 있을때에는 비정기적으로 업데이트 될 수도 있습니다. 기능 개선이나 안정성 수정은 범위에 포함되지 않습니다.</p>
+
+<p>ESR 버전의 지원이 종료되었을 떄에는 다음과 같이 됩니다:</p>
+
+<ul>
+    <li>출시가 종료됩니다.</li>
+    <li>해당 버전에 대한 추가적인 업데이트가 이루어지지 않습니다.</li>
+    <li>어플리케이션 업데이트 서비스를 통해서 다음 버전으로의 업데이트가 제공됩니다.</li>
+</ul>
+
+<p><a href="https://wiki.mozilla.org/Enterprise/Firefox/ExtendedSupport:Proposal#Proposal">출시 계획</a>에 대한 자세한 정보를 확인하세요.</p>
+
+<h4>Mozilla Firefox ESR은 어떤 사람들이 이용해야 하나요?</h4>
+<p>Mozilla Firefox ESR은 학교나 기업, 그 밖의 기관을 포함한 Firefox를 테스크탑에 사용하고자 하는 조직을 위한 제품입니다. 가장 최신의 기능과 성능 향상, 기술이 포함된 브라우저를 사용하려는 사용자는 <a href="/firefox/">개인사용자용 Firefox</a>를 다운로드해야 합니다. ESR 사용자가 사용하는 제품에는 이러한 기능 개선이 Firefox 데스크탑이 출시된 후 몇차례의 출시 기간이 지나야만 포함이 됩니다. 개인적인 목적으로 Firefox를 사용한다면 <a href="/firefox/">mozilla.org/firefox</a>에서 다운받을 수 있습니다.</p>
+
+<h4>내가 속한 조직에서 Mozilla Firefox ESR을 사용하고 싶으면 어떻게 해야 하나요?</h4>
+<p>Firefox ESR을 사용하려는 조직은 기업 지원 그룹 메일링 리스트에 가입할 것을 요청받게됩니다. 또한 다음 버전의 Firefox와 ESR 배포 예정 버전에 대한 테스트를 요청받습니다. 사용자들은 발생한 <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Firefox">이슈에 대한 버그</a>를 올릴 수 있고 <a href="https://wiki.mozilla.org/Enterprise:Bugs">이미 알려진 버그</a>를 확인할 수 있습니다.</p>
+
+<h4>최신의 Mozilla Firefox ESR 뉴스를 받아보려면 어떻게 해야 하나요?</h4>
+<p>최신의 Mozilla Firefox ESR 뉴스를 받아보기 위해서는 Mozilla의 <a href="..">기업 지원 그룹 메일링 리스트</a>에 가입하는 것이 가장 좋습니다. 이곳에서 Mozilla는 EWG나 Firefox ESR, 제품 업데이트에 대한 정보를 나눕니다. EWG에 대해서는 <a href="https://wiki.mozilla.org/Enterprise">위키페이지</a>에서 보다 많은 정보를 확인할 수 있습니다.</p>
+
+<h4>기업 지원 그룹은 무엇인가요?</h4>
+<p>Mozilla 기업 사용자 지원 그룹은 기업 개발자나 IT 담당자, Firefox와 Thunderbird 개발자가 기업에 Firefox와 Thunderbird를 제공하기 위한 가장 좋은 방법을 논의하는 장소입니다. <a href="https://wiki.mozilla.org/Enterprise">위키페이지</a>에서 EMG에 대한 자세한 내용을 확인할 수 있습니다.</p>
+
+<h4>Mozilla Firefox ESR에 대한 기술 지원은 어디서 얻을 수 있나요?</h4>
+<p>EWG 메일링 리스트에서 Mozilla Firefox ESR에 대한 지원을 얻을 수 있습니다. Firefox ESR은 기능적으로 데스크탑 Firefox와 동일하기 때문에 <a href="http://support.mozilla.org/ko/home">Mozilla Support</a> 사이트에서 관련된 내용을 찾아볼 수도 있습니다.</p>
+
+<h4>Firefox를 내가 속한 조직의 IT 정책과 요구사항에 맞게 변경하려면 어떻게 해야 하나요?</h4>
+<p>Firefox를 커스터마이징하는 데에는 몇가지 방법이 있고 기업 지원 그룹이나 기업 위키 페이지에서 시작하면 좋습니다. <a href="https://addons.mozilla.org/ko/firefox/addon/cck/">애드온</a>도 있고 커스터마이징 서비스를 제공하는 업체도 있습니다. 처음 시작하는 단계라면 EWG에서 요구사항에 대해서 논의해 보는 것이 좋습니다.</p>
+
+<h4>Mozilla Firefox ESR이 제가 사용하는 언어로도 제공되나요?</h4>
+<p>Firefox ESR은 Firefox가 지원하는 모든 버전의 언어로 제공이 됩니다. Firefox ESR에 대한 정교한 요구사항 때문에 ESR 빌드를 배포하려는 사람은 EWG <a href="..">메일링 리스트</a>에 가입하고 참여하는 것이 중요합니다. 메일링 리스트는 <a href="https://mail.mozilla.org/listinfo/enterprise-de">독일어</a>, <a href="http://mozilla.jp/business/">일본어</a>, 영어로만 제공되지만 사용하시는 언어로 Firefox ESR 메일링 리스트 제공을 하고 싶으시다면 <a href="mailto:stormy@mozilla.com">연락</a>주시기 바랍니다.</p>
+
+<h4>Mozilla Firefox ESR이 안드로이드 버전으로도 제공되나요?</h4>
+<p>아니요. Firefox ESR은 윈도우, 맥, 리눅스 데스크탑 버전으로만 제공됩니다.</p>
+
+<h4>Mozilla Firefox ESR은 어디서 다운 받나요?</h4>
+<p>Mozilla <a href="http://www.mozilla.org/firefox/organizations/all.html">Firefox ESR 페이지</a>에서 다운 받을 수 있습니다.</p>
+
+  </div>
+
+<?php include "ewg.html"; ?>
+
+</div>
+</div>
+
+<?
+	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/fxnews.php";
+	$extra_js="";
+	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
+?>
