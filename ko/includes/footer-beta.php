@@ -262,7 +262,7 @@ if ($Fproduct == 'mobile_aurora') {
 <option value='so'>Somalia</option>
 <option value='za'>South Africa</option>
 <option value='gs'>South Georgia and the South Sandwich Islands</option>
-<option value='kr'>South Korea</option>
+<option value='kr' selected='selected'>한국어</option>
 <option value='es'>Spain</option>
 <option value='lk'>Sri Lanka</option>
 <option value='sd'>Sudan</option>
@@ -291,7 +291,7 @@ if ($Fproduct == 'mobile_aurora') {
 <option value='ug'>Uganda</option>
 <option value='ua'>Ukraine</option>
 <option value='gb'>United Kingdom</option>
-<option value='us' selected='selected'>United States</option>
+<option value='us'>United States</option>
 <option value='um'>United States Minor Outlying Islands</option>
 <option value='uy'>Uruguay</option>
 <option value='uz'>Uzbekistan</option>
@@ -424,24 +424,24 @@ if ($Fproduct == 'desktop_aurora') {
   <!-- start #footer -->
   <div id="sub-footer">
     <div id="sub-footer-contents">
-                  <h3>Let’s be <span>friends!</span></h3>
+                  <h3>소셜웹 <span>공식채널</span></h3>
                   <ul>
                     <li id="footer-twitter">
-                      <a href="http://twitter.com/firefox"
+                      <a href="http://twitter.com/mozillakr" 
                          onclick="dcsMultiTrack('DCS.dcssip', 'twitter.com', 'DCS.dcsuri', '/firefox', 'WT.ti', 'Twitter');">
                         Twitter
                       </a>
                     </li>
                     <li id="footer-facebook">
-                      <a href="http://facebook.com/Firefox"
+                      <a href="http://facebook.com/mozillakr" 
                          onclick="dcsMultiTrack('DCS.dcssip', 'facebook.com', 'DCS.dcsuri', '/Firefox', 'WT.ti', 'Facebook');">
                         Facebook
                       </a>
                     </li>
                     <li id="footer-affiliates">
-                      <a href="https://affiliates.mozilla.org/"
+                      <a href="http://forums.mozilla.or.kr/" 
                          onclick="dcsMultiTrack('DCS.dcsuri', 'https://affiliates.mozilla.org/', 'WT.ti', 'Affiliates');">
-                       Firefox Affiliates
+                       한국커뮤니티
                       </a>
                     </li>
                   </ul>
@@ -688,7 +688,7 @@ if ($Fproduct == 'desktop_aurora') {
 <option value='so'>Somalia</option>
 <option value='za'>South Africa</option>
 <option value='gs'>South Georgia and the South Sandwich Islands</option>
-<option value='kr'>South Korea</option>
+<option value='kr' selected='selected'>한국어</option>
 <option value='es'>Spain</option>
 <option value='lk'>Sri Lanka</option>
 <option value='sd'>Sudan</option>
@@ -717,7 +717,7 @@ if ($Fproduct == 'desktop_aurora') {
 <option value='ug'>Uganda</option>
 <option value='ua'>Ukraine</option>
 <option value='gb'>United Kingdom</option>
-<option value='us' selected='selected'>United States</option>
+<option value='us'>United States</option>
 <option value='um'>United States Minor Outlying Islands</option>
 <option value='uy'>Uruguay</option>
 <option value='uz'>Uzbekistan</option>
@@ -787,7 +787,7 @@ if ($Fproduct == 'desktop_aurora') {
     <div id="footer-right">
 
     <form id="lang_form" dir="ltr" method="get"><div>
-      <label for="flang">Other Languages</label>
+      <label for="flang">다른 언어</label>
       
 <select id="flang" name="flang" dir="ltr" onchange="this.form.submit()">    <option value="ach">Acholi</option>
     <option value="af">Afrikaans</option>
@@ -817,7 +817,7 @@ if ($Fproduct == 'desktop_aurora') {
     <option value="et">Eesti keel</option>
     <option value="eu">Euskara</option>
     <option value="en-GB">English (British)</option>
-    <option value="en-US" selected="selected">English (US)</option>
+    <option value="en-US">English (US)</option>
     <option value="fa">&#1601;&#1575;&#1585;&#1587;&#1740;</option>
     <option value="ff">Pulaar-Fulfulde</option>
     <option value="fi">Suomi</option>
@@ -886,27 +886,27 @@ if ($Fproduct == 'desktop_aurora') {
 
     </div>
 
-    <h3 id="footer-logo"><a href="/en-US/firefox/" title="Back to home page">Firefox</a></h3>
+    <h3 id="footer-logo"><a href="/ko/firefox/" title="홈페이지">Firefox</a></h3>
 
                 
 <!-- start menu #footer-menu -->
 <div id="footer-menu" role="navigation">
   <ul>
-    <li><a href="/en-US/firefox/features/">Desktop</a><ul><li><a href="/en-US/firefox/features/">Features</a></li><li><a href="/en-US/firefox/customize/">Customize</a></li><li><a href="/en-US/firefox/performance/">Performance</a></li><li><a href="/en-US/firefox/technology/">Technology</a></li><li><a href="/en-US/firefox/security/">Privacy &amp; Security</a></li></ul></li>
-    <li><a href="/en-US/mobile/">Mobile</a><ul><li><a href="/en-US/mobile/">Download</a></li><li><a href="/en-US/mobile/features/">Features</a></li><li><a href="https://addons.mozilla.org/en-US/mobile/?browse=featured">Customize</a></li><li><a href="/en-US/mobile/faq/">FAQ</a></li></ul></li>
-    <li><a href="/en-US/firefox/channel/">Releases</a><ul><li><a href="/en-US/firefox/channel/">Overview</a></li><li><a href="/en-US/firefox/aurora/">Firefox Aurora</a></li><li><a href="/beta/">Firefox Beta</a></li><li><a href="/en-US/firefox/">Firefox</a></li><li><a href="/en-US/firefox/organizations/">Firefox for Organizations</a></li></ul></li>
-    <li><a href="https://addons.mozilla.org/">Add-ons</a><ul><li><a href="https://addons.mozilla.org/firefox/">Desktop Add-ons</a></li><li><a href="https://addons.mozilla.org/mobile/">Mobile Add-ons</a></li><li><a href="http://www.getpersonas.com/">Personas</a></li></ul></li>
-    <li><a href="http://support.mozilla.org/">Support</a><ul><li><a href="http://support.mozilla.org/en-US/kb/">Desktop Support</a></li><li><a href="http://support.mozilla.org/mobile">Mobile Support</a></li></ul></li>
-    <li><a href="/en-US/firefox/about/">About</a><ul><li><a href="http://blog.mozilla.com/">Blog</a></li><li><a href="/en-US/firefox/about/">About Firefox</a></li><li><a href="http://www.mozilla.org/join">Join Mozilla</a></li><li><a href="/en-US/about/participate/">Participate</a></li><li><a href="/en-US/press/">Press Center</a></li><li><a href="/en-US/firefox/brand/">Brand Toolkit</a></li><li><a href="/en-US/about/careers.html">Careers</a></li><li><a href="/en-US/about/partnerships.html">Partnerships</a></li><li><a href="/en-US/about/contact.html">Contact Us</a></li></ul></li>
+    <li><a href="/ko/firefox/features/">데스크탑</a><ul><li><a href="/ko/firefox/features/">주요 기능</a></li><li><a href="/ko/firefox/customize/">부가 기능</a></li><li><a href="/ko/firefox/performance/">성능 향상</a></li><li><a href="/ko/firefox/technology/">웹 기술</a></li><li><a href="/ko/firefox/security/">보안 및 정보 보호</a></li></ul></li>
+    <li><a href="/ko/mobile/">모바일</a><ul><li><a href="/ko/mobile/">다운로드</a></li><li><a href="/ko/mobile/features/">주요 기능</a></li><li><a href="https://addons.mozilla.org/ko/mobile/?browse=featured">부가 기능</a></li><li><a href="/ko/mobile/faq/">FAQ &shy;</a></li></ul></li>
+    <li><a href="/ko/firefox/channel/">다운로드</a><ul><li><a href="/ko/firefox/channel/">채널별</a></li><li><a href="/ko/firefox/aurora/">Firefox Aurora</a></li><li><a href="/ko/firefox/beta/">Firefox Beta</a></li><li><a href="/ko/firefox/">Firefox</a></li><li><a href="/ko/firefox/organizations/">Firefox 기관용</a></li></ul></li>
+    <li><a href="https://addons.mozilla.org/">부가 기능</a><ul><li><a href="https://addons.mozilla.org/firefox/">PC용 부가기능</a></li><li><a href="https://addons.mozilla.org/mobile/">모바일용 부가기능</a></li><li><a href="https://addons.mozilla.org/themes/">테마</a></li></ul></li>
+    <li><a href="http://support.mozilla.org/">도움말</a><ul><li><a href="http://support.mozilla.org/ko/">PC용 도움말</a></li><li><a href="http://support.mozilla.org/mobile">모바일 도움말</a></li></ul></li>
+    <li><a href="/ko/about/">소개</a><ul><li><a href="http://blog.mozilla.org/">블로그(영문)</a></li><li><a href="/ko/about/">Firefox 소개</a></li><li><a href="http://www.mozilla.org/join">Mozilla 후원(영문)</a></li><li><a href="/ko/about/participate/">참여하기</a></li><li><a href="http://blog.mozilla.org/press/">보도자료</a></li><li><a href="/ko/firefox/brand/">로고 이용(영문)</a></li><li><a href="/ko/about/careers.html">채용문의 (영문)</a></li><li><a href="/ko/about/partnerships.html">제휴 안내</a></li><li><a href="/ko/about/contact.html">연락처</a></li></ul></li>
   </ul>
 </div>
 <!-- end menu #footer-menu -->
 
     <div id="copyright">
-      <p id="footer-links"><a href="/en-US/privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp;
-      <a href="/en-US/about/legal.html">Legal Notices</a> &nbsp;|&nbsp;
-                        <a href="/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a></p>
-      <p>Except where otherwise <a href="/en-US/about/legal.html#site">noted</a>, content on this site is licensed under the <br /><a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.</p>
+      <p id="footer-links"><a href="/ko/privacy-policy.html">개인 정보 보호 정책 (영문)</a> &nbsp;|&nbsp; 
+      <a href="/ko/about/legal.html">법적 고지 (영문)</a> &nbsp;|&nbsp;
+                        <a href="/ko/legal/fraud-report/index.html">상표권 침해 신고 (영문)</a></p>
+      <p>Except where otherwise <a href="/ko/about/legal.html#site">noted</a>, content on this site is licensed under the <br /><a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.</p>
     </div>
 
   </div>
@@ -927,7 +927,7 @@ _tag.dcsCollect();
 </script>
 <noscript>
 <div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="//statse.webtrendslive.com/dcsis0ifv10000gg3ag82u4rf_7b1e/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.6.2"/></div>
-</noscript>    <script src="//www.mozilla.org/en-US/tabzilla/media/js/tabzilla.js"></script>
+</noscript>    <script src="/ko/tabzilla/tabzilla.js"></script>
 <?php
 if ($Fproduct == 'mobile_beta' || $Fproduct == 'mobile_aurora') {
 ?>
@@ -970,6 +970,19 @@ if ($Fproduct == 'mobile_beta' || $Fproduct == 'mobile_aurora') {
 
     // ]]>
     </script>
+<script type="text/javascript">
 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-53785-1']);
+  _gaq.push(['_setDomainName', 'mozilla.or.kr']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>
