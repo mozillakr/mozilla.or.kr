@@ -166,15 +166,15 @@ if (gPlatform == 1) {
 <div id="doc">
 
     <div id="nav-access">
-        <a href="#nav-main">skip to Navigation</a>
-        <a href="#lang_form">switch language</a>
+        <a href="#nav-main">메뉴 건너뛰기</a>
+        <a href="#lang_form">언어설정</a>
     </div>
 
     <!-- start #header -->
     <div id="header">
         <div>
         <h1>
-                  <a href="/en-US/firefox/" title="Back to home page">Mozilla Firefox</a>
+                  <a href="/ko/firefox/" title="홈페이지">Mozilla Firefox</a>
                 </h1>
 
         <a href="http://www.mozilla.org/" class="mozilla" id="tabzilla">mozilla</a>
