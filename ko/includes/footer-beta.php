@@ -1,18 +1,54 @@
 <?php
-if ($Fproduct == 'desktop_beta') {
+if ($Fproduct == 'desktop_beta' || $Fproduct == 'mobile_beta') {
   $newsletter_product_name = 'Beta';
-} else if ($Fproduct == 'desktop_aurora') {
+} else if ($Fproduct == 'desktop_aurora' || $Fproduct == 'mobile_aurora') {
   $newsletter_product_name = 'Aurora';
 }
 ?>
 <div id="main-content">
+<?php
+if ($Fproduct == 'mobile_aurora') {
+?>
+  <div id="install" class="clearfix">
+    <h3>How to install Aurora for Android</h3>
 
+    <ol>
+      <li id="step1">
+        <p>Check the <a href="/en-US/mobile/platforms/">system requirements</a> to see if Aurora is compatible with your Android device.</p>
+      </li>
+      <li id="step2">
+        <p>Configure your device to install non–Android Market apps by going to <em>Settings > Applications & checking “Unknown sources”</em>.</p>
+        <p class="note">Note: Some devices may have a slightly different process</p>
+      </li>
+      <li id="step3">
+        <p>Download Aurora directly to your Android device by scanning the QR code or by clicking the download button from your mobile Web browser.</p>
+      </li>
+      <li id="step4">
+        <p>Open the “<a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/fennec-21.0a2.en-US.android-arm.apk">.apk</a>” file when it finishes downloading.</p>
+      </li>
+    </ol>
+
+  </div>
+<?php
+}
+?>
     <div id="channel_news" class="">
+<?php
+if ($Fproduct == 'mobile_aurora') {
+?>
+          <div id="newsletter-signup" class="column">
+            <h3>Get the latest <span>Aurora news</span></h3>
+<?php
+} else {
+?>
           <div id="newsletter-signup">
             <div class="title">
               <h3>Get the latest <span><?=$newsletter_product_name?> news</span></h3>
               <p>Sign up for our <?=$newsletter_product_name?> newsletter for desktop and mobile.</p>
             </div>
+<?php
+}
+?>
             <div class="success-pane">
               <h3>Thanks for subscribing!</h3>
             </div>
@@ -317,13 +353,24 @@ if ($Fproduct == 'desktop_beta') {
             </form>
           </div>
 
+<?php
+if ($Fproduct == 'mobile_aurora') {
+?>
+        <div id="blog" class="column">
+            <h3>Read about the latest <span>Aurora features <a href="http://blog.mozilla.com/futurereleases/category/aurora/feed/">RSS Feed</a></span></h3>
+<?php
+} else {
+?>
         <div id="blog">
             <div class="title">
             <h3>Read about the latest <span><?=$newsletter_product_name?> features <a href="http://blog.mozilla.com/futurereleases/category/aurora/feed/">RSS Feed</a></span></h3>
             <p>Follow the <a href="http://blog.mozilla.com/futurereleases/">Future Release Blog</a> to stay in the loop.</p>
             </div>
 <?php
-if ($Fproduct == 'desktop_aurora') {
+}
+?>
+<?php
+if ($Fproduct == 'desktop_aurora' || $Fproduct == 'mobile_aurora') {
 ?>
             <ul><li><h4><a href="http://blog.mozilla.com/futurereleases/2012/03/19/the-latest-firefox-aurora-is-now-available-for-download-and-testing/">The latest Firefox Aurora is now available for download and testing!</a></h4><div class="info"><span class="date">March 19, 2012</span> • Firefox Aurora</div></li><li><h4><a href="http://blog.mozilla.com/futurereleases/2012/02/10/help-us-test-new-tab/">Help us test New Tab!</a></h4><div class="info"><span class="date">February 10, 2012</span> • Feedback, Firefox Aurora</div></li><li><h4><a href="http://blog.mozilla.com/futurereleases/2012/02/03/firefoxaurora12/">The latest Firefox Aurora is now available for download and testing!</a></h4><div class="info"><span class="date">February 3, 2012</span> • Firefox Aurora</div></li><li><h4><a href="http://blog.mozilla.com/futurereleases/2011/12/23/firefoxaurora11/">Get the Latest Firefox Aurora</a></h4><div class="info"><span class="date">December 23, 2011</span> • Firefox Aurora, For Android</div></li></ul>
 <?php
@@ -339,6 +386,27 @@ if ($Fproduct == 'desktop_aurora') {
         <p>Firefox <?=$newsletter_product_name?> is on your favorite social media sites. Connect with us and join the conversation!</p>
         <a href="http://www.facebook.com/Firefox<?=$newsletter_product_name?>" class="button">Join the conversation<span> »</span></a>
     </div>
+<?php
+} else if ($Fproduct == 'mobile_aurora') {
+?>
+      <div id="stay-connected" class="column">
+          <h3>Stay connected <span>with Aurora</span></h3>
+          <ul>
+            <li id="link-facebook">
+              <a href="http://www.facebook.com/FirefoxAurora">
+                <span class="title">Facebook »</span>
+                <span class="desc">Become a fan of Firefox Aurora</span>
+              </a>
+            </li>
+            <li id="link-affiliates">
+              <a href="https://affiliates.mozilla.org">
+                <span class="title">Firefox Affiliates »</span>
+                <span class="desc">Share Firefox Aurora with the world</span>
+              </a>
+            </li>
+          </ul>
+          </ul>
+      </div>
 <?php
 }
 ?>
@@ -860,7 +928,24 @@ _tag.dcsCollect();
 <noscript>
 <div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="//statse.webtrendslive.com/dcsis0ifv10000gg3ag82u4rf_7b1e/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.6.2"/></div>
 </noscript>    <script src="//www.mozilla.org/en-US/tabzilla/media/js/tabzilla.js"></script>
-  
+<?php
+if ($Fproduct == 'mobile_beta' || $Fproduct == 'mobile_aurora') {
+?>
+      <script src="//www.mozilla.org/js/jquery/jquery-basic-slider.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#features').bjqs({
+                'width' : 350,
+                'height' : <?=(($Fproduct == 'mobile_beta') ? '170' : '180')?>,
+                'showMarkers' : true,
+                'showControls' : false,
+                'centerMarkers' : true
+            });
+        });
+    </script>
+<?php
+}
+?>
     <script>
     // <![CDATA[
 

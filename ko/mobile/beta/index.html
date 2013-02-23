@@ -1,0 +1,76 @@
+<?
+  require $_SERVER['DOCUMENT_ROOT']."/ko/includes/common.inc";
+  
+  $Htitle="Mozilla Firefox 웹 브라우저 | Beta 안드로이드 버전 다운로드";
+  $Hfontface="<style>
+    /* MetaWebPro font family licensed from fontshop.com. WOFF-FTW! */
+    @font-face {
+        font-family: 'MetaBlack';
+        src: url('http://www.mozilla.org/img/fonts/MetaWebPro-Black.eot');
+        src: local('☺'), url('http://www.mozilla.org/img/fonts/MetaWebPro-Black.woff') format('woff');
+        font-weight: bold;
+    }
+    </style>";
+  $Hextraheader="<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800,800italic,700italic' rel='stylesheet' type='text/css'>"
+    . '<link rel="stylesheet" href="//www.mozilla.org/style/covehead/mobile-beta.css" media="screen" />
+    <META name="WT.z_pdp" content="firefox_mobile_beta" /> 
+    <META name="WT.si_n" content="Firefox Beta for Mobile" />';
+  $Hid="beta";
+  $Hclass="";
+
+  include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/header-beta.php";
+?>
+
+<div id="main-feature">
+    <div id="relnoteswitcher">
+        <h4>Firefox 베타 버전:</h4>
+        <ul>
+            <li><a href="/ko/firefox/beta/">데스크톱</a></li>
+            <li><span>모바일</span></li>
+        </ul>
+    </div>
+    <h2><img src="//www.mozilla.org/img/covehead/firefox/beta/title.png" alt="Firefox Beta" height="69" width="412" /></h2>
+    <p>Firefox의 차기 버전이 될 베타 다운로드</p>
+        <div id="download_beta_mobile_button">
+        <div class="home-download beta-download">
+            <a href="https://market.android.com/details?id=org.mozilla.firefox_beta"
+               class="download-link download-firefox"
+               onclick="dcsMultiTrack('DCS.dcssip',
+                        document.location.host,'DCS.dcsuri',
+                        document.location.pathname,'WT.ti',
+                        document.title,'WT.dl',
+                        99,'WT.z_convert',
+                        'Firefox Beta for Mobile','WT.si_n',
+                        'Firefox Beta for Mobile','WT.si_x', '3');">
+                <span class="download-content">
+                <span class="download-title">다운로드</span>
+                Firefox Beta 모바일
+                </span>
+                <img src="//www.mozilla.org/img/covehead/channel/icon-mobile.png" alt="" />
+            </a>
+            <div class="download-other"><a href="/en-US/mobile/platforms/">지원 기기</a>  | 
+            <a href="/en-US/legal/privacy/firefox.html">개인 정보 보호 정책</a></div>
+        </div>
+        </div>
+    <div id="features">
+    <ul id="feature-list" class="bjqs">
+        <li>
+            <h3>1. 신규 기능 테스트</h3>
+            <p>최신 성능 향상 및 개인화, 보안 업데이트 등을 미리 경험해 보시고 의견을 주십시오.</p>
+        </li>
+        <li>
+            <h3>2. 기존 기능 개선</h3>
+            <p>안정 환경에서 다양한 기능 및 성능을 테스트 하시고 저희에게 의견을 보내 주십시오.</p>
+        </li>
+        <li>
+            <h3>3. 일반 사용자 돕기</h3>
+            <p>여러분의 테스트가 다음 버전에서 사용할 4억 5천만 사용자에게 큰 도움이 될 것입니다. 지금 참여해 주십시오.</p>
+        </li>
+    </ul>
+  </div>
+</div>
+
+<?
+  $Fproduct = "mobile_beta";
+  include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer-beta.php";
+?>
