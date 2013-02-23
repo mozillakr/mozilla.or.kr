@@ -1,3 +1,10 @@
+RedirectMatch ^/ko/firefox/$ /ko/firefox/fx/
+
+# /ko/firefox/channel/
+RedirectMatch ^/firefox/$ /ko/firefox/fx/#desktop
+RedirectMatch ^/firefox/beta/$ /ko/firefox/beta/
+RedirectMatch ^/firefox/aurora/$ /ko/firefox/aurora/
+
 Redirect /media/img/mosaic/loading.gif http://www.mozilla.org/media/img/mosaic/loading.gif
 
 # Add video types
