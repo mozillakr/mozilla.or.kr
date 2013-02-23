@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024">
+    <title><?=$Htitle?></title>
+    <meta name="og:image" content="//www.mozilla.org/img/firefox-100.jpg">
+    <meta name="Description" content="Download and test Firefox future releases. Experience the newest innovations with the Aurora or Beta builds.">
+    <?=$Hfontface?>
+    <link href="//www.mozilla.org/includes/min/min.css?g=css&_d=20120207" rel="stylesheet">
+    <link href="//www.mozilla.org/tabzilla/media/css/tabzilla.css" rel="stylesheet">
+    <script src="//www.mozilla.org/includes/min/min.js?g=js"></script>
+    <?=$Hextraheader?>
+    <META name="WT.si_x" content="2" />
+<style>
+#download #update-notice { display: none; }
+
+#update-notice {
+    background: rgb(20,20,20);
+    background: rgba(38, 38, 38, 0.95);
+    border-bottom: 2px solid #686868;
+    text-shadow: 0 1px #000;
+    -moz-text-shadow: 0 1px #000;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    z-index: 99;
+    line-height: 1;
+}
+
+#update-notice.bottom {
+    position: fixed;
+    bottom: 0;
+}
+
+#update-notice .container {
+    text-align: left;
+    padding: 15px 10px 15px 140px;
+    width: 800px;
+    display: inline-block;
+    margin: 0 auto;
+    background: url(//www.mozilla.org/img/covehead/firefox/update-creature.png) 0 100% no-repeat;
+    position: relative;
+}
+
+#update-notice .message {
+    float: left;
+    width: 600px;
+}
+
+#update-notice h2 {
+    letter-spacing: normal;
+    text-transform: none;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 18px;
+    font-style: normal;
+    margin: 0 0 5px 0;
+    color: #fff;
+}
+
+#update-notice p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 0;
+}
+
+#update-notice p.action {
+    width: 200px;
+    margin: 0;
+    text-align: center;
+    float: right;
+}
+
+#home #update-notice p.action {
+    display: none;
+}
+
+#update-notice p.action span {
+    display: block;
+}
+
+#update-notice p.action span a {
+    color: #6ba4ff;
+}
+
+#update-notice .button {
+    display: inline-block;
+    padding: 6px 16px 8px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1),
+                0 -2px rgba(0, 0, 0, 0.1) inset;
+    background:-moz-linear-gradient(top, #84C63C, #489615);
+    background-color: #489615;
+    color: #fff;
+    font-size: 16px;
+    font-style: italic;
+    text-decoration: none;
+    text-shadow: 1px 1px rgba(0,0,0,0.4);
+}
+
+#update-notice .close {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    background: url(//www.mozilla.org/img/covehead/firefox/update-close.png) 0 0 no-repeat;
+    height: 25px;
+    width: 25px;
+    overflow: hidden;
+    text-indent: -1000em;
+}
+
+#update-notice .close:hover,
+#update-notice .close:focus {
+    background-position: -25px 0;
+}
+
+</style>
+
+<script>
+var _gaq = _gaq || [];
+var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+_gaq.push(['_setAccount', 'UA-36116321-1']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_setAllowAnchor', true]);
+_gaq.push(['_trackPageview']);
+(function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    var prefix = ('https:' == document.location.protocol ? 'https://ssl' :
+                  'http://www');
+    ga.src = prefix + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</head>
+
+<body id="<?=$Hid?>" class="<?=$Hclass?>">
+
+<script>// <![CDATA[
+// add classes to body to indicate browser version and JavaScript availabiliy
+if (document.body.className == '') {
+    document.body.className = 'js';
+} else {
+    document.body.className += ' js';
+}
+
+if (gPlatform == 1) {
+    document.body.className += ' platform-windows';
+} else if (gPlatform == 3 || gPlatform == 4) {
+    document.body.className += ' platform-mac';
+} else if (gPlatform == 2) {
+    document.body.className += ' platform-linux';
+}
+
+// ]]></script>
+
+<noscript><div id="no-js-feature"></div></noscript>
+
+<div id="outer-wrapper">
+<div id="wrapper">
+<div id="doc">
+
+    <div id="nav-access">
+        <a href="#nav-main">skip to Navigation</a>
+        <a href="#lang_form">switch language</a>
+    </div>
+
+    <!-- start #header -->
+    <div id="header">
+        <div>
+        <h1>
+                  <a href="/en-US/firefox/" title="Back to home page">Mozilla Firefox</a>
+                </h1>
+
+        <a href="http://www.mozilla.org/" class="mozilla" id="tabzilla">mozilla</a>
+        
+<!-- start menu #nav-main -->
+<div id="nav-main" role="navigation">
+  <ul role="menubar">
+    <li id="nav-main-features"  class="first"><a aria-haspopup="true" aria-owns="nav-main-features-submenu" tabindex="0" href="/en-US/firefox/features/">Desktop</a><ul id="nav-main-features-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="/en-US/firefox/features/">Features</a></li><li ><a tabindex="-1" href="/en-US/firefox/customize/">Customize</a></li><li ><a tabindex="-1" href="/en-US/firefox/performance/">Performance</a></li><li ><a tabindex="-1" href="/en-US/firefox/technology/">Technology</a></li><li  class="last"><a tabindex="-1" href="/en-US/firefox/security/">Privacy &amp; Security</a></li></ul></li>
+    <li id="nav-main-mobile" ><a aria-haspopup="true" aria-owns="nav-main-mobile-submenu" tabindex="0" href="/en-US/mobile/">Mobile</a><ul id="nav-main-mobile-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="/en-US/mobile/">Download</a></li><li ><a tabindex="-1" href="/en-US/mobile/features/">Features</a></li><li ><a tabindex="-1" href="https://addons.mozilla.org/en-US/mobile/?browse=featured">Customize</a></li><li  class="last"><a tabindex="-1" href="/en-US/mobile/faq/">FAQ</a></li></ul></li>
+    <li id="nav-main-releases" ><a aria-haspopup="true" aria-owns="nav-main-releases-submenu" tabindex="0" href="/en-US/firefox/channel/">Releases</a><ul id="nav-main-releases-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="/en-US/firefox/channel/">Overview</a></li><li ><a tabindex="-1" href="/en-US/firefox/aurora/">Firefox Aurora</a></li><li ><a tabindex="-1" href="/beta/">Firefox Beta</a></li><li ><a tabindex="-1" href="/en-US/firefox/">Firefox</a></li><li  class="last"><a tabindex="-1" href="/en-US/firefox/organizations/">Firefox for Organizations</a></li></ul></li>
+    <li id="nav-main-addons" ><a aria-haspopup="true" aria-owns="nav-main-addons-submenu" tabindex="0" href="https://addons.mozilla.org/">Add-ons</a><ul id="nav-main-addons-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="https://addons.mozilla.org/firefox/">Desktop Add-ons</a></li><li ><a tabindex="-1" href="https://addons.mozilla.org/mobile/">Mobile Add-ons</a></li><li  class="last"><a tabindex="-1" href="http://www.getpersonas.com/">Personas</a></li></ul></li>
+    <li id="nav-main-support" ><a aria-haspopup="true" aria-owns="nav-main-support-submenu" tabindex="0" href="http://support.mozilla.org/">Support</a><ul id="nav-main-support-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="http://support.mozilla.org/en-US/kb/">Desktop Support</a></li><li  class="last"><a tabindex="-1" href="http://support.mozilla.org/mobile">Mobile Support</a></li></ul></li>
+    <li id="nav-main-about"  class="last"><a aria-haspopup="true" aria-owns="nav-main-about-submenu" tabindex="0" href="/en-US/firefox/about/">About</a><ul id="nav-main-about-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="http://blog.mozilla.com/">Blog</a></li><li ><a tabindex="-1" href="/en-US/firefox/about/">About Firefox</a></li><li ><a tabindex="-1" href="http://www.mozilla.org/join">Join Mozilla</a></li><li ><a tabindex="-1" href="/en-US/about/participate/">Participate</a></li><li ><a tabindex="-1" href="/en-US/press/">Press Center</a></li><li ><a tabindex="-1" href="/en-US/firefox/brand/">Brand Toolkit</a></li><li ><a tabindex="-1" href="/en-US/about/careers.html">Careers</a></li><li ><a tabindex="-1" href="/en-US/about/partnerships.html">Partnerships</a></li><li  class="last"><a tabindex="-1" href="/en-US/about/contact.html">Contact Us</a></li></ul></li>
+  </ul>
+</div>
+<!-- end menu #nav-main -->
+
+        </div>
+    </div>
+    <!-- end #header -->
