@@ -46,3 +46,40 @@ ul.links h4 a:after {
 #contribute #opportunities nav li {
 	font-family: 'Open Sans', 'Apple SD Gothic Neo', "나눔고딕", "맑은 고딕", "Malgun Gothic", AppleGothic, "Lucida Grande", Tahoma, Verdana, "돋움", Dotum, sans-serif;
 }
+
+
+@media only screen and (min-width:760px) {
+
+	.billboard h2 {
+	    font-size: 40px;
+	    letter-spacing: -2px;
+	    line-height: 1.4em;
+	}
+
+	#home-news, #home-promos, #home-about {
+	    float: left;
+	    margin: 0 20px 20px;
+	    width: 200px;
+	    word-spacing: 2px;
+	    line-height: 1.4em;
+	    font-size: 20px;
+	}
+
+	h4 {
+	    font-size: 20px;
+	    line-height: 1.4em;
+	}
+
+	#colophon {
+	    line-height: 1.5em;
+	    word-spacing: 2px;
+	}
+
+}
+
+@media only screen and (min-width:1000px) {
+	#home-news, #home-promos, #home-about {
+	    margin: 0 20px 20px;
+	    width: 290px;
+	}
+}
