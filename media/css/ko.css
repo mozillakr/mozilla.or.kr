@@ -64,8 +64,9 @@ ul.links h4 a:after {
 	    line-height: 1.4em;
 	    font-size: 20px;
 	}
-
-	h4 {
+	#home-news h4, 
+	#home-promos h4, 
+	#home-about h4 {
 	    font-size: 20px;
 	    line-height: 1.4em;
 	}
