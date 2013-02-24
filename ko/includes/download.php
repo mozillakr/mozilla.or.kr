@@ -91,7 +91,7 @@ function download_button_desktop($button, $fx_version, $style) {
     </p>
   
     <small class="download-other">
-    <a href="/ko/firefox/all.html">시스템 &amp; 언어선택</a> |
+    <a href="/ko/firefox/all/">시스템 &amp; 언어선택</a> |
     <a href="/ko/firefox/notes">변경내역</a> |
     <a href="/ko/legal/privacy/firefox.html">개인정보 정책</a>
   </small>
@@ -148,7 +148,7 @@ function download_button_mobile($button, $version, $style) {
     </p>
   
     <small class="download-other">
-    <a href="/ko/firefox/all.html">시스템 &amp; 언어선택</a> |
+    <a href="/ko/firefox/all/">시스템 &amp; 언어선택</a> |
     <a href="/ko/firefox/notes">변경내역</a> |
     <a href="/ko/legal/privacy/firefox.html">개인정보 정책</a>
   </small>

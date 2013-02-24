@@ -88,5 +88,7 @@ if (isset($custom_logo)) {
 }
 ?>
         
+<?=$breadcrumbs?>
+
       </header>
 
