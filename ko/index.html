@@ -32,15 +32,16 @@
 
   <div class="pager-content">
   
-    <div class="pager-page default-page" id="promo-storyvideo">
+    <div class="pager-page default-page" id="promo-mwc-preview">
       <script>// <![CDATA[
-        document.getElementById('promo-storyvideo').id = 'page-promo-storyvideo';
+      document.getElementById('promo-mwc-preview').id = 'page-promo-mwc-preview';
       // ]]></script>
-      <a href="https://donate.mozilla.org/Mozilla-Story7?WT.mc_id=mostoryvideo&amp;WT.mc_ev=click" class="container">
-        <img src="http://www.mozilla.org/media/img/home/promo-storyvideo.jpg" alt="">
-        <div>
-          <h3>더 나은 웹을 만들어 주세요!</h3>
-          <h4>Mozilla가 어떻게 웹을 멋진 곳으로 만들고 있는지 동영상으로 살펴 보실 수 있습니다.</h4>
+      <a href="http://www.mozilla.org/ko/firefox/partners/" class="container">
+        <img src="http://mozorg.cdn.mozilla.net/media/img/home/promo-mwc-preview.jpg" alt="">
+        <div class="content">
+          <h3>웹은 플랫폼이다!</h3>
+          <h4>작년 모바일 웹 콩그레스 행사시 약속한대로 새로운 개방형 모바일 운영체제와 디바이스를 선보입니다.</h4>
+          <p class="go">더 자세히 보기</p>
         </div>
       </a>
     </div>
@@ -52,7 +53,7 @@
       // ]]></script>
       <a href="/ko/firefox/fx/?WT.mc_id=moandroid&amp;WT.mc_ev=click#mobile" class="container">
         <img src="http://www.mozilla.org/media/img/home/promo-android.jpg" alt="">
-        <div>
+        <div class="content">
                     <h3>빠름 똑똑함 안전!</h3>
           <h4>모바일용 웹 브라우저를 체험해 보십시오.</h4>
           <p class="go">Firefox for Android 다운로드</p>
@@ -66,7 +67,7 @@
       // ]]></script>
       <a href="/ko/firefoxos/" class="container">
         <img src="http://www.mozilla.org/media/img/home/promo-firefoxos.jpg" alt="">
-        <div>
+        <div class="content">
           <h3>Firefox OS!</h3>
           <h4>오픈 웹 모바일 기기를 위한 운영 체제입니다</h4>
           <p class="go">더 자세히 보기</p>
@@ -93,9 +94,9 @@
 <?
 	$xml_source = file_get_contents("http://www.mozilla.or.kr/community/feed");
         $x = simplexml_load_string($xml_source);
-	$i=1;
+	$i=0;
         foreach($x->channel->item as $item) {
-	if($i>6)  echo '
+	if($i<3)  echo '
 	<li>
 	   <h4><a href="'.$item->link.'">'.$item->title.'</a></h4>
 	</li>';
@@ -111,12 +112,12 @@
     <h3>주요 프로젝트</h3>
      <ul>
       <li>
-        <h4><a href="/ko/firefoxos/">Firefox OS</a></h4>
-        <p>새로운 모바일 웹 운영 체제가 옵니다.</p>
+        <h4><a href="/ko/mobile/">Firefox 안드로이드버전</a></h4>
+        <p>안드로이드에서 Firefox를 이용하세요.</p>
       </li>
       <li>
-        <h4><a href="https://affiliates.mozilla.org/ko/">Firefox 제휴</a></h4>
-        <p>Firefox를 알리는데 동참해 주십시오.</p>
+        <h4><a href="/ko/firefoxos/">Firefox OS</a></h4>
+        <p>새로운 모바일 웹 운영 체제입니다.</p>
       </li>
       <li>
         <h4><a href="/ko/apps/">Firefox Marketplace</a></h4>
@@ -129,24 +130,16 @@
     <h3>참여하기</h3>
     <ul>
       <li id="about-volunteer"><a href="/ko/contribute/">
-        <h4>자원 봉사</h4>
+        <h4>참여 하기</h4>
         <p>Mozilla Project의 다양한 영역을 알려드립니다.</p>
       </a></li>
-      <li id="about-work"><a href="http://careers.mozilla.org/">
-        <h4>채용 정보</h4>
-        <p>웹을 멋지게 만드는 직장으로 초대합니다.</p>
-      </a></li>
-      <li id="about-find"><a href="http://www.mozilla.org/en-US/about/mozilla-spaces/">
-        <h4>연락처(영문)</h4>
-        <p>전 세계 Mozilla 공간을 소개합니다.</p>
-      </a></li>
-      <li id="about-join"><a href="https://donate.mozilla.org/page/contribute/join-mozilla">
-        <h4>기부하기</h4>
-        <p>비영리 재단 활동에 직접 기부해 주십시오.</p>
+      <li id="about-work"><a href="/community/join">
+        <h4>한국 커뮤니티</h4>
+        <p>국내 사용자 및 개발자를 위한 공간입니다.</p>
       </a></li>
       <li id="about-learn"><a href="/ko/about/">
         <h4>더 자세히 보기</h4>
-        <p>Mozilla에 대한 더 상세한 정보를 보십시오.</p>
+        <p>Mozilla에 대한 더 상세한 정보를 살펴보세요.</p>
       </a></li>
     </ul>
   </section>
