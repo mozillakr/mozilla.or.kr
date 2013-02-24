@@ -30,7 +30,7 @@ function download_button_desktop($button, $fx_version, $style) {
     <ul class="download-list">
         <li class="os_windows">
       <a class="download-link download-firefox"
-         href="/ko/products/download.html?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko">
+         href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko">
                   <span class="download-content">
         <?php
         if ($style == "channel") {
@@ -44,7 +44,7 @@ function download_button_desktop($button, $fx_version, $style) {
     </li>
         <li class="os_linux">
       <a class="download-link download-firefox"
-         href="/ko/products/download.html?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko">
+         href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko">
                   <span class="download-content">
         <?php
         if ($style == "channel") {
@@ -58,7 +58,7 @@ function download_button_desktop($button, $fx_version, $style) {
     </li>
         <li class="os_osx">
       <a class="download-link download-firefox"
-         href="/ko/products/download.html?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko">
+         href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko">
                   <span class="download-content">
         <?php
         if ($style == "channel") {
