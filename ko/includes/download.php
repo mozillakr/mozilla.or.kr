@@ -1,7 +1,7 @@
 <?
 // 다운로드 버튼 만들기 
 
-function download_button_desktop($button, $fx_version) {
+function download_button_desktop($button, $fx_version, $style) {
 ?>
 <aside id="download" class="download-button download-button-<?=$button?>">
     <noscript>
@@ -32,32 +32,56 @@ function download_button_desktop($button, $fx_version) {
       <a class="download-link download-firefox"
          href="/ko/products/download.html?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=win&amp;lang=ko">
                   <span class="download-content">
-            <span class="download-title">Firefox</span>
-            무료 다운로드                      </span>
+        <?php
+        if ($style == "channel") {
+          echo('<span class="download-title">다운로드</span><span class="download-subtitle">윈도우용</span>');
+        } else {
+          echo('<span class="download-title">Firefox</span> 무료 다운로드');
+        }
+        ?>
+        </span>
               </a>
     </li>
         <li class="os_linux">
       <a class="download-link download-firefox"
          href="/ko/products/download.html?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=linux&amp;lang=ko">
                   <span class="download-content">
-            <span class="download-title">Firefox</span>
-            무료 다운로드                      </span>
+        <?php
+        if ($style == "channel") {
+          echo('<span class="download-title">다운로드</span><span class="download-subtitle">리눅스용</span>');
+        } else {
+          echo('<span class="download-title">Firefox</span> 무료 다운로드');
+        }
+        ?>
+        </span>
               </a>
     </li>
         <li class="os_osx">
       <a class="download-link download-firefox"
          href="/ko/products/download.html?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko"         data-direct-link="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko">
                   <span class="download-content">
-            <span class="download-title">Firefox</span>
-            무료 다운로드                      </span>
+        <?php
+        if ($style == "channel") {
+          echo('<span class="download-title">다운로드</span><span class="download-subtitle">맥오에스용</span>');
+        } else {
+          echo('<span class="download-title">Firefox</span> 무료 다운로드');
+        }
+        ?>
+        </span>
               </a>
     </li>
         <li class="os_android">
       <a class="download-link download-firefox"
          href="https://market.android.com/details?id=org.mozilla.firefox">
                   <span class="download-content">
-            <span class="download-title">Firefox</span>
-            무료 다운로드                      </span>
+        <?php
+        if ($style == "channel") {
+          echo('<span class="download-title">다운로드</span><span class="download-subtitle">안드로이드용</span>');
+        } else {
+          echo('<span class="download-title">Firefox</span> 무료 다운로드');
+        }
+        ?>
+        </span>
               </a>
     </li>
       </ul>
@@ -67,7 +91,7 @@ function download_button_desktop($button, $fx_version) {
     </p>
   
     <small class="download-other">
-    <a href="/ko/firefox/all.html">시스템 & 언어선택</a> |
+    <a href="/ko/firefox/all.html">시스템 &amp; 언어선택</a> |
     <a href="/ko/firefox/notes">변경내역</a> |
     <a href="/ko/legal/privacy/firefox.html">개인정보 정책</a>
   </small>
@@ -75,17 +99,26 @@ function download_button_desktop($button, $fx_version) {
 </aside>
 <? }
 
-function download_button_mobile($button, $version) { 
-
-	if($version=="_aurora") {
+function download_button_mobile($button, $version, $style) { 
+	if($style == "apps" || $style == "channel") {
+    if ($version == '_aurora') {
+      $id_prefix = 'aurora';
+      $download_url = 'https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/fennec-' . $fx_aurora_version . '.multi.android-arm.apk';
+    } else if ($version == '_beta') {
+      $id_prefix = 'beta';
+      $download_url = 'https://market.android.com/details?id=org.mozilla.firefox_beta';
+    } else {
+      $id_prefix = 'primary';
+      $download_url = 'https://market.android.com/details?id=org.mozilla.firefox';
+    }
 ?>
-<aside id="aurora-download-mobile" class="download-button download-button-small">
+<aside id="<?=$id_prefix?>-download-mobile" class="download-button download-button-small">
     <noscript>
     
 <div class="download download-dumb">
   <h4>Firefox 다운로드 — 한국어</h4>
   <ul>
-          <li><a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/fennec-<?=$fx_aurora_version?>.multi.android-arm.apk" class="button-white">안드로이드용</a></li>
+          <li><a href="<?=$download_url?>" class="button-white">안드로이드용</a></li>
       </ul>
 </div>  </noscript>
   
@@ -94,14 +127,14 @@ function download_button_mobile($button, $version) {
 <div class="download download-dumb">
   <h4>Firefox 다운로드 — 한국어</h4>
   <ul>
-          <li><a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/fennec-<?=$fx_aurora_version?>.multi.android-arm.apk" class="button-white">안드로이드용</a></li>
+          <li><a href="" class="button-white">안드로이드용</a></li>
       </ul>
 </div>  </div>
   
     <ul class="download-list">
         <li class="">
       <a class="download-link download-firefox-mobile"
-         href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/fennec-<?=$fx_aurora_version?>.multi.android-arm.apk">
+         href="<?=$download_url?>">
                   <span class="download-content">
             <span class="download-title">다운로드</span>
               <span class="download-subtitle">(안드로이드용)</span>
@@ -115,7 +148,7 @@ function download_button_mobile($button, $version) {
     </p>
   
     <small class="download-other">
-    <a href="/ko/firefox/all.html">시스템 & 언어선택</a> |
+    <a href="/ko/firefox/all.html">시스템 &amp; 언어선택</a> |
     <a href="/ko/firefox/notes">변경내역</a> |
     <a href="/ko/legal/privacy/firefox.html">개인정보 정책</a>
   </small>
