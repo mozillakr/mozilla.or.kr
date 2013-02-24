@@ -26,28 +26,38 @@
       // ]]></script>
       <section>
         <hgroup>
-          <h1>안드로이드용 Firefox</h1>
-          <h2>빠르고 똑똑하고 안전합니다</h2>
+          <h1>Firefox 안드로이드 버전</h1>
         </hgroup>
         <div id="download-column">
-          <?=download_button_large()?> 
+          <div id="rating-column">
+            <span>4.5 별점</span>
+          </div>
+          <?=download_button_small()?> 
         </div>
-        <div id="photo-column">
-          <img src="http://www.mozilla.org/media/img/firefox/fx/mobile-phone.jpg" alt="안드로이드용 Firefox" />
-          <span id="phone-screen"></span>
-        </div>
-        <ul class="sub-features">
-          <li id="supported">
-            <a class="link" href="/ko/firefox/mobile/platforms/">지원 단말기 목록 보기&nbsp;»</a>
-          </li>
-          <li id="firefox-mobile">
-            <a class="link" href="/ko/firefox/mobile/features/">안드로이드용 Firefox에 대해 알아보기&nbsp;»</a>
-          </li>
-          <li id="playstore-mobile">
-            <a class="link" href="https://market.android.com/details?id=org.mozilla.firefox">Google Play 스토어에서 안드로이드용 Firefox 무료로 받기&nbsp;»</a>
-          </li>
-        </ul>
+        <aside id="phone-tablet-image">
+          <img alt="Android Phone and Tablet" src="http://www.mozilla.org/media/img/firefox/fx/android-phone-tablet.png">
+        </aside>
       </section>
+      <ul class="sub-features">
+        <li id="playstore-mobile">
+          <a class="mobile-link" href="https://market.android.com/details?id=org.mozilla.firefox">
+            <h3>Firefox 안드로이드 버전 다운로드</h3>
+            <span class="link">Google Play 혹은 모바일 브라우저에서 바로 다운로드 가능합니다.&nbsp;»</span>
+          </a>
+        </li>
+        <li id="firefox-mobile">
+          <a class="mobile-link" href="/ko/firefox/mobile/features/">
+            <h3>주요 기능</h3>
+            <span class="link">모바일에 최적화된 혁신적인 기술을 살펴 보십시오. &nbsp;»</span>
+          </a>      
+        </li>
+        <li id="supported">
+          <a class="mobile-link" href="/ko/firefox/mobile/platforms/">
+            <h3>지원 단말</h3>
+            <span class="link">여러분의 스마트폰을 지원하는지 알아 보십시오. &nbsp;»</span>
+          </a>
+        </li>
+      </ul>
     </div>
 
     <div class="pager-page desktop-content" id="desktop">
