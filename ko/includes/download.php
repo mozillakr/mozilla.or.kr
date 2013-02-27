@@ -180,14 +180,26 @@ function download_button_mobile($button, $version, $style) {
 	<ul class="download-list">
 		<li class="">
 	<a class="download-link download-firefox-mobile"
-		href="https://market.android.com/details?id=org.mozilla.firefox<?=$version?>">
-		<span class="download-content-wrapper"> <span class="download-content">
+		href="https://market.android.com/details?id=org.mozilla.firefox<?=$version?>">  
+<?php
+if ($button == "small") {
+?>
+		<span class="download-content">
 			<span class="download-title">안드로이드용 Firefox</span>
-			무료 다운로드			<span class="download-info">
-	Google Play 스토어로 이동
+		</span>
+<?php
+} else {
+?>
+    <span class="download-content-wrapper"> <span class="download-content">
+      <span class="download-title">안드로이드용 Firefox</span>
+      무료 다운로드     <span class="download-info">
+  Google Play 스토어로 이동
   </span>
 		</span>
        </span>
+<?php
+}
+?>
 	  </a>
 	</li>
 		</ul>
