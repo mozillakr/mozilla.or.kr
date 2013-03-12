@@ -30,7 +30,7 @@
           </ul>
 
           <div class="desktop download-button-wrapper">
-            <?php download_button_desktop(); ?>
+            <?php download_button_desktop('', $fx_version); ?>
           </div>
           <div class="mobile download-button-wrapper">
             <?php download_button_mobile(); ?>
@@ -44,7 +44,7 @@
 
       <div class="scene" id="scene2">
         <p class="thankyou" tabindex="0">
-          Firefox를 다운받아 주셔서 감사합니다! 비영리 재단으로서 우리는 다양한 영향으로부터 자유로은 현식을 보여드릴 수 있습니다. 차별성을 느끼실 수 있습니다.
+          Firefox를 다운받아 주셔서 감사합니다! 비영리 재단으로서 우리는 다양한 영향력에 구애받지 않는 혁신을 보여드릴 수 있습니다. 차별성을 느끼실 수 있습니다.
         </p>
 
         <ol class="installation">
@@ -53,7 +53,7 @@
             <span class="install-win">
               Run을 누르면 시작됩니다.
             </span>
-            다운로드가 자동으로 시작됩니다. 그렇지 않으면 <a id="direct-download-link" href="">다운로드 링크</a>를 눌러주세요. 몇분밖에 걸리지 않습니다.
+            다운로드가 자동으로 시작됩니다. 그렇지 않으면 <a id="direct-download-link" href="https://download.mozilla.org/?product=firefox-<?=$fx_version?>&amp;os=osx&amp;lang=ko">다운로드 링크</a>를 누르세요. 얼마 걸리지 않습니다.
           </li>
           <li id="install2">
             <strong>2.</strong>
