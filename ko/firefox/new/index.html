@@ -1,0 +1,88 @@
+<? 
+ 	require $_SERVER['DOCUMENT_ROOT']."/ko/includes/common.inc";
+	
+	$Htitle="Mozilla Firefox 웹 브라우저 — 다운로드 — mozilla.or.kr";
+	$Hid="firefox-new";
+	$extra_css='<link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/firefox_new-min.css?build='.$build_code.'" /><meta name="og:image" content="http://www.mozilla.org/media/img/firefox/firefox-100.jpg">';
+  $show_navigation = false;
+  $custom_logo = '<h2><a href="/ko/"><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png" alt="Firefox for desktop" /></a></h2>';
+
+	include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/header-fx.php";
+	include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/download.php";
+?>
+
+<main role="main">
+  <div id="main-feature">
+    <div class="row">
+      <img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/firefox-logo.png" alt="Firefox" />
+      <h1 class="large">내재된 <span>차별성</span></h1>
+    </div>
+  </div>
+
+  <div class="theater" id="theater-firefox">
+    <div class="stage" id="stage-firefox">
+      <div class="scene" id="scene1">
+        <div class="container" id="features-download">
+          <ul id="features">
+            <li>비영리 <br />재단에 의한</li>
+            <li>혁신적인<br /> 기능</li>
+            <li>빠름, 유연함,<br /> 안전함</li>
+          </ul>
+
+          <div class="desktop download-button-wrapper">
+            <?php download_button_desktop(); ?>
+          </div>
+          <div class="mobile download-button-wrapper">
+            <?php download_button_mobile(); ?>
+          </div>
+        </div>
+
+        <div class="desktop">
+          <img class="platform-img js" src="" data-src="//mozorg.cdn.mozilla.net/media/img/firefox/new/browser.png" alt="Firefox screenshot" id="firefox-screenshot"><noscript><img class="platform-img win" src="//mozorg.cdn.mozilla.net/media/img/firefox/new/browser.png" alt="Firefox screenshot" id="firefox-screenshot"></noscript>
+        </div>
+      </div> <!-- /#scene1 -->
+
+      <div class="scene" id="scene2">
+        <p class="thankyou" tabindex="0">
+          Firefox를 다운받아 주셔서 감사합니다! 비영리 재단으로서 우리는 다양한 영향으로부터 자유로은 현식을 보여드릴 수 있습니다. 차별성을 느끼실 수 있습니다.
+        </p>
+
+        <ol class="installation">
+          <li id="install1">
+            <strong>1.</strong>
+            <span class="install-win">
+              Run을 누르면 시작됩니다.
+            </span>
+            다운로드가 자동으로 시작됩니다. 그렇지 않으면 <a id="direct-download-link" href="">다운로드 링크</a>를 눌러주세요. 몇분밖에 걸리지 않습니다.
+          </li>
+          <li id="install2">
+            <strong>2.</strong>
+            <span class="install-osx">
+              창이 뜨면 Firefox 아이콘을 Applications 폴더 이미지로 이동시키세요.
+            </span>
+            <span class="install-win">
+              Run을 누르면 Firefox 설치 마법사가 시작되니다. 그 다음은 화면에 나오는 과정을 따르면 됩니다(설치과정을 최대한 간단한게 만들었습니다).
+            </span>
+          </li>
+          <li id="install3">
+            <strong>3.</strong>
+            <span class="install-osx">
+              Firefox 아이콘을 독에 내려놓으세요. 웹을 사용할때마다 아이콘을 눌러주세요!
+            </span>
+            <span class="install-win">
+              새로운 시대의 웹서핑을 할 준비가 되었습니다. 언제든지 Firefox 아이콘을 더블클릭 하세요.
+            </span>
+          </li>
+        </ol>
+      </div> <!-- /#scene2 -->
+
+    </div> <!-- /#stage -->
+  </div>
+</main>
+
+<?
+	$extra_js='<script src="//mozorg.cdn.mozilla.net/media/js/firefox_new-min.js?build='.$build_code.'"></script>';
+  $is_firefox_new = true;
+
+	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
+?>

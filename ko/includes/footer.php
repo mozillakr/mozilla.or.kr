@@ -1,7 +1,24 @@
  </div><!-- close #wrapper -->
  <footer id="colophon">
       <div class="row">
-
+<?php
+if ($is_firefox_new) {
+?>
+      <ul class="primary">
+        <li><a href="http://www.mozilla.org/en-US/firefox/central/"><span>살펴보기</span></a></li>
+        <li><a href="/ko/firefox/features/"><span>데스크톱</span></a></li>
+        <li><a href="/ko/firefox/fx/"><span>모바일</span></a></li>
+        <li><a href="https://addons.mozilla.org"><span>부가 기능</span></a></li>
+        <li><a href="http://support.mozilla.org"><span>도움말</span></a></li>
+        <li><a href="/ko/about/"><span>소개</span></a></li>
+      </ul>
+      <ul class="secondary">
+        <li><a href="http://www.mozilla.org/en-US/privacy/">개인 정보 보호 정책(영문)</a></li>
+        <li><a href="http://www.mozilla.org/en-US/about/legal.html">법적 고지(영문)</a></li>
+      </ul>
+<?php
+} else {
+?>
           <div class="footer-logo">
               <a href="/"><img src="http://www.mozilla.org/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
           </div>
@@ -25,7 +42,9 @@
             <li><a href="http://facebook.com/mozillakr">Facebook</a></li>
             <li><a href="https://affiliates.mozilla.org/ko/">Firefox 제휴</a></li>
           </ul>
-          
+<?php
+}
+?>
       </div>
       </footer>
     
