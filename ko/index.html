@@ -96,7 +96,7 @@
         $x = simplexml_load_string($xml_source);
 	$i=0;
         foreach($x->channel->item as $item) {
-	if($i<3)  echo '
+	if($i<4)  echo '
 	<li>
 	   <h4><a href="'.$item->link.'">'.$item->title.'</a></h4>
 	</li>';
@@ -112,30 +112,38 @@
     <h3>주요 프로젝트</h3>
      <ul>
       <li>
+        <h4><a href="/ko/firefox/mobile/features/">Firefox 데스크톱</a></h4>
+        <p>윈도/맥/리눅스 모두를 지원하는 오픈 웹 브라우저</p>
+      </li>
+      <li>
         <h4><a href="/ko/firefox/mobile/features/">Firefox 안드로이드버전</a></h4>
-        <p>안드로이드에서 Firefox를 이용하세요.</p>
+        <p>안드로이드에서도 빠르고 안전한 맞춤 브라우저</p>
       </li>
       <li>
         <h4><a href="http://www.mozilla.org/ko/firefox/partners/">Firefox OS</a></h4>
-        <p>새로운 모바일 웹 운영 체제입니다.</p>
+        <p>새로운 개방형 모바일 웹 운영 체제(OS)</p>
       </li>
       <li>
         <h4><a href="/ko/apps/">Firefox Marketplace</a></h4>
-        <p>웹 개발자가 만든 웹앱을 배포할 수 있습니다.</p>
+        <p>웹개발자가 만든 웹앱을 다양한 채널로 배포 가능</p>
       </li>
     </ul>
   </section>
 
   <section id="home-about">
-    <h3>참여하기</h3>
+    <h3>참여 하기</h3>
     <ul>
-      <li id="about-volunteer"><a href="/ko/contribute/">
-        <h4>참여 하기</h4>
+      <li id="about-find"><a href="/ko/contribute/">
+        <h4>글로벌 참여 하기</h4>
         <p>Mozilla Project의 다양한 영역을 알려드립니다.</p>
       </a></li>
-      <li id="about-work"><a href="/community/join">
+      <li id="about-volunteer"><a href="/community/join">
         <h4>한국 커뮤니티</h4>
-        <p>국내 사용자 및 개발자를 위한 공간입니다.</p>
+        <p>국내 Mozilla 활동 및 참여 방법을 소개합니다.</p>
+      </a></li>
+      <li id="about-work"><a href="http://forums.mozilla.or.kr">
+        <h4>사용자 포럼</h4>
+        <p>일반 사용자 질문 및 답변, 정보 공유 공간입니다.</p>
       </a></li>
       <li id="about-learn"><a href="/ko/about/">
         <h4>더 자세히 보기</h4>
