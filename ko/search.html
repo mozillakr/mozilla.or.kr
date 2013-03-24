@@ -1,0 +1,34 @@
+<?
+        require $_SERVER['DOCUMENT_ROOT']."/ko/includes/common.inc";
+
+        $Htitle="Mozilla 검색 결과: ".$_GET['q'];
+        $Hid="firefox-fx";
+        $extra_css='<link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/firefox_fx-min.css?build='.$build_code.'" /><meta name="og:image" content="http://www.mozilla.org/media/img/firefox/firefox-100.jpg">';
+
+        include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/header-fx.php";
+        include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/download.php";
+?>
+
+<div id="main-pager" class="pager pager-with-tabs">
+
+<h2>검색결과: <?=$_GET['q']?></h2>
+<script>
+  (function() {
+    var cx = '007293501836867466220:_qmkgaaprw0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+
+<?
+        $extra_js='<script src="http://www.mozilla.org/media/js/firefox-resp-min.js?build='.$build_code.'"></script>';
+        include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
+?>
