@@ -83,7 +83,7 @@ if (isset($custom_logo)) {
   echo($custom_logo);
 } else {
 ?>
-        <h2><img src="http://www.mozilla.org/media/img/firefox/template/header-logo.png" alt="Mozilla Firefox" height="70" width="185" data-inverse-src="http://www.mozilla.org/media/img/firefox/template/header-logo-inverse.png"></h2>
+        <h2><a href="/ko"><img src="http://www.mozilla.org/media/img/firefox/template/header-logo.png" alt="Mozilla Firefox" height="70" width="185" data-inverse-src="http://www.mozilla.org/media/img/firefox/template/header-logo-inverse.png"></a></h2>
 <?php
 }
 ?>
