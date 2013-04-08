@@ -11,7 +11,9 @@
     <link href="//www.mozilla.org/tabzilla/media/css/tabzilla.css" rel="stylesheet">
     <script src="//www.mozilla.org/includes/min/min.js?g=js"></script>
     <?=$Hextraheader?>
-    <META name="WT.si_x" content="2" />
+<?php
+if ($print_download_css === true) {
+?>
 <style>
 #download #update-notice { display: none; }
 
@@ -117,26 +119,9 @@
 }
 
 </style>
-
-<script>
-var _gaq = _gaq || [];
-var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-_gaq.push(['_setAccount', 'UA-36116321-1']);
-_gaq.push(['_setAllowLinker', true]);
-_gaq.push(['_setAllowAnchor', true]);
-_gaq.push(['_trackPageview']);
-(function() {
-    var ga = document.createElement('script');
-    ga.type = 'text/javascript';
-    ga.async = true;
-    var prefix = ('https:' == document.location.protocol ? 'https://ssl' :
-                  'http://www');
-    ga.src = prefix + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(ga, s);
-})();
-</script>
+<?php
+}
+?>
 </head>
 
 <body id="<?=$Hid?>" class="<?=$Hclass?>">
@@ -179,6 +164,9 @@ if (gPlatform == 1) {
 
         <a href="http://www.mozilla.org/" class="mozilla" id="tabzilla">mozilla</a>
         
+<?php
+if (!isset($show_navigation) || $show_navigation != false) {
+?>
 <!-- start menu #nav-main -->
 <div id="nav-main" role="navigation">
   <ul role="menubar">
@@ -191,6 +179,9 @@ if (gPlatform == 1) {
   </ul>
 </div>
 <!-- end menu #nav-main -->
+<?php
+}
+?>
 
         </div>
     </div>
