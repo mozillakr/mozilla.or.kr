@@ -1,5 +1,8 @@
 RedirectMatch ^/ko/firefox/$ /ko/firefox/fx/
 
+RedirectMatch ^/about$ /ko/about/
+RedirectMatch ^/about/$ /ko/about/
+
 # /ko/firefox/channel/
 RedirectMatch ^/firefox/$ /ko/firefox/fx/#desktop
 RedirectMatch ^/beta/$ /ko/firefox/beta/
