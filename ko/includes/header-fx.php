@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?=$Htitle?></title>
-    <link href="http://www.mozilla.org/tabzilla/media/css/tabzilla.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=<?=$build_code?>">
     <!--[if lte IE 8]>
-    <script src="http://www.mozilla.org/media/js/libs/html5shiv.js"></script>
+    <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
     <![endif]-->
      <?=$extra_css?>
     <link rel="stylesheet" media="screen,projection,tv" href="/media/css/ko.css">
-    <link rel="shortcut icon" href="http://www.mozilla.org/media/img/favicon.ico">
-    <script src="http://www.mozilla.org/media/js/site-min.js?build=<?=$build_code?>"></script>
+    <link rel="shortcut icon" type="image/icon" href="//mozorg.cdn.mozilla.net/media/img/firefox/favicon.ico">
+    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=<?=$build_code?>"></script>
 </head>
 
   <body id="<?=$Hid?>" class="html-ltr sky">

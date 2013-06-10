@@ -48,10 +48,14 @@ if ($is_firefox_new) {
       </div>
       </footer>
     
-    <script src="/ko/tabzilla/tabzilla.js"></script>
     </div><!-- close #outer-wrapper -->
 
+    <!--[if IE 9]>
+      <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
+    <![endif]-->
+
       <script src="http://www.mozilla.org/media/js/mozorg-resp-min.js?build=<?=$build_code?>"></script>
+      <script src="/ko/tabzilla/tabzilla.js"></script>
       <?=$extra_js?>
       <script type="text/javascript">
         var _gaq = _gaq || [];
