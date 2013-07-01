@@ -2,7 +2,7 @@
           id="footer-email-form" action="#footer-email-form" method="post"
           onsubmit="dcsMultiTrack('DCS.dcsuri','/signmeup.button','WT.ti','Sign%20Me%20Up','WT.dl','26');">
       <input type="hidden" name="newsletter-footer" value="Y">
-      <input type="hidden" name="newsletter" value="mozilla-and-you">
+      <input type="hidden" name="newsletter" value="mozilla-and-you,<?=$Fxnews?>">
       <input type="hidden" name="source_url" value="<?=$Fxnewsurl?>">
 
       <h3>Firefox 뉴스 받아보기</h3>
