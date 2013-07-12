@@ -5,6 +5,6 @@
   $build_code ="62e0369";
 // version for download link
   $fx_version="22.0";
-  $fx_beta_version="22.0b5";  
-  $fx_aurora_version="23.0a2";
+  $fx_beta_version="23.0b4";  
+  $fx_aurora_version="24.0a2";
 ?>
