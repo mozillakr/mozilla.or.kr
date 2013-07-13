@@ -5,7 +5,7 @@
 if ($is_firefox_new) {
 ?>
       <ul class="primary">
-        <li><a href="http://www.mozilla.org/en-US/firefox/central/"><span>살펴보기</span></a></li>
+        <li><a href="/ko/firefox/central/"><span>살펴보기</span></a></li>
         <li><a href="/ko/firefox/features/"><span>데스크톱</span></a></li>
         <li><a href="/ko/firefox/fx/"><span>모바일</span></a></li>
         <li><a href="https://addons.mozilla.org"><span>부가 기능</span></a></li>
