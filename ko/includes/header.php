@@ -30,6 +30,8 @@
             <li class="last"><a href="/ko/contribute/">참여하기</a></li>
             </ul>
     </nav>
-     <h2><a href="/ko/"><img src="http://www.mozilla.org/media/img/sandstone/header-mozilla-stone.png" alt="mozilla"></a></h2>      
+    <?php if (!$hide_logo) { ?>
+    <h2><a href="/ko/"><img src="http://www.mozilla.org/media/img/sandstone/header-mozilla-stone.png" alt="mozilla"></a></h2>
+    <?php } ?>
   </header>
 
