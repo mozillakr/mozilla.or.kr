@@ -68,65 +68,64 @@
 <a href="#email-form-wrapper" id="signup-toggle-icon" class="newsletter-signup-toggle">등록하기</a>
 
 <div id="get-firefox-os">
-  <span id="keep-scrolling"></span>
-
-  <div id="adaptive-wrapper">
+  <div class="item-wrapper" id="every-moment">
     <div class="item phone-item" id="phone-item-intro">
       <div class="phone-wrapper" id="phone-wrapper-intro">
-        <div class="phone"></div>
-        <div id="screen-intro" class="screen screen-birthday"></div>
+        <div id="phone-hook">
+          <div class="adapt-feature-sprite adapt-feature-sprite-line" id="adapt-feature-sprite-blue-line"></div>
+          <div class="adapt-feature-sprite adapt-feature-sprite-line" id="adapt-feature-sprite-orange-line"></div>
+          
+          <div class="phone"></div>
+          <div id="screen-intro" class="screen-wrapper">
+            <div id="screen-intro-a" class="screen screen-birthday"></div>
+          </div>
+        </div>
         <div id="fox-wrapper-intro" class="fox-wrapper">
           <div class="fox"></div>
           <div class="tail"></div>
         </div>
       </div>
+    </div><!--/#phone-item-intro-->
+
+    <div id="intro-bg-a" class="intro-bg bg-birthday"></div>
+
+    <div class="item">
+      <section class="content">
+                <h2>삶의 순간을<br>위한 스마트폰</h2>
+        <p>여러분의 필요는 매 순간 바뀌고 있습니다. Firefox OS가 그런 이유로 만들어졌습니다. 이를 통해 삶의 매 순간의 요구를 채워줄 수 있고 참여를 통해 더 나은 세상을 만들 수 있는 방법을 제공합니다.</p>
+        <div id="primary-cta-phone">
+          <p><a class="button-green" href="#get-phone">오늘 Firefox OS 스마트폰을 받으세요!</a></p>
+          <p class="small">Firefox OS 최신 정보를 매월 메일로 받을 수 있습니다.</p>
+          <a class="button newsletter-signup-toggle" href="#email-form-wrapper">등록하기</a>
+        </div>
+        <div id="primary-cta-signup">
+          <p>Firefox OS 최신 정보를 매월 메일로 받을 수 있습니다.</p>
+          <a class="button newsletter-signup-toggle wide" href="#email-form-wrapper">등록하기</a>
+        </div>
+      </section>
+    </div><!--/.item-->
+  </div><!--/#every-moment-->
+  
+  <div id="adaptive-wrapper" class="nav-anchor">
+    <div id="adaptive-bgs">
+      <div id="adaptive-bg-birthday" class="adaptive-bg bg-birthday"></div>
+      <div id="adaptive-bg-cafe" class="adaptive-bg bg-cafe"></div>
+      <div id="adaptive-bg-soccer" class="adaptive-bg bg-soccer"></div>
+
+      <a title="Scroll down" href="#" id="keep-scrolling"></a>
     </div>
 
-    <div class="item phone-item" id="phone-item-soccer">
-      <div class="phone-wrapper" id="phone-wrapper-soccer">
-        <div class="phone"></div>
-        <div id="screen-soccer" class="screen screen-soccer"></div>
-        <div id="fox-wrapper-soccer" class="fox-wrapper">
-          <div class="fox"></div>
-          <div class="tail"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="item phone-item" id="phone-item-cafe">
-      <div class="phone-wrapper" id="phone-wrapper-cafe">
-        <div class="phone"></div>
-        <div id="screen-cafe" class="screen screen-cafe"></div>
-        <div id="fox-wrapper-cafe" class="fox-wrapper">
-          <div class="fox"></div>
-          <div class="tail"></div>
-        </div>
-      </div>
-    </div>
-    
     <div id="adaptive-app-search">
       <div id="scenes">
-        <div class="item-wrapper" id="every-moment">
-          <div id="intro-bg-a" class="intro-bg bg-birthday"></div>
-
-          <div class="item">
-            <section class="content">
-                            <h2>삶의 순간을<br>위한 스마트폰</h2>
-              <p>여러분의 필요는 매 순간 바뀌고 있습니다. Firefox OS가 그런 이유로 만들어졌습니다. 이를 통해 삶의 매 순간의 요구를 채워줄 수 있고 참여를 통해 더 나은 세상을 만들 수 있는 방법을 제공합니다.</p>
-              <div id="primary-cta-phone">
-                <p><a class="button-green" href="#get-phone">오늘 Firefox OS 스마트폰을 받으세요!</a></p>
-                <p class="small">Firefox OS 최신 정보를 매월 메일로 받을 수 있습니다.</p>
-                <a class="button newsletter-signup-toggle" href="#email-form-wrapper">등록하기</a>
+        <div class="item-wrapper bg-soccer" id="adapt1">
+          <div class="item phone-item" id="phone-item-soccer">
+            <div class="phone-wrapper" id="phone-wrapper-soccer">
+              <div class="phone"></div>
+              <div id="screen-soccer" class="screen-wrapper">
+                <div class="screen screen-soccer"></div>
               </div>
-              <div id="primary-cta-signup">
-                <p>Firefox OS 최신 정보를 매월 메일로 받을 수 있습니다.</p>
-                <a class="button newsletter-signup-toggle wide" href="#email-form-wrapper">등록하기</a>
-              </div>
-            </section>
+            </div>
           </div>
-        </div>
-      
-        <div class="item-wrapper bg-soccer nav-anchor" id="adapt1">
           <div class="item">
             <section class="content">
                             <h2>필요에 따라 <br>진화합니다!</h2>
@@ -137,6 +136,15 @@
         </div>
 
         <div class="item-wrapper bg-cafe" id="adapt2">
+          <div class="item phone-item" id="phone-item-cafe">
+            <div class="phone-wrapper" id="phone-wrapper-cafe">
+              <div class="phone"></div>
+              <div id="screen-cafe" class="screen-wrapper">
+                <div class="screen screen-cafe"></div>
+              </div>
+            </div>
+          </div>
+          
           <div class="item" id="adapt-features">
             <section class="content">
               <h2>진화하는 앱 검색</h2>
@@ -147,11 +155,7 @@
                 <li class="discover" id="adapt-feature-discover">Firefox Marketplace에서 찾아보기</li>
               </ul>
 
-              <div id="adapt-feature-sprites">
-                <div class="adapt-feature-sprite" id="adapt-feature-sprite-blue-line"></div>
-                <div class="adapt-feature-sprite" id="adapt-feature-sprite-orange-line"></div>
-                <div class="adapt-feature-sprite" id="adapt-feature-sprite-plus"></div>
-              </div>
+              <div class="adapt-feature-sprite" id="adapt-feature-sprite-plus"></div>
             </section>
           </div>
         </div>
@@ -160,12 +164,15 @@
         </div>
       </div><!--/#scenes-->
     </div><!--/#adaptive-app-search-->
+
+    <div id="adaptive-mask"></div>
+    <div id="fox-tail-tip"></div>
   </div><!--/#adaptive-wrapper-->
 
   <div id="scene-hooks">
-    <div id="soccer-hook" class="item scene-hook"></div>
     <div id="cafe-hook" class="item scene-hook"></div>
     <div id="birthday-hook" class="item scene-hook"></div>
+    <div id="soccer-hook" class="item scene-hook"></div>
   </div>
 
   <div id="fox-tail-tip"></div>
