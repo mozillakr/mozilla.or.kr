@@ -293,19 +293,18 @@ $insert_rule = array(
     'after' => '<a href="/community/" id="all-news">뉴스 더 보기', 
     'insert' => $news_html
   ), 
-  array(
-    'before' => '<p>Mozilla에 대한 더 상세한 정보를 살펴보세요.</p>
-      </a></li>
-    </ul>
-  </section>
+);
 
-</div>', 
-    'after' => '</div><!-- close #wrapper -->', 
-    'insert' => ''
+$remove_rule = array(
+  array(
+    'start' => '<form class="billboard newsletter-form"', 
+    'end' => '<small>We will only send you Mozilla-related information.</small></p>
+  </div>
+</form>'
   ), 
 );
 
 require_once('../lib/MozKr.class.php');
-$t = new MozKr('http://www.mozilla.org/en-US/', 'http://www.mozilla.or.kr/ko/', $replace_rule, $insert_rule);
+$t = new MozKr('http://www.mozilla.org/en-US/', 'http://www.mozilla.or.kr/ko/', $replace_rule, $insert_rule, $remove_rule);
 echo($t->get_content());
 ?>

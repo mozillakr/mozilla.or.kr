@@ -70,7 +70,7 @@ class MozKr {
 			$tail_position = strpos($html, $item['end']);
 
 			if ($head_position === false || $tail_position === false || $head_position > $tail_position) {
-				return $source;
+				return $html;
 			}
 
 			$head = substr($html, 0, $head_position);

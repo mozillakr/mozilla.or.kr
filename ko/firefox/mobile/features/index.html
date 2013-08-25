@@ -250,19 +250,17 @@ _gaq.push(['_trackPageview']);
      </script>"), 
 );
 
-$insert_rule = array(
+$remove_rule = array(
   array(
-    'before' => '<p><a href="https://market.android.com/details?id=org.mozilla.firefox">Google Play 스토어에서 안드로이드용 Firefox 무료 다운로드</a></p>
-    </section>
-  </div>
-
-</div>', 
-    'after' => '</div><!-- close #wrapper -->', 
-    'insert' => ''
+    'start' => '<form class="billboard newsletter-form"', 
+    'end' => '<small>We will only send you Mozilla-related information.</small>
+        </p>
+      </div>
+    </form>'
   ), 
 );
 
 require_once('../../../../lib/MozKr.class.php');
-$t = new MozKr('http://www.mozilla.org/en-US/firefox/mobile/features/', 'http://www.mozilla.or.kr/ko/firefox/mobile/features/', $replace_rule, $insert_rule);
+$t = new MozKr('http://www.mozilla.org/en-US/firefox/mobile/features/', 'http://www.mozilla.or.kr/ko/firefox/mobile/features/', $replace_rule, $insert_rule, $remove_rule);
 echo($t->get_content());
 ?>
