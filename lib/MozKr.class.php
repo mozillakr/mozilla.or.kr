@@ -13,7 +13,7 @@ class MozKr {
 	}
 
 	function get_content() {
-		if (file_exists($this->target_file_path)) {
+		if (file_exists($this->target_file_path) && strpos($_SERVER['HTTP_HOST'], 'localhost') === false) {
 			return file_get_contents($this->target_file_path);
 		} else {
 			return $this->generate_content();
