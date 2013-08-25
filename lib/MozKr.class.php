@@ -66,7 +66,7 @@ class MozKr {
 		$head_position = strpos($source, $start);
 		$tail_position = strpos($source, $end);
 
-		if ($head_position > $tail_position) {
+		if ($head_position === false || $tail_position === false || $head_position > $tail_position) {
 			return $source;
 		}
 
