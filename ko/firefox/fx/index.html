@@ -139,6 +139,15 @@
   	      var latestVersion = parseInt("17.0.1".split(".")[0], 10);
 	      var isFirefox = (/\sFirefox/.test(window.navigator.userAgent));
 	      var isMobile = (/\sMobile/.test(window.navigator.userAgent));
+$remove_rule = array(
+  array(
+    'start' => '<form class="billboard newsletter-form"', 
+    'end' => '<small>We will only send you Mozilla-related information.</small>
+        </p>
+      </div>
+    </form>'
+  ), 
+);
 
 	      // If Firefox is the latest version and not mobile,
 	      // hide the out-of-date messaging and show up-to-date
@@ -151,4 +160,5 @@
 	   });
 	</script>';
 	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
+$t = new MozKr('http://www.mozilla.org/en-US/firefox/fx/', 'http://www.mozilla.or.kr/ko/firefox/fx/', $replace_rule, $insert_rule, $remove_rule);
 ?>

@@ -1,6 +1,6 @@
 <?php
 class MozKr {
-	function __construct($source_url, $target_url, $replace_rule, $insert_rule) {
+	function __construct($source_url, $target_url, $replace_rule, $insert_rule, $remove_rule) {
 		$this->source_url = $source_url;
 		$this->target_url = $target_url;
 		$this->cache_directory = dirname(__FILE__) . '/../cache/';
@@ -9,6 +9,7 @@ class MozKr {
 
 		$this->replace_rule = $replace_rule;
 		$this->insert_rule = $insert_rule;
+		$this->remove_rule = $remove_rule;
 	}
 
 	function get_content() {
@@ -25,6 +26,7 @@ class MozKr {
 
 		$html = $this->replace_string($html);
 		$html = $this->insert_string($html);
+		$html = $this->remove_string($html);
 
 		file_put_contents($this->target_file_path, $html);
 		return $html;
@@ -57,6 +59,23 @@ class MozKr {
 	function insert_string($html) {
 		foreach ($this->insert_rule as $key => $item) {
 			$html = $this->insert_text_by_string($item['before'], $item['after'], $item['insert'], $html);
+		}
+
+		return $html;
+	}
+
+	function remove_string($html) {
+		foreach ($this->remove_rule as $key => $item) {
+			$head_position = strpos($html, $item['start']);
+			$tail_position = strpos($html, $item['end']);
+
+			if ($head_position === false || $tail_position === false || $head_position > $tail_position) {
+				return $source;
+			}
+
+			$head = substr($html, 0, $head_position);
+			$tail = substr($html, $tail_position + strlen($item['end']));
+			$html = $head . $tail;
 		}
 
 		return $html;
