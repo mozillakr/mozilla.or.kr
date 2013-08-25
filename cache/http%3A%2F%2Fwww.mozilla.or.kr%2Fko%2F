@@ -45,7 +45,7 @@
     <div id="wrapper">
 
           <header id="masthead">
-        <a href="/en-US/" id="tabzilla">Mozilla</a>
+        <a href="/ko/" id="tabzilla">Mozilla</a>
 
                 <nav id="nav-main" role="navigation">
           <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">주요 메뉴</span>

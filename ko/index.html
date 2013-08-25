@@ -1,23 +1,10 @@
 <?php
 $replace_rule = array(
+  // Document title
   array(
     'source' => '<title>Mozilla — Home of the Mozilla Project — mozilla.org</title>', 
     'target' => '<title>Mozilla - Mozilla 프로젝트</title>'), 
-  array(
-    'source' => '<span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>', 
-    'target' => '<span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">주요 메뉴</span>'), 
-  array(
-    'source' => '<li class="first"><a href="/en-US/mission/">Mission</a></li>', 
-    'target' => '<li class="first"><a href="/ko/mission/">사명</a></li>'), 
-  array(
-    'source' => '<li><a href="/en-US/about/">About</a></li>', 
-    'target' => '<li><a href="/ko/about/">소개</a></li>'), 
-  array(
-    'source' => '<li><a href="/en-US/products/">Products</a></li>', 
-    'target' => '<li><a href="/ko/products/">제품</a></li>'), 
-  array(
-    'source' => '<li class="last"><a href="/en-US/contribute/">Get Involved</a></li>', 
-    'target' => '<li class="last"><a href="/ko/contribute/">참여하기</a></li>'), 
+  // Main contents
   array(
     'source' => 'Doing good is part of our code', 
     'target' => '웹으로 세상을 바꾸고 있습니다!'), 
@@ -33,45 +20,6 @@ $replace_rule = array(
   array(
     'source' => 'Fast,&nbsp;flexible, <br> secure', 
     'target' => '빠르고<br> 보안 강화'), 
-  array(
-    'source' => 'Download Firefox — English (US)', 
-    'target' => 'Firefox 무료 다운로드- 한국어'), 
-  array(
-    'source' => '/en-US/products/download.html', 
-    'target' => '//www.mozilla.org/en-US/products/download.html'), 
-  array(
-    'source' => 'lang=en-US', 
-    'target' => 'lang=ko'), 
-  array(
-    'source' => 'Your system doesn\'t meet the <a href="/en-US/firefox/23.0.1/system-requirements/">requirements</a> to run Firefox.', 
-    'target' => 'Firefox를 구동하기에 충분한 <a href="//www.mozilla.org/en-US/firefox/23.0.1/system-requirements/">시스템 사양</a>이 아닙니다.'), 
-  array(
-    'source' => '<span class="download-subtitle">Free Download</span>', 
-    'target' => '<span class="download-subtitle">무료 다운로드</span>'), 
-  array(
-    'source' => '<span class="download-lang">English (US)</span>', 
-    'target' => '<span class="download-lang">한국어</span>'), 
-  array(
-    'source' => '<strong class="download-title"><span>Firefox</span> for Android</strong>', 
-    'target' => '<strong class="download-title"><span>Firefox</span> 안드로이드</strong>'), 
-  array(
-    'source' => '<span class="download-subtitle">Get it free on Google Play</span>', 
-    'target' => '<span class="download-subtitle">Google Play에서 무료 다운로드</span>'), 
-  array(
-    'source' => '<a href="/en-US/firefox/mobile/platforms">Supported Devices</a> |', 
-    'target' => '<a href="/ko/firefox/mobile/platforms">지원 기기</a> |'), 
-  array(
-    'source' => '<a href="/en-US/mobile/notes">What’s New</a> |', 
-    'target' => '<a href="//www.mozilla.org/en-US/mobile/notes">변경내역</a> |'), 
-  array(
-    'source' => '<a href="/en-US/legal/privacy/firefox.html">Privacy</a>', 
-    'target' => '<a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>'), 
-  array(
-    'source' => '<a href="/en-US/firefox/all">Systems &amp; Languages</a> |', 
-    'target' => '<a href="/ko/firefox/all">시스템 &amp; 언어 선택</a> |'), 
-  array(
-    'source' => '<a href="/en-US/firefox/notes">What’s New</a> |', 
-    'target' => '<a href="//www.mozilla.org/en-US/firefox/notes">변경내역</a> |'), 
   array(
     'source' => '<a href="/en-US/firefox/os/" class="container">', 
     'target' => '<a href="/ko/firefox/os/" class="container">'), 
@@ -203,77 +151,6 @@ $replace_rule = array(
       </a></li>
     </ul>
   </section>'), 
-  array(
-    'source' => '<a href="/en-US/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>', 
-    'target' => '<a href="/ko/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>'), 
-  array(
-    'source' => 'Portions of this content are ©1998–2013 by individual mozilla.org contributors. Content available under a <a href="/en-US/foundation/licensing/website-content/">Creative Commons license</a>.', 
-    'target' => '&copy;1998–2012 일부 콘텐츠는 mozilla.org 공헌자에 의해 만들어졌으며, 이 콘텐츠는 <a href="//www.mozilla.org/foundation/licensing/website-content.html">Creative Commons license</a> 하에서 사용 가능합니다.'), 
-  array(
-    'source' => '<a href="/en-US/contribute/page/">Contribute to this page</a>', 
-    'target' => '<a href="/ko/contribute/page/">공헌자 홈페이지</a>'), 
-  array(
-    'source' => '<ul class="footer-nav">
-            <li><a href="/en-US/about/contact.html#map-mountain_view">Contact Us</a></li>
-            <li><a href="/en-US/about/partnerships/">Partner with Us</a></li>
-            <li><a href="/en-US/privacy/">Privacy Policy</a></li>
-            <li><a href="/en-US/about/legal.html">Legal Notices</a></li>
-            <li><a href="/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a></li>
-          </ul>', 
-    'target' => '<ul class="footer-nav">
-            <li><a href="//www.mozilla.org/en-US/about/contact.html#map-mountain_view">연락하기(영문)</a></li>
-            <li><a href="//www.mozilla.org/en-US/privacy/">개인 정보 보호 정책(영문)</a></li>
-            <li><a href="//www.mozilla.org/en-US/about/legal.html">법적 고지(영문)</a></li>
-            <li><a href="//www.mozilla.org/en-US/legal/fraud-report/index.html">상표권 침해 신고(영문)</a></li>
-          </ul>'), 
-  array(
-    'source' => '<ul class="footer-nav">
-            <li><a href="https://twitter.com/firefox">Twitter</a></li>
-            <li><a href="https://facebook.com/Firefox">Facebook</a></li>
-            <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
-          </ul>', 
-    'target' => '<ul class="footer-nav">
-            <li><a href="//twitter.com/mozillakr">Twitter</a></li>
-            <li><a href="//facebook.com/mozillakr">Facebook</a></li>
-            <li><a href="//affiliates.mozilla.org/ko/">Firefox 제휴</a></li>
-          </ul>'), 
-  array(
-    'source' => '//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js?', 
-    'target' => '/ko/tabzilla/tabzilla.js?'), 
-  array(
-    'source' => "<script>
-var _gaq = _gaq || [];
-var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-_gaq.push(['_setAccount', 'UA-36116321-1']);
-_gaq.push(['_setAllowLinker', true]);
-_gaq.push(['_setAllowAnchor', true]);
-_gaq.push(['_trackPageview']);
-
-(function() {
-    var ga = document.createElement('script');
-    ga.type = 'text/javascript';
-    ga.async = true;
-
-    var prefix = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www');
-    ga.src = prefix + '.google-analytics.com/ga.js';
-
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(ga, s);
-})();
-</script>", 
-    'target' => "<script>
-        var _gaq = _gaq || [];
-       _gaq.push(['_setAccount', 'UA-53785-1']);
-       _gaq.push(['_setDomainName', 'mozilla.or.kr']);
-       _gaq.push(['_trackPageview']);
-
-       (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-     </script>"), 
 );
 
 $xml_source = file_get_contents("http://www.mozilla.or.kr/community/feed");
@@ -304,7 +181,8 @@ $remove_rule = array(
   ), 
 );
 
-require_once('../lib/MozKr.class.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/lib/MozKr.class.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/lib/common_rules.php');
 $t = new MozKr('http://www.mozilla.org/en-US/', 'http://www.mozilla.or.kr/ko/', $replace_rule, $insert_rule, $remove_rule);
 echo($t->get_content());
 ?>
