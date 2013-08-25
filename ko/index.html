@@ -1,135 +1,141 @@
-<?
- 	require $_SERVER['DOCUMENT_ROOT']."/ko/includes/common.inc";
-	
-	$Htitle="Mozilla - Mozilla 프로젝트";
-	$Hid="home";
-	$extra_css='<link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/home-min.css" />';
-
-  $hide_logo = true;
-	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/header.php";
-	include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/download.php";
-?>
-
-<hgroup id="main-feature" class="huge">
-    <h1>We are <img src="http://www.mozilla.org/media/img/home/title-wordmark.png" alt="Mozilla" height="92" width="348"></h1>
-  <h2>웹으로 세상을 바꾸고 있습니다!</h2>
-</hgroup>
-
-<section id="firefox-promo" class="billboard">
-  <h3>새로운 디자인: </h3>
-    <a href="firefox/" id="firefox-promo-link">
-  <img src="http://www.mozilla.org/media/img/home/firefox.png" id="promo-logo" alt="Firefox">
-  </a>
-  <ul class="features">
-        <li><small>비영리<br> 웹브라우저</small></li>
-        <li><small>사용자로부터<br> 기술 혁신</small></li>
-        <li><small>빠르고<br> 보안 강화</small></li>
-  </ul>
-
-  <?=download_button_desktop("small", $fx_version)?>
-</section>
-
-<section id="home-promo" class="pager pager-with-tabs pager-auto-rotate pager-no-history">
-
-  <div class="pager-content">
-      <div class="pager-page default-page" id="promo-fxos">
-      <script>
-        document.getElementById('promo-fxos').id = 'page-promo-fxos';
-      </script>
-      <a href="/ko/firefox/os/" class="container">
-        <div class="content">
-          <h3>미래를 봅니다!</h3>
-          <h4>Firefox OS는 여러분 삶의 순간 마다 더 나은 경험을 제공하는 동시에 웹의 미래를 더 밝게 합니다.</h4>
-          <p class="go">자세히 보기</p>
-        </div>
-      </a>
-    </div>
-    
-      <div class="pager-page" id="promo-mozilla15">
-      <script>// <![CDATA[
-        document.getElementById('promo-mozilla15').id = 'page-promo-mozilla15';
-      // ]]></script>
-      <a href="/ko/contribute" class="container">
-        <img src="http://mozorg.cdn.mozilla.net/media/img/home/promo-mozilla15.jpg" alt="">
-        <div class="content">
-          <h3>Mozilla 15주년!</h3>
-          <h4>전 세계 자원 봉사자들이 함께 만들어온 성취를 함께 보고 축하해 주십시오.</h4>
-          <p class="go">15가지의 주요 업적 보기</p>
-        </div>
-      </a>
-    </div>
-    
-    <div class="pager-page" id="promo-flicksvideo">
-      <script>// <![CDATA[
-        document.getElementById('promo-flicksvideo').id = 'page-promo-flicksvideo';
-      // ]]></script>
-      <img id="promo-flicks-keyframe" src="//mozorg.cdn.mozilla.net/media/img/home/promo-flicks-ic-video-thumb.jpg" alt="Play Video" tabindex="0" role="button" />
-      <a href="https://firefoxflicks.mozilla.org/" class="container">
-        <div class="content">
-          <h3>여러분이 영화 감독이 될 수 있습니다!</h3>
-          <h4>Firefox Flicks에서 Firefox를 위한 동영상 경진대회에 참여하세요!</h4>
-          <p class="go">자세히 보기</p>
-        </div>
-      </a>
-      <div id="promo-flicks-overlay" class="video-overlay">
-        <a class="video-visit" href="https://firefoxflicks.mozilla.org/">FirefoxFlicks.org 방문</a>
-        <ul class="share-links">
-          <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffirefoxflicks.org" class="share-facebook">Share on Facebook</a></li>
-          <li><a href="https://www.twitter.com/intent/tweet?url=https%3A%2F%2Ffirefoxflicks.org&amp;text=I+just+watched+this+great+video+about+the+new+%23FirefoxFlicks+contest.+See+for+yourself+and+enter+to+win%21" class="share-twitter">Tweet</a></li>
-        </ul>
-        <span tabindex="0" role="button" class="video-replay">재생</span>
-        <span tabindex="0" role="button" class="video-continue">계속</span>
-      </div>
-    </div>
-    
-    <div class="pager-page" id="promo-android">
-      <script>// <![CDATA[
-      document.getElementById('promo-android').id = 'page-promo-android';
-      // ]]></script>
-      <a href="/ko/firefox/fx/?WT.mc_id=moandroid&amp;WT.mc_ev=click#mobile" class="container">
-        <img src="http://www.mozilla.org/media/img/home/promo-android.jpg" alt="">
-        <div class="content">
-                    <h3>빠름 똑똑하고 안전한!</h3>
-          <h4>모바일용 웹 브라우저를 체험해 보십시오.</h4>
-          <p class="go">Firefox for Android 다운로드</p>
-        </div>
-      </a>
-    </div>
-
-  </div>
-
-  <ul class="pager-tabs">
-    <li><a href="#p1">●</a></li>
-    <li><a href="#p2">●</a></li>
-    <li><a href="#p3">●</a></li>
-    <li><a href="#p4">●</a></li>
-  </ul>
-
-</section>
-
-<div id="main-content">
-
-    <section id="home-news">
-    <h3>새로운 뉴스</h3>
-    <ul>
-<?
-	$xml_source = file_get_contents("http://www.mozilla.or.kr/community/feed");
-        $x = simplexml_load_string($xml_source);
-	$i=0;
-        foreach($x->channel->item as $item) {
-	if($i<4)  echo '
-	<li>
-	   <h4><a href="'.$item->link.'">'.$item->title.'</a></h4>
-	</li>';
-	$i++;
-        }
-
-?>
+<?php
+$replace_rule = array(
+  array(
+    'source' => '<title>Mozilla — Home of the Mozilla Project — mozilla.org</title>', 
+    'target' => '<title>Mozilla - Mozilla 프로젝트</title>'), 
+  array(
+    'source' => '<span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>', 
+    'target' => '<span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">주요 메뉴</span>'), 
+  array(
+    'source' => '<li class="first"><a href="/en-US/mission/">Mission</a></li>', 
+    'target' => '<li class="first"><a href="/ko/mission/">사명</a></li>'), 
+  array(
+    'source' => '<li><a href="/en-US/about/">About</a></li>', 
+    'target' => '<li><a href="/ko/about/">소개</a></li>'), 
+  array(
+    'source' => '<li><a href="/en-US/products/">Products</a></li>', 
+    'target' => '<li><a href="/ko/products/">제품</a></li>'), 
+  array(
+    'source' => '<li class="last"><a href="/en-US/contribute/">Get Involved</a></li>', 
+    'target' => '<li class="last"><a href="/ko/contribute/">참여하기</a></li>'), 
+  array(
+    'source' => 'Doing good is part of our code', 
+    'target' => '웹으로 세상을 바꾸고 있습니다!'), 
+  array(
+    'source' => 'Different by&nbsp;Design', 
+    'target' => '새로운 디자인'), 
+  array(
+    'source' => 'Proudly <br> non-profit', 
+    'target' => '비영리<br> 웹브라우저'), 
+  array(
+    'source' => 'Innovating <br> for&nbsp;you', 
+    'target' => '사용자로부터<br> 기술 혁신'), 
+  array(
+    'source' => 'Fast,&nbsp;flexible, <br> secure', 
+    'target' => '빠르고<br> 보안 강화'), 
+  array(
+    'source' => 'Download Firefox — English (US)', 
+    'target' => 'Firefox 무료 다운로드- 한국어'), 
+  array(
+    'source' => '/en-US/products/download.html', 
+    'target' => '//www.mozilla.org/en-US/products/download.html'), 
+  array(
+    'source' => 'lang=en-US', 
+    'target' => 'lang=ko'), 
+  array(
+    'source' => 'Your system doesn\'t meet the <a href="/en-US/firefox/23.0.1/system-requirements/">requirements</a> to run Firefox.', 
+    'target' => 'Firefox를 구동하기에 충분한 <a href="//www.mozilla.org/en-US/firefox/23.0.1/system-requirements/">시스템 사양</a>이 아닙니다.'), 
+  array(
+    'source' => '<span class="download-subtitle">Free Download</span>', 
+    'target' => '<span class="download-subtitle">무료 다운로드</span>'), 
+  array(
+    'source' => '<span class="download-lang">English (US)</span>', 
+    'target' => '<span class="download-lang">한국어</span>'), 
+  array(
+    'source' => '<strong class="download-title"><span>Firefox</span> for Android</strong>', 
+    'target' => '<strong class="download-title"><span>Firefox</span> 안드로이드</strong>'), 
+  array(
+    'source' => '<span class="download-subtitle">Get it free on Google Play</span>', 
+    'target' => '<span class="download-subtitle">Google Play에서 무료 다운로드</span>'), 
+  array(
+    'source' => '<a href="/en-US/firefox/mobile/platforms">Supported Devices</a> |', 
+    'target' => '<a href="/ko/firefox/mobile/platforms">지원 기기</a> |'), 
+  array(
+    'source' => '<a href="/en-US/mobile/notes">What’s New</a> |', 
+    'target' => '<a href="//www.mozilla.org/en-US/mobile/notes">변경내역</a> |'), 
+  array(
+    'source' => '<a href="/en-US/legal/privacy/firefox.html">Privacy</a>', 
+    'target' => '<a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>'), 
+  array(
+    'source' => '<a href="/en-US/firefox/all">Systems &amp; Languages</a> |', 
+    'target' => '<a href="/ko/firefox/all">시스템 &amp; 언어 선택</a> |'), 
+  array(
+    'source' => '<a href="/en-US/firefox/notes">What’s New</a> |', 
+    'target' => '<a href="//www.mozilla.org/en-US/firefox/notes">변경내역</a> |'), 
+  array(
+    'source' => '<a href="/en-US/firefox/os/" class="container">', 
+    'target' => '<a href="/ko/firefox/os/" class="container">'), 
+  array(
+    'source' => 'Look ahead', 
+    'target' => '미래를 봅니다!'), 
+  array(
+    'source' => 'Firefox OS lets you live every moment to its fullest and build a brighter future for the Web.', 
+    'target' => 'Firefox OS는 여러분 삶의 순간 마다 더 나은 경험을 제공하는 동시에 웹의 미래를 더 밝게 합니다.'), 
+  array(
+    'source' => 'Find out how', 
+    'target' => '자세히 보기'), 
+  array(
+    'source' => 'Did you know?', 
+    'target' => '알고 계신가요?'), 
+  array(
+    'source' => 'From June 15 &ndash; September 15, thousands of Mozillians worldwide are throwing parties to make and share amazing projects.', 
+    'target' => '6월 15일 부터 9월 15일까지 전세계 수만은 Mozillian들이 멋진 프로젝트를 만들고 공유하기 위한 파티를 엽니다.'), 
+  array(
+    'source' => 'Join us', 
+    'target' => '참여하기'), 
+  array(
+    'source' => 'Choose your favorites', 
+    'target' => '좋아하는 작품을 골라 보세요.'), 
+  array(
+    'source' => 'August 31 is the last day to vote for the People‘s Choice Awards. Don‘t miss your chance.', 
+    'target' => '8월 31일은 사람들이 선택한 작품에 투표하는 마지막 기한입니다. 기회를 놓치지 마세요.'), 
+  array(
+    'source' => 'Vote now', 
+    'target' => '투표하기'), 
+  array(
+    'source' => 'Fast. Smart. Safe.', 
+    'target' => '빠름. 똑똑함. 안전함.'), 
+  array(
+    'source' => 'Get the mobile browser that’s got your back.', 
+    'target' => '모바일용 웹 브라우저를 체험해 보세요.'), 
+  array(
+    'source' => 'Get Firefox for Android', 
+    'target' => 'Firefox for Android 다운로드'), 
+  array(
+    'source' => 'In the news', 
+    'target' => '새로운 뉴스'), 
+  array(
+    'source' => '<a href="https://blog.mozilla.org/" id="all-news">See all news', 
+    'target' => '<a href="/community/" id="all-news">뉴스 더 보기'), 
+  array(
+    'source' => '<section id="home-promos">
+    <h3>In the know</h3>
+     <ul>
+      <li>
+        <h4><a href="/en-US/firefox/os/">Firefox OS</a></h4>
+        <p>See what’s next for the mobile Web.</p>
+      </li>
+      <li>
+        <h4><a href="https://affiliates.mozilla.org/">Become an Affiliate</a></h4>
+        <p>Help us share Firefox with the world!</p>
+      </li>
+      <li>
+        <h4><a href="/en-US/apps/">Firefox Marketplace</a></h4>
+        <p>Launch your app on the web</p>
+      </li>
     </ul>
-    <a href="http://www.mozilla.or.kr/community/" id="all-news">뉴스 더 보기 »</a>
-  </section>
-  
-  <section id="home-promos">
+  </section>', 
+    'target' => '<section id="home-promos">
     <h3>주요 프로젝트</h3>
      <ul>
       <li>
@@ -149,9 +155,34 @@
         <p>웹개발자가 만든 웹앱을 다양한 채널로 배포 가능</p>
       </li>
     </ul>
-  </section>
-
-  <section id="home-about">
+  </section>'), 
+  array(
+    'source' => '<section id="home-about">
+    <h3>Be a part of Mozilla</h3>
+    <ul>
+      <li id="about-volunteer"><a href="/en-US/contribute/">
+        <h4>Volunteer with us</h4>
+        <p>Get involved in any area of the Mozilla Project.</p>
+      </a></li>
+      <li id="about-work"><a href="http://careers.mozilla.org/">
+        <h4>Work with us</h4>
+        <p>Apply today and love the Web for a living.</p>
+      </a></li>
+      <li id="about-find"><a href="/en-US/about/mozilla-spaces/">
+        <h4>Find us</h4>
+        <p>Contact one of our global Mozilla Spaces.</p>
+      </a></li>
+      <li id="about-join"><a href="https://sendto.mozilla.org/Join-Moz-Org">
+        <h4>Donate</h4>
+        <p>Show your support and help us build a better Web.</p>
+      </a></li>
+      <li id="about-learn"><a href="/en-US/about/">
+        <h4>Learn more</h4>
+        <p>Get to know Mozilla a little bit better.</p>
+      </a></li>
+    </ul>
+  </section>', 
+    'target' => '<section id="home-about">
     <h3>참여 하기</h3>
     <ul>
       <li id="about-find"><a href="/ko/contribute/">
@@ -171,10 +202,110 @@
         <p>Mozilla에 대한 더 상세한 정보를 살펴보세요.</p>
       </a></li>
     </ul>
+  </section>'), 
+  array(
+    'source' => '<a href="/en-US/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>', 
+    'target' => '<a href="/ko/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>'), 
+  array(
+    'source' => 'Portions of this content are ©1998–2013 by individual mozilla.org contributors. Content available under a <a href="/en-US/foundation/licensing/website-content/">Creative Commons license</a>.', 
+    'target' => '&copy;1998–2012 일부 콘텐츠는 mozilla.org 공헌자에 의해 만들어졌으며, 이 콘텐츠는 <a href="//www.mozilla.org/foundation/licensing/website-content.html">Creative Commons license</a> 하에서 사용 가능합니다.'), 
+  array(
+    'source' => '<a href="/en-US/contribute/page/">Contribute to this page</a>', 
+    'target' => '<a href="/ko/contribute/page/">공헌자 홈페이지</a>'), 
+  array(
+    'source' => '<ul class="footer-nav">
+            <li><a href="/en-US/about/contact.html#map-mountain_view">Contact Us</a></li>
+            <li><a href="/en-US/about/partnerships/">Partner with Us</a></li>
+            <li><a href="/en-US/privacy/">Privacy Policy</a></li>
+            <li><a href="/en-US/about/legal.html">Legal Notices</a></li>
+            <li><a href="/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a></li>
+          </ul>', 
+    'target' => '<ul class="footer-nav">
+            <li><a href="//www.mozilla.org/en-US/about/contact.html#map-mountain_view">연락하기(영문)</a></li>
+            <li><a href="//www.mozilla.org/en-US/privacy/">개인 정보 보호 정책(영문)</a></li>
+            <li><a href="//www.mozilla.org/en-US/about/legal.html">법적 고지(영문)</a></li>
+            <li><a href="//www.mozilla.org/en-US/legal/fraud-report/index.html">상표권 침해 신고(영문)</a></li>
+          </ul>'), 
+  array(
+    'source' => '<ul class="footer-nav">
+            <li><a href="https://twitter.com/firefox">Twitter</a></li>
+            <li><a href="https://facebook.com/Firefox">Facebook</a></li>
+            <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
+          </ul>', 
+    'target' => '<ul class="footer-nav">
+            <li><a href="//twitter.com/mozillakr">Twitter</a></li>
+            <li><a href="//facebook.com/mozillakr">Facebook</a></li>
+            <li><a href="//affiliates.mozilla.org/ko/">Firefox 제휴</a></li>
+          </ul>'), 
+  array(
+    'source' => '//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js?', 
+    'target' => '/ko/tabzilla/tabzilla.js?'), 
+  array(
+    'source' => "<script>
+var _gaq = _gaq || [];
+var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+_gaq.push(['_setAccount', 'UA-36116321-1']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_setAllowAnchor', true]);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+
+    var prefix = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www');
+    ga.src = prefix + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>", 
+    'target' => "<script>
+        var _gaq = _gaq || [];
+       _gaq.push(['_setAccount', 'UA-53785-1']);
+       _gaq.push(['_setDomainName', 'mozilla.or.kr']);
+       _gaq.push(['_trackPageview']);
+
+       (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+     </script>"), 
+);
+
+$xml_source = file_get_contents("http://www.mozilla.or.kr/community/feed");
+$x = simplexml_load_string($xml_source);
+$i = 0;
+$news_html = '';
+foreach($x->channel->item as $item) {
+  if($i < 4) {
+    $news_html .= '<li><h4><a href="'.$item->link.'">'.$item->title.'</a></h4></li>';
+    $i++;
+  }
+}
+
+$insert_rule = array(
+  array(
+    'before' => '<h3>새로운 뉴스</h3>', 
+    'after' => '<a href="/community/" id="all-news">뉴스 더 보기', 
+    'insert' => $news_html
+  ), 
+  array(
+    'before' => '<p>Mozilla에 대한 더 상세한 정보를 살펴보세요.</p>
+      </a></li>
+    </ul>
   </section>
 
-</div>
-<?
-	$extra_js='<script src="http://www.mozilla.org/media/js/pager-min.js?build='.$build_code.'"></script>';
-	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
+</div>', 
+    'after' => '</div><!-- close #wrapper -->', 
+    'insert' => ''
+  ), 
+);
+
+require_once('../lib/MozKr.class.php');
+$t = new MozKr('http://www.mozilla.org/en-US/', 'http://www.mozilla.or.kr/ko/', $replace_rule, $insert_rule);
+echo($t->get_content());
 ?>

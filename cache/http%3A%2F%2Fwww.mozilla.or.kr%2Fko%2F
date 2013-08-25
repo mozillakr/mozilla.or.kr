@@ -1,0 +1,323 @@
+
+
+<!doctype html>
+<html class="windows no-js" lang="en-US" dir="ltr">
+  <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- validates bing webmaster tools -->
+  <meta name="msvalidate.01" content="B7B177115A634927D608514DA17B2574" />
+
+    <title>Mozilla - Mozilla 프로젝트</title>
+    <meta name="description" content="">
+
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=959b02a" />
+    
+    <!--[if lte IE 8]>
+    <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
+    <![endif]-->
+
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/responsive-min.css?build=959b02a" />
+    
+      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/home-min.css?build=959b02a" />
+
+    <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=959b02a"></script>
+
+    <script>
+        var _gaq = _gaq || [];
+       _gaq.push(['_setAccount', 'UA-53785-1']);
+       _gaq.push(['_setDomainName', 'mozilla.or.kr']);
+       _gaq.push(['_trackPageview']);
+
+       (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+     </script>  </head>
+
+  <body id="home" class="html-ltr sand">
+    <div id="strings"   data-close='Close'
+  data-share='Share'
+></div>
+    <div id="outer-wrapper">
+    <div id="wrapper">
+
+          <header id="masthead">
+        <a href="/en-US/" id="tabzilla">Mozilla</a>
+
+                <nav id="nav-main" role="navigation">
+          <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">주요 메뉴</span>
+          <ul id="nav-main-menu">
+            <li class="first"><a href="/ko/mission/">사명</a></li>
+            <li><a href="/ko/about/">소개</a></li>
+            <li><a href="/ko/products/">제품</a></li>
+            <li class="last"><a href="/ko/contribute/">참여하기</a></li>
+          </ul>
+        </nav>
+        
+        
+        
+        
+        
+      </header>
+    
+    
+              
+    
+<hgroup id="main-feature" class="huge">
+    <h1>We are <img src="//mozorg.cdn.mozilla.net/media/img/home/title-wordmark.png" alt="Mozilla" height="92" width="348"></h1>
+  <h2>웹으로 세상을 바꾸고 있습니다!</h2>
+</hgroup>
+
+<section id="firefox-promo" class="billboard">
+  <h3>새로운 디자인</h3>
+    <a href="/firefox/" id="firefox-promo-link">
+  <img src="//mozorg.cdn.mozilla.net/media/img/home/firefox.png?2013-06" id="promo-logo" alt="Firefox">
+  </a>
+  <ul class="features">
+        <li><small>비영리<br> 웹브라우저</small></li>
+        <li><small>사용자로부터<br> 기술 혁신</small></li>
+        <li><small>빠르고<br> 보안 강화</small></li>
+  </ul>
+
+  
+
+
+<div id="download-button-desktop-release" class="download-button download-button-small download-button-noicon">
+      <noscript>
+        <div class="download download-dumb">
+    <h4>Firefox 무료 다운로드- 한국어</h4>
+    <ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
+  </div>
+
+    </noscript>
+    <div class="unrecognized-download">
+        <div class="download download-dumb">
+    <h4>Firefox 무료 다운로드- 한국어</h4>
+    <ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
+  </div>
+
+    </div>
+        <p class="unsupported-download">
+      Firefox를 구동하기에 충분한 <a href="//www.mozilla.org/en-US/firefox/23.0.1/system-requirements/">시스템 사양</a>이 아닙니다.
+    </p>
+    <ul class="download-list">
+          <li class="os_windows">
+        <a class="download-link"
+           href="//www.mozilla.org/en-US/products/download.html?product=firefox-stub&amp;os=win&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko">
+          <span class="download-content">
+                                          <strong class="download-title">Firefox</strong>
+                            <span class="download-subtitle">무료 다운로드</span>
+              <span class="download-lang">한국어</span>
+              <span class="download-platform">Windows</span>
+                      </span>
+        </a>
+      </li>
+          <li class="os_linux">
+        <a class="download-link"
+           href="//www.mozilla.org/en-US/products/download.html?product=firefox-23.0.1&amp;os=linux&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=linux&amp;lang=ko">
+          <span class="download-content">
+                                          <strong class="download-title">Firefox</strong>
+                            <span class="download-subtitle">무료 다운로드</span>
+              <span class="download-lang">한국어</span>
+              <span class="download-platform">Linux</span>
+                      </span>
+        </a>
+      </li>
+          <li class="os_osx">
+        <a class="download-link"
+           href="//www.mozilla.org/en-US/products/download.html?product=firefox-23.0.1&amp;os=osx&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=osx&amp;lang=ko">
+          <span class="download-content">
+                                          <strong class="download-title">Firefox</strong>
+                            <span class="download-subtitle">무료 다운로드</span>
+              <span class="download-lang">한국어</span>
+              <span class="download-platform">Mac OS X</span>
+                      </span>
+        </a>
+      </li>
+          <li class="os_android">
+        <a class="download-link"
+           href="https://play.google.com/store/apps/details?id=org.mozilla.firefox">
+          <span class="download-content">
+                                          <strong class="download-title"><span>Firefox</span> 안드로이드</strong>
+                                            <span class="download-subtitle">Google Play에서 무료 다운로드</span>
+                                    </span>
+        </a>
+      </li>
+      </ul>
+      <small class="download-other os_android">
+      <a href="/ko/firefox/mobile/platforms">지원 기기</a> |
+              <a href="//www.mozilla.org/en-US/mobile/notes">변경내역</a> |
+            <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>
+    </small>
+        <small class="download-other os_linux os_osx os_windows">
+              <a href="/ko/firefox/all">시스템 &amp; 언어 선택</a> |
+        <a href="//www.mozilla.org/en-US/firefox/notes">변경내역</a> |
+            <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>
+    </small>
+  </div>
+</section>
+
+<section id="home-promo" class="pager pager-with-tabs pager-auto-rotate pager-no-history pager-with-hidden-class">
+
+  <div class="pager-content">
+
+    <div class="pager-page default-page" id="promo-fxos">
+      <script>
+        document.getElementById('promo-fxos').id = 'page-promo-fxos';
+      </script>
+      <a href="/ko/firefox/os/" class="container">
+        <div class="content">
+          <h3>미래를 봅니다!</h3>
+          <h4>Firefox OS는 여러분 삶의 순간 마다 더 나은 경험을 제공하는 동시에 웹의 미래를 더 밝게 합니다.</h4>
+          <p class="go">자세히 보기</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="pager-page" id="promo-makerparty">
+      <script>
+        document.getElementById('promo-makerparty').id = 'page-promo-makerparty';
+      </script>
+      <a href="https://webmaker.org/party/?icn=hpromo2" class="container">
+        <div class="content">
+          <h3>알고 계신가요?</h3>
+          <h4>6월 15일 부터 9월 15일까지 전세계 수만은 Mozillian들이 멋진 프로젝트를 만들고 공유하기 위한 파티를 엽니다.</h4>
+          <p class="go">참여하기</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="pager-page" id="promo-flicksvoting">
+      <script>
+        document.getElementById('promo-flicksvoting').id = 'page-promo-flicksvoting';
+      </script>
+      <a href="https://firefoxflicks.mozilla.org/video/" class="container">
+        <div class="content">
+          <h3><i class="hidden">Firefox Flicks</i> 좋아하는 작품을 골라 보세요.</h3>
+          <h4>8월 31일은 사람들이 선택한 작품에 투표하는 마지막 기한입니다. 기회를 놓치지 마세요.</h4>
+          <p class="go">투표하기</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="pager-page" id="promo-android">
+      <script>// <![CDATA[
+      document.getElementById('promo-android').id = 'page-promo-android';
+      // ]]></script>
+      <a href="/en-US/firefox/fx/" class="container">
+        <div class="content">
+                    <h3>빠름. 똑똑함. 안전함.</h3>
+          <h4>모바일용 웹 브라우저를 체험해 보세요.</h4>
+          <p class="go">Firefox for Android 다운로드</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+  <ul class="pager-tabs">
+    <li><a tabindex="-1" aria-hidden="true" href="#p1"></a></li>
+    <li><a tabindex="-1" aria-hidden="true" href="#p2"></a></li>
+    <li><a tabindex="-1" aria-hidden="true" href="#p3"></a></li>
+    <li><a tabindex="-1" aria-hidden="true" href="#p4"></a></li>
+  </ul>
+
+</section>
+
+<div id="main-content">
+
+    <section id="home-news">
+    <h3>새로운 뉴스</h3><li><h4><a href="http://www.mozilla.or.kr/community/blog/1256">Firefox OS폰 ZTE Open, eBay 통해 온라인 판매 개시</a></h4></li><li><h4><a href="http://www.mozilla.or.kr/community/blog/1252">Firefox 23, 소셜 공유 및 모바일 인터페이스 강화</a></h4></li><li><h4><a href="http://www.mozilla.or.kr/community/blog/1249">Firefox OS 단말기 남미에도 공급 시작!</a></h4></li><li><h4><a href="http://www.mozilla.or.kr/community/blog/1247">도이치텔레콤, 폴란드에서 Firefox OS폰 판매 개시</a></h4></li><a href="/community/" id="all-news">뉴스 더 보기 »</a>
+  </section>
+  
+  <section id="home-promos">
+    <h3>주요 프로젝트</h3>
+     <ul>
+      <li>
+        <h4><a href="/ko/firefox/features/">Firefox 데스크톱</a></h4>
+        <p>윈도/맥/리눅스 모두를 지원하는 오픈 웹 브라우저</p>
+      </li>
+      <li>
+        <h4><a href="/ko/firefox/mobile/features/">Firefox 안드로이드버전</a></h4>
+        <p>안드로이드에서도 빠르고 안전한 맞춤 브라우저</p>
+      </li>
+      <li>
+        <h4><a href="/ko/firefox/os/">Firefox OS</a></h4>
+        <p>새로운 개방형 모바일 웹 운영 체제(OS)</p>
+      </li>
+      <li>
+        <h4><a href="/ko/apps/">Firefox Marketplace</a></h4>
+        <p>웹개발자가 만든 웹앱을 다양한 채널로 배포 가능</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="home-about">
+    <h3>참여 하기</h3>
+    <ul>
+      <li id="about-find"><a href="/ko/contribute/">
+        <h4>글로벌 참여 하기</h4>
+        <p>Mozilla Project의 다양한 영역을 알려드립니다.</p>
+      </a></li>
+      <li id="about-volunteer"><a href="/community/join">
+        <h4>한국 커뮤니티</h4>
+        <p>국내 Mozilla 활동 및 참여 방법을 소개합니다.</p>
+      </a></li>
+      <li id="about-work"><a href="http://forums.mozilla.or.kr">
+        <h4>사용자 포럼</h4>
+        <p>일반 사용자 질문 및 답변, 정보 공유 공간입니다.</p>
+      </a></li>
+      <li id="about-learn"><a href="/ko/about/">
+        <h4>더 자세히 보기</h4>
+        <p>Mozilla에 대한 더 상세한 정보를 살펴보세요.</p>
+      </a></li>
+    </ul>
+  </section>
+
+</div></div><!-- close #wrapper -->
+
+          <footer id="colophon" class="">
+      <div class="row">
+
+          <div class="footer-logo">
+              <a href="/ko/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+                &copy;1998–2012 일부 콘텐츠는 mozilla.org 공헌자에 의해 만들어졌으며, 이 콘텐츠는 <a href="//www.mozilla.org/foundation/licensing/website-content.html">Creative Commons license</a> 하에서 사용 가능합니다.              </p>
+              <p>
+                <a href="/ko/contribute/page/">공헌자 홈페이지</a>
+              </p>
+          </div>
+          <ul class="footer-nav">
+            <li><a href="//www.mozilla.org/en-US/about/contact.html#map-mountain_view">연락하기(영문)</a></li>
+            <li><a href="//www.mozilla.org/en-US/privacy/">개인 정보 보호 정책(영문)</a></li>
+            <li><a href="//www.mozilla.org/en-US/about/legal.html">법적 고지(영문)</a></li>
+            <li><a href="//www.mozilla.org/en-US/legal/fraud-report/index.html">상표권 침해 신고(영문)</a></li>
+          </ul>
+                    <ul class="footer-nav">
+            <li><a href="//twitter.com/mozillakr">Twitter</a></li>
+            <li><a href="//facebook.com/mozillakr">Facebook</a></li>
+            <li><a href="//affiliates.mozilla.org/ko/">Firefox 제휴</a></li>
+          </ul>
+          
+      </div>
+      </footer>
+    
+    </div><!-- close #outer-wrapper -->
+
+    <!--[if IE 9]>
+      <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
+    <![endif]-->
+
+      <script src="//mozorg.cdn.mozilla.net/media/js/mozorg-resp-min.js?build=959b02a"></script>
+          <script src="/ko/tabzilla/tabzilla.js?build=959b02a"></script>
+          <script src="//mozorg.cdn.mozilla.net/media/js/home-min.js?build=959b02a"></script>
+  </body>
+</html>
