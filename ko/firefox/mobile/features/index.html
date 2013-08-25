@@ -1,65 +1,268 @@
-<?
-	require $_SERVER['DOCUMENT_ROOT']."/ko/includes/common.inc";
-	$Htitle="Mozilla Firefox 웹 브라우저 — Mozilla Firefox 모바일 브라우저 — mozilla.or.kr";
-	$Hid="mobile-features";
-	$Hnavigation="주요 기능";
-	$Fxnewsurl="/ko/firefox/mobile/features/";
-	$extra_css='<link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/mobile_features-min.css?build='.$build_code.'" />';
-	include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/header-mobile.php";
-	include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/download.php";
-?>
+<?php
+$replace_rule = array(
+  // Document title
+  array(
+    'source' => '<title>Mozilla Firefox Web Browser — Mozilla Firefox Mobile Browser — mozilla.org</title>', 
+    'target' => '<title>Mozilla Firefox 웹 브라우저 — Mozilla Firefox 모바일 브라우저</title>'), 
+  // Menu titls
+  array(
+    'source' => '<span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>', 
+    'target' => '<span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">주요 메뉴</span>'), 
+  // Navigation
+  array(
+    'source' => '<li class="first" id="nav-main-features"><a href="/en-US/firefox/fx/#desktop" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">Desktop</a>', 
+    'target' => '<li class="first" id="nav-main-features"><a href="/ko/firefox/fx/#desktop" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">데스크톱</a>'), 
+  array(
+    'source' => '<li class="first"><a href="/en-US/firefox/features/" tabindex="-1">Features</a></li>
+        <li><a href="/en-US/firefox/customize/" tabindex="-1">Customize</a></li>
+        <li><a href="/en-US/firefox/performance/" tabindex="-1">Performance</a></li>
+        <li><a href="/en-US/firefox/technology/" tabindex="-1">Technology</a></li>
+        <li class="last"><a href="/en-US/firefox/security/" tabindex="-1">Privacy &amp; Security</a></li>', 
+    'target' => '<li class="first"><a href="/ko/firefox/features/" tabindex="-1">주요 기능</a></li>
+        <li><a href="/ko/firefox/customize/" tabindex="-1">맞춤 기능</a></li>
+        <li><a href="/ko/firefox/performance/" tabindex="-1">빠른 성능</a></li>
+        <li><a href="/ko/firefox/technology/" tabindex="-1">기술 혁신</a></li>
+        <li class="last"><a href="/ko/firefox/security/" tabindex="-1">정보 보호 및 보안</a></li>'), 
+  array(
+    'source' => '<li id="nav-main-mobile"><a href="/en-US/firefox/fx/" tabindex="0" aria-owns="nav-main-mobile-submenu" aria-haspopup="true">Mobile</a>', 
+    'target' => '<li id="nav-main-mobile"><a href="/ko/firefox/fx/" tabindex="0" aria-owns="nav-main-mobile-submenu" aria-haspopup="true">모바일</a>'), 
+  array(
+    'source' => '<li class="first"><a href="/en-US/firefox/mobile/features/" tabindex="-1">Features</a></li>
+        <li><a href="https://addons.mozilla.org/en-US/mobile/?browse=featured" tabindex="-1">Customize</a></li>
+        <li class="last"><a href="/en-US/firefox/mobile/faq/" tabindex="-1">FAQ</a></li>', 
+    'target' => '<li class="first"><a href="/ko/firefox/mobile/features/" tabindex="-1">주요 기능</a></li>
+        <li><a href="https://addons.mozilla.org/ko/mobile/?browse=featured" tabindex="-1">맞춤 기능</a></li>
+        <li class="last"><a href="/ko/firefox/mobile/faq/" tabindex="-1">FAQ</a></li>'), 
+  array(
+    'source' => '    <li id="nav-main-releases" class=""><a href="/en-US/firefox/channel/" tabindex="0" aria-owns="nav-main-releases-submenu" aria-haspopup="true">Releases</a>', 
+    'target' => '    <li id="nav-main-releases" class=""><a href="/ko/firefox/channel/" tabindex="0" aria-owns="nav-main-releases-submenu" aria-haspopup="true">출시 현황</a>'), 
+  array(
+    'source' => '<li class="first"><a href="/en-US/firefox/channel/" tabindex="-1">Overview</a></li>
+        <li><a href="/en-US/firefox/aurora/" tabindex="-1">Firefox Aurora</a></li>', 
+    'target' => '<li class="first"><a href="/ko/firefox/channel/" tabindex="-1">전체 보기</a></li>
+        <li><a href="/ko/firefox/aurora/" tabindex="-1">Firefox Aurora</a></li>'), 
+  array(
+    'source' => '<li><a href="/en-US/firefox/" tabindex="-1">Firefox</a></li>
+        <li class="last"><a href="/en-US/firefox/organizations/" tabindex="-1">Firefox for Organizations</a></li>', 
+    'target' => '<li><a href="/ko/firefox/" tabindex="-1">Firefox</a></li>
+        <li class="last"><a href="/ko/firefox/organizations/" tabindex="-1">기업용 Firefox</a></li>'), 
+  array(
+    'source' => '<li id="nav-main-addons"><a href="https://addons.mozilla.org/" tabindex="0" aria-owns="nav-main-addons-submenu" aria-haspopup="true">Add-ons</a>', 
+    'target' => '<li id="nav-main-addons"><a href="https://addons.mozilla.org/" tabindex="0" aria-owns="nav-main-addons-submenu" aria-haspopup="true">부가 기능</a>'), 
+  array(
+    'source' => '<li class="first"><a href="https://addons.mozilla.org/firefox/" tabindex="-1">Desktop Add-ons</a></li>
+        <li><a href="https://addons.mozilla.org/android/" tabindex="-1">Mobile Add-ons</a></li>
+        <li class="last"><a href="https://addons.mozilla.org/firefox/themes/" tabindex="-1">Themes</a></li>', 
+    'target' => '<li class="first"><a href="https://addons.mozilla.org/firefox/" tabindex="-1">데스크톱용</a></li>
+        <li><a href="https://addons.mozilla.org/android/" tabindex="-1">모바일용</a></li>
+        <li class="last"><a href="https://addons.mozilla.org/firefox/themes/" tabindex="-1">테마</a></li>'), 
+  array(
+    'source' => '<li id="nav-main-support"><a href="https://support.mozilla.org/" tabindex="0" aria-owns="nav-main-support-submenu" aria-haspopup="true">Support</a>', 
+    'target' => '<li id="nav-main-support"><a href="https://support.mozilla.org/" tabindex="0" aria-owns="nav-main-support-submenu" aria-haspopup="true">도움말</a>'), 
+  array(
+    'source' => '<li class="first"><a href="https://support.mozilla.org/products/firefox" tabindex="-1">Desktop Support</a></li>
+        <li class="last"><a href="https://support.mozilla.org/products/mobile" tabindex="-1">Mobile Support</a></li>', 
+    'target' => '<li class="first"><a href="https://support.mozilla.org/products/firefox" tabindex="-1">데스크톱용</a></li>
+        <li><a href="https://support.mozilla.org/products/mobile" tabindex="-1">모바일용</a></li>
+        <li class="last"><a href="http://forums.mozilla.or.kr" tabindex="-1">사용자 포럼</a></li>'), 
+  array(
+    'source' => '<li class="last" id="nav-main-about"><a href="/en-US/firefox/about/" tabindex="0" aria-owns="nav-main-about-submenu" aria-haspopup="true">About</a>', 
+    'target' => '<li class="last" id="nav-main-about"><a href="/ko/about/" tabindex="0" aria-owns="nav-main-about-submenu" aria-haspopup="true">소개</a>'), 
+  array(
+    'source' => '<li class="first"><a href="https://blog.mozilla.org/" tabindex="-1">Blog</a></li>
+        <li><a href="/en-US/firefox/about/" tabindex="-1">About Firefox</a></li>
+        <li><a href="/join" tabindex="-1">Join Mozilla</a></li>
+        <li><a href="/en-US/about/participate/" tabindex="-1">Participate</a></li>
+        <li><a href="https://blog.mozilla.org/press/" tabindex="-1">Press Center</a></li>
+        <li><a href="/en-US/firefox/brand/" tabindex="-1">Brand Toolkit</a></li>
+        <li><a href="/en-US/about/careers.html" tabindex="-1">Careers</a></li>
+        <li><a href="/en-US/about/partnerships.html" tabindex="-1">Partnerships</a></li>
+        <li class="last"><a href="/en-US/about/contact.html" tabindex="-1">Contact Us</a></li>', 
+    'target' => '<li class="first"><a href="/ko/about/" tabindex="-1">Mozilla 소개</a></li>
+    <li><a href="http://www.mozilla.or.kr/community/" tabindex="-1">블로그</a></li>
+        <li><a href="/ko/contribute" tabindex="-1">참여하기</a></li>
+        <li><a href="http://www.mozilla.or.kr/community/about" tabindex="-1">한국 커뮤니티</a></li>
+        <li class="last"><a href="/ko/about/contact.html" tabindex="-1">연락처</a></li>'), 
+  array(
+    'source' => '<a href="/en-US/">Home</a> >
+    <a href="/en-US/firefox/fx/#mobile">Mobile</a> >
+    <span>Features</span>', 
+    'target' => '<a href="/ko/">홈</a> >
+    <a href="/ko/firefox/fx/#mobile">모바일</a> >
+    <span>주요 기능</span>'), 
+  // Download button
+  // array(
+  //   'source' => 'Download Firefox — English (US)', 
+  //   'target' => 'Firefox 무료 다운로드- 한국어'), 
+  // array(
+  //   'source' => '/en-US/products/download.html', 
+  //   'target' => '//www.mozilla.org/en-US/products/download.html'), 
+  // array(
+  //   'source' => 'lang=en-US', 
+  //   'target' => 'lang=ko'), 
+  // array(
+  //   'source' => 'Your system doesn\'t meet the <a href="/en-US/firefox/23.0.1/system-requirements/">requirements</a> to run Firefox.', 
+  //   'target' => 'Firefox를 구동하기에 충분한 <a href="//www.mozilla.org/en-US/firefox/23.0.1/system-requirements/">시스템 사양</a>이 아닙니다.'), 
+  // array(
+  //   'source' => '<span class="download-subtitle">Free Download</span>', 
+  //   'target' => '<span class="download-subtitle">무료 다운로드</span>'), 
+  // array(
+  //   'source' => '<span class="download-lang">English (US)</span>', 
+  //   'target' => '<span class="download-lang">한국어</span>'), 
+  array(
+    'source' => '<strong class="download-title"><span>Firefox</span> for Android</strong>', 
+    'target' => '<strong class="download-title"><span>Firefox</span> 안드로이드</strong>'), 
+  array(
+    'source' => '<span class="download-subtitle">Get it free on Google Play</span>', 
+    'target' => '<span class="download-subtitle">Google Play에서 무료 다운로드</span>'), 
+  array(
+    'source' => '<a href="/en-US/firefox/mobile/platforms">Supported Devices</a> |', 
+    'target' => '<a href="/ko/firefox/mobile/platforms">지원 기기</a> |'), 
+  array(
+    'source' => '<a href="/en-US/mobile/notes">What’s New</a> |', 
+    'target' => '<a href="//www.mozilla.org/en-US/mobile/notes">변경내역</a> |'), 
+  array(
+    'source' => '<a href="/en-US/legal/privacy/firefox.html">Privacy</a>', 
+    'target' => '<a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>'), 
+  array(
+    'source' => '<a href="/en-US/firefox/all">Systems &amp; Languages</a> |', 
+    'target' => '<a href="/ko/firefox/all">시스템 &amp; 언어 선택</a> |'), 
+  array(
+    'source' => '<a href="/en-US/firefox/notes">What’s New</a> |', 
+    'target' => '<a href="//www.mozilla.org/en-US/firefox/notes">변경내역</a> |'), 
+  // Main contents
+  array(
+    'source' => 'Mobile features', 
+    'target' => '모바일 버전 주요 기능'), 
+  array(
+    'source' => 'All the awesomeness of Firefox, packed into a mobile device.', 
+    'target' => 'Firefox의 모든 장점을 모바일 기기에서 만나보실 수 있습니다.'), 
+  array(
+    'source' => '<h2>Fast</h2>', 
+    'target' => '<h2>빠름</h2>'), 
+  array(
+    'source' => 'Get to the Web quickly with speedy start up and page load times.', 
+    'target' => '빠른 실행 속도와 페이지 로딩이 웹 서핑을 쾌적하게 만들어 줍니다.'), 
+  array(
+    'source' => 'Type less, browse more with the <a href="https://support.mozilla.org/kb/use-awesome-screen-search-firefox-android">Awesome Bar</a> and <a href="https://support.mozilla.org/kb/use-awesome-screen-search-firefox-android">Awesome Screen</a>.', 
+    'target' => '<a href="http://support.mozilla.org/kb/use-awesome-screen-search-firefox-android">스마트 주소창</a>이 웹 사이트 이용 내역을 기억해 두고 있어서 검색이 보다 쉬워지고 원하는 곳을 빠르게 이동할 수 있습니다.'), 
+  array(
+    'source' => 'Browse multiple sites at once, simply and easily, with easy-to-use <a href="https://support.mozilla.org/kb/use-awesome-screen-search-firefox-android">tabs.</a>', 
+    'target' => '사용하기 쉬운 <a href="https://support.mozilla.org/kb/use-awesome-screen-search-firefox-android">탭</a>을 사용해서 여러 사이트를 한번에 간단하고 쉽게 사용합니다.'), 
+  array(
+    'source' => '<h2>Safe</h2>', 
+    'target' => '<h2>안전함</h2>'), 
+  array(
+    'source' => 'Enjoy the latest security features to easily customize settings for passwords, private data, cookies and more. <a class="more" href="https://support.mozilla.org/kb/configure-mobile-privacy-and-security-settings">Learn more</a>', 
+    'target' => '최신 버전은 보안 설정에서 암호, 개인 정보, 쿠키, 이미지, 부가 기능의 관련 보안 설정을 <a class="more" href="https://support.mozilla.org/kb/configure-mobile-privacy-and-security-settings">간편하게 조정</a>할 수 있습니다.'), 
+  array(
+    'source' => 'Control what you share on the Web with features like <a href="/en-US/dnt/">Do Not Track</a>', 
+    'target' => '<a href="/en-US/dnt/">개인 정보 추적 금지</a>과 같은 기능이 웹 사이트가 추적할 수 있는 개인 정보 범위를 조절합니다.'), 
+  array(
+    'source' => 'Browse without worry thanks to built-in <a href="/en-US/firefox/phishing-protection/">phishing and malware protection.</a>', 
+    'target' => '내장된 <a href="/en-US/firefox/phishing-protection/">피싱과 악성코드 방어 기능</a> 덕분에 걱정없이 브라우징 할 수 있습니다.'), 
+  array(
+    'source' => '<h2>Smart</h2>', 
+    'target' => '<h2>똑똑함</h2>'), 
+  array(
+    'source' => 'Experience the unlimited possibilities of the mobile Web with full support for HTML5 and Web APIs. <a class="more" href="https://developer.mozilla.org/en-US/docs/HTML/HTML5">Learn more</a>', 
+    'target' => 'HTML5와 웹 API 완벽 지원을 통해 모바일 웹의 무한한 가능성을 경험해 보십시오. <a class="more" href="https://developer.mozilla.org/en/Mobile">자세히 알아보기</a>'), 
+  array(
+    'source' => '<a href="https://support.mozilla.org/kb/how-do-i-set-up-firefox-sync">Sync</a> your desktop history, bookmarks and passwords to all your devices for a painless browsing experience on mobile.', 
+    'target' => '데스크톱 버전에 저장된 방문 기록, 북마크, 암호를 모바일 단말기와 <a href="http://support.mozilla.org/kb/how-do-i-set-up-firefox-sync">동기화</a>하면 모바일에서도 익숙하게 웹 서핑을 즐길 수 있습니다.'), 
+  array(
+    'source' => 'Personalize features and functionality with add-ons. <a class="more" href="https://addons.mozilla.org/android/">Get add-ons</a>', 
+    'target' => '부가 기능으로 나만의 기능을 추가해 보십시오. <a class="more" href="http://addons.mozilla.org/mobile/">부가 기능 받기</a>'), 
+  array(
+    'source' => 'Get Firefox for Android free from <a href="https://market.android.com/details?id=org.mozilla.firefox">Google Play</a></a>', 
+    'target' => '<a href="https://market.android.com/details?id=org.mozilla.firefox">Google Play 스토어에서 안드로이드용 Firefox 무료 다운로드</a>'), 
+  // Footer
+  array(
+    'source' => '<a href="/en-US/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>', 
+    'target' => '<a href="/ko/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>'), 
+  array(
+    'source' => 'Portions of this content are ©1998–2013 by individual mozilla.org contributors. Content available under a <a href="/en-US/foundation/licensing/website-content/">Creative Commons license</a>.', 
+    'target' => '&copy;1998–2012 일부 콘텐츠는 mozilla.org 공헌자에 의해 만들어졌으며, 이 콘텐츠는 <a href="//www.mozilla.org/foundation/licensing/website-content.html">Creative Commons license</a> 하에서 사용 가능합니다.'), 
+  array(
+    'source' => '<a href="/en-US/contribute/page/">Contribute to this page</a>', 
+    'target' => '<a href="/ko/contribute/page/">공헌자 홈페이지</a>'), 
+  array(
+    'source' => '<ul class="footer-nav">
+            <li><a href="/en-US/about/contact.html#map-mountain_view">Contact Us</a></li>
+            <li><a href="/en-US/about/partnerships/">Partner with Us</a></li>
+            <li><a href="/en-US/privacy/">Privacy Policy</a></li>
+            <li><a href="/en-US/about/legal.html">Legal Notices</a></li>
+            <li><a href="/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a></li>
+          </ul>', 
+    'target' => '<ul class="footer-nav">
+            <li><a href="//www.mozilla.org/en-US/about/contact.html#map-mountain_view">연락하기(영문)</a></li>
+            <li><a href="//www.mozilla.org/en-US/privacy/">개인 정보 보호 정책(영문)</a></li>
+            <li><a href="//www.mozilla.org/en-US/about/legal.html">법적 고지(영문)</a></li>
+            <li><a href="//www.mozilla.org/en-US/legal/fraud-report/index.html">상표권 침해 신고(영문)</a></li>
+          </ul>'), 
+  array(
+    'source' => '<ul class="footer-nav">
+            <li><a href="https://twitter.com/firefox">Twitter</a></li>
+            <li><a href="https://facebook.com/Firefox">Facebook</a></li>
+            <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
+          </ul>', 
+    'target' => '<ul class="footer-nav">
+            <li><a href="//twitter.com/mozillakr">Twitter</a></li>
+            <li><a href="//facebook.com/mozillakr">Facebook</a></li>
+            <li><a href="//affiliates.mozilla.org/ko/">Firefox 제휴</a></li>
+          </ul>'), 
+  array(
+    'source' => '//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js?', 
+    'target' => '/ko/tabzilla/tabzilla.js?'), 
+  array(
+    'source' => "<script>
+var _gaq = _gaq || [];
+var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+_gaq.push(['_setAccount', 'UA-36116321-1']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_setAllowAnchor', true]);
+_gaq.push(['_trackPageview']);
 
-    
-    
-    
-<div id="main-feature">
-  
+(function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
 
+    var prefix = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www');
+    ga.src = prefix + '.google-analytics.com/ga.js';
 
-<?=download_button_mobile("small")?> 
-	<hgroup>
-    <h1 class="large">모바일 버전 주요 기능</h1>
-    <h2>Firefox의 모든 장점을 모바일 기기에서 만나보실 수 있습니다.</h2>
-  </hgroup>
-</div>
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>", 
+    'target' => "<script>
+        var _gaq = _gaq || [];
+       _gaq.push(['_setAccount', 'UA-53785-1']);
+       _gaq.push(['_setDomainName', 'mozilla.or.kr']);
+       _gaq.push(['_trackPageview']);
 
-<div id="main-content">
-  <div class="col1">
-    <section id="fast">
-      <h2>빠름</h2>
-      <p>빠른 실행 속도와 페이지 로딩이 웹 서핑을 쾌적하게 만들어 줍니다.</p>
-      <p><a href="http://support.mozilla.org/kb/use-awesome-screen-search-firefox-android">스마트 주소창</a>이 웹 사이트 이용 내역을 기억해 두고 있어서 검색이 보다 쉬워지고 원하는 곳을 빠르게 이동할 수 있습니다.</p>
-    </section>
-    
-    <section id="safe">
-      <h2>안전함</h2>
-      <p class="icon privacy"><span class="img"></span>개인 정보 추적 금지와 같은 기능이 웹 사이트가 추적할 수 있는 개인 정보 범위를 조절합니다. <a class="more" href="http://support.mozilla.org/kb/configure-mobile-privacy-and-security-settings">자세히 알아보기</a></p>
-      <p>최신 버전은 보안 설정에서 암호, 개인 정보, 쿠키, 이미지, 부가 기능의 관련 보안 설정을 간편하게 조정할 수 있습니다.</p>
+       (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+     </script>"), 
+);
+
+$insert_rule = array(
+  array(
+    'before' => '<p><a href="https://market.android.com/details?id=org.mozilla.firefox">Google Play 스토어에서 안드로이드용 Firefox 무료 다운로드</a></p>
     </section>
   </div>
-  
-  <div class="col2">
-    <section id="smart">
-      <h2>똑똑함</h2>
-      <p class="icon html5"><span class="img"></span>HTML5와 웹 API 완벽 지원을 통해 모바일 웹의 무한한 가능성을 경험해 보십시오. <a class="more" href="https://developer.mozilla.org/en/Mobile">자세히 알아보기</a></p>
-      <p class="icon sync"><span class="img"></span>데스크톱 버전에 저장된 방문 기록, 북마크, 암호를 모바일 단말기와 <a href="http://support.mozilla.org/kb/how-do-i-set-up-firefox-sync">동기화</a>하면 모바일에서도 익숙하게 웹 서핑을 즐길 수 있습니다.</p>
-      <p class="icon addons"><span class="img"></span>부가 기능으로 나만의 기능을 추가해 보십시오. <a class="more" href="http://addons.mozilla.org/mobile/">부가 기능 받기</a></p>
-      <p><a href="http://support.mozilla.org/kb/tabs-quickly-switch-websites-firefox-mobile">탭</a> 전환시 실시간 사이트 화면이 썸네일 이미지로 표시되어 매우 편리합니다.</p>
-    </section>
 
-    <section id="get">
-      <p><a href="https://market.android.com/details?id=org.mozilla.firefox">Google Play 스토어에서 안드로이드용 Firefox 무료 다운로드</a></p>
-    </section>
-  </div>
+</div>', 
+    'after' => '</div><!-- close #wrapper -->', 
+    'insert' => ''
+  ), 
+);
 
-</div>
-
-
-          
-  
-
-<?
-	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/fxnews.php";
-	$extra_js='<script src="http://www.mozilla.org/media/js/firefox-resp-min.js?build='.$build_code.'"></script>';
-	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
+require_once('../../../../lib/MozKr.class.php');
+$t = new MozKr('http://www.mozilla.org/en-US/firefox/mobile/features/', 'http://www.mozilla.or.kr/ko/firefox/mobile/features/', $replace_rule, $insert_rule);
+echo($t->get_content());
 ?>

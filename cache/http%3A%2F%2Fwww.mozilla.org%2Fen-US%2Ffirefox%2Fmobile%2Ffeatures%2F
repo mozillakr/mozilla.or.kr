@@ -1,0 +1,526 @@
+
+
+<!doctype html>
+<html class="windows no-js" lang="en-US" dir="ltr">
+  <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Mozilla Firefox Web Browser — Mozilla Firefox Mobile Browser — mozilla.org</title>
+    <meta name="description" content="Mozilla Firefox, free web browser, is created by a global non-profit dedicated to putting individuals in control &amp; shaping the future of the web for the public good.">
+
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=959b02a" />
+    
+    <!--[if lte IE 8]>
+    <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
+    <![endif]-->
+
+      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/mobile_features-min.css?build=959b02a" />
+
+    <meta name="og:image" content="//mozorg.cdn.mozilla.net/media/img/firefox/firefox-100.jpg?2013-06">
+
+    <link rel="shortcut icon" type="image/icon" href="//mozorg.cdn.mozilla.net/media/img/firefox/favicon.ico?2013-08">
+    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=959b02a"></script>
+
+    <script>
+var _gaq = _gaq || [];
+var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+_gaq.push(['_setAccount', 'UA-36116321-1']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_setAllowAnchor', true]);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+
+    var prefix = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www');
+    ga.src = prefix + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>  </head>
+
+  <body id="mobile-features" class="html-ltr sky" data-latest-firefox="23.0.1" data-esr-versions="[10, 17]">
+    <div id="strings" ></div>
+    <div id="outer-wrapper">
+    <div id="wrapper">
+
+          <header id="masthead">
+        <a href="/en-US/" id="tabzilla">Mozilla</a>
+
+        <nav id="nav-main" role="navigation">
+  <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>
+  <ul id="nav-main-menu" class="has-submenus">
+    <li class="first" id="nav-main-features"><a href="/en-US/firefox/fx/#desktop" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">Desktop</a>
+      <ul aria-expanded="false" id="nav-main-features-submenu" class="submenu">
+        <li class="first"><a href="/en-US/firefox/features/" tabindex="-1">Features</a></li>
+        <li><a href="/en-US/firefox/customize/" tabindex="-1">Customize</a></li>
+        <li><a href="/en-US/firefox/performance/" tabindex="-1">Performance</a></li>
+        <li><a href="/en-US/firefox/technology/" tabindex="-1">Technology</a></li>
+        <li class="last"><a href="/en-US/firefox/security/" tabindex="-1">Privacy &amp; Security</a></li>
+      </ul>
+    </li>
+    <li id="nav-main-mobile"><a href="/en-US/firefox/fx/" tabindex="0" aria-owns="nav-main-mobile-submenu" aria-haspopup="true">Mobile</a>
+      <ul aria-expanded="false" id="nav-main-mobile-submenu" class="submenu">
+        <li class="first"><a href="/en-US/firefox/mobile/features/" tabindex="-1">Features</a></li>
+        <li><a href="https://addons.mozilla.org/en-US/mobile/?browse=featured" tabindex="-1">Customize</a></li>
+        <li class="last"><a href="/en-US/firefox/mobile/faq/" tabindex="-1">FAQ</a></li>
+      </ul>
+    </li>
+    <li id="nav-main-releases" class=""><a href="/en-US/firefox/channel/" tabindex="0" aria-owns="nav-main-releases-submenu" aria-haspopup="true">Releases</a>
+      <ul aria-expanded="false" id="nav-main-releases-submenu" class="submenu">
+        <li class="first"><a href="/en-US/firefox/channel/" tabindex="-1">Overview</a></li>
+        <li><a href="/en-US/firefox/aurora/" tabindex="-1">Firefox Aurora</a></li>
+        <li><a href="/beta/" tabindex="-1">Firefox Beta</a></li>
+        <li><a href="/en-US/firefox/" tabindex="-1">Firefox</a></li>
+        <li class="last"><a href="/en-US/firefox/organizations/" tabindex="-1">Firefox for Organizations</a></li>
+      </ul>
+    </li>
+    <li id="nav-main-addons"><a href="https://addons.mozilla.org/" tabindex="0" aria-owns="nav-main-addons-submenu" aria-haspopup="true">Add-ons</a>
+      <ul aria-expanded="false" id="nav-main-addons-submenu" class="submenu">
+        <li class="first"><a href="https://addons.mozilla.org/firefox/" tabindex="-1">Desktop Add-ons</a></li>
+        <li><a href="https://addons.mozilla.org/android/" tabindex="-1">Mobile Add-ons</a></li>
+        <li class="last"><a href="https://addons.mozilla.org/firefox/themes/" tabindex="-1">Themes</a></li>
+      </ul>
+      </li>
+      <li id="nav-main-support"><a href="https://support.mozilla.org/" tabindex="0" aria-owns="nav-main-support-submenu" aria-haspopup="true">Support</a>
+      <ul aria-expanded="false" id="nav-main-support-submenu" class="submenu">
+        <li class="first"><a href="https://support.mozilla.org/products/firefox" tabindex="-1">Desktop Support</a></li>
+        <li class="last"><a href="https://support.mozilla.org/products/mobile" tabindex="-1">Mobile Support</a></li>
+      </ul>
+    </li>
+    <li class="last" id="nav-main-about"><a href="/en-US/firefox/about/" tabindex="0" aria-owns="nav-main-about-submenu" aria-haspopup="true">About</a>
+      <ul aria-expanded="false" id="nav-main-about-submenu" class="submenu">
+        <li class="first"><a href="https://blog.mozilla.org/" tabindex="-1">Blog</a></li>
+        <li><a href="/en-US/firefox/about/" tabindex="-1">About Firefox</a></li>
+        <li><a href="/join" tabindex="-1">Join Mozilla</a></li>
+        <li><a href="/en-US/about/participate/" tabindex="-1">Participate</a></li>
+        <li><a href="https://blog.mozilla.org/press/" tabindex="-1">Press Center</a></li>
+        <li><a href="/en-US/firefox/brand/" tabindex="-1">Brand Toolkit</a></li>
+        <li><a href="/en-US/about/careers.html" tabindex="-1">Careers</a></li>
+        <li><a href="/en-US/about/partnerships.html" tabindex="-1">Partnerships</a></li>
+        <li class="last"><a href="/en-US/about/contact.html" tabindex="-1">Contact Us</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/template/header-logo.png?2013-06" alt="Mozilla Firefox" height="70" width="185" data-inverse-src="//mozorg.cdn.mozilla.net/media/img/firefox/template/header-logo-inverse.png?2013-06"></h2>
+
+        
+        
+          <nav class="breadcrumbs">
+    <a href="/en-US/">Home</a> >
+    <a href="/en-US/firefox/fx/#mobile">Mobile</a> >
+    <span>Features</span>
+  </nav>
+
+      </header>
+    
+    
+              
+    
+<div id="main-feature">
+  
+
+
+<div id="download-button-mobile-release" class="download-button download-button-mobile download-button-small">
+    <ul class="download-list">
+          <li class="os_android">
+        <a class="download-link"
+           href="https://play.google.com/store/apps/details?id=org.mozilla.firefox">
+          <span class="download-content">
+                                          <strong class="download-title"><span>Firefox</span> for Android</strong>
+                                            <span class="download-subtitle">Get it free on Google Play</span>
+                                    </span>
+        </a>
+      </li>
+      </ul>
+      <small class="download-other os_android">
+      <a href="/en-US/firefox/mobile/platforms">Supported Devices</a> |
+              <a href="/en-US/mobile/notes">What’s New</a> |
+            <a href="/en-US/legal/privacy/firefox.html">Privacy</a>
+    </small>
+    </div>
+  <hgroup>
+    <h1 class="large">Mobile features</h1>
+    <h2>All the awesomeness of Firefox, packed into a mobile device.</h2>
+  </hgroup>
+</div>
+
+<div id="main-content">
+  <div class="col1">
+    <section id="fast">
+      <h2>Fast</h2>
+      <p>Get to the Web quickly with speedy start up and page load times.</p>
+      <p>Type less, browse more with the <a href="https://support.mozilla.org/kb/use-awesome-screen-search-firefox-android">Awesome Bar</a> and <a href="https://support.mozilla.org/kb/use-awesome-screen-search-firefox-android">Awesome Screen</a>.</p>
+      <p>Browse multiple sites at once, simply and easily, with easy-to-use <a href="https://support.mozilla.org/kb/use-awesome-screen-search-firefox-android">tabs.</a></p>
+    </section>
+
+    <section id="safe">
+      <h2>Safe</h2>
+      <p>Enjoy the latest security features to easily customize settings for passwords, private data, cookies and more. <a class="more" href="https://support.mozilla.org/kb/configure-mobile-privacy-and-security-settings">Learn more</a></p>
+      <p class="icon privacy"><span class="img"></span>Control what you share on the Web with features like <a href="/en-US/dnt/">Do Not Track</a>.</p>
+      <p>Browse without worry thanks to built-in <a href="/en-US/firefox/phishing-protection/">phishing and malware protection.</a></p>
+    </section>
+  </div>
+
+  <div class="col2">
+    <section id="smart">
+      <h2>Smart</h2>
+      <p class="icon html5"><span class="img"></span>Experience the unlimited possibilities of the mobile Web with full support for HTML5 and Web APIs. <a class="more" href="https://developer.mozilla.org/en-US/docs/HTML/HTML5">Learn more</a></p>
+      <p class="icon sync"><span class="img"></span><a href="https://support.mozilla.org/kb/how-do-i-set-up-firefox-sync">Sync</a> your desktop history, bookmarks and passwords to all your devices for a painless browsing experience on mobile.</p>
+      <p class="icon addons"><span class="img"></span>Personalize features and functionality with add-ons. <a class="more" href="https://addons.mozilla.org/android/">Get add-ons</a></p>
+    </section>
+
+    <section id="get">
+      <p>Get Firefox for Android free from <a href="https://market.android.com/details?id=org.mozilla.firefox">Google Play</a></a></p>
+    </section>
+  </div>
+
+</div>
+
+
+          
+    <form class="billboard newsletter-form"
+                       id="footer-email-form" action="http://www.mozilla.org/en-US/firefox/mobile/features/#footer-email-form"
+                    method="post">
+              <input type="hidden" name="newsletter-footer" value="Y">
+            <input type="hidden" name="newsletter" value="mozilla-and-you">
+      <input type="hidden" name="source_url" value="http://www.mozilla.org/en-US/firefox/mobile/features/">
+
+              <h3>Get Firefox news</h3>
+      
+      <div class="form-contents">
+        <div class="field field-email ">
+          <input type="email" required="required" placeholder="YOUR EMAIL HERE" name="email" id="id_email" />
+        </div>
+
+        <div id="form-details">
+                      <div class="field field-country">
+              <select name="country" id="id_country">
+<option value="af">Afghanistan</option>
+<option value="al">Albania</option>
+<option value="dz">Algeria</option>
+<option value="as">American Samoa</option>
+<option value="ad">Andorra</option>
+<option value="ao">Angola</option>
+<option value="ai">Anguilla</option>
+<option value="aq">Antarctica</option>
+<option value="ag">Antigua and Barbuda</option>
+<option value="ar">Argentina</option>
+<option value="am">Armenia</option>
+<option value="aw">Aruba</option>
+<option value="au">Australia</option>
+<option value="at">Austria</option>
+<option value="az">Azerbaijan</option>
+<option value="bs">Bahamas</option>
+<option value="bh">Bahrain</option>
+<option value="bd">Bangladesh</option>
+<option value="bb">Barbados</option>
+<option value="by">Belarus</option>
+<option value="be">Belgium</option>
+<option value="bz">Belize</option>
+<option value="bj">Benin</option>
+<option value="bm">Bermuda</option>
+<option value="bt">Bhutan</option>
+<option value="bo">Bolivia</option>
+<option value="ba">Bosnia and Herzegovina</option>
+<option value="bw">Botswana</option>
+<option value="bv">Bouvet Island</option>
+<option value="br">Brazil</option>
+<option value="io">British Indian Ocean Territory</option>
+<option value="vg">British Virgin Islands</option>
+<option value="bn">Brunei Darussalam</option>
+<option value="bg">Bulgaria</option>
+<option value="bf">Burkina Faso</option>
+<option value="bi">Burundi</option>
+<option value="kh">Cambodia</option>
+<option value="cm">Cameroon</option>
+<option value="ca">Canada</option>
+<option value="cv">Cape Verde</option>
+<option value="ky">Cayman Islands</option>
+<option value="cf">Central African Republic</option>
+<option value="td">Chad</option>
+<option value="cl">Chile</option>
+<option value="cn">China</option>
+<option value="cx">Christmas Island</option>
+<option value="cc">Cocos (Keeling) Islands</option>
+<option value="co">Colombia</option>
+<option value="km">Comoros</option>
+<option value="cg">Congo-Brazzaville</option>
+<option value="cd">Congo-Kinshasa</option>
+<option value="ck">Cook Islands</option>
+<option value="cr">Costa Rica</option>
+<option value="hr">Croatia</option>
+<option value="cu">Cuba</option>
+<option value="cy">Cyprus</option>
+<option value="cz">Czech Republic</option>
+<option value="dk">Denmark</option>
+<option value="dj">Djibouti</option>
+<option value="dm">Dominica</option>
+<option value="do">Dominican Republic</option>
+<option value="ec">Ecuador</option>
+<option value="eg">Egypt</option>
+<option value="sv">El Salvador</option>
+<option value="gq">Equatorial Guinea</option>
+<option value="er">Eritrea</option>
+<option value="ee">Estonia</option>
+<option value="et">Ethiopia</option>
+<option value="fk">Falkland Islands (Malvinas)</option>
+<option value="fo">Faroe Islands</option>
+<option value="fj">Fiji</option>
+<option value="fi">Finland</option>
+<option value="fr">France</option>
+<option value="gf">French Guiana</option>
+<option value="pf">French Polynesia</option>
+<option value="tf">French Southern Territories</option>
+<option value="ga">Gabon</option>
+<option value="gm">Gambia</option>
+<option value="ge">Georgia</option>
+<option value="de">Germany</option>
+<option value="gh">Ghana</option>
+<option value="gi">Gibraltar</option>
+<option value="gr">Greece</option>
+<option value="gl">Greenland</option>
+<option value="gd">Grenada</option>
+<option value="gp">Guadeloupe</option>
+<option value="gu">Guam</option>
+<option value="gt">Guatemala</option>
+<option value="gg">Guernsey</option>
+<option value="gn">Guinea</option>
+<option value="gw">Guinea-Bissau</option>
+<option value="gy">Guyana</option>
+<option value="ht">Haiti</option>
+<option value="hm">Heard Island and McDonald Islands</option>
+<option value="hn">Honduras</option>
+<option value="hk">Hong Kong</option>
+<option value="hu">Hungary</option>
+<option value="is">Iceland</option>
+<option value="in">India</option>
+<option value="id">Indonesia</option>
+<option value="ir">Iran</option>
+<option value="iq">Iraq</option>
+<option value="ie">Ireland</option>
+<option value="im">Isle of Man</option>
+<option value="il">Israel</option>
+<option value="it">Italy</option>
+<option value="ci">Ivory Coast</option>
+<option value="jm">Jamaica</option>
+<option value="jp">Japan</option>
+<option value="je">Jersey</option>
+<option value="jo">Jordan</option>
+<option value="kz">Kazakhstan</option>
+<option value="ke">Kenya</option>
+<option value="ki">Kiribati</option>
+<option value="kw">Kuwait</option>
+<option value="kg">Kyrgyzstan</option>
+<option value="la">Laos</option>
+<option value="lv">Latvia</option>
+<option value="lb">Lebanon</option>
+<option value="ls">Lesotho</option>
+<option value="lr">Liberia</option>
+<option value="ly">Libya</option>
+<option value="li">Liechtenstein</option>
+<option value="lt">Lithuania</option>
+<option value="lu">Luxembourg</option>
+<option value="mo">Macao</option>
+<option value="mk">Macedonia, F.Y.R. of</option>
+<option value="mg">Madagascar</option>
+<option value="mw">Malawi</option>
+<option value="my">Malaysia</option>
+<option value="mv">Maldives</option>
+<option value="ml">Mali</option>
+<option value="mt">Malta</option>
+<option value="mh">Marshall Islands</option>
+<option value="mq">Martinique</option>
+<option value="mr">Mauritania</option>
+<option value="mu">Mauritius</option>
+<option value="yt">Mayotte</option>
+<option value="mx">Mexico</option>
+<option value="fm">Micronesia</option>
+<option value="md">Moldova</option>
+<option value="mc">Monaco</option>
+<option value="mn">Mongolia</option>
+<option value="me">Montenegro</option>
+<option value="ms">Montserrat</option>
+<option value="ma">Morocco</option>
+<option value="mz">Mozambique</option>
+<option value="mm">Myanmar</option>
+<option value="na">Namibia</option>
+<option value="nr">Nauru</option>
+<option value="np">Nepal</option>
+<option value="nl">Netherlands</option>
+<option value="an">Netherlands Antilles</option>
+<option value="nc">New Caledonia</option>
+<option value="nz">New Zealand</option>
+<option value="ni">Nicaragua</option>
+<option value="ne">Niger</option>
+<option value="ng">Nigeria</option>
+<option value="nu">Niue</option>
+<option value="nf">Norfolk Island</option>
+<option value="kp">North Korea</option>
+<option value="mp">Northern Mariana Islands</option>
+<option value="no">Norway</option>
+<option value="ps">Occupied Palestinian Territory</option>
+<option value="om">Oman</option>
+<option value="pk">Pakistan</option>
+<option value="pw">Palau</option>
+<option value="pa">Panama</option>
+<option value="pg">Papua New Guinea</option>
+<option value="py">Paraguay</option>
+<option value="pe">Peru</option>
+<option value="ph">Philippines</option>
+<option value="pn">Pitcairn</option>
+<option value="pl">Poland</option>
+<option value="pt">Portugal</option>
+<option value="pr">Puerto Rico</option>
+<option value="qa">Qatar</option>
+<option value="re">Reunion</option>
+<option value="ro">Romania</option>
+<option value="ru">Russian Federation</option>
+<option value="rw">Rwanda</option>
+<option value="bl">Saint Barthélemy</option>
+<option value="sh">Saint Helena</option>
+<option value="kn">Saint Kitts and Nevis</option>
+<option value="lc">Saint Lucia</option>
+<option value="mf">Saint Martin</option>
+<option value="pm">Saint Pierre and Miquelon</option>
+<option value="vc">Saint Vincent and the Grenadines</option>
+<option value="ws">Samoa</option>
+<option value="sm">San Marino</option>
+<option value="st">Sao Tome and Principe</option>
+<option value="sa">Saudi Arabia</option>
+<option value="sn">Senegal</option>
+<option value="rs">Serbia</option>
+<option value="sc">Seychelles</option>
+<option value="sl">Sierra Leone</option>
+<option value="sg">Singapore</option>
+<option value="sk">Slovakia</option>
+<option value="si">Slovenia</option>
+<option value="sb">Solomon Islands</option>
+<option value="so">Somalia</option>
+<option value="za">South Africa</option>
+<option value="gs">South Georgia and the South Sandwich Islands</option>
+<option value="kr">South Korea</option>
+<option value="es">Spain</option>
+<option value="lk">Sri Lanka</option>
+<option value="sd">Sudan</option>
+<option value="sr">Suriname</option>
+<option value="sj">Svalbard and Jan Mayen</option>
+<option value="sz">Swaziland</option>
+<option value="se">Sweden</option>
+<option value="ch">Switzerland</option>
+<option value="sy">Syria</option>
+<option value="tw">Taiwan</option>
+<option value="tj">Tajikistan</option>
+<option value="tz">Tanzania</option>
+<option value="th">Thailand</option>
+<option value="tl">Timor-Leste</option>
+<option value="tg">Togo</option>
+<option value="tk">Tokelau</option>
+<option value="to">Tonga</option>
+<option value="tt">Trinidad and Tobago</option>
+<option value="tn">Tunisia</option>
+<option value="tr">Turkey</option>
+<option value="tm">Turkmenistan</option>
+<option value="tc">Turks and Caicos Islands</option>
+<option value="tv">Tuvalu</option>
+<option value="ae">U.A.E.</option>
+<option value="vi">U.S. Virgin Islands</option>
+<option value="ug">Uganda</option>
+<option value="ua">Ukraine</option>
+<option value="gb">United Kingdom</option>
+<option value="us" selected="selected">United States</option>
+<option value="um">United States Minor Outlying Islands</option>
+<option value="uy">Uruguay</option>
+<option value="uz">Uzbekistan</option>
+<option value="vu">Vanuatu</option>
+<option value="va">Vatican City</option>
+<option value="ve">Venezuela</option>
+<option value="vn">Vietnam</option>
+<option value="wf">Wallis and Futuna</option>
+<option value="eh">Western Sahara</option>
+<option value="ye">Yemen</option>
+<option value="zm">Zambia</option>
+<option value="zw">Zimbabwe</option>
+<option value="ax">Åland Islands</option>
+</select>
+            </div>
+                                <div class="field field-language ">
+              <select required="required" name="lang" id="id_lang">
+<option value="id">Bahasa Indonesia</option>
+<option value="de">Deutsch</option>
+<option value="en" selected="selected">English</option>
+<option value="es">Español</option>
+<option value="fr">Français</option>
+<option value="pl">Polski</option>
+<option value="pt">Português</option>
+<option value="ru">Русский</option>
+</select>
+            </div>
+                    <div class="field field-format">
+            <label for="id_fmt_0"><input checked="checked" type="radio" id="id_fmt_0" value="H" name="fmt" /> HTML</label><label for="id_fmt_1"><input type="radio" id="id_fmt_1" value="T" name="fmt" /> Text</label>
+          </div>
+          <div class="field field-privacy ">
+            <label for="id_privacy" class="privacy-check-label"><input required="required" type="checkbox" name="privacy" id="id_privacy" /> <span class="title">I’m okay with you handling this info as you explain in your <a href="/en-US/privacy-policy">Privacy Policy</a></span></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-submit">
+        <input type="submit" id="footer_email_submit"
+               value="Sign me up »" class="button">
+
+        <p class="form-details">
+          <small>We will only send you Mozilla-related information.</small>
+        </p>
+      </div>
+    </form>
+  
+    </div><!-- close #wrapper -->
+
+          <footer id="colophon" class="">
+      <div class="row">
+
+          <div class="footer-logo">
+              <a href="/en-US/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+                Portions of this content are ©1998–2013 by individual mozilla.org contributors. Content available under a <a href="/en-US/foundation/licensing/website-content/">Creative Commons license</a>.              </p>
+              <p>
+                <a href="/en-US/contribute/page/">Contribute to this page</a>
+              </p>
+          </div>
+          <ul class="footer-nav">
+            <li><a href="/en-US/about/contact.html#map-mountain_view">Contact Us</a></li>
+            <li><a href="/en-US/about/partnerships/">Partner with Us</a></li>
+            <li><a href="/en-US/privacy/">Privacy Policy</a></li>
+            <li><a href="/en-US/about/legal.html">Legal Notices</a></li>
+            <li><a href="/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a></li>
+          </ul>
+                    <ul class="footer-nav">
+            <li><a href="https://twitter.com/firefox">Twitter</a></li>
+            <li><a href="https://facebook.com/Firefox">Facebook</a></li>
+            <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
+          </ul>
+          
+      </div>
+      </footer>
+    
+    </div><!-- close #outer-wrapper -->
+
+    <!--[if IE 9]>
+      <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
+    <![endif]-->
+
+      <script src="//mozorg.cdn.mozilla.net/media/js/firefox-resp-min.js?build=959b02a"></script>
+          <script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js?build=959b02a"></script>
+          </body>
+</html>
