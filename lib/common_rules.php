@@ -1,5 +1,12 @@
 <?php
 $common_rule = array(
+  // link on head
+  array(
+    'source' => '<link rel="canonical" hreflang="en-US" href="http://www.mozilla.org/en-US/', 
+    'target' => '<link rel="canonical" hreflang="ko" href="http://www.mozilla.or.kr/ko/'), 
+  array(
+    'source' => '<link rel="alternate" hreflang="x-default" href="http://www.mozilla.org/', 
+    'target' => '<link rel="alternate" hreflang="x-default" href="http://www.mozilla.or.kr/'), 
   // Menu titles
   array(
     'source' => '<a href="/en-US/" id="tabzilla">Mozilla</a>', 

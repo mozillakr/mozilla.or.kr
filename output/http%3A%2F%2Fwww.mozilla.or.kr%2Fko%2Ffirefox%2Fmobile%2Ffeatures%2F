@@ -5,7 +5,10 @@
   <head>
         <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+            <link rel="canonical" hreflang="ko" href="http://www.mozilla.or.kr/ko/firefox/mobile/features/">
+    <link rel="alternate" hreflang="x-default" href="http://www.mozilla.or.kr/firefox/mobile/features/">
+          <link rel="alternate" hreflang="en-US" href="http://www.mozilla.org/en-US/firefox/mobile/features/" title="English (US)">
+      
     <title>Mozilla Firefox 웹 브라우저 — Mozilla Firefox 모바일 브라우저</title>
     <meta name="description" content="Mozilla Firefox, free web browser, is created by a global non-profit dedicated to putting individuals in control &amp; shaping the future of the web for the public good.">
 
