@@ -38,7 +38,7 @@
       })();
      </script>  </head>
 
-  <body id="mobile-features" class="html-ltr sky" data-latest-firefox="23.0.1" data-esr-versions="[10, 17]">
+  <body id="mobile-features" class="html-ltr sky" data-latest-firefox="24.0" data-esr-versions="[10, 17]">
     <div id="strings" ></div>
     <div id="outer-wrapper">
     <div id="wrapper">

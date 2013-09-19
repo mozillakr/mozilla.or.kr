@@ -94,7 +94,7 @@
         <div class="download download-dumb">
     <h4>Firefox 무료 다운로드- 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
   </div>
 
     </noscript>
@@ -102,12 +102,12 @@
         <div class="download download-dumb">
     <h4>Firefox 무료 다운로드- 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
   </div>
 
     </div>
         <p class="unsupported-download">
-      Firefox를 구동하기에 충분한 <a href="//www.mozilla.org/en-US/firefox/23.0.1/system-requirements/">시스템 사양</a>이 아닙니다.
+      Firefox를 구동하기에 충분한 <a href="//www.mozilla.org/en-US/firefox/24.0/system-requirements/">시스템 사양</a>이 아닙니다.
     </p>
     <ul class="download-list">
           <li class="os_windows">
@@ -123,7 +123,7 @@
       </li>
           <li class="os_linux">
         <a class="download-link"
-           href="//www.mozilla.org/en-US/products/download.html?product=firefox-23.0.1&amp;os=linux&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=linux&amp;lang=ko">
+           href="//www.mozilla.org/en-US/products/download.html?product=firefox-24.0&amp;os=linux&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-24.0&amp;os=linux&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
                             <span class="download-subtitle">무료 다운로드</span>
@@ -134,7 +134,7 @@
       </li>
           <li class="os_osx">
         <a class="download-link"
-           href="//www.mozilla.org/en-US/products/download.html?product=firefox-23.0.1&amp;os=osx&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=osx&amp;lang=ko">
+           href="//www.mozilla.org/en-US/products/download.html?product=firefox-24.0&amp;os=osx&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-24.0&amp;os=osx&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
                             <span class="download-subtitle">무료 다운로드</span>

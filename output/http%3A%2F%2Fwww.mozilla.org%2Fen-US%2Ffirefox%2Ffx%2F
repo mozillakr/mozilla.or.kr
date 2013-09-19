@@ -47,7 +47,7 @@ _gaq.push(['_trackPageview']);
 })();
 </script>  </head>
 
-  <body id="firefox-fx" class="html-ltr sky" data-latest-firefox="23.0.1" data-esr-versions="[10, 17]">
+  <body id="firefox-fx" class="html-ltr sky" data-latest-firefox="24.0" data-esr-versions="[10, 17]">
     <div id="strings" ></div>
     <div id="outer-wrapper">
     <div id="wrapper">
@@ -220,7 +220,7 @@ _gaq.push(['_trackPageview']);
         <div class="download download-dumb">
     <h4>Download Firefox — English (US)</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=en-US" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=linux&amp;lang=en-US" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=osx&amp;lang=en-US" class="button-green">Mac OS X</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=en-US" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=linux&amp;lang=en-US" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=osx&amp;lang=en-US" class="button-green">Mac OS X</a></li>    </ul>
   </div>
 
     </noscript>
@@ -228,12 +228,12 @@ _gaq.push(['_trackPageview']);
         <div class="download download-dumb">
     <h4>Download Firefox — English (US)</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=en-US" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=linux&amp;lang=en-US" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=osx&amp;lang=en-US" class="button-green">Mac OS X</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=en-US" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=linux&amp;lang=en-US" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=osx&amp;lang=en-US" class="button-green">Mac OS X</a></li>    </ul>
   </div>
 
     </div>
         <p class="unsupported-download">
-      Your system doesn't meet the <a href="/en-US/firefox/23.0.1/system-requirements/">requirements</a> to run Firefox.
+      Your system doesn't meet the <a href="/en-US/firefox/24.0/system-requirements/">requirements</a> to run Firefox.
     </p>
     <ul class="download-list">
           <li class="os_windows">
@@ -249,7 +249,7 @@ _gaq.push(['_trackPageview']);
       </li>
           <li class="os_linux">
         <a class="download-link"
-           href="/en-US/products/download.html?product=firefox-23.0.1&amp;os=linux&amp;lang=en-US"           data-direct-link="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=linux&amp;lang=en-US">
+           href="/en-US/products/download.html?product=firefox-24.0&amp;os=linux&amp;lang=en-US"           data-direct-link="https://download.mozilla.org/?product=firefox-24.0&amp;os=linux&amp;lang=en-US">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
                             <span class="download-subtitle">Free Download</span>
@@ -260,7 +260,7 @@ _gaq.push(['_trackPageview']);
       </li>
           <li class="os_osx">
         <a class="download-link"
-           href="/en-US/products/download.html?product=firefox-23.0.1&amp;os=osx&amp;lang=en-US"           data-direct-link="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=osx&amp;lang=en-US">
+           href="/en-US/products/download.html?product=firefox-24.0&amp;os=osx&amp;lang=en-US"           data-direct-link="https://download.mozilla.org/?product=firefox-24.0&amp;os=osx&amp;lang=en-US">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
                             <span class="download-subtitle">Free Download</span>
@@ -302,7 +302,7 @@ _gaq.push(['_trackPageview']);
         <div class="download download-dumb">
     <h4>Download Firefox — English (US)</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=en-US" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=linux&amp;lang=en-US" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=osx&amp;lang=en-US" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=en-US" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=linux&amp;lang=en-US" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=osx&amp;lang=en-US" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
   </div>
 
     </noscript>
@@ -310,12 +310,12 @@ _gaq.push(['_trackPageview']);
         <div class="download download-dumb">
     <h4>Download Firefox — English (US)</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=en-US" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=linux&amp;lang=en-US" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=osx&amp;lang=en-US" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=en-US" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=linux&amp;lang=en-US" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=osx&amp;lang=en-US" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
   </div>
 
     </div>
         <p class="unsupported-download">
-      Your system doesn't meet the <a href="/en-US/firefox/23.0.1/system-requirements/">requirements</a> to run Firefox.
+      Your system doesn't meet the <a href="/en-US/firefox/24.0/system-requirements/">requirements</a> to run Firefox.
     </p>
     <ul class="download-list">
           <li class="os_windows">
@@ -331,7 +331,7 @@ _gaq.push(['_trackPageview']);
       </li>
           <li class="os_linux">
         <a class="download-link"
-           href="/en-US/products/download.html?product=firefox-23.0.1&amp;os=linux&amp;lang=en-US"           data-direct-link="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=linux&amp;lang=en-US">
+           href="/en-US/products/download.html?product=firefox-24.0&amp;os=linux&amp;lang=en-US"           data-direct-link="https://download.mozilla.org/?product=firefox-24.0&amp;os=linux&amp;lang=en-US">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
                             <span class="download-subtitle">Free Download</span>
@@ -342,7 +342,7 @@ _gaq.push(['_trackPageview']);
       </li>
           <li class="os_osx">
         <a class="download-link"
-           href="/en-US/products/download.html?product=firefox-23.0.1&amp;os=osx&amp;lang=en-US"           data-direct-link="https://download.mozilla.org/?product=firefox-23.0.1&amp;os=osx&amp;lang=en-US">
+           href="/en-US/products/download.html?product=firefox-24.0&amp;os=osx&amp;lang=en-US"           data-direct-link="https://download.mozilla.org/?product=firefox-24.0&amp;os=osx&amp;lang=en-US">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
                             <span class="download-subtitle">Free Download</span>
