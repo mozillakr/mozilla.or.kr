@@ -315,6 +315,19 @@
             <li><a href="//facebook.com/mozillakr">Facebook</a></li>
             <li><a href="//affiliates.mozilla.org/ko/">Firefox 제휴</a></li>
           </ul>
+                              <div class="footer-lang">
+            
+<form id="lang_form" dir="ltr" method="get" action="">
+  <label for="language">Other languages:</label>
+  <select id="language" name="lang" dir="ltr">
+          <option value="en-US" selected>English (US)</option>
+          <option value="fr">Français</option>
+      </select>
+  <noscript>
+    <button type="submit">Go</button>
+  </noscript>
+</form>
+          </div>
           
       </div>
       </footer>

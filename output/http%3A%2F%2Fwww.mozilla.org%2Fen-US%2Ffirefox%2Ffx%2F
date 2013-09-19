@@ -723,6 +723,9 @@ _gaq.push(['_trackPageview']);
             <li><a href="https://facebook.com/Firefox">Facebook</a></li>
             <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
           </ul>
+                              <div class="footer-lang">
+            
+          </div>
           
       </div>
       </footer>
