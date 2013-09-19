@@ -116,8 +116,11 @@ $common_rule = array(
     'source' => 'lang=en-US', 
     'target' => 'lang=ko'), 
   array(
-    'source' => 'Your system doesn\'t meet the <a href="/en-US/firefox/23.0.1/system-requirements/">requirements</a> to run Firefox.', 
-    'target' => 'Firefox를 구동하기에 충분한 <a href="//www.mozilla.org/en-US/firefox/23.0.1/system-requirements/">시스템 사양</a>이 아닙니다.'), 
+    'source' => 'Your system doesn\'t meet the <a href="/en-US/firefox/', 
+    'target' => 'Firefox를 구동하기에 충분한 <a href="//www.mozilla.org/en-US/firefox/'), 
+  array(
+    'source' => '/system-requirements/">requirements</a> to run Firefox.', 
+    'target' => '/system-requirements/">시스템 사양</a>이 아닙니다.'), 
   array(
     'source' => '<span class="download-subtitle">Free Download</span>', 
     'target' => '<span class="download-subtitle">무료 다운로드</span>'), 
