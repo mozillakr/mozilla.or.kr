@@ -12,18 +12,18 @@
     <title>Mozilla Firefox 웹 브라우저 — Mozilla Firefox 모바일 브라우저</title>
     <meta name="description" content="Mozilla Firefox, free web browser, is created by a global non-profit dedicated to putting individuals in control &amp; shaping the future of the web for the public good.">
 
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=959b02a" />
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=82c91b4" />
     
     <!--[if lte IE 8]>
     <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
     <![endif]-->
 
-      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/mobile_features-min.css?build=959b02a" />
+      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/mobile_features-min.css?build=82c91b4" />
 
     <meta name="og:image" content="//mozorg.cdn.mozilla.net/media/img/firefox/firefox-100.jpg?2013-06">
 
     <link rel="shortcut icon" type="image/icon" href="//mozorg.cdn.mozilla.net/media/img/firefox/favicon.ico?2013-08">
-    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=959b02a"></script>
+    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=82c91b4"></script>
 
     <script>
         var _gaq = _gaq || [];
@@ -219,7 +219,7 @@
       <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
     <![endif]-->
 
-      <script src="//mozorg.cdn.mozilla.net/media/js/firefox-resp-min.js?build=959b02a"></script>
-          <script src="/ko/tabzilla/tabzilla.js?build=959b02a"></script>
+      <script src="//mozorg.cdn.mozilla.net/media/js/firefox-resp-min.js?build=82c91b4"></script>
+          <script src="/ko/tabzilla/tabzilla.js?build=82c91b4"></script>
           </body>
 </html>

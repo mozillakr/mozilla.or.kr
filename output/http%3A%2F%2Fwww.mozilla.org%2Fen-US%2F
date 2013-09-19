@@ -15,18 +15,18 @@
     <title>Mozilla — Home of the Mozilla Project — mozilla.org</title>
     <meta name="description" content="">
 
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=959b02a" />
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=82c91b4" />
     
     <!--[if lte IE 8]>
     <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
     <![endif]-->
 
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/responsive-min.css?build=959b02a" />
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/responsive-min.css?build=82c91b4" />
     
-      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/home-min.css?build=959b02a" />
+      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/home-min.css?build=82c91b4" />
 
     <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
-    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=959b02a"></script>
+    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=82c91b4"></script>
 
     <script>
 var _gaq = _gaq || [];
@@ -623,8 +623,8 @@ _gaq.push(['_trackPageview']);
       <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
     <![endif]-->
 
-      <script src="//mozorg.cdn.mozilla.net/media/js/mozorg-resp-min.js?build=959b02a"></script>
-          <script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js?build=959b02a"></script>
-          <script src="//mozorg.cdn.mozilla.net/media/js/home-min.js?build=959b02a"></script>
+      <script src="//mozorg.cdn.mozilla.net/media/js/mozorg-resp-min.js?build=82c91b4"></script>
+          <script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js?build=82c91b4"></script>
+          <script src="//mozorg.cdn.mozilla.net/media/js/home-min.js?build=82c91b4"></script>
   </body>
 </html>
