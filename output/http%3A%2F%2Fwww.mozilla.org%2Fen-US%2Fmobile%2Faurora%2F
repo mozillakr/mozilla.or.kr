@@ -219,7 +219,7 @@ if (gPlatform == 1) {
     <p>Download the pre-Beta build of Firefox.</p>
     <div id="download_aurora_button">
         <div class="home-download beta-download">
-            <a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/en-US/fennec-25.0a2.en-US.android-arm.apk"
+            <a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/en-US/fennec-26.0a2.en-US.android-arm.apk"
                class="download-link download-firefox">
                 <span class="download-content">
                 <span class="download-title">Firefox Aurora</span>
@@ -268,7 +268,7 @@ if (gPlatform == 1) {
         <p>Download Aurora directly to your Android device by scanning the QR code or by clicking the download button from your mobile Web browser.</p>
       </li>
       <li id="step4">
-        <p>Open the “<a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/fennec-25.0a2.en-US.android-arm.apk">.apk</a>” file when it finishes downloading.</p>
+        <p>Open the “<a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/fennec-26.0a2.en-US.android-arm.apk">.apk</a>” file when it finishes downloading.</p>
       </li>
     </ol>
 
