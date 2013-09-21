@@ -1647,7 +1647,7 @@ function dcsMultiTrack() {
 }
 </script>
 
-    <script src="/en-US/tabzilla/media/js/tabzilla.js"></script>
+    <script src="/ko/tabzilla/tabzilla.js"></script>
 	
     <script>
     // <![CDATA[

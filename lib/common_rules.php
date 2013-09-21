@@ -28,6 +28,9 @@ $common_rule = array(
   array(
     'source' => 'content="/img/', 
     'target' => 'content="//www.mozilla.org/img/'), 
+  array(
+    'source' => 'src="/js/', 
+    'target' => 'src="//www.mozilla.org/js/'), 
 
   // link on head
   array(
@@ -243,6 +246,9 @@ $common_rule = array(
   array(
     'source' => '//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js?', 
     'target' => '/ko/tabzilla/tabzilla.js?'), 
+  array(
+    'source' => '/en-US/tabzilla/media/js/tabzilla.js', 
+    'target' => '/ko/tabzilla/tabzilla.js'), 
   array(
     'source' => "<script>
 var _gaq = _gaq || [];
