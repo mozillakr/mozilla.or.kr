@@ -825,7 +825,7 @@ function do_download(link)
                 </div>
             </noscript>        <div class="flash-beta"><a href="http://www.adobe.com/go/flashplayerbeta">Flash 베타 버전</a>도 테스트 해 보세요.</div>
     </div>
-    <div class="warning">Firefox Aurora는 자동으로 Mozilla에 사용 정보를 보냅니다. <a href="/en-US/legal/privacy/firefox.html#telemetry">자세히 보기</a></div>
+    <div class="warning">Firefox Aurora는 자동으로 Mozilla에 사용 정보를 보냅니다. <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html#telemetry">자세히 보기</a></div>
     <ul id="feature-list">
         <li>
             <h3>1. 신규 기능 테스트</h3>
