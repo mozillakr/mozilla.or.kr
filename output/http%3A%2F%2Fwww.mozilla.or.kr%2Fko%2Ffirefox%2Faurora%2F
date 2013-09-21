@@ -1,0 +1,1678 @@
+<!DOCTYPE HTML>
+<html lang="en-US" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024">
+    <title>Mozilla Firefox 웹 브라우저 | Aurora 버전 다운로드</title>
+    <meta name="og:image" content="//www.mozilla.org/img/firefox-100.jpg?2013-06">
+    <meta name="Description" content="Download and test Firefox future releases. Experience the newest innovations with the Aurora or Beta builds.">
+    <style>
+    @font-face {
+        font-family: 'MuseoSans';
+        src: url('//www.mozilla.org/img/fonts/MuseoSans_500-webfont.eot');
+        src: url('//www.mozilla.org/img/fonts/MuseoSans_500-webfont.eot?iefix') format('eot'),
+             url('//www.mozilla.org/img/fonts/MuseoSans_500-webfont.woff') format('woff'),
+             url('//www.mozilla.org/img/fonts/MuseoSans_500-webfont.ttf') format('truetype'),
+             url('//www.mozilla.org/img/fonts/MuseoSans_500-webfont.svg#webfont') format('svg');
+    }
+    </style>
+    <link href="//www.mozilla.org/includes/min/min.css?g=css&_d=20120207" rel="stylesheet">
+    <link href="//www.mozilla.org/tabzilla/media/css/tabzilla.css" rel="stylesheet">
+    <script src="//www.mozilla.org/includes/min/min.js?g=js"></script>
+    <link rel="stylesheet" href="//www.mozilla.org/style/covehead/aurora.css" media="screen" />
+    <META name="WT.z_pdp" content="firefox_aurora" />
+    <META name="WT.si_n" content="Firefox Aurora" />
+    <META name="WT.si_x" content="2" />
+<style>
+#download #update-notice { display: none; }
+
+#update-notice {
+    background: rgb(20,20,20);
+    background: rgba(38, 38, 38, 0.95);
+    border-bottom: 2px solid #686868;
+    text-shadow: 0 1px #000;
+    -moz-text-shadow: 0 1px #000;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    z-index: 99;
+    line-height: 1;
+}
+
+#update-notice.bottom {
+    position: fixed;
+    bottom: 0;
+}
+
+#update-notice .container {
+    text-align: left;
+    padding: 15px 10px 15px 140px;
+    width: 800px;
+    display: inline-block;
+    margin: 0 auto;
+    background: url(//www.mozilla.org/img/covehead/firefox/update-creature.png) 0 100% no-repeat;
+    position: relative;
+}
+
+#update-notice .message {
+    float: left;
+    width: 600px;
+}
+
+#update-notice h2 {
+    letter-spacing: normal;
+    text-transform: none;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 18px;
+    font-style: normal;
+    margin: 0 0 5px 0;
+    color: #fff;
+}
+
+#update-notice p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 0;
+}
+
+#update-notice p.action {
+    width: 200px;
+    margin: 0;
+    text-align: center;
+    float: right;
+}
+
+#home #update-notice p.action {
+    display: none;
+}
+
+#update-notice p.action span {
+    display: block;
+}
+
+#update-notice p.action span a {
+    color: #6ba4ff;
+}
+
+#update-notice .button {
+    display: inline-block;
+    padding: 6px 16px 8px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1),
+                0 -2px rgba(0, 0, 0, 0.1) inset;
+    background:-moz-linear-gradient(top, #84C63C, #489615);
+    background-color: #489615;
+    color: #fff;
+    font-size: 16px;
+    font-style: italic;
+    text-decoration: none;
+    text-shadow: 1px 1px rgba(0,0,0,0.4);
+}
+
+#update-notice .close {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    background: url(//www.mozilla.org/img/covehead/firefox/update-close.png) 0 0 no-repeat;
+    height: 25px;
+    width: 25px;
+    overflow: hidden;
+    text-indent: -1000em;
+}
+
+#update-notice .close:hover,
+#update-notice .close:focus {
+    background-position: -25px 0;
+}
+
+</style>
+
+<script>
+        var _gaq = _gaq || [];
+       _gaq.push(['_setAccount', 'UA-53785-1']);
+       _gaq.push(['_setDomainName', 'mozilla.or.kr']);
+       _gaq.push(['_trackPageview']);
+
+       (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+     </script>
+</head>
+
+<body id="aurora" class="darkbg">
+
+<script>// <![CDATA[
+// add classes to body to indicate browser version and JavaScript availabiliy
+if (document.body.className == '') {
+    document.body.className = 'js';
+} else {
+    document.body.className += ' js';
+}
+
+if (gPlatform == 1) {
+    document.body.className += ' platform-windows';
+} else if (gPlatform == 3 || gPlatform == 4) {
+    document.body.className += ' platform-mac';
+} else if (gPlatform == 2) {
+    document.body.className += ' platform-linux';
+}
+
+// ]]></script>
+
+<noscript><div id="no-js-feature"></div></noscript>
+
+<div id="outer-wrapper">
+<div id="wrapper">
+<div id="doc">
+
+    <div id="nav-access">
+        <a href="#nav-main">메뉴 건너뛰기</a>
+        <a href="#lang_form">언어설정</a>
+    </div>
+
+	<!-- start #header -->
+	<div id="header">
+		<div>
+		<h1>
+                  <a href="/ko/firefox/" title="홈페이지">Mozilla Firefox</a>
+                </h1>
+
+		<a href="http://www.mozilla.or.kr/" class="mozilla" id="tabzilla">mozilla</a>
+		
+<!-- start menu #nav-main -->
+<div id="nav-main" role="navigation">
+  <ul role="menubar">
+    <li id="nav-main-features"  class="first"><a aria-haspopup="true" aria-owns="nav-main-features-submenu" tabindex="0" href="/ko/firefox/fx#desktop">데스크탑</a><ul id="nav-main-features-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="/ko/firefox/features/">주요 기능</a></li><li ><a tabindex="-1" href="/ko/firefox/customize/">부가 기능</a></li><li ><a tabindex="-1" href="/ko/firefox/performance/">성능 향상</a></li><li ><a tabindex="-1" href="/ko/firefox/technology/">웹 기술</a></li><li  class="last"><a tabindex="-1" href="/ko/firefox/security/">보안 및 정보 보호</a></li></ul></li>
+    <li id="nav-main-mobile" ><a aria-haspopup="true" aria-owns="nav-main-mobile-submenu" tabindex="0" href="/ko/firefox/fx/">모바일</a><ul id="nav-main-mobile-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="/ko/mobile/">다운로드</a></li><li ><a tabindex="-1" href="/ko/mobile/features/">주요 기능</a></li><li ><a tabindex="-1" href="https://addons.mozilla.org/ko/mobile/?browse=featured">부가 기능</a></li><li  class="last"><a tabindex="-1" href="/ko/mobile/faq/">FAQ &shy;</a></li></ul></li>
+    <li id="nav-main-releases" ><a aria-haspopup="true" aria-owns="nav-main-releases-submenu" tabindex="0" href="/ko/firefox/channel/">다운로드</a><ul id="nav-main-releases-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="/ko/firefox/channel/">채널별</a></li><li ><a tabindex="-1" href="/ko/firefox/aurora/">Firefox Aurora</a></li><li ><a tabindex="-1" href="/ko/firefox/beta/">Firefox Beta</a></li><li ><a tabindex="-1" href="/ko/firefox/fx/#desktop">Firefox</a></li><li  class="last"><a tabindex="-1" href="/ko/firefox/organizations/">Firefox 기관용</a></li></ul></li>
+    <li id="nav-main-addons" ><a aria-haspopup="true" aria-owns="nav-main-addons-submenu" tabindex="0" href="https://addons.mozilla.org/">부가 기능</a><ul id="nav-main-addons-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="https://addons.mozilla.org/ko/firefox/">PC용 부가기능</a></li><li ><a tabindex="-1" href="https://addons.mozilla.org/ko/android/">모바일용 부가기능</a></li><li  class="last"><a tabindex="-1" href="https://addons.mozilla.org/ko/firefox/themes/">테마</a></li></ul></li>
+    <li id="nav-main-support" ><a aria-haspopup="true" aria-owns="nav-main-support-submenu" tabindex="0" href="http://support.mozilla.org/">도움말</a><ul id="nav-main-support-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="http://support.mozilla.org/ko/">PC용 도움말</a></li><li  class="last"><a tabindex="-1" href="http://support.mozilla.org/ko/products/mobile">모바일 도움말</a></li></ul></li>
+    <li id="nav-main-about"  class="last"><a aria-haspopup="true" aria-owns="nav-main-about-submenu" tabindex="0" href="/ko/about/">소개</a><ul id="nav-main-about-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="/community/">블로그</a></li><li ><a tabindex="-1" href="/ko/about/">Firefox 소개</a></li><li ><a tabindex="-1" href="http://www.mozilla.org/join">Mozilla 후원(영문)</a></li><li ><a tabindex="-1" href="/ko/about/participate/">참여하기</a></li></ul></li>
+  </ul>
+</div>
+<!-- end menu #nav-main -->
+
+		</div>
+	</div>
+	<!-- end #header -->
+
+    
+<div id="main-feature">
+    <div id="switcher">
+        <h4>Firefox Aurora 버전:</h4>
+        <ul>
+          <li><span>데스크톱</span></li>
+          <li><a href="/ko/mobile/aurora/">모바일</a></li>
+        </ul>
+    </div>
+    <h2><img src="//www.mozilla.org/img/covehead/firefox/aurora/title.png" alt="Firefox Aurora" height="69" width="486" /></h2>
+    <p>Firefox의 차기 버전이 될 Aurora 다운로드</p>
+    <script>/*
+ * This file is soon to be deprecated.  (bug 393634)
+ */
+var aurora_stub_installer = false;
+aurora_stub_installer = true;
+
+var gPlatform = PLATFORM_WINDOWS;
+var gCssClass = '';
+
+var PLATFORM_OTHER    = 0;
+var PLATFORM_WINDOWS  = 1;
+var PLATFORM_LINUX    = 2;
+var PLATFORM_MACOSX   = 3;
+var PLATFORM_MAC      = 4;
+var PLATFORM_SOLARIS  = 5;
+var PLATFORM_ANDROID  = 6;
+
+if (navigator.platform.indexOf("Win32") != -1 || navigator.platform.indexOf("Win64") != -1) {
+  gPlatform = PLATFORM_WINDOWS;
+  gCssClass = 'os_windows';
+} else if (navigator.platform.indexOf("armv7l") != -1) {
+  gPlatform = PLATFORM_ANDROID;
+  gCssClass = 'os_android';
+} else if (navigator.platform.indexOf("Linux") != -1) {
+  gPlatform = PLATFORM_LINUX;
+  gCssClass = 'os_linux';
+} else if (navigator.userAgent.indexOf("Mac OS X") != -1) {
+  gPlatform = PLATFORM_MACOSX;
+  gCssClass = 'os_osx';
+} else if (navigator.userAgent.indexOf("MSIE 5.2") != -1) {
+  gPlatform = PLATFORM_MACOSX;
+  gCssClass = 'os_osx';
+} else if (navigator.platform.indexOf("Mac") != -1) {
+  gPlatform = PLATFORM_MAC; // This will show up as unsupported (ie. < OS X)
+  gCssClass = 'os_osx';
+
+  // Special case for Opera on OS X emulating IE (bug 402113)
+  if ((navigator.userAgent.indexOf("Opera") != -1) && (navigator.userAgent.indexOf("Opera 6") == -1)) {
+    gPlatform = PLATFORM_MACOSX;
+  }
+} else if (navigator.platform.indexOf("SunOS") != -1) {
+  gPlatform = PLATFORM_SOLARIS;
+  gCssClass = '';
+} else {
+  gPlatform = PLATFORM_OTHER;
+  gCssClass = '';
+}
+
+/**
+ * Gets whether or not the client is an officially unsupported platform
+ *
+ * Officially unsupported platforms are Windows 95, 98, ME and NT 4.x
+ *
+ * The regular expression matches:
+ *
+ *  - Win16
+ *  - Win9x
+ *  - Win95
+ *  - Win98
+ *  - WinNT (not followed by version or followed bu version < 5)
+ *  - Windows ME
+ *  - Windows CE
+ *  - Windows 9x
+ *  - Windows 95
+ *  - Windows 98
+ *  - Windows 3.1
+ *  - Windows 4.10
+ *  - Windows NT (not followed by version or followed by version < 5)
+ *  - Windows_95
+ */
+var gPlatformUnsupported = /(Win(16|9[x58]|NT( [1234]| [^0-9]|[^ -]|$))|Windows ([MC]E|9[x58]|3\.1|4\.10|NT( [1234]| [^0-9]|[^ ]|$))|Windows_95)/.test(navigator.userAgent);
+
+function getPlatformName(aPlatform)
+{
+  if (aPlatform == PLATFORM_WINDOWS)
+    return "Windows";
+  if (aPlatform == PLATFORM_LINUX)
+    return "Linux i686";
+  if (aPlatform == PLATFORM_MACOSX)
+    return "Mac OS X";
+  if (aPlatform == PLATFORM_SOLARIS)
+    return "SunOS";
+	if (aPlatform == PLATFORM_ANDROID)
+     return "Android";
+  return "Unknown";
+}
+
+function getPlatformFileSize(aPlatform, aProduct)
+{
+  if (aProduct == "fx") {
+    if (aPlatform == PLATFORM_WINDOWS)
+      return "7.7<abbr title=\"megabytes\">MB</abbr>";
+    if (aPlatform == PLATFORM_LINUX)
+      return "9.4<abbr title=\"megabytes\">MB</abbr>";
+    if (aPlatform == PLATFORM_MACOSX)
+      return "17.6<abbr title=\"megabytes\">MB</abbr>";
+  } else if (aProduct == "fxold") {
+    if (aPlatform == PLATFORM_WINDOWS)
+      return "7.2<abbr title=\"megabytes\">MB</abbr>";
+    if (aPlatform == PLATFORM_LINUX)
+      return "8.7<abbr title=\"megabytes\">MB</abbr>";
+    if (aPlatform == PLATFORM_MACOSX)
+      return "17.3<abbr title=\"megabytes\">MB</abbr>";
+  } else if (aProduct == "fxbeta") {
+    if (aPlatform == PLATFORM_WINDOWS)
+      return "7.7<abbr title=\"megabytes\">MB</abbr>";
+    if (aPlatform == PLATFORM_LINUX)
+      return "9.4<abbr title=\"megabytes\">MB</abbr>";
+    if (aPlatform == PLATFORM_MACOSX)
+      return "17.6<abbr title=\"megabytes\">MB</abbr>";
+  } else if (aProduct == "tb") {
+    if (aPlatform == PLATFORM_WINDOWS)
+      return "6.4<abbr title=\"megabytes\">MB</abbr>";
+    if (aPlatform == PLATFORM_LINUX)
+      return "10.9<abbr title=\"megabytes\">MB</abbr>";
+    if (aPlatform == PLATFORM_MACOSX)
+      return "18.7<abbr title=\"megabytes\">MB</abbr>";
+  } else if (aProduct == "tbold") {
+    if (aPlatform == PLATFORM_WINDOWS)
+      return "6.1<abbr title=\"megabytes\">MB</abbr>";
+    if (aPlatform == PLATFORM_LINUX)
+      return "10.2<abbr title=\"megabytes\">MB</abbr>";
+    if (aPlatform == PLATFORM_MACOSX)
+      return "17.8<abbr title=\"megabytes\">MB</abbr>";
+  } else if (aProduct == "tbbeta") {
+    if (aPlatform == PLATFORM_WINDOWS)
+      return "6.4<abbr title=\"megabytes\">MB</abbr>";
+    if (aPlatform == PLATFORM_LINUX)
+      return "10.9<abbr title=\"megabytes\">MB</abbr>";
+    if (aPlatform == PLATFORM_MACOSX)
+      return "18.7<abbr title=\"megabytes\">MB</abbr>";
+  }
+  return "";
+}
+
+function getProductName(aProduct)
+{
+  if (aProduct == "fx") {
+    return "firefox";
+  } else if (aProduct == "fxold") {
+    return "firefox";
+  } else if (aProduct == "fxbeta") {
+    return "firefox";
+  } else if (aProduct == "fxaurora") {
+    return "firefox";
+  } else if (aProduct == "tb") {
+    return "thunderbird";
+  } else if (aProduct == "tbold") {
+    return "thunderbird";
+  } else if (aProduct == "tbbeta") {
+    return "thunderbird";
+  }
+  return "Unknown";
+}
+
+function getDownloadURLForProduct(product, version)
+{
+  return "https://download.mozilla.org/?product=";
+}
+
+// Get a downloadURL given a locale and platform.
+// The optional boolean is used when we want to get the download.mozilla.org
+// link that points directly to Bouncer.
+function getDownloadURLForLanguage(aLangID, aPlatform, directLink)
+{
+  var abCD = aLangID.abCD;
+  var product = getProductName(aLangID.product);
+  var version = aLangID[aLangID.product];
+
+  if (aLangID.product == "fxaurora") {
+    return getDownloadURLForAuroraForLanguage(product, version, abCD, aPlatform);
+  }
+
+  // If we are testing the site locally, or if we explicitly asked for it,
+  // give the direct download URL.
+  if (window.location.protocol == "file:" ||
+      directLink == true) {
+    var url = getDownloadURLForProduct(product, version);
+  // Otherwise give the download page URL.
+  } else {
+    var url = "/products/download.html?product=";
+  }
+
+  // bug 874982
+  // special case for stub installer
+  if ((aLangID.product === 'fxbeta' || aLangID.product === 'fx')
+      //&& abCD === 'en-US'  // uncomment if we have to revert to en-US only
+      && aPlatform === PLATFORM_WINDOWS) {
+    version = 'stub';
+    if (aLangID.product === 'fxbeta') {
+      version = 'beta-' + version;
+    }
+  }
+
+  url += product + "-" + version;
+
+  if (typeof gDownloadFunnelCake != 'undefined') {
+      url += gDownloadFunnelCake;
+  }
+
+  url +="&amp;os=";
+
+
+  if (aPlatform == PLATFORM_WINDOWS) {
+    url += "win";
+  } else if (aPlatform == PLATFORM_LINUX) {
+    url += "linux";
+  } else if (aPlatform == PLATFORM_MACOSX) {
+    url += "osx";
+    if (abCD == "ja-JP")
+      abCD = "ja-JPM";
+    if (abCD == "ja")
+      abCD = "ja-JP-mac";
+  } else if (aPlatform == PLATFORM_SOLARIS) {
+    return "http://opensolaris.org/os/community/desktop/communities/mozilla/development/";
+  } else {
+    return "http://www.mozilla.com/" + abCD + "/" + product + "/all.html";
+  }
+
+  return url + "&amp;lang=" + abCD;
+}
+
+function getDownloadURLForAuroraForLanguage(aProduct, aVersion, aLocale, aPlatform) {
+  var os_file_ext;
+  if (aPlatform == PLATFORM_WINDOWS) {
+    os_file_ext = "win32.installer.exe";
+    if (aurora_stub_installer && aLocale == "en-US") {
+      os_file_ext = "win32.installer-stub.exe";
+    }
+  } else if (aPlatform == PLATFORM_LINUX) {
+    os_file_ext = "linux-i686.tar.bz2";
+  } else if (aPlatform == PLATFORM_MACOSX) {
+    os_file_ext = "mac.dmg";
+    if (aLocale == "ja") {
+      aLocale = "ja-JP-mac";
+    }
+  }
+
+
+  // Force en-US locale for now, when we fix other language replace it with "locale"
+  var url = "https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-mozilla-aurora-l10n/";
+  if (aLocale == "en-US") {
+    url = "https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-mozilla-aurora/";
+  }
+  url += aProduct + "-" + aVersion + "." + aLocale + "." + os_file_ext;
+
+  return url;
+}
+
+// "" for a version means it should be "Not Yet Available" on all.html,
+// null means it should not be listed
+// A region code of "-" means that no region code should be used.
+var gLanguages = {
+"af": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Afrikaans",	localName: "Afrikaans" } },
+"ach": { 	"-": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Acholi",	localName: "Acholi" } },
+"ak": { 	"-": { fx: null,	fxold: "17.0.9esr",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Akan",	localName: "Akan" } },
+"am": { 	"et": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Amharic",	localName: "አማርኛ" } },
+"an": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Aragonese",	localName: "aragonés" } },
+"ar": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Arabic",	localName: "عربي" } },
+"as": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Assamese",	localName: "অসমীয়া" } },
+"ast": { 	"-": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Asturian",	localName: "Asturianu" } },
+"az": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Azerbaijani",	localName: "Azərbaycanca" } },
+"be": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Belarusian",	localName: "Беларуская" } },
+"bg": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Bulgarian",	localName: "Български" } },
+"bn": { 	"bd": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Bengali (Bangladesh)",	localName: "বাংলা (বাংলাদেশ)" },
+ 	"in": { fx: "3.6.28",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Bengali (India)",	localName: "বাংলা (ভারত)" } },
+"br": { 	"-": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Breton",	localName: "Brezhoneg" } },
+"bs": { 	"-": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Bosnian",	localName: "Bosanski" } },
+"ca": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Catalan",	localName: "Català" },
+ 	"valencia": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Catalan (Valencian)",	localName: "català (valencià)" } },
+"cs": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Czech",	localName: "Čeština" } },
+"csb": { 	"-": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Kashubian",	localName: "Kaszëbsczi" } },
+"cy": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Welsh",	localName: "Cymraeg" } },
+"da": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Danish",	localName: "Dansk" } },
+"dbg": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Debug Robot",	localName: "Ḓḗƀŭɠ Řǿƀǿŧ" } },
+"de": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "German",	localName: "Deutsch" },
+ 	"at": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "German (Austria)",	localName: "Deutsch (Österreich)" },
+ 	"ch": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "German (Switzerland)",	localName: "Deutsch (Schweiz)" },
+ 	"de": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "German (Germany)",	localName: "Deutsch (Deutschland)" } },
+"dsb": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Lower Sorbian",	localName: "Dolnoserbšćina" } },
+"el": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Greek",	localName: "Ελληνικά" } },
+"en": { 	"au": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "English (Australian)",	localName: "English (Australian)" },
+ 	"ca": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "English (Canadian)",	localName: "English (Canadian)" },
+ 	"gb": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "English (British)",	localName: "English (British)" },
+ 	"nz": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "English (New Zealand)",	localName: "English (New Zealand)" },
+ 	"us": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "English (US)",	localName: "English (US)" },
+ 	"za": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "English (South African)",	localName: "English (South African)" } },
+"eo": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Esperanto",	localName: "Esperanto" } },
+"es": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Spanish",	localName: "Español" },
+ 	"ar": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Spanish (Argentina)",	localName: "Español (de Argentina)" },
+ 	"cl": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Spanish (Chile)",	localName: "Español (de Chile)" },
+ 	"es": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Spanish (Spain)",	localName: "Español (de España)" },
+ 	"mx": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Spanish (Mexico)",	localName: "Español (de México)" } },
+"et": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Estonian",	localName: "Eesti keel" } },
+"eu": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Basque",	localName: "Euskara" } },
+"fa": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Persian",	localName: "فارسی" } },
+"ff": { 	"-": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Fulah",	localName: "Pulaar-Fulfulde" } },
+"fi": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Finnish",	localName: "suomi" } },
+"fj": { 	"fj": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Fijian",	localName: "Vosa vaka-Viti" } },
+"fr": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "French",	localName: "Français" } },
+"fur": { 	"it": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Friulian",	localName: "Furlan" } },
+"fy": { 	"nl": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Frisian",	localName: "Frysk" } },
+"ga": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Irish",	localName: "Gaeilge" },
+ 	"ie": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Irish",	localName: "Gaeilge" } },
+"gd": { 	"-": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Gaelic (Scotland)",	localName: "Gàidhlig" } },
+"gl": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Galician",	localName: "Galego" } },
+"gu": { 	"in": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Gujarati",	localName: "ગુજરાતી" } },
+"he": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Hebrew",	localName: "עברית" } },
+"hi": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Hindi",	localName: "हिन्दी" },
+ 	"in": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Hindi (India)",	localName: "हिन्दी (भारत)" } },
+"hr": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Croatian",	localName: "Hrvatski" } },
+"hsb": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Upper Sorbian",	localName: "Hornjoserbsce" } },
+"hu": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Hungarian",	localName: "magyar" } },
+"hy": { 	"am": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Armenian",	localName: "Հայերեն" } },
+"id": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Indonesian",	localName: "Bahasa Indonesia" } },
+"is": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Icelandic",	localName: "íslenska" } },
+"it": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Italian",	localName: "Italiano" } },
+"ja": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Japanese",	localName: "日本語" },
+ 	"jp": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Japanese",	localName: "日本語" } },
+"ka": { 	"-": { fx: "3.6.28",	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Georgian",	localName: "ქართული" } },
+"kk": { 	"-": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Kazakh",	localName: "Қазақ" } },
+"km": { 	"-": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Khmer",	localName: "ខ្មែរ" } },
+"kn": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Kannada",	localName: "ಕನ್ನಡ" } },
+"ko": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Korean",	localName: "한국어" } },
+"ku": { 	"-": { fx: "3.6.28",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Kurdish",	localName: "Kurdî" } },
+"la": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Latin",	localName: "Latina" } },
+"lg": { 	"-": { fx: null,	fxold: "17.0.9esr",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Luganda",	localName: "Luganda" } },
+"lij": { 	"-": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Ligurian",	localName: "Ligure" } },
+"lt": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Lithuanian",	localName: "lietuvių kalba" } },
+"lv": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Latvian",	localName: "Latviešu" } },
+"mai": { 	"-": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Maithili",	localName: "मैथिली মৈথিলী" } },
+"mg": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Malagasy",	localName: "Malagasy" } },
+"mi": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Maori (Aotearoa)",	localName: "Māori (Aotearoa)" } },
+"mk": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Macedonian",	localName: "Македонски" } },
+"ml": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Malayalam",	localName: "മലയാളം" } },
+"mn": { 	"-": { fx: null,	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Mongolian",	localName: "Монгол" } },
+"mr": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Marathi",	localName: "मराठी" } },
+"ms": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Malay",	localName: "Melayu" } },
+"my": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Burmese",	localName: "မြန်မာဘာသာ" } },
+"nb": { 	"no": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Norwegian (Bokmål)",	localName: "Norsk bokmål" } },
+"ne": { 	"np": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Nepali",	localName: "नेपाली" } },
+"nn": { 	"no": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Norwegian (Nynorsk)",	localName: "Norsk nynorsk" } },
+"nl": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Dutch",	localName: "Nederlands" } },
+"nr": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Ndebele, South",	localName: "isiNdebele" } },
+"nso": { 	"-": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Northern Sotho",	localName: "Sepedi" } },
+"oc": { 	"-": { fx: "3.6.28",	fxold: null,	fxbeta: null,	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Occitan (Lengadocian)",	localName: "occitan (lengadocian)" } },
+"or": { 	"-": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Oriya",	localName: "ଓଡ଼ିଆ" } },
+"pa": { 	"in": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Punjabi",	localName: "ਪੰਜਾਬੀ" } },
+"pl": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Polish",	localName: "Polski" } },
+"pt": { 	"br": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Portuguese (Brazilian)",	localName: "Português (do Brasil)" },
+ 	"pt": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Portuguese (Portugal)",	localName: "Português (Europeu)" } },
+"ro": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Romanian",	localName: "română" } },
+"rm": { 	"-": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Romansh",	localName: "rumantsch" } },
+"ru": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Russian",	localName: "Русский" } },
+"rw": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Kinyarwanda",	localName: "Ikinyarwanda" } },
+"sa": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Sanskrit",	localName: "संस्कृत" } },
+"sah": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Sakha",	localName: "Сахалыы" } },
+"si": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Sinhala",	localName: "සිංහල" } },
+"sk": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Slovak",	localName: "slovenčina" } },
+"sl": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Slovenian",	localName: "Slovenščina" } },
+"son": { 	"-": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Songhai",	localName: "Soŋay" } },
+"sq": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Albanian",	localName: "Shqip" } },
+"sr": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Serbian",	localName: "Српски" },
+ 	"latn": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Serbian",	localName: "Srpski" } },
+"ss": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Siswati",	localName: "siSwati" } },
+"st": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Southern Sotho",	localName: "Sesotho" } },
+"sv": { 	"se": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Swedish",	localName: "Svenska" } },
+"sw": { 	"-": { fx: null,	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Swahili",	localName: "Kiswahili" } },
+"ta": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Tamil",	localName: "தமிழ்" },
+ 	"in": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Tamil (India)",	localName: "தமிழ் (இந்தியா)" },
+ 	"lk": { fx: "3.6.28",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Tamil (Sri Lanka)",	localName: "தமிழ் (இலங்கை)" } },
+"te": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Telugu",	localName: "తెలుగు" } },
+"th": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Thai",	localName: "ไทย" } },
+"tn": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Tswana",	localName: "Setswana" } },
+"tr": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Turkish",	localName: "Türkçe" } },
+"ts": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Tsonga",	localName: "Xitsonga" } },
+"tt": { 	"ru": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Tatar",	localName: "Tatarça" } },
+"uk": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Ukrainian",	localName: "Українська" } },
+"ur": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Urdu",	localName: "اُردو" } },
+"ve": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Venda",	localName: "Tshivenḓa" } },
+"vi": { 	"-": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Vietnamese",	localName: "Tiếng Việt" } },
+"wo": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Wolof",	localName: "Wolof" } },
+"x": { 	"testing": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Testing",	localName: "Ŧḗşŧīƞɠ" } },
+"xh": { 	"-": { fx: null,	fxold: null,	fxbeta: null,	fxaurora: null,	tb: null,	tbold: null,	tbbeta: null,	name: "Xhosa",	localName: "isiXhosa" } },
+"zh": { 	"cn": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Chinese (Simplified)",	localName: "中文 (简体)" },
+ 	"tw": { fx: "24.0",	fxold: "3.6.28",	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: "24.0",	tbold: null,	tbbeta: null,	name: "Chinese (Traditional)",	localName: "正體中文 (繁體)" } },
+"zu": { 	"-": { fx: "24.0",	fxold: null,	fxbeta: "24.0b10",	fxaurora: "25.0a2",	tb: null,	tbold: null,	tbbeta: null,	name: "Zulu",	localName: "isiZulu" } }
+};
+function LanguageID(aAB, aCD, aProduct, aBuild)
+{
+  if (aCD == "-")
+    this.abCD = aAB;
+  else
+    this.abCD = aAB + "-" + aCD.toUpperCase();
+  this.product = aProduct;
+  for (var prop in aBuild)
+    this[prop] = aBuild[prop];
+}
+
+function buildValidForPlatform(aLangID, aPlatform)
+{
+  var product = getProductName(aLangID.product);
+  var version = aLangID[aLangID.product];
+  if ((aLangID.abCD == "gu-IN" ||
+       (aLangID.abCD == "pa-IN" &&
+        ((product == "firefox" && version < "2.0.0.1") ||
+         (product == "thunderbird" && version < "2.0.0.0")))) &&
+      (aPlatform == PLATFORM_MACOSX))
+    return false;
+
+  return true;
+}
+
+function getLanguageIDs(aProduct)
+{
+  var language = "";
+  if (navigator.language)
+    language = navigator.language;
+  else if (navigator.userLanguage)
+    language = navigator.userLanguage;
+  else if (navigator.systemLanguage)
+    language = navigator.systemLanguage;
+
+  // Convert "en" to "en-US" as well since en-US build is the canonical
+  // translation, and thus better tested.
+  if (language == "" || language == "en")
+    language = "en-US";
+
+  // Konqueror uses '_' where other browsers use '-'.
+  if (language.indexOf("_") != -1)
+    language = language.split("_").join("-");
+
+  language = language.toLowerCase();
+  var languageCode = language.split("-")[0];
+  var regionCode = language.split("-")[1];
+
+  // String comparison actually works for version numbers.
+  var currentVersion = gLanguages["en"]["us"][aProduct];
+  var bestVersion = "";
+  var ids = [];
+
+  if (gLanguages[languageCode]) {
+    var region;
+    var build;
+    var langid;
+
+    for (region in gLanguages[languageCode]) {
+      build = gLanguages[languageCode][region];
+      if (build[aProduct] && regionCode == region) {
+        langid = new LanguageID(languageCode, regionCode, aProduct, build);
+        if (buildValidForPlatform(langid, gPlatform)) {
+          ids[ids.length] = langid;
+          bestVersion = build[aProduct];
+        }
+      }
+    }
+
+    // We have a localized build for this language, but not this region.
+    // Show all available regions and let the user pick.
+
+    if (bestVersion != currentVersion) {
+      var bestRegionVersion = "";
+      for (region in gLanguages[languageCode]) {
+        build = gLanguages[languageCode][region];
+        if (build[aProduct] > bestVersion) {
+          langid = new LanguageID(languageCode, region, aProduct, build);
+          if (buildValidForPlatform(langid, gPlatform)) {
+            ids[ids.length] = langid;
+            if (build[aProduct] > bestRegionVersion)
+              bestRegionVersion = build[aProduct];
+          }
+        }
+      }
+      if (bestRegionVersion > bestVersion)
+        bestVersion = bestRegionVersion;
+    }
+  }
+
+  // Bug 373796 -- Norwegian users need to be offered both nb-NO and nn-NO
+  if (regionCode == "no") {
+    if (languageCode == "nb") {
+      ids[ids.length] = new LanguageID("nn", regionCode, aProduct, gLanguages["nn"][regionCode]);
+    }
+    if (languageCode == "nn") {
+      ids[ids.length] = new LanguageID("nb", regionCode, aProduct, gLanguages["nb"][regionCode]);
+    }
+  }
+
+  // Offer the en-US version if it has a higher version than the locale
+  if (bestVersion != currentVersion) {
+    ids[ids.length] = new LanguageID("en", "us", aProduct, gLanguages["en"]["us"]);
+  }
+
+  return ids;
+}
+
+function writeDownloadItem(aLanguageID)
+{
+  var item = gDownloadItemTemplate;
+  item = item.replace(/%DOWNLOAD_URL%/g,  getDownloadURLForLanguage(aLanguageID, gPlatform));
+  item = item.replace(/%BOUNCER_URL%/g,   getDownloadURLForLanguage(aLanguageID, gPlatform, true));
+  item = item.replace(/%VERSION%/g,       aLanguageID[aLanguageID.product]);
+  item = item.replace(/%PLATFORM_NAME%/g, getPlatformName(gPlatform));
+  item = item.replace(/%LANGUAGE_NAME%/g, aLanguageID.name);
+  item = item.replace(/%FILE_SIZE%/g,     getPlatformFileSize(gPlatform, aLanguageID.product));
+  item = item.replace(/%CSS_CLASS%/g,     gCssClass);
+  document.writeln(item);
+}
+
+function writeDownloadItemForAndroid(aProduct)
+{
+	var aLanguageID = new LanguageID("en", "us", aProduct, gLanguages["en"]["us"]);
+  var item = gDownloadItemTemplate;
+  item = item.replace(/%DOWNLOAD_URL%/g,  'https://market.android.com/details?id=org.mozilla.firefox');
+  item = item.replace(/%BOUNCER_URL%/g,   'https://market.android.com/details?id=org.mozilla.firefox');
+  item = item.replace(/%VERSION%/g,       aLanguageID[aLanguageID.product]);
+  item = item.replace(/%PLATFORM_NAME%/g, getPlatformName(gPlatform));
+  item = item.replace(/%LANGUAGE_NAME%/g, "");
+  item = item.replace(/%FILE_SIZE%/g,     getPlatformFileSize(gPlatform, aLanguageID.product));
+  item = item.replace(/%CSS_CLASS%/g,     gCssClass);
+  document.writeln(item);
+}
+
+
+function writeDownloadItems(aProduct)
+{
+	// Show the dynamic links
+  if (gPlatform == PLATFORM_MAC) {
+    document.writeln(gDownloadItemMacOS9);
+  } else if (gPlatform == PLATFORM_OTHER) {
+    document.writeln(gDownloadItemOtherPlatform);
+	} else if (gPlatform == PLATFORM_ANDROID && aProduct == "fx") {
+		writeDownloadItemForAndroid(aProduct);
+  } else {
+    var languageIDs = getLanguageIDs(aProduct);
+    for (var i = 0; i < languageIDs.length; ++i)
+      writeDownloadItem(languageIDs[i]);
+  }
+}
+
+function do_download(link)
+{
+
+  // get product
+  var matches = link.match(/product=([^&]+)/);
+  if (matches.length > 1) {
+    if (matches[1] == 'fx') {
+      var product = 'firefox';
+    } else if (matches[1] == 'fxold') {
+      var product = 'firefox';
+    } else if (matches[1] == 'fxbeta') {
+      var product = 'firefox';
+    } else if (matches[1] == 'fxaurora') {
+      var product = 'firefox';
+    } else if (matches[1] == 'tb') {
+      var product = 'thunderbird';
+    } else if (matches[1] == 'tbold') {
+      var product = 'thunderbird';
+    } else if (matches[1] == 'tbbeta') {
+      var product = 'thunderbird';
+    } else {
+      var product = 'firefox';
+    }
+  } else {
+    var product = 'firefox';
+  }
+
+  // If we have IE, use a new window to push the download.
+  // We have to do this because other methods did not work in IE.
+  if (navigator.appVersion.indexOf('MSIE') != -1) {
+    if (gPlatformUnsupported && product == 'firefox') {
+      var unsupportedLink = link.replace(/\/products\/download\.html/, '/firefox/unsupported-systems.html');
+      // redirect to unsupported platform page
+      window.location = unsupportedLink;
+    } else {
+      // start the download
+      window.open(link, 'download_window', 'toolbar=0,location=no,directories=0,status=0,scrollbars=0,resizeable=0,width=1,height=1,top=0,left=0');
+      window.focus();
+    }
+  }
+}
+</script>
+    <div id="download_aurora_button">
+        <script>
+            <!--
+            // Configure the Firefox download write script
+
+        var gDownloadItemTemplate = " <li class=\"%CSS_CLASS%\"> <a onclick=\"do_download('%BOUNCER_URL%');\" href=\"%DOWNLOAD_URL%\" class=\"download-link download-firefox\"><span class=\"download-content\"><span class=\"download-title\">Firefox Aurora</span> <img src=\"//www.mozilla.org/img/home/download-arrow.png\" alt=\"\" id=\"download-arrow\">무료 다운로드 <span class=\"download-info\">%LANGUAGE_NAME%<\/em><\/span><\/span><\/a> <\/li>";
+
+            var gDownloadItemMacOS9 = "<a href=\"\">MacOS 9과 이전 버전은 지원되지 않습니다.<\/a>";
+            var gDownloadItemOtherPlatform = "<a href=\"/en-US/firefox/24.0/releasenotes/#contributedbuilds\">무료 다운로드<\/a>"
+
+            document.writeln("<ul class=\"home-download " + gCssClass + " \">");
+            writeDownloadItems("fxaurora");
+            document.writeln("<\/ul>");
+            document.writeln("<div class=\"download-other\">");
+            document.writeln("<a href=\"\/en-US\/firefox\/all-aurora.html\">시스템 및 언어별 버전<\/a> | ");
+            document.writeln("<a href=\"\/en-US\/firefox\/aurora\/notes\/\">신규 기능<\/a> | ");
+            document.writeln("<a href=\"\/en-US\/legal\/privacy\/firefox.html\">개인 정보 보호 정책<\/a>");
+            document.writeln("<\/div>");
+            //-->
+        </script>
+        
+            <noscript>
+                <div class="download download-noscript">
+                <h3>Download Now - Free <span>(English (US) | <a href="http://www.mozilla.com/en-US/firefox/all.html">Other Systems and Languages</a>)</span></h3>
+                <ul>
+                                    <li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=win&amp;lang=ko">Windows</a></li>
+                                    <li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=linux&amp;lang=ko">Linux</a></li>
+                                    <li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=osx&amp;lang=ko">Mac OS X</a></li>
+                </ul>
+                </div>
+            </noscript>        <div class="flash-beta"><a href="http://www.adobe.com/go/flashplayerbeta">Flash 베타 버전</a>도 테스트 해 보세요.</div>
+    </div>
+    <div class="warning">Firefox Aurora는 자동으로 Mozilla에 사용 정보를 보냅니다. <a href="/en-US/legal/privacy/firefox.html#telemetry">자세히 보기</a></div>
+    <ul id="feature-list">
+        <li>
+            <h3>1. 신규 기능 테스트</h3>
+            <p>HTML5 최신 웹 기술, 개발 도구에 대한 최신 성능 향상, 보안 업데이트 등을 미리 경험해 보실수 있습니다.</p>
+            <p><a href="/en-US/firefox/aurora/notes">자세히 보기 »</a></p>
+        </li>
+        <li>
+            <h3>2. 기존 기능 개선</h3>
+            <p>안정 환경에서 다양한 기능 및 성능을 테스트 하시고 저희에게 의견을 보내 주십시오.</p>
+            <p><a href="http://input.mozilla.com/feedback">자세히 보기 »</a></p>
+        </li>
+        <li class="last">
+            <h3>3. Firefox 직접 만들기</h3>
+            <p>여러분의 테스트가 커뮤니티의 일원으로서 웹 개발자 및 다음 베타 바전 사용자에게 도움을 줄것입니다.</p>
+        </li>
+    </ul>
+</div>
+
+<div id="main-content">
+
+    <div id="channel_news" class="">
+          <div id="newsletter-signup">
+            <div class="title">
+              <h3>Get the latest <span>Aurora news</span></h3>
+              <p>Sign up for our Aurora newsletter for desktop and mobile.</p>
+            </div>
+            <div class="success-pane">
+              <h3>Thanks for subscribing!</h3>
+            </div>
+            <form id="email-form" action="https://www.mozilla.org/en-US/firefox/aurora/#newsletter-signup" method="post">
+              <input id="email" name="email" type="email" value="" placeholder="Your email address">
+              <div id="email-error">Whoops! Be sure to enter a valid email address.</div>
+              <div class="more">
+                <div class="row">
+                  <select id="country" name="country">
+                      <option value="">Select country</option>
+                      <option value='af'>Afghanistan</option>
+<option value='al'>Albania</option>
+<option value='dz'>Algeria</option>
+<option value='as'>American Samoa</option>
+<option value='ad'>Andorra</option>
+<option value='ao'>Angola</option>
+<option value='ai'>Anguilla</option>
+<option value='aq'>Antarctica</option>
+<option value='ag'>Antigua and Barbuda</option>
+<option value='ar'>Argentina</option>
+<option value='am'>Armenia</option>
+<option value='aw'>Aruba</option>
+<option value='au'>Australia</option>
+<option value='at'>Austria</option>
+<option value='az'>Azerbaijan</option>
+<option value='bs'>Bahamas</option>
+<option value='bh'>Bahrain</option>
+<option value='bd'>Bangladesh</option>
+<option value='bb'>Barbados</option>
+<option value='by'>Belarus</option>
+<option value='be'>Belgium</option>
+<option value='bz'>Belize</option>
+<option value='bj'>Benin</option>
+<option value='bm'>Bermuda</option>
+<option value='bt'>Bhutan</option>
+<option value='bo'>Bolivia</option>
+<option value='ba'>Bosnia and Herzegovina</option>
+<option value='bw'>Botswana</option>
+<option value='bv'>Bouvet Island</option>
+<option value='br'>Brazil</option>
+<option value='io'>British Indian Ocean Territory</option>
+<option value='vg'>British Virgin Islands</option>
+<option value='bn'>Brunei Darussalam</option>
+<option value='bg'>Bulgaria</option>
+<option value='bf'>Burkina Faso</option>
+<option value='bi'>Burundi</option>
+<option value='kh'>Cambodia</option>
+<option value='cm'>Cameroon</option>
+<option value='ca'>Canada</option>
+<option value='cv'>Cape Verde</option>
+<option value='ky'>Cayman Islands</option>
+<option value='cf'>Central African Republic</option>
+<option value='td'>Chad</option>
+<option value='cl'>Chile</option>
+<option value='cn'>China</option>
+<option value='cx'>Christmas Island</option>
+<option value='cc'>Cocos (Keeling) Islands</option>
+<option value='co'>Colombia</option>
+<option value='km'>Comoros</option>
+<option value='cg'>Congo-Brazzaville</option>
+<option value='cd'>Congo-Kinshasa</option>
+<option value='ck'>Cook Islands</option>
+<option value='cr'>Costa Rica</option>
+<option value='hr'>Croatia</option>
+<option value='cu'>Cuba</option>
+<option value='cy'>Cyprus</option>
+<option value='cz'>Czech Republic</option>
+<option value='dk'>Denmark</option>
+<option value='dj'>Djibouti</option>
+<option value='dm'>Dominica</option>
+<option value='do'>Dominican Republic</option>
+<option value='ec'>Ecuador</option>
+<option value='eg'>Egypt</option>
+<option value='sv'>El Salvador</option>
+<option value='gq'>Equatorial Guinea</option>
+<option value='er'>Eritrea</option>
+<option value='ee'>Estonia</option>
+<option value='et'>Ethiopia</option>
+<option value='fk'>Falkland Islands (Malvinas)</option>
+<option value='fo'>Faroe Islands</option>
+<option value='fj'>Fiji</option>
+<option value='fi'>Finland</option>
+<option value='fr'>France</option>
+<option value='gf'>French Guiana</option>
+<option value='pf'>French Polynesia</option>
+<option value='tf'>French Southern Territories</option>
+<option value='ga'>Gabon</option>
+<option value='gm'>Gambia</option>
+<option value='ge'>Georgia</option>
+<option value='de'>Germany</option>
+<option value='gh'>Ghana</option>
+<option value='gi'>Gibraltar</option>
+<option value='gr'>Greece</option>
+<option value='gl'>Greenland</option>
+<option value='gd'>Grenada</option>
+<option value='gp'>Guadeloupe</option>
+<option value='gu'>Guam</option>
+<option value='gt'>Guatemala</option>
+<option value='gg'>Guernsey</option>
+<option value='gn'>Guinea</option>
+<option value='gw'>Guinea-Bissau</option>
+<option value='gy'>Guyana</option>
+<option value='ht'>Haiti</option>
+<option value='hm'>Heard Island and McDonald Islands</option>
+<option value='hn'>Honduras</option>
+<option value='hk'>Hong Kong</option>
+<option value='hu'>Hungary</option>
+<option value='is'>Iceland</option>
+<option value='in'>India</option>
+<option value='id'>Indonesia</option>
+<option value='ir'>Iran</option>
+<option value='iq'>Iraq</option>
+<option value='ie'>Ireland</option>
+<option value='im'>Isle of Man</option>
+<option value='il'>Israel</option>
+<option value='it'>Italy</option>
+<option value='ci'>Ivory Coast</option>
+<option value='jm'>Jamaica</option>
+<option value='jp'>Japan</option>
+<option value='je'>Jersey</option>
+<option value='jo'>Jordan</option>
+<option value='kz'>Kazakhstan</option>
+<option value='ke'>Kenya</option>
+<option value='ki'>Kiribati</option>
+<option value='kw'>Kuwait</option>
+<option value='kg'>Kyrgyzstan</option>
+<option value='la'>Laos</option>
+<option value='lv'>Latvia</option>
+<option value='lb'>Lebanon</option>
+<option value='ls'>Lesotho</option>
+<option value='lr'>Liberia</option>
+<option value='ly'>Libya</option>
+<option value='li'>Liechtenstein</option>
+<option value='lt'>Lithuania</option>
+<option value='lu'>Luxembourg</option>
+<option value='mo'>Macao</option>
+<option value='mk'>Macedonia, F.Y.R. of</option>
+<option value='mg'>Madagascar</option>
+<option value='mw'>Malawi</option>
+<option value='my'>Malaysia</option>
+<option value='mv'>Maldives</option>
+<option value='ml'>Mali</option>
+<option value='mt'>Malta</option>
+<option value='mh'>Marshall Islands</option>
+<option value='mq'>Martinique</option>
+<option value='mr'>Mauritania</option>
+<option value='mu'>Mauritius</option>
+<option value='yt'>Mayotte</option>
+<option value='mx'>Mexico</option>
+<option value='fm'>Micronesia</option>
+<option value='md'>Moldova</option>
+<option value='mc'>Monaco</option>
+<option value='mn'>Mongolia</option>
+<option value='me'>Montenegro</option>
+<option value='ms'>Montserrat</option>
+<option value='ma'>Morocco</option>
+<option value='mz'>Mozambique</option>
+<option value='mm'>Myanmar</option>
+<option value='na'>Namibia</option>
+<option value='nr'>Nauru</option>
+<option value='np'>Nepal</option>
+<option value='nl'>Netherlands</option>
+<option value='an'>Netherlands Antilles</option>
+<option value='nc'>New Caledonia</option>
+<option value='nz'>New Zealand</option>
+<option value='ni'>Nicaragua</option>
+<option value='ne'>Niger</option>
+<option value='ng'>Nigeria</option>
+<option value='nu'>Niue</option>
+<option value='nf'>Norfolk Island</option>
+<option value='kp'>North Korea</option>
+<option value='mp'>Northern Mariana Islands</option>
+<option value='no'>Norway</option>
+<option value='ps'>Occupied Palestinian Territory</option>
+<option value='om'>Oman</option>
+<option value='pk'>Pakistan</option>
+<option value='pw'>Palau</option>
+<option value='pa'>Panama</option>
+<option value='pg'>Papua New Guinea</option>
+<option value='py'>Paraguay</option>
+<option value='pe'>Peru</option>
+<option value='ph'>Philippines</option>
+<option value='pn'>Pitcairn</option>
+<option value='pl'>Poland</option>
+<option value='pt'>Portugal</option>
+<option value='pr'>Puerto Rico</option>
+<option value='qa'>Qatar</option>
+<option value='re'>Reunion</option>
+<option value='ro'>Romania</option>
+<option value='ru'>Russian Federation</option>
+<option value='rw'>Rwanda</option>
+<option value='bl'>Saint Barthélemy</option>
+<option value='sh'>Saint Helena</option>
+<option value='kn'>Saint Kitts and Nevis</option>
+<option value='lc'>Saint Lucia</option>
+<option value='mf'>Saint Martin</option>
+<option value='pm'>Saint Pierre and Miquelon</option>
+<option value='vc'>Saint Vincent and the Grenadines</option>
+<option value='ws'>Samoa</option>
+<option value='sm'>San Marino</option>
+<option value='st'>Sao Tome and Principe</option>
+<option value='sa'>Saudi Arabia</option>
+<option value='sn'>Senegal</option>
+<option value='rs'>Serbia</option>
+<option value='sc'>Seychelles</option>
+<option value='sl'>Sierra Leone</option>
+<option value='sg'>Singapore</option>
+<option value='sk'>Slovakia</option>
+<option value='si'>Slovenia</option>
+<option value='sb'>Solomon Islands</option>
+<option value='so'>Somalia</option>
+<option value='za'>South Africa</option>
+<option value='gs'>South Georgia and the South Sandwich Islands</option>
+<option value='kr'>South Korea</option>
+<option value='es'>Spain</option>
+<option value='lk'>Sri Lanka</option>
+<option value='sd'>Sudan</option>
+<option value='sr'>Suriname</option>
+<option value='sj'>Svalbard and Jan Mayen</option>
+<option value='sz'>Swaziland</option>
+<option value='se'>Sweden</option>
+<option value='ch'>Switzerland</option>
+<option value='sy'>Syria</option>
+<option value='tw'>Taiwan</option>
+<option value='tj'>Tajikistan</option>
+<option value='tz'>Tanzania</option>
+<option value='th'>Thailand</option>
+<option value='tl'>Timor-Leste</option>
+<option value='tg'>Togo</option>
+<option value='tk'>Tokelau</option>
+<option value='to'>Tonga</option>
+<option value='tt'>Trinidad and Tobago</option>
+<option value='tn'>Tunisia</option>
+<option value='tr'>Turkey</option>
+<option value='tm'>Turkmenistan</option>
+<option value='tc'>Turks and Caicos Islands</option>
+<option value='tv'>Tuvalu</option>
+<option value='ae'>U.A.E.</option>
+<option value='vi'>U.S. Virgin Islands</option>
+<option value='ug'>Uganda</option>
+<option value='ua'>Ukraine</option>
+<option value='gb'>United Kingdom</option>
+<option value='us' selected='selected'>United States</option>
+<option value='um'>United States Minor Outlying Islands</option>
+<option value='uy'>Uruguay</option>
+<option value='uz'>Uzbekistan</option>
+<option value='vu'>Vanuatu</option>
+<option value='va'>Vatican City</option>
+<option value='ve'>Venezuela</option>
+<option value='vn'>Vietnam</option>
+<option value='wf'>Wallis and Futuna</option>
+<option value='eh'>Western Sahara</option>
+<option value='ye'>Yemen</option>
+<option value='zm'>Zambia</option>
+<option value='zw'>Zimbabwe</option>
+<option value='ax'>Åland Islands</option>
+                  </select>
+                </div>
+                <p>Aurora and Beta newsletters are currently only available in English.</p>
+                <ul class="channels_signup">
+                  <li>
+                    <label for="check_aurora">
+                                            <input type="checkbox" id="check_aurora" name="aurora" value="Y"  />
+                      <span>Aurora</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="check_beta">
+                                            <input type="checkbox" id="check_beta" name="beta" value="Y"  />
+                      <span>Beta</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="check_general">
+                                            <input type="checkbox" id="check_general" name="mozilla-and-you" value="Y"  />
+                      <span>Firefox</span>
+                    </label>
+                  </li>
+                </ul>
+                <div id="channel-error">Please select at least one newsletter.</div>
+                <div class="privacy-field">
+                                    <label for="inline-privacy-check" class="privacy-check-label">
+                    <span class="error-wrapper">
+                      <input type="checkbox" class="privacy-check" id="inline-privacy-check" name="privacy" >
+                    </span> 
+                    <span class="title">
+                      I agree to the <a href="/en-US/privacy-policy">개인 정보 보호 정책 (영문)</a>
+                    </span>
+                    <div class="clear"></div>
+                  </label>
+                </div>
+                <div id="privacy-error">Please agree to the 개인 정보 보호 정책 (영문).</div>
+                <input name="submit" class="button" type="submit" value="Sign me up »" id="subscribe">
+                <p class="footnote">We will only send you Mozilla-related information.</p>
+              </div>
+            </form>
+          </div>
+
+        <div id="blog">
+            <div class="title">
+            <h3>Read about the latest <span>Aurora features <a href="http://blog.mozilla.com/futurereleases/category/aurora/feed/">RSS Feed</a></span></h3>
+            <p>Follow the <a href="http://blog.mozilla.com/futurereleases/">Future Release Blog</a> to stay in the loop.</p>
+            </div>
+            <ul><li><h4><a href="http://blog.mozilla.com/futurereleases/2012/03/19/the-latest-firefox-aurora-is-now-available-for-download-and-testing/">The latest Firefox Aurora is now available for download and testing!</a></h4><div class="info"><span class="date">March 19, 2012</span> • Firefox Aurora</div></li><li><h4><a href="http://blog.mozilla.com/futurereleases/2012/02/10/help-us-test-new-tab/">Help us test New Tab!</a></h4><div class="info"><span class="date">February 10, 2012</span> • Feedback, Firefox Aurora</div></li><li><h4><a href="http://blog.mozilla.com/futurereleases/2012/02/03/firefoxaurora12/">The latest Firefox Aurora is now available for download and testing!</a></h4><div class="info"><span class="date">February 3, 2012</span> • Firefox Aurora</div></li><li><h4><a href="http://blog.mozilla.com/futurereleases/2011/12/23/firefoxaurora11/">Get the Latest Firefox Aurora</a></h4><div class="info"><span class="date">December 23, 2011</span> • Firefox Aurora, For Android</div></li></ul>        </div>
+
+    <div id="stay-connected">
+        <h4>Stay <span>Connected</span></h4>
+        <p>Firefox Aurora is on your favorite social media sites. Connect with us and join the conversation!</p>
+        <a href="http://www.facebook.com/FirefoxAurora" class="button">Join the conversation<span> »</span></a>
+    </div>
+
+    </div>
+
+</div><!-- end #main-content div -->
+
+
+</div><!-- end #doc -->
+</div><!-- end #wrapper -->
+</div><!-- end #outer-wrapper -->
+
+<div class="clear"></div>
+
+	<!-- start #footer -->
+	<div id="sub-footer">
+		<div id="sub-footer-contents">
+                  <h3>소셜웹 <span>공식채널</span></h3>
+                  <ul>
+                    <li id="footer-twitter">
+                      <a href="http://twitter.com/mozillakr">Twitter</a>
+                    </li>
+                    <li id="footer-facebook">
+                      <a href="http://facebook.com/mozillakr">Facebook</a>
+                    </li>
+                    <li id="footer-affiliates">
+                      <a href="http://forums.mozilla.or.kr/">한국커뮤니티</a>
+                    </li>
+                  </ul>
+		  <div id="sub-footer-newsletter">
+
+<div class="newsletter-signup  " id="newsletter">
+  <div class="container">
+
+    <form class="email-form inline-email-form"
+          action="https://www.mozilla.org/en-US/firefox/aurora/#subscribe-form"
+          method="post">
+      <input type="hidden" name="target" value="inline" />
+      <input type="hidden" name="mozilla-and-you" value="Y" />
+
+      <ul class="">
+        <li class="open-pane" data-wt_uri="" data-wt_ti="">
+          <h3>Get Monthly News</h3>
+                    <div class="email-field field">
+            <span class="error-wrapper ">
+              <input
+                 name="email"
+                 type="email"
+                 placeholder="Your Email Address"
+                 value=""
+                 class="email  placeholder">
+            </span>
+            <a class="email-open"
+               href="/en-US/newsletter/">»</a>
+          </div>
+        </li>
+        <li class="form-pane">
+
+          <div class="form-details">
+
+            <div class="field country-field">
+              <select class="country" name="country">
+                <option value="">Select country</option>
+                <option value='af'>Afghanistan</option>
+<option value='al'>Albania</option>
+<option value='dz'>Algeria</option>
+<option value='as'>American Samoa</option>
+<option value='ad'>Andorra</option>
+<option value='ao'>Angola</option>
+<option value='ai'>Anguilla</option>
+<option value='aq'>Antarctica</option>
+<option value='ag'>Antigua and Barbuda</option>
+<option value='ar'>Argentina</option>
+<option value='am'>Armenia</option>
+<option value='aw'>Aruba</option>
+<option value='au'>Australia</option>
+<option value='at'>Austria</option>
+<option value='az'>Azerbaijan</option>
+<option value='bs'>Bahamas</option>
+<option value='bh'>Bahrain</option>
+<option value='bd'>Bangladesh</option>
+<option value='bb'>Barbados</option>
+<option value='by'>Belarus</option>
+<option value='be'>Belgium</option>
+<option value='bz'>Belize</option>
+<option value='bj'>Benin</option>
+<option value='bm'>Bermuda</option>
+<option value='bt'>Bhutan</option>
+<option value='bo'>Bolivia</option>
+<option value='ba'>Bosnia and Herzegovina</option>
+<option value='bw'>Botswana</option>
+<option value='bv'>Bouvet Island</option>
+<option value='br'>Brazil</option>
+<option value='io'>British Indian Ocean Territory</option>
+<option value='vg'>British Virgin Islands</option>
+<option value='bn'>Brunei Darussalam</option>
+<option value='bg'>Bulgaria</option>
+<option value='bf'>Burkina Faso</option>
+<option value='bi'>Burundi</option>
+<option value='kh'>Cambodia</option>
+<option value='cm'>Cameroon</option>
+<option value='ca'>Canada</option>
+<option value='cv'>Cape Verde</option>
+<option value='ky'>Cayman Islands</option>
+<option value='cf'>Central African Republic</option>
+<option value='td'>Chad</option>
+<option value='cl'>Chile</option>
+<option value='cn'>China</option>
+<option value='cx'>Christmas Island</option>
+<option value='cc'>Cocos (Keeling) Islands</option>
+<option value='co'>Colombia</option>
+<option value='km'>Comoros</option>
+<option value='cg'>Congo-Brazzaville</option>
+<option value='cd'>Congo-Kinshasa</option>
+<option value='ck'>Cook Islands</option>
+<option value='cr'>Costa Rica</option>
+<option value='hr'>Croatia</option>
+<option value='cu'>Cuba</option>
+<option value='cy'>Cyprus</option>
+<option value='cz'>Czech Republic</option>
+<option value='dk'>Denmark</option>
+<option value='dj'>Djibouti</option>
+<option value='dm'>Dominica</option>
+<option value='do'>Dominican Republic</option>
+<option value='ec'>Ecuador</option>
+<option value='eg'>Egypt</option>
+<option value='sv'>El Salvador</option>
+<option value='gq'>Equatorial Guinea</option>
+<option value='er'>Eritrea</option>
+<option value='ee'>Estonia</option>
+<option value='et'>Ethiopia</option>
+<option value='fk'>Falkland Islands (Malvinas)</option>
+<option value='fo'>Faroe Islands</option>
+<option value='fj'>Fiji</option>
+<option value='fi'>Finland</option>
+<option value='fr'>France</option>
+<option value='gf'>French Guiana</option>
+<option value='pf'>French Polynesia</option>
+<option value='tf'>French Southern Territories</option>
+<option value='ga'>Gabon</option>
+<option value='gm'>Gambia</option>
+<option value='ge'>Georgia</option>
+<option value='de'>Germany</option>
+<option value='gh'>Ghana</option>
+<option value='gi'>Gibraltar</option>
+<option value='gr'>Greece</option>
+<option value='gl'>Greenland</option>
+<option value='gd'>Grenada</option>
+<option value='gp'>Guadeloupe</option>
+<option value='gu'>Guam</option>
+<option value='gt'>Guatemala</option>
+<option value='gg'>Guernsey</option>
+<option value='gn'>Guinea</option>
+<option value='gw'>Guinea-Bissau</option>
+<option value='gy'>Guyana</option>
+<option value='ht'>Haiti</option>
+<option value='hm'>Heard Island and McDonald Islands</option>
+<option value='hn'>Honduras</option>
+<option value='hk'>Hong Kong</option>
+<option value='hu'>Hungary</option>
+<option value='is'>Iceland</option>
+<option value='in'>India</option>
+<option value='id'>Indonesia</option>
+<option value='ir'>Iran</option>
+<option value='iq'>Iraq</option>
+<option value='ie'>Ireland</option>
+<option value='im'>Isle of Man</option>
+<option value='il'>Israel</option>
+<option value='it'>Italy</option>
+<option value='ci'>Ivory Coast</option>
+<option value='jm'>Jamaica</option>
+<option value='jp'>Japan</option>
+<option value='je'>Jersey</option>
+<option value='jo'>Jordan</option>
+<option value='kz'>Kazakhstan</option>
+<option value='ke'>Kenya</option>
+<option value='ki'>Kiribati</option>
+<option value='kw'>Kuwait</option>
+<option value='kg'>Kyrgyzstan</option>
+<option value='la'>Laos</option>
+<option value='lv'>Latvia</option>
+<option value='lb'>Lebanon</option>
+<option value='ls'>Lesotho</option>
+<option value='lr'>Liberia</option>
+<option value='ly'>Libya</option>
+<option value='li'>Liechtenstein</option>
+<option value='lt'>Lithuania</option>
+<option value='lu'>Luxembourg</option>
+<option value='mo'>Macao</option>
+<option value='mk'>Macedonia, F.Y.R. of</option>
+<option value='mg'>Madagascar</option>
+<option value='mw'>Malawi</option>
+<option value='my'>Malaysia</option>
+<option value='mv'>Maldives</option>
+<option value='ml'>Mali</option>
+<option value='mt'>Malta</option>
+<option value='mh'>Marshall Islands</option>
+<option value='mq'>Martinique</option>
+<option value='mr'>Mauritania</option>
+<option value='mu'>Mauritius</option>
+<option value='yt'>Mayotte</option>
+<option value='mx'>Mexico</option>
+<option value='fm'>Micronesia</option>
+<option value='md'>Moldova</option>
+<option value='mc'>Monaco</option>
+<option value='mn'>Mongolia</option>
+<option value='me'>Montenegro</option>
+<option value='ms'>Montserrat</option>
+<option value='ma'>Morocco</option>
+<option value='mz'>Mozambique</option>
+<option value='mm'>Myanmar</option>
+<option value='na'>Namibia</option>
+<option value='nr'>Nauru</option>
+<option value='np'>Nepal</option>
+<option value='nl'>Netherlands</option>
+<option value='an'>Netherlands Antilles</option>
+<option value='nc'>New Caledonia</option>
+<option value='nz'>New Zealand</option>
+<option value='ni'>Nicaragua</option>
+<option value='ne'>Niger</option>
+<option value='ng'>Nigeria</option>
+<option value='nu'>Niue</option>
+<option value='nf'>Norfolk Island</option>
+<option value='kp'>North Korea</option>
+<option value='mp'>Northern Mariana Islands</option>
+<option value='no'>Norway</option>
+<option value='ps'>Occupied Palestinian Territory</option>
+<option value='om'>Oman</option>
+<option value='pk'>Pakistan</option>
+<option value='pw'>Palau</option>
+<option value='pa'>Panama</option>
+<option value='pg'>Papua New Guinea</option>
+<option value='py'>Paraguay</option>
+<option value='pe'>Peru</option>
+<option value='ph'>Philippines</option>
+<option value='pn'>Pitcairn</option>
+<option value='pl'>Poland</option>
+<option value='pt'>Portugal</option>
+<option value='pr'>Puerto Rico</option>
+<option value='qa'>Qatar</option>
+<option value='re'>Reunion</option>
+<option value='ro'>Romania</option>
+<option value='ru'>Russian Federation</option>
+<option value='rw'>Rwanda</option>
+<option value='bl'>Saint Barthélemy</option>
+<option value='sh'>Saint Helena</option>
+<option value='kn'>Saint Kitts and Nevis</option>
+<option value='lc'>Saint Lucia</option>
+<option value='mf'>Saint Martin</option>
+<option value='pm'>Saint Pierre and Miquelon</option>
+<option value='vc'>Saint Vincent and the Grenadines</option>
+<option value='ws'>Samoa</option>
+<option value='sm'>San Marino</option>
+<option value='st'>Sao Tome and Principe</option>
+<option value='sa'>Saudi Arabia</option>
+<option value='sn'>Senegal</option>
+<option value='rs'>Serbia</option>
+<option value='sc'>Seychelles</option>
+<option value='sl'>Sierra Leone</option>
+<option value='sg'>Singapore</option>
+<option value='sk'>Slovakia</option>
+<option value='si'>Slovenia</option>
+<option value='sb'>Solomon Islands</option>
+<option value='so'>Somalia</option>
+<option value='za'>South Africa</option>
+<option value='gs'>South Georgia and the South Sandwich Islands</option>
+<option value='kr'>South Korea</option>
+<option value='es'>Spain</option>
+<option value='lk'>Sri Lanka</option>
+<option value='sd'>Sudan</option>
+<option value='sr'>Suriname</option>
+<option value='sj'>Svalbard and Jan Mayen</option>
+<option value='sz'>Swaziland</option>
+<option value='se'>Sweden</option>
+<option value='ch'>Switzerland</option>
+<option value='sy'>Syria</option>
+<option value='tw'>Taiwan</option>
+<option value='tj'>Tajikistan</option>
+<option value='tz'>Tanzania</option>
+<option value='th'>Thailand</option>
+<option value='tl'>Timor-Leste</option>
+<option value='tg'>Togo</option>
+<option value='tk'>Tokelau</option>
+<option value='to'>Tonga</option>
+<option value='tt'>Trinidad and Tobago</option>
+<option value='tn'>Tunisia</option>
+<option value='tr'>Turkey</option>
+<option value='tm'>Turkmenistan</option>
+<option value='tc'>Turks and Caicos Islands</option>
+<option value='tv'>Tuvalu</option>
+<option value='ae'>U.A.E.</option>
+<option value='vi'>U.S. Virgin Islands</option>
+<option value='ug'>Uganda</option>
+<option value='ua'>Ukraine</option>
+<option value='gb'>United Kingdom</option>
+<option value='us' selected='selected'>United States</option>
+<option value='um'>United States Minor Outlying Islands</option>
+<option value='uy'>Uruguay</option>
+<option value='uz'>Uzbekistan</option>
+<option value='vu'>Vanuatu</option>
+<option value='va'>Vatican City</option>
+<option value='ve'>Venezuela</option>
+<option value='vn'>Vietnam</option>
+<option value='wf'>Wallis and Futuna</option>
+<option value='eh'>Western Sahara</option>
+<option value='ye'>Yemen</option>
+<option value='zm'>Zambia</option>
+<option value='zw'>Zimbabwe</option>
+<option value='ax'>Åland Islands</option>
+              </select>
+            </div>
+
+            <div class="field format-field">
+                            <div class="field-radios">
+                <span class="radio-wrapper"><input type="radio" name="format" class="html-format" id="inline-html-format" value="html" checked="checked"></span>
+                <label for="inline-html-format">HTML</label>
+                <span class="radio-wrapper"><input type="radio" name="format" class="text-format" id="inline-text-format" value="text" ></span>
+                <label for="inline-text-format">Text</label>&nbsp;
+              </div>
+            </div>
+
+            <div class="privacy-field">
+                            <label for="inline-privacy-check" class="privacy-check-label">
+                <span class="error-wrapper ">
+                   <input type="checkbox" class="privacy-check" id="inline-privacy-check" name="privacy" >
+                </span>
+                I agree to the <a href="/en-US/privacy-policy">개인 정보 보호 정책 (영문)</a>
+              </label>
+            </div>
+
+            <input name="submit" type="submit" value="Sign me up!" class="subscribe">
+
+            <p class="footnote">We will only send you Mozilla-related information.</p>
+          </div>
+
+        </li>
+        <li class="success-pane">
+          <h3>Thanks for Subscribing!</h3>
+          <p>We look forward to soon begin sharing tips &amp; tricks on getting the most out of Firefox, as well as exciting news about Mozilla and how we’re working to create a better Web.</p>
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>
+
+		</div>
+
+                <div class="clear"></div>
+		</div>
+	</div>
+	<div id="footer">
+	<div id="footer-contents" role="contentinfo">
+
+		<div id="footer-right">
+
+		<form id="lang_form" dir="ltr" method="get"><div>
+			<label for="flang">다른 언어</label>
+			
+<select id="flang" name="flang" dir="ltr" onchange="this.form.submit()">    <option value="ach">Acholi</option>
+    <option value="af">Afrikaans</option>
+    <option value="ak">Akan</option>
+    <option value="ar">&#1593;&#1585;&#1576;&#1610;</option>
+    <option value="as">&#2437;&#2488;&#2478;&#2496;&#2479;&#2492;&#2494;</option>
+    <option value="ast">Asturianu</option>
+    <option value="be">Беларуская</option>
+    <option value="bg">&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;</option>
+    <option value="bn-BD">বাংলা (বাংলাদেশ)</option>
+    <option value="bn-IN">&#2476;&#2494;&#2434;&#2482;&#2494;</option>
+    <option value="br">Brezhoneg</option>
+    <option value="bs">Bosanski</option>
+    <option value="ca">Catal&#224;</option>
+    <option value="cs">&#268;e&#353;tina</option>
+    <option value="csb">Kaszëbsczi</option>
+    <option value="cy">Cymraeg</option>
+    <option value="da">Dansk</option>
+    <option value="de">Deutsch</option>
+    <option value="el">&#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940;</option>
+    <option value="en-ZA">English (South African)</option>
+    <option value="eo">Esperanto</option>
+    <option value="es-AR">Español (Argentina)</option>
+    <option value="es-CL">Español (Chile)</option>
+    <option value="es-ES">Español (España)</option>
+    <option value="es-MX">Español (México)</option>
+    <option value="et">Eesti keel</option>
+    <option value="eu">Euskara</option>
+    <option value="en-GB">English (British)</option>
+    <option value="en-US" selected="selected">English (US)</option>
+    <option value="fa">&#1601;&#1575;&#1585;&#1587;&#1740;</option>
+    <option value="ff">Pulaar-Fulfulde</option>
+    <option value="fi">Suomi</option>
+    <option value="fr">Fran&#231;ais</option>
+    <option value="fy-NL">Frysk</option>
+    <option value="ga-IE">Gaeilge</option>
+    <option value="gd">Gàidhlig</option>
+    <option value="gl">Galego</option>
+    <option value="gu-IN">&#2711;&#2753;&#2716;&#2736;&#2750;&#2724;&#2752;</option>
+    <option value="he">&#1506;&#1489;&#1512;&#1497;&#1514;</option>
+    <option value="hi-IN">&#2361;&#2367;&#2344;&#2381;&#2342;&#2368; (&#2349;&#2366;&#2352;&#2340;)</option>
+    <option value="hy-AM">&#1344;&#1377;&#1397;&#1381;&#1408;&#1381;&#1398;</option>
+    <option value="hr">Hrvatski</option>
+    <option value="hu">magyar</option>
+    <option value="id">Bahasa Indonesia</option>
+    <option value="is">&#205;slenska</option>
+    <option value="it">Italiano</option>
+    <option value="ja">&#26085;&#26412;&#35486;</option>
+    <option value="ka">&#4325;&#4304;&#4320;&#4311;&#4323;&#4314;&#4312;&#32;&#4308;&#4316;&#4304;</option>
+    <option value="kk">Қазақ</option>
+    <option value="kn">&#57522;&#38368;&#45736;&#57523;&#36320;&#45736;&#57522;</option>
+    <option value="km">&#6039;&#6070;&#6047;&#6070;&#6017;&#6098;&#6040;&#6082;&#6042;</option>
+    <option value="ko">&#54620;&#44397;&#50612;</option>
+    <option value="ku">Kurd&#238;</option>
+    <option value="lg">Luganda</option>
+    <option value="lij">Ligure</option>
+    <option value="lt">Lietuvi&#371;</option>
+    <option value="lv">Latvie&#353;u</option>
+    <option value="mk">&#1052;&#1072;&#1082;&#1077;&#1076;&#1086;&#1085;&#1089;&#1082;&#1080;</option>
+    <option value="ml">&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;</option>
+    <option value="mn">&#1052;&#1086;&#1085;&#1075;&#1086;&#1083;</option>
+    <option value="mr">&#2350;&#2352;&#2366;&#2336;&#2368;</option>
+    <option value="nl">Nederlands</option>
+    <option value="no">Norsk bokm&#229;l</option>
+    <option value="nso">Sesotho sa leboa</option>
+    <option value="oc">occitan (lengadocian)</option>
+    <option value="pa-IN">&#2602;&#2672;&#2588;&#2622;&#2604;&#2624;</option>
+    <option value="pl">Polski</option>
+    <option value="pt-BR">Portugu&#234;s (do Brasil)</option>
+    <option value="pt-PT">Portugu&#234;s (Europeu)</option>
+    <option value="rm">Rumantsch</option>
+    <option value="ro">Rom&#226;n&#259;</option>
+    <option value="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</option>
+    <option value="sk">Sloven&#269;ina</option>
+    <option value="si">&#3523;&#3538;&#3458;&#3524;&#3517;</option>
+    <option value="sl">slovensko</option>
+    <option value="son">Soŋay</option>
+    <option value="sq">Shqip</option>
+    <option value="sr">&#1057;&#1088;&#1087;&#1089;&#1082;&#1080;</option>
+    <option value="sv-SE">Svenska</option>
+    <option value="ta">&#2980;&#2990;&#3007;&#2996;&#3021;</option>
+    <option value="ta-LK">Tamil (Sri Lanka)</option>
+    <option value="te">&#57520;&#42208;&#45446;&#57520;&#45792;&#45441;&#57520;&#38880;&#45441;</option>
+    <option value="th">&#3616;&#3634;&#3625;&#3634;&#3652;&#3607;&#3618;</option>
+    <option value="tr">T&#252;rk&#231;e</option>
+    <option value="uk">&#1059;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072;</option>
+    <option value="vi">Tiếng Việt</option>
+    <option value="zh-CN">&#20013;&#25991; (&#31616;&#20307;)</option>
+    <option value="zh-TW">&#27491;&#39636;&#20013;&#25991; (&#32321;&#39636;)</option>
+    <option value="zu">isiZulu</option>
+</select>
+			<noscript>
+				<div><input type="submit" id="lang_submit" value="Go" /></div>
+			</noscript>
+		</div></form>
+
+		</div>
+
+		<h3 id="footer-logo"><a href="/en-US/firefox/" title="Back to home page">Firefox</a></h3>
+
+                
+<!-- start menu #footer-menu -->
+<div id="footer-menu" role="navigation">
+  <ul>
+    <li><a href="/ko/firefox/features/">데스크탑</a><ul><li><a href="/ko/firefox/features/">주요 기능</a></li><li><a href="/ko/firefox/customize/">부가 기능</a></li><li><a href="/ko/firefox/performance/">성능 향상</a></li><li><a href="/ko/firefox/technology/">웹 기술</a></li><li><a href="/ko/firefox/security/">보안 및 정보 보호</a></li></ul></li>
+    <li><a href="/ko/mobile/">모바일</a><ul><li><a href="/ko/mobile/">다운로드</a></li><li><a href="/ko/mobile/features/">주요 기능</a></li><li><a href="https://addons.mozilla.org/ko/mobile/?browse=featured">부가 기능</a></li><li><a href="/ko/mobile/faq/">FAQ &shy;</a></li></ul></li>
+    <li><a href="/ko/firefox/channel/">다운로드</a><ul><li><a href="/ko/firefox/channel/">채널별</a></li><li><a href="/ko/firefox/aurora/">Firefox Aurora</a></li><li><a href="/ko/firefox/beta/">Firefox Beta</a></li><li><a href="/ko/firefox/fx/#desktop">Firefox</a></li><li><a href="/ko/firefox/organizations/">Firefox 기관용</a></li></ul></li>
+    <li><a href="https://addons.mozilla.org/">부가 기능</a><ul><li><a href="https://addons.mozilla.org/ko/firefox/">PC용 부가기능</a></li><li><a href="https://addons.mozilla.org/ko/android/">모바일용 부가기능</a></li><li><a href="https://addons.mozilla.org/ko/firefox/themes/">테마</a></li></ul></li>
+    <li><a href="http://support.mozilla.org/">도움말</a><ul><li><a href="http://support.mozilla.org/ko/">PC용 도움말</a></li><li><a href="http://support.mozilla.org/ko/products/mobile">모바일 도움말</a></li></ul></li>
+    <li><a href="/ko/about/">소개</a><ul><li><a href="http://blog.mozilla.org/">블로그(영문)</a></li><li><a href="/ko/about/">Firefox 소개</a></li><li><a href="http://www.mozilla.org/join">Mozilla 후원(영문)</a></li><li><a href="/ko/about/participate/">참여하기</a></li><li><a href="http://blog.mozilla.org/press/">보도자료</a></li><li><a href="/ko/firefox/brand/">로고 이용(영문)</a></li><li><a href="/ko/about/careers.html">채용문의 (영문)</a></li><li><a href="/ko/about/partnerships.html">제휴 안내</a></li><li><a href="/ko/about/contact.html">연락처</a></li></ul></li>
+  </ul>
+</div>
+<!-- end menu #footer-menu -->
+
+		<div id="copyright">
+			<p id="footer-links"><a href="/en-US/privacy-policy.html">개인 정보 보호 정책 (영문)</a> &nbsp;|&nbsp;
+			<a href="/en-US/about/legal.html">법적 고지 (영문)</a> &nbsp;|&nbsp;
+                        <a href="/en-US/legal/fraud-report/index.html">상표권 침해 신고 (영문)</a></p>
+			<p>Except where otherwise <a href="/en-US/about/legal.html#site">noted</a>, content on this site is licensed under the <br /><a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.</p>
+		</div>
+
+	</div>
+	</div>
+	<!-- end #footer -->
+    <script type="text/javascript">
+function dcsMultiTrack() {
+    return false;
+}
+</script>
+
+    <script src="/en-US/tabzilla/media/js/tabzilla.js"></script>
+	
+    <script>
+    // <![CDATA[
+
+    // Firefox 3.x update notice. Only show for Firefox 3.x, don't show for
+    // cousins that say they are Firefox 3.x.
+    var isOldVersion = (navigator.userAgent &&
+        navigator.userAgent.indexOf('Firefox/3.') !== -1 &&
+        navigator.userAgent.indexOf('Camino') === -1 &&
+        navigator.userAgent.indexOf('SeaMonkey') === -1);
+
+    if (isOldVersion) {
+        var oldOnload = window.onload;
+        window.onload = function() {
+            var script = document.createElement('script');
+            script.src = '/js/update-v3.js';
+            document.body.appendChild(script);
+            if (typeof oldOnload == 'function') {
+                oldOnload();
+            }
+        }
+    }
+
+    // ]]>
+    </script>
+
+</body>
+</html>
