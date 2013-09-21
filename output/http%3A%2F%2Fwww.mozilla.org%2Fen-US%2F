@@ -15,20 +15,20 @@
     <title>Mozilla — Home of the Mozilla Project — mozilla.org</title>
     <meta name="description" content="">
 
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=82c91b4" />
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=f0d1830" />
     
     <!--[if lte IE 8]>
     <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
     <![endif]-->
 
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/responsive-min.css?build=82c91b4" />
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/responsive-min.css?build=f0d1830" />
     
-      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/home-min.css?build=82c91b4" />
+      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/home-min.css?build=f0d1830" />
 
     <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
-    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=82c91b4"></script>
+    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=f0d1830"></script>
 
-    <script>
+              <script>
 var _gaq = _gaq || [];
 var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
 _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
@@ -48,7 +48,7 @@ _gaq.push(['_trackPageview']);
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(ga, s);
 })();
-</script>  </head>
+</script>      </head>
 
   <body id="home" class="html-ltr sand">
     <div id="strings"   data-close='Close'
@@ -205,17 +205,27 @@ _gaq.push(['_trackPageview']);
       </a>
     </div>
 
-    <div class="pager-page" id="promo-flicksvoting">
+    <div class="pager-page" id="promo-flickswinners">
       <script>
-        document.getElementById('promo-flicksvoting').id = 'page-promo-flicksvoting';
+        document.getElementById('promo-flickswinners').id = 'page-promo-flickswinners';
       </script>
-      <a href="https://firefoxflicks.mozilla.org/video/" class="container">
+      <a href="https://firefoxflicks.mozilla.org/video/winners/" class="container">
         <div class="content">
-          <h3><i class="hidden">Firefox Flicks</i> Choose your favorites</h3>
-          <h4>August 31 is the last day to vote for the People‘s Choice Awards. Don‘t miss your chance.</h4>
-          <p class="go">Vote now</p>
+          <h3><i class="hidden">Firefox Flicks</i> Congratulations to our winners</h3>
+          <h4>The votes are in and we‘re excited to present the winners of Firefox Flicks 2013. Thanks to everyone who entered!</h4>
+          <p class="go">Watch the winning flicks</p>
         </div>
       </a>
+      <img id="promo-flicks-keyframe" src="//mozorg.cdn.mozilla.net/media/img/home/promo/flickswinners/2013-winner-thumb.jpg" alt="Play Video" tabindex="0" role="button">
+      <div id="promo-flicks-overlay" class="video-overlay">
+        <a class="video-visit" href="https://firefoxflicks.mozilla.org/">Visit FirefoxFlicks.org</a>
+        <ul class="share-links">
+          <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffirefoxflicks.org" class="share-facebook">Share on Facebook</a></li>
+          <li><a href="https://www.twitter.com/intent/tweet?url=https%3A%2F%2Ffirefoxflicks.org&amp;text=I+just+watched+the+winning+video+in+the+%23FirefoxFlicks+contest.+See+all+the+winning+flicks+for+yourself%21" class="share-twitter">Tweet</a></li>
+        </ul>
+        <span tabindex="0" role="button" class="video-replay">Replay</span>
+        <span tabindex="0" role="button" class="video-continue">Continue</span>
+      </div>
     </div>
 
     <div class="pager-page" id="promo-android">
@@ -623,8 +633,8 @@ _gaq.push(['_trackPageview']);
       <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
     <![endif]-->
 
-      <script src="//mozorg.cdn.mozilla.net/media/js/mozorg-resp-min.js?build=82c91b4"></script>
-          <script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js?build=82c91b4"></script>
-          <script src="//mozorg.cdn.mozilla.net/media/js/home-min.js?build=82c91b4"></script>
+      <script src="//mozorg.cdn.mozilla.net/media/js/mozorg-resp-min.js?build=f0d1830"></script>
+          <script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js?build=f0d1830"></script>
+          <script src="//mozorg.cdn.mozilla.net/media/js/home-min.js?build=f0d1830"></script>
   </body>
 </html>
