@@ -830,7 +830,7 @@ function do_download(link)
         <li>
             <h3>1. 신규 기능 테스트</h3>
             <p>HTML5 최신 웹 기술, 개발 도구에 대한 최신 성능 향상, 보안 업데이트 등을 미리 경험해 보실수 있습니다.</p>
-            <p><a href="/en-US/firefox/aurora/notes">자세히 보기 »</a></p>
+            <p><a href="http://www.mozilla.org/en-US/firefox/aurora/notes">자세히 보기 »</a></p>
         </li>
         <li>
             <h3>2. 기존 기능 개선</h3>
