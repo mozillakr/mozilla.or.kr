@@ -354,6 +354,9 @@ _gaq.push(['_trackPageview']);
   array(
     'source' => 'Report Trademark Abuse', 
     'target' => '상표권 침해 신고 (영문)'), 
+  array(
+    'source' => '<p>Except where otherwise <a href="/en-US/about/legal.html#site">noted</a>, content on this site is licensed under the <br /><a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.</p>', 
+    'target' => '<p>별도로 <a href="/en-US/about/legal.html#site">명시</a>한 경우를 제외하고 이 사이트의 콘텐츠는 <br /><a href="http://creativecommons.org/licenses/by-sa/3.0/">크리에이티브 커먼즈 저작자표시-동일조건변경허락 v3.0</a> 라이센스나 그 이후 버전을 따르고 있습니다.</p>'), 
 );
 
 $replace_rule = array_merge($common_rule, $replace_rule);
