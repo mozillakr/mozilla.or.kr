@@ -346,14 +346,14 @@ _gaq.push(['_trackPageview']);
     <li><a href="http://support.mozilla.org/">도움말</a><ul><li><a href="http://support.mozilla.org/ko/">PC용 도움말</a></li><li><a href="http://support.mozilla.org/ko/products/mobile">모바일 도움말</a></li></ul></li>
     <li><a href="/ko/about/">소개</a><ul><li><a href="http://blog.mozilla.org/">블로그(영문)</a></li><li><a href="/ko/about/">Firefox 소개</a></li><li><a href="http://www.mozilla.org/join">Mozilla 후원(영문)</a></li><li><a href="/ko/about/participate/">참여하기</a></li><li><a href="http://blog.mozilla.org/press/">보도자료</a></li><li><a href="/ko/firefox/brand/">로고 이용(영문)</a></li><li><a href="/ko/about/careers.html">채용문의 (영문)</a></li><li><a href="/ko/about/partnerships.html">제휴 안내</a></li><li><a href="/ko/about/contact.html">연락처</a></li></ul></li>'), 
   array(
-    'source' => 'Privacy Policy', 
-    'target' => '개인 정보 보호 정책 (영문)'), 
+    'source' => '<a href="/en-US/privacy-policy.html">Privacy Policy', 
+    'target' => '<a href="/en-US/privacy-policy.html">개인 정보 보호 정책 (영문)'), 
   array(
-    'source' => 'Legal Notices', 
-    'target' => '법적 고지 (영문)'), 
+    'source' => '<a href="/en-US/about/legal.html">Legal Notices', 
+    'target' => '<a href="/en-US/about/legal.html">법적 고지 (영문)'), 
   array(
-    'source' => 'Report Trademark Abuse', 
-    'target' => '상표권 침해 신고 (영문)'), 
+    'source' => '<a href="/en-US/legal/fraud-report/index.html">Report Trademark Abuse', 
+    'target' => '<a href="/en-US/legal/fraud-report/index.html">상표권 침해 신고 (영문)'), 
   array(
     'source' => '<p>Except where otherwise <a href="/en-US/about/legal.html#site">noted</a>, content on this site is licensed under the <br /><a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.</p>', 
     'target' => '<p>별도로 <a href="/en-US/about/legal.html#site">명시</a>한 경우를 제외하고 이 사이트의 콘텐츠는 <br /><a href="http://creativecommons.org/licenses/by-sa/3.0/">크리에이티브 커먼즈 저작자표시-동일조건변경허락 v3.0</a> 라이센스나 그 이후 버전을 따르고 있습니다.</p>'), 

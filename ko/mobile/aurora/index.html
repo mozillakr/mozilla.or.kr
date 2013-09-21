@@ -1,62 +1,51 @@
-<?
-  require $_SERVER['DOCUMENT_ROOT']."/ko/includes/common.inc";
-  
-  $Htitle="Mozilla Firefox 웹 브라우저 | Aurora 안드로이드 버전 다운로드";
-  $Hfontface="<style>
-    /* MetaWebPro font family licensed from fontshop.com. WOFF-FTW! */
-    @font-face {
-        font-family: 'MetaBlack';
-        src: url('//www.mozilla.org/img/fonts/MetaWebPro-Black.eot');
-        src: local('☺'), url('//www.mozilla.org/img/fonts/MetaWebPro-Black.woff') format('woff');
-        font-weight: bold;
-    }
-    </style>";
-  $Hextraheader='<link rel="stylesheet" href="//www.mozilla.org/style/covehead/mobile-aurora.css" media="screen" />
-    <META name="WT.z_pdp" content="firefox_mobile_aurora" />
-    <META name="WT.si_n" content="Firefox Aurora for Mobile" />
-    <META name="WT.si_x" content="2" />';
-  $print_download_css=true;
-  $Hid="aurora-mobile";
-  $Hclass="darkbg";
+<?php
+$replace_rule = array(
+  // Document title
+  array(
+    'source' => '<title>Mozilla Firefox Web Browser | Download Firefox Aurora for Android - Free</title>', 
+    'target' => '<title>Mozilla Firefox 웹 브라우저 | Aurora 안드로이드 버전 다운로드</title>'), 
 
-  include $_SERVER["DOCUMENT_ROOT"]."/ko/includes/header-beta.php";
-?>
-
-<div id="main-feature">
-    <div id="switcher">
-        <h4>Firefox Aurora 버전:</h4>
-        <ul>
-          <li><a href="/ko/firefox/aurora/">데스크톱</a></li>
-          <li><span>모바일</span></li>
-        </ul>
-    </div>
-    <h2><img src="//www.mozilla.org/img/covehead/firefox/aurora/title.png" alt="Firefox Aurora" height="69" width="486" /></h2>
-    <p>Firefox의 차기 버전이 될 Aurora 다운로드</p>
-    <div id="download_aurora_button">
-        <div class="home-download beta-download">
-            <a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/en-US/fennec-21.0a2.en-US.android-arm.apk"
-               class="download-link download-firefox"
-               onclick="dcsMultiTrack('DCS.dcssip',
-                        document.location.host,'DCS.dcsuri',
-                        document.location.pathname,'WT.ti',
-                        document.title,'WT.dl', 99,
-                        'WT.z_convert', 'Firefox Aurora for Mobile',
-                        'WT.si_n', 'Firefox Aurora for Mobile',
-                        'WT.si_x', '3');">
-                <span class="download-content">
-                <span class="download-title">Firefox Aurora</span>
-                <em>안드로이드 버전</em>
-                </span>
-            </a>
-            <div class="download-other">
-                <a href="/en-US/legal/privacy/firefox.html">개인 정보 보호 정책</a> |
-                <a href="/en-US/mobile/platforms/">지원기기 목록</a> |
-                <a href="/en-US/mobile/aurora/notes/">신규 기능</a>
-            </div>
-        </div>
-    </div>
-    <div id="features">
-    <ul id="feature-list" class="bjqs">
+  // Main contents
+  array(
+    'source' => 'Firefox Aurora for:', 
+    'target' => 'Firefox Aurora 버전:'), 
+  array(
+    'source' => '<li><a href="/en-US/firefox/aurora/">Desktop</a></li>', 
+    'target' => '<li><a href="/ko/firefox/aurora/">데스크톱</a></li></li>'), 
+  array(
+    'source' => '<li><span>Mobile</span></li>', 
+    'target' => '<li><span>모바일</span></li>'), 
+  array(
+    'source' => 'Download the pre-Beta build of Firefox.', 
+    'target' => 'Firefox의 차기 버전이 될 Aurora 다운로드'), 
+  array(
+    'source' => '<em>for Android</em>', 
+    'target' => '<em>안드로이드 버전</em>'), 
+  array(
+    'source' => '<a href="/en-US/legal/privacy/firefox.html">Privacy Policy', 
+    'target' => '<a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인 정보 보호 정책'), 
+  array(
+    'source' => '<a href="/en-US/mobile/platforms/">List of Supported devices', 
+    'target' => '<a href="//www.mozilla.org/en-US/mobile/platforms/">지원 기기 목록'), 
+  array(
+    'source' => '<a href="/en-US/mobile/aurora/notes/">What’s New', 
+    'target' => '<a href="//www.mozilla.org/en-US/mobile/aurora/notes/">신규 기능'), 
+  array(
+    'source' => '<ul id="feature-list" class="bjqs">
+        <li>
+            <h3>1. Preview Features</h3>
+            <p>Get the latest mobile and tablet UI, security features, HTML5 and other technologies first.</p>
+        </li>
+        <li>
+            <h3>2. Share Feedback</h3>
+            <p>Test performance, file bugs and help us determine what features go on to Beta.</p>
+        </li>
+        <li>
+            <h3>3. Shape Firefox</h3>
+            <p>Join a community of users, contributors and developers working to build Firefox.</p>
+        </li>
+    </ul>', 
+    'target' => '<ul id="feature-list" class="bjqs">
         <li>
             <h3>1. 신규 기능 테스트</h3>
             <p>최신 성능 향상 및 개인화, 보안 업데이트 등을 미리 경험해 보시고 의견을 주십시오.</p>
@@ -69,11 +58,32 @@
             <h3>3. 일반 사용자 돕기</h3>
             <p>여러분의 테스트가 다음 버전에서 사용할 4억 5천만 사용자에게 큰 도움이 될 것입니다. 지금 참여해 주십시오.</p>
         </li>
-    </ul>
-    </div>
-</div>
+    </ul>'), 
+  array(
+    'source' => 'How to install Aurora for Android', 
+    'target' => '안드로이드용 Aurora 설치하기'), 
+  array(
+    'source' => 'Check the <a href="/en-US/mobile/platforms/">system requirements</a> to see if Aurora is compatible with your Android device.', 
+    'target' => '<a href="/ko/mobile/platforms/">시스템 요구사항</a>을 확인하고 가지고 있는 안드로이드 기기와 Aurora가 호환되는지 확인합니다.'), 
+  array(
+    'source' => 'Configure your device to install non–Android Market apps by going to <em>Settings > Applications & checking “Unknown sources”</em>.', 
+    'target' => '안드로이드 마켓에 올라가 있지 않은 앱을 설치할기 위해서 <em>설정 &gt; 어플리케이션에 가서 “알 수 없는 소스”</em>를 체크합니다.'), 
+  array(
+    'source' => 'Note: Some devices may have a slightly different process', 
+    'target' => '주의: 어떤 기기는 약간 다른 과정을 거칠 수도 있습니다.'), 
+  array(
+    'source' => 'Download Aurora directly to your Android device by scanning the QR code or by clicking the download button from your mobile Web browser.', 
+    'target' => 'QR 코드를 이용하거나 모바일 브라우저의 다운로드 버튼을 눌러서 기기에 직접 Aurora를 다운 받으세요.'), 
+  array(
+    'source' => 'Open the “<a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/fennec-', 
+    'target' => '다운로드가 끝나면 “<a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/fennec-'), 
+  array(
+    'source' => '.en-US.android-arm.apk">.apk</a>” file when it finishes downloading.', 
+    'target' => '.en-US.android-arm.apk">.apk</a>” 파일을 여세요.'), 
+);
 
-<?
-  $Fproduct = "mobile_aurora";
-  include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer-beta.php";
+require_once($_SERVER['DOCUMENT_ROOT'] . '/lib/MozKr.class.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/lib/common_rules.php');
+$t = new MozKr('http://www.mozilla.org/en-US/mobile/aurora/', 'http://www.mozilla.or.kr/ko/mobile/aurora/', $replace_rule, $insert_rule, $remove_rule);
+echo($t->get_content());
 ?>
