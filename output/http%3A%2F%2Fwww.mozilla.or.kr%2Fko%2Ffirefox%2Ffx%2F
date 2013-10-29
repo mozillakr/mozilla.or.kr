@@ -1,31 +1,44 @@
 
 
+
 <!doctype html>
-<html class="windows no-js" lang="en-US" dir="ltr">
+<html class="windows no-js" lang="en-US" dir="ltr" data-latest-firefox="25.0" data-esr-versions="[10, 17, 24]">
   <head>
         <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="canonical" hreflang="ko" href="http://www.mozilla.or.kr/ko/firefox/fx/">
-    <link rel="alternate" hreflang="x-default" href="http://www.mozilla.or.kr/firefox/fx/">
-          <link rel="alternate" hreflang="en-US" href="http://www.mozilla.org/en-US/firefox/fx/" title="English (US)">
-      
+    
     <title>Mozilla Firefox 웹 브라우저 — Firefox의 다양한 기능을 접하세요 — 모바일, 부가기능 그 외 많은 것들이 있습니다</title>
     <meta name="description" content="Mozilla Firefox, free web browser, is created by a global non-profit dedicated to putting individuals in control &amp; shaping the future of the web for the public good.">
-
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=82c91b4" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mozilla">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="http://www.mozilla.org/en-US/firefox/fx/">
+    <meta property="og:image" content="https://mozorg.cdn.mozilla.net/media/img/firefox/firefox-256.jpg">
+    <meta property="og:title" content="Mozilla Firefox Web Browser — Get More From Your Firefox — Mobile, Add-ons & Other Stuff">
+    <meta property="og:description" content="Mozilla Firefox, free web browser, is created by a global non-profit dedicated to putting individuals in control &amp; shaping the future of the web for the public good.">
+    <meta property="fb:page_id" content="14696440021">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@firefox">
+    <meta name="twitter:domain" content="mozilla.org">
+    <meta name="twitter:app:name:googleplay" content="Firefox">
+    <meta name="twitter:app:id:googleplay" content="org.mozilla.firefox">
+    <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/firefox/favicon.ico?2013-08">
+        <link rel="canonical" hreflang="ko" href="http://www.mozilla.or.kr/ko/firefox/fx/">
+    <link rel="alternate" hreflang="x-default" href="http://www.mozilla.or.kr/firefox/fx/">
+    <link rel="alternate" hreflang="en-US" href="http://www.mozilla.org/en-US/firefox/fx/" title="English (US)">
+        
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=c2bb3eb" />
     
     <!--[if lte IE 8]>
     <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
     <![endif]-->
 
-      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox_fx-min.css?build=82c91b4" />
+      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox_fx-min.css?build=c2bb3eb" />
 
-    <meta name="og:image" content="//mozorg.cdn.mozilla.net/media/img/firefox/firefox-100.jpg?2013-06">
+    
+    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=c2bb3eb"></script>
 
-    <link rel="shortcut icon" type="image/icon" href="//mozorg.cdn.mozilla.net/media/img/firefox/favicon.ico?2013-08">
-    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=82c91b4"></script>
-
-    <script>
+              <script>
         var _gaq = _gaq || [];
        _gaq.push(['_setAccount', 'UA-53785-1']);
        _gaq.push(['_setDomainName', 'mozilla.or.kr']);
@@ -36,18 +49,17 @@
           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-     </script>  </head>
+     </script>      </head>
 
-  <body id="firefox-fx" class="html-ltr sky" data-latest-firefox="24.0" data-esr-versions="[10, 17]">
+  <body id="firefox-fx" class="html-ltr sky">
     <div id="strings" ></div>
     <div id="outer-wrapper">
     <div id="wrapper">
 
           <header id="masthead">
         <a href="/ko/" id="tabzilla">Mozilla</a>
-
-        <nav id="nav-main" role="navigation">
-  <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">주요 메뉴</span>
+        <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">주요 메뉴</span>
+<nav id="nav-main" role="navigation">
   <ul id="nav-main-menu" class="has-submenus">
     <li class="first" id="nav-main-features"><a href="/ko/firefox/fx/#desktop" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">데스크톱</a>
       <ul aria-expanded="false" id="nav-main-features-submenu" class="submenu">
@@ -145,7 +157,7 @@
       </li>
       </ul>
       <small class="download-other os_android">
-      <a href="/ko/firefox/mobile/platforms">지원 기기</a> |
+      <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |
               <a href="//www.mozilla.org/en-US/mobile/notes">변경내역</a> |
             <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>
     </small>
@@ -169,7 +181,7 @@
           </a>
         </li>
         <li id="supported">
-          <a class="mobile-link" href="/ko/firefox/mobile/platforms/">
+          <a class="mobile-link" href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">
             <h3>지원 단말</h3>
             <span class="link">여러분의 스마트폰을 지원하는지 알아 보십시오. &nbsp;»</span>
           </a>
@@ -208,7 +220,7 @@
         <div class="download download-dumb">
     <h4>Firefox 무료 다운로드- 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li>    </ul>
   </div>
 
     </noscript>
@@ -216,12 +228,12 @@
         <div class="download download-dumb">
     <h4>Firefox 무료 다운로드- 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li>    </ul>
   </div>
 
     </div>
         <p class="unsupported-download">
-      Firefox를 구동하기에 충분한 <a href="//www.mozilla.org/en-US/firefox/24.0/system-requirements/">시스템 사양</a>이 아닙니다.
+      Firefox를 구동하기에 충분한 <a href="//www.mozilla.org/en-US/firefox/25.0/system-requirements/">시스템 사양</a>이 아닙니다.
     </p>
     <ul class="download-list">
           <li class="os_windows">
@@ -237,7 +249,7 @@
       </li>
           <li class="os_linux">
         <a class="download-link"
-           href="//www.mozilla.org/en-US/products/download.html?product=firefox-24.0&amp;os=linux&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-24.0&amp;os=linux&amp;lang=ko">
+           href="//www.mozilla.org/en-US/products/download.html?product=firefox-25.0&amp;os=linux&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-25.0&amp;os=linux&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
                             <span class="download-subtitle">무료 다운로드</span>
@@ -248,7 +260,7 @@
       </li>
           <li class="os_osx">
         <a class="download-link"
-           href="//www.mozilla.org/en-US/products/download.html?product=firefox-24.0&amp;os=osx&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-24.0&amp;os=osx&amp;lang=ko">
+           href="//www.mozilla.org/en-US/products/download.html?product=firefox-25.0&amp;os=osx&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-25.0&amp;os=osx&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
                             <span class="download-subtitle">무료 다운로드</span>
@@ -290,7 +302,7 @@
         <div class="download download-dumb">
     <h4>Firefox 무료 다운로드- 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
   </div>
 
     </noscript>
@@ -298,12 +310,12 @@
         <div class="download download-dumb">
     <h4>Firefox 무료 다운로드- 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-24.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
   </div>
 
     </div>
         <p class="unsupported-download">
-      Firefox를 구동하기에 충분한 <a href="//www.mozilla.org/en-US/firefox/24.0/system-requirements/">시스템 사양</a>이 아닙니다.
+      Firefox를 구동하기에 충분한 <a href="//www.mozilla.org/en-US/firefox/25.0/system-requirements/">시스템 사양</a>이 아닙니다.
     </p>
     <ul class="download-list">
           <li class="os_windows">
@@ -319,7 +331,7 @@
       </li>
           <li class="os_linux">
         <a class="download-link"
-           href="//www.mozilla.org/en-US/products/download.html?product=firefox-24.0&amp;os=linux&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-24.0&amp;os=linux&amp;lang=ko">
+           href="//www.mozilla.org/en-US/products/download.html?product=firefox-25.0&amp;os=linux&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-25.0&amp;os=linux&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
                             <span class="download-subtitle">무료 다운로드</span>
@@ -330,7 +342,7 @@
       </li>
           <li class="os_osx">
         <a class="download-link"
-           href="//www.mozilla.org/en-US/products/download.html?product=firefox-24.0&amp;os=osx&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-24.0&amp;os=osx&amp;lang=ko">
+           href="//www.mozilla.org/en-US/products/download.html?product=firefox-25.0&amp;os=osx&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-25.0&amp;os=osx&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
                             <span class="download-subtitle">무료 다운로드</span>
@@ -350,7 +362,7 @@
       </li>
       </ul>
       <small class="download-other os_android">
-      <a href="/ko/firefox/mobile/platforms">지원 기기</a> |
+      <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |
               <a href="//www.mozilla.org/en-US/mobile/notes">변경내역</a> |
             <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>
     </small>
@@ -429,8 +441,8 @@
       <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
     <![endif]-->
 
-      <script src="//mozorg.cdn.mozilla.net/media/js/firefox-resp-min.js?build=82c91b4"></script>
-          <script src="/ko/tabzilla/tabzilla.js?build=82c91b4"></script>
-          <script src="//mozorg.cdn.mozilla.net/media/js/firefox_fx-min.js?build=82c91b4"></script>
+      <script src="//mozorg.cdn.mozilla.net/media/js/firefox-resp-min.js?build=c2bb3eb"></script>
+          <script src="/ko/tabzilla/tabzilla.js?build=c2bb3eb"></script>
+          <script src="//mozorg.cdn.mozilla.net/media/js/firefox_fx-min.js?build=c2bb3eb"></script>
   </body>
 </html>

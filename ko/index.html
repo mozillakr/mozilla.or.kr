@@ -2,14 +2,14 @@
 $replace_rule = array(
   // Document title
   array(
-    'source' => '<title>Mozilla — Home of the Mozilla Project — mozilla.org</title>', 
+    'source' => '<title>Mozilla — Home of the Mozilla Project — Mozilla</title>', 
     'target' => '<title>Mozilla - Mozilla 프로젝트</title>'), 
   // Main contents
   array(
     'source' => 'Doing good is part of our code', 
     'target' => '웹으로 세상을 바꾸고 있습니다!'), 
   array(
-    'source' => 'Different by&nbsp;Design', 
+    'source' => 'Different by&nbsp;design', 
     'target' => '새로운 디자인'), 
   array(
     'source' => 'Proudly <br> non-profit', 
@@ -189,10 +189,16 @@ $insert_rule = array(
 
 $remove_rule = array(
   array(
-    'start' => '<form class="billboard newsletter-form"', 
-    'end' => '<small>We will only send you Mozilla-related information.</small></p>
-  </div>
-</form>'
+    'start' => '<!-- Google Analytics Content Experiment code -->', 
+    'end' => '<!-- End of Google Analytics Content Experiment code -->'
+  ), 
+  array(
+    'start' => '<!-- validates bing webmaster tools', 
+    'end' => 'content="B7B177115A634927D608514DA17B2574" />'
+  ), 
+  array(
+    'start' => '<aside class="billboard newsletter-form">', 
+    'end' => '</aside>'
   ), 
 );
 

@@ -1,31 +1,44 @@
 
 
+
 <!doctype html>
-<html class="windows no-js" lang="en-US" dir="ltr">
+<html class="windows no-js" lang="en-US" dir="ltr" data-latest-firefox="25.0" data-esr-versions="[10, 17, 24]">
   <head>
         <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="canonical" hreflang="ko" href="http://www.mozilla.or.kr/ko/firefox/mobile/features/">
-    <link rel="alternate" hreflang="x-default" href="http://www.mozilla.or.kr/firefox/mobile/features/">
-          <link rel="alternate" hreflang="en-US" href="http://www.mozilla.org/en-US/firefox/mobile/features/" title="English (US)">
-      
+    
     <title>Mozilla Firefox 웹 브라우저 — Mozilla Firefox 모바일 브라우저</title>
     <meta name="description" content="Mozilla Firefox, free web browser, is created by a global non-profit dedicated to putting individuals in control &amp; shaping the future of the web for the public good.">
-
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=82c91b4" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mozilla">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="http://www.mozilla.org/en-US/firefox/mobile/features/">
+    <meta property="og:image" content="https://mozorg.cdn.mozilla.net/media/img/firefox/firefox-256.jpg">
+    <meta property="og:title" content="Mozilla Firefox Web Browser — Mozilla Firefox Mobile Browser">
+    <meta property="og:description" content="Mozilla Firefox, free web browser, is created by a global non-profit dedicated to putting individuals in control &amp; shaping the future of the web for the public good.">
+    <meta property="fb:page_id" content="14696440021">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@firefox">
+    <meta name="twitter:domain" content="mozilla.org">
+    <meta name="twitter:app:name:googleplay" content="Firefox">
+    <meta name="twitter:app:id:googleplay" content="org.mozilla.firefox">
+    <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/firefox/favicon.ico?2013-08">
+        <link rel="canonical" hreflang="ko" href="http://www.mozilla.or.kr/ko/firefox/mobile/features/">
+    <link rel="alternate" hreflang="x-default" href="http://www.mozilla.or.kr/firefox/mobile/features/">
+    <link rel="alternate" hreflang="en-US" href="http://www.mozilla.org/en-US/firefox/mobile/features/" title="English (US)">
+        
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=c2bb3eb" />
     
     <!--[if lte IE 8]>
     <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
     <![endif]-->
 
-      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/mobile_features-min.css?build=82c91b4" />
+      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/mobile_features-min.css?build=c2bb3eb" />
 
-    <meta name="og:image" content="//mozorg.cdn.mozilla.net/media/img/firefox/firefox-100.jpg?2013-06">
+    
+    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=c2bb3eb"></script>
 
-    <link rel="shortcut icon" type="image/icon" href="//mozorg.cdn.mozilla.net/media/img/firefox/favicon.ico?2013-08">
-    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=82c91b4"></script>
-
-    <script>
+              <script>
         var _gaq = _gaq || [];
        _gaq.push(['_setAccount', 'UA-53785-1']);
        _gaq.push(['_setDomainName', 'mozilla.or.kr']);
@@ -36,18 +49,17 @@
           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-     </script>  </head>
+     </script>      </head>
 
-  <body id="mobile-features" class="html-ltr sky" data-latest-firefox="24.0" data-esr-versions="[10, 17]">
+  <body id="mobile-features" class="html-ltr sky">
     <div id="strings" ></div>
     <div id="outer-wrapper">
     <div id="wrapper">
 
           <header id="masthead">
         <a href="/ko/" id="tabzilla">Mozilla</a>
-
-        <nav id="nav-main" role="navigation">
-  <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">주요 메뉴</span>
+        <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">주요 메뉴</span>
+<nav id="nav-main" role="navigation">
   <ul id="nav-main-menu" class="has-submenus">
     <li class="first" id="nav-main-features"><a href="/ko/firefox/fx/#desktop" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">데스크톱</a>
       <ul aria-expanded="false" id="nav-main-features-submenu" class="submenu">
@@ -132,7 +144,7 @@
       </li>
       </ul>
       <small class="download-other os_android">
-      <a href="/ko/firefox/mobile/platforms">지원 기기</a> |
+      <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |
               <a href="//www.mozilla.org/en-US/mobile/notes">변경내역</a> |
             <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>
     </small>
@@ -148,13 +160,13 @@
     <section id="fast">
       <h2>빠름</h2>
       <p>빠른 실행 속도와 페이지 로딩이 웹 서핑을 쾌적하게 만들어 줍니다.</p>
-      <p><a href="http://support.mozilla.org/kb/use-awesome-screen-search-firefox-android">스마트 주소창</a>이 웹 사이트 이용 내역을 기억해 두고 있어서 검색이 보다 쉬워지고 원하는 곳을 빠르게 이동할 수 있습니다.</p>
-      <p>사용하기 쉬운 <a href="https://support.mozilla.org/kb/use-awesome-screen-search-firefox-android">탭</a>을 사용해서 여러 사이트를 한번에 간단하고 쉽게 사용합니다.</p>
+      <p>Type less, browse more with the <a href="https://support.mozilla.org/ko/kb/use-awesome-screen-search-firefox-android">Awesome Bar</a> and <a href="https://support.mozilla.org/ko/kb/use-awesome-screen-search-firefox-android">Awesome Screen</a>.</p>
+      <p>Browse multiple sites at once, simply and easily, with easy-to-use <a href="https://support.mozilla.org/ko/kb/use-awesome-screen-search-firefox-android">tabs.</a></p>
     </section>
 
     <section id="safe">
       <h2>안전함</h2>
-      <p>최신 버전은 보안 설정에서 암호, 개인 정보, 쿠키, 이미지, 부가 기능의 관련 보안 설정을 <a class="more" href="https://support.mozilla.org/kb/configure-mobile-privacy-and-security-settings">간편하게 조정</a>할 수 있습니다.</p>
+      <p>Enjoy the latest security features to easily customize settings for passwords, private data, cookies and more. <a class="more" href="https://support.mozilla.org/ko/kb/configure-mobile-privacy-and-security-settings">Learn more</a></p>
       <p class="icon privacy"><span class="img"></span><a href="/en-US/dnt/">개인 정보 추적 금지</a>과 같은 기능이 웹 사이트가 추적할 수 있는 개인 정보 범위를 조절합니다..</p>
       <p>내장된 <a href="/en-US/firefox/phishing-protection/">피싱과 악성코드 방어 기능</a> 덕분에 걱정없이 브라우징 할 수 있습니다.</p>
     </section>
@@ -164,7 +176,7 @@
     <section id="smart">
       <h2>똑똑함</h2>
       <p class="icon html5"><span class="img"></span>HTML5와 웹 API 완벽 지원을 통해 모바일 웹의 무한한 가능성을 경험해 보십시오. <a class="more" href="https://developer.mozilla.org/en/Mobile">자세히 알아보기</a></p>
-      <p class="icon sync"><span class="img"></span>데스크톱 버전에 저장된 방문 기록, 북마크, 암호를 모바일 단말기와 <a href="http://support.mozilla.org/kb/how-do-i-set-up-firefox-sync">동기화</a>하면 모바일에서도 익숙하게 웹 서핑을 즐길 수 있습니다.</p>
+      <p class="icon sync"><span class="img"></span><a href="https://support.mozilla.org/ko/kb/how-do-i-set-up-firefox-sync">Sync</a> your desktop history, bookmarks and passwords to all your devices for a painless browsing experience on mobile.</p>
       <p class="icon addons"><span class="img"></span>부가 기능으로 나만의 기능을 추가해 보십시오. <a class="more" href="http://addons.mozilla.org/mobile/">부가 기능 받기</a></p>
     </section>
 
@@ -219,7 +231,7 @@
       <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
     <![endif]-->
 
-      <script src="//mozorg.cdn.mozilla.net/media/js/firefox-resp-min.js?build=82c91b4"></script>
-          <script src="/ko/tabzilla/tabzilla.js?build=82c91b4"></script>
+      <script src="//mozorg.cdn.mozilla.net/media/js/firefox-resp-min.js?build=c2bb3eb"></script>
+          <script src="/ko/tabzilla/tabzilla.js?build=c2bb3eb"></script>
           </body>
 </html>

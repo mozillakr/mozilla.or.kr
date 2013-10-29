@@ -31,6 +31,9 @@ $common_rule = array(
   array(
     'source' => 'src="/js/', 
     'target' => 'src="//www.mozilla.org/js/'), 
+  array(
+    'source' => '//support.mozilla.org/kb/', 
+    'target' => '//support.mozilla.org/ko/kb/'), 
 
   // link on head
   array(
@@ -49,17 +52,17 @@ $common_rule = array(
 
   // Navigation
   array(
-    'source' => '<li class="first"><a href="/en-US/mission/">Mission</a></li>', 
-    'target' => '<li class="first"><a href="/ko/mission/">사명</a></li>'), 
+    'source' => '<a href="/en-US/mission/">Mission</a>', 
+    'target' => '<a href="/ko/mission/">사명</a>'), 
   array(
-    'source' => '<li><a href="/en-US/about/">About</a></li>', 
-    'target' => '<li><a href="/ko/about/">소개</a></li>'), 
+    'source' => '<a href="/en-US/about/">About</a>', 
+    'target' => '<a href="/ko/about/">소개</a>'), 
   array(
-    'source' => '<li><a href="/en-US/products/">Products</a></li>', 
-    'target' => '<li><a href="/ko/products/">제품</a></li>'), 
+    'source' => '<a href="/en-US/products/">Products</a>', 
+    'target' => '<a href="/ko/products/">제품</a>'), 
   array(
-    'source' => '<li class="last"><a href="/en-US/contribute/">Get Involved</a></li>', 
-    'target' => '<li class="last"><a href="/ko/contribute/">참여하기</a></li>'), 
+    'source' => '<a href="/en-US/contribute/">Get Involved</a>', 
+    'target' => '<a href="/ko/contribute/">참여하기</a>'), 
 
   // Previous Navigation
   array(
@@ -193,8 +196,9 @@ $common_rule = array(
     'source' => '<span class="download-subtitle">Get it free on Google Play</span>', 
     'target' => '<span class="download-subtitle">Google Play에서 무료 다운로드</span>'), 
   array(
-    'source' => '<a href="/en-US/firefox/mobile/platforms">Supported Devices</a> |', 
-    'target' => '<a href="/ko/firefox/mobile/platforms">지원 기기</a> |'), 
+    'source' => '>Supported Devices</a> |', 
+    'target' => '>지원 기기</a> |'), 
+    // 'target' => '<a href="/ko/firefox/mobile/platforms">지원 기기</a> |'), 
   array(
     'source' => '<a href="/en-US/mobile/notes">What’s New</a> |', 
     'target' => '<a href="//www.mozilla.org/en-US/mobile/notes">변경내역</a> |'), 

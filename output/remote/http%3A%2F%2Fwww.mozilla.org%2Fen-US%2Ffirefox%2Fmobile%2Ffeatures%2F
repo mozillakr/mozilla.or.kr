@@ -1,29 +1,42 @@
 
 
+
 <!doctype html>
-<html class="windows no-js" lang="en-US" dir="ltr" data-latest-firefox="24.0" data-esr-versions="[10, 17]">
+<html class="windows no-js" lang="en-US" dir="ltr" data-latest-firefox="25.0" data-esr-versions="[10, 17, 24]">
   <head>
         <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="canonical" hreflang="en-US" href="http://www.mozilla.org/en-US/firefox/mobile/features/">
-    <link rel="alternate" hreflang="x-default" href="http://www.mozilla.org/firefox/mobile/features/">
-          <link rel="alternate" hreflang="en-US" href="http://www.mozilla.org/en-US/firefox/mobile/features/" title="English (US)">
-      
-    <title>Mozilla Firefox Web Browser — Mozilla Firefox Mobile Browser — mozilla.org</title>
+    
+    <title>Mozilla Firefox Web Browser — Mozilla Firefox Mobile Browser — Mozilla</title>
     <meta name="description" content="Mozilla Firefox, free web browser, is created by a global non-profit dedicated to putting individuals in control &amp; shaping the future of the web for the public good.">
-
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=f0d1830" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mozilla">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="http://www.mozilla.org/en-US/firefox/mobile/features/">
+    <meta property="og:image" content="https://mozorg.cdn.mozilla.net/media/img/firefox/firefox-256.jpg">
+    <meta property="og:title" content="Mozilla Firefox Web Browser — Mozilla Firefox Mobile Browser">
+    <meta property="og:description" content="Mozilla Firefox, free web browser, is created by a global non-profit dedicated to putting individuals in control &amp; shaping the future of the web for the public good.">
+    <meta property="fb:page_id" content="14696440021">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@firefox">
+    <meta name="twitter:domain" content="mozilla.org">
+    <meta name="twitter:app:name:googleplay" content="Firefox">
+    <meta name="twitter:app:id:googleplay" content="org.mozilla.firefox">
+    <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/firefox/favicon.ico?2013-08">
+        <link rel="canonical" hreflang="en-US" href="http://www.mozilla.org/en-US/firefox/mobile/features/">
+    <link rel="alternate" hreflang="x-default" href="http://www.mozilla.org/firefox/mobile/features/">
+    <link rel="alternate" hreflang="en-US" href="http://www.mozilla.org/en-US/firefox/mobile/features/" title="English (US)">
+        
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=c2bb3eb" />
     
     <!--[if lte IE 8]>
     <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
     <![endif]-->
 
-      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/mobile_features-min.css?build=f0d1830" />
+      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/mobile_features-min.css?build=c2bb3eb" />
 
-    <meta name="og:image" content="//mozorg.cdn.mozilla.net/media/img/firefox/firefox-100.jpg?2013-06">
-
-    <link rel="shortcut icon" type="image/icon" href="//mozorg.cdn.mozilla.net/media/img/firefox/favicon.ico?2013-08">
-    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=f0d1830"></script>
+    
+    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=c2bb3eb"></script>
 
               <script>
 var _gaq = _gaq || [];
@@ -54,9 +67,8 @@ _gaq.push(['_trackPageview']);
 
           <header id="masthead">
         <a href="/en-US/" id="tabzilla">Mozilla</a>
-
-        <nav id="nav-main" role="navigation">
-  <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>
+        <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>
+<nav id="nav-main" role="navigation">
   <ul id="nav-main-menu" class="has-submenus">
     <li class="first" id="nav-main-features"><a href="/en-US/firefox/fx/#desktop" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">Desktop</a>
       <ul aria-expanded="false" id="nav-main-features-submenu" class="submenu">
@@ -144,7 +156,7 @@ _gaq.push(['_trackPageview']);
       </li>
       </ul>
       <small class="download-other os_android">
-      <a href="/en-US/firefox/mobile/platforms">Supported Devices</a> |
+      <a href="https://support.mozilla.org/kb/will-firefox-work-my-mobile-device">Supported Devices</a> |
               <a href="/en-US/mobile/notes">What’s New</a> |
             <a href="/en-US/legal/privacy/firefox.html">Privacy</a>
     </small>
@@ -463,6 +475,7 @@ _gaq.push(['_trackPageview']);
 <option value="fr">Français</option>
 <option value="pl">Polski</option>
 <option value="pt">Português</option>
+<option value="hu">magyar</option>
 <option value="ru">Русский</option>
 </select>
             </div>
@@ -526,7 +539,7 @@ _gaq.push(['_trackPageview']);
       <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
     <![endif]-->
 
-      <script src="//mozorg.cdn.mozilla.net/media/js/firefox-resp-min.js?build=f0d1830"></script>
-          <script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js?build=f0d1830"></script>
+      <script src="//mozorg.cdn.mozilla.net/media/js/firefox-resp-min.js?build=c2bb3eb"></script>
+          <script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js?build=c2bb3eb"></script>
           </body>
 </html>
