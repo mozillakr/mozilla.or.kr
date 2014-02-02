@@ -2,6 +2,9 @@
 $common_rule = array(
   // resource path
   array(
+    'source' => 'href="/en-US/', 
+    'target' => 'href="//www.mozilla.org/en-US/'), 
+  array(
     'source' => 'href="/includes/', 
     'target' => 'href="//www.mozilla.org/includes/'), 
   array(
@@ -218,10 +221,10 @@ $common_rule = array(
     'target' => '<a href="/ko/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>'), 
   array(
     'source' => 'Portions of this content are ©1998–2013 by individual mozilla.org contributors. Content available under a <a href="/en-US/foundation/licensing/website-content/">Creative Commons license</a>.', 
-    'target' => '&copy;1998–2012 일부 콘텐츠는 mozilla.org 공헌자에 의해 만들어졌으며, 이 콘텐츠는 <a href="//www.mozilla.org/foundation/licensing/website-content.html">Creative Commons license</a> 하에서 사용 가능합니다.'), 
+    'target' => '&copy;1998–2013 콘텐츠의 일부는 개별 mozilla.org 공헌자에게 저작권이 있습니다. 콘텐츠는 <a href="//www.mozilla.org/foundation/licensing/website-content.html">Creative Commons license</a>에 의해 사용할 수 있습니다.'), 
   array(
     'source' => '<a href="/en-US/contribute/page/">Contribute to this page</a>', 
-    'target' => '<a href="/ko/contribute/page/">공헌자 홈페이지</a>'), 
+    'target' => '<a href="/ko/contribute/page/">이 페이지에 기여하기</a>'), 
   array(
     'source' => '<ul class="footer-nav">
             <li><a href="/en-US/about/contact.html#map-mountain_view">Contact Us</a></li>
@@ -319,6 +322,41 @@ _gaq.push(['_trackPageview']);
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
      </script>"), 
+
+  // Korean Footer
+  array(
+    'source' => '<ul class="footer-nav">
+            <li><a href="/ko/contact/spaces/">연락처</a></li>
+            <li><a href="/ko/about/partnerships/">제휴하기</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">기부하기</a></li>
+            <li><a href="/ko/privacy/">개인 정보 보호 정책 (영문)</a></li>
+            <li><a href="/ko/about/legal.html">법적 고지 (영문)</a></li>
+            <li><a href="/ko/legal/fraud-report/index.html">상표권 침해 신고 (영문)</a></li>
+          </ul>', 
+    'target' => '<ul class="footer-nav">
+            <li><a href="//www.mozilla.org/en-US/contact/spaces/">연락처</a></li>
+            <li><a href="//www.mozilla.org/en-US/about/partnerships/">제휴하기</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">기부하기</a></li>
+            <li><a href="//www.mozilla.org/en-US/privacy/">개인 정보 보호 정책</a></li>
+            <li><a href="//www.mozilla.org/en-US/about/legal.html">법적 고지</a></li>
+            <li><a href="//www.mozilla.org/en-US/legal/fraud-report/">상표권 침해 신고</a></li>
+          </ul>'), 
+  array(
+    'source' => '<ul class="footer-nav">
+            <li><a href="https://twitter.com/mozilla">트위터 Mozilla</a></li>
+            <li><a href="https://twitter.com/firefox">트위터 Firefox</a></li>
+            <li><a href="https://www.facebook.com/mozilla">페이스북 Mozilla</a></li>
+            <li><a href="https://www.facebook.com/Firefox">페이스북 Firefox</a></li>
+            <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
+          </ul>', 
+    'target' => '<ul class="footer-nav">
+            <li><a href="https://twitter.com/mozilla">Mozilla 트위터</a></li>
+            <li><a href="https://twitter.com/firefox">Firefox 트위터</a></li>
+            <li><a href="https://www.facebook.com/mozilla">Mozilla 페이스북</a></li>
+            <li><a href="https://www.facebook.com/Firefox">Firefox 페이스북</a></li>
+            <li><a href="https://affiliates.mozilla.org/">Firefox 제휴</a></li>
+            <li><a href="http://forums.mozilla.or.kr/">한국 커뮤니티</a></li>
+          </ul>'), 
 
   // Aurora Footer
   array(
