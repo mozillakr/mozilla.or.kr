@@ -2,10 +2,11 @@
 class MozKr {
 	function __construct($source_url, $target_url, $replace_rule, $insert_rule, $remove_rule) {
 		$this->source_url = $source_url;
+		// TODO remove $target_url argument
 		$this->target_url = $target_url;
 		$this->output_directory = dirname(__FILE__) . '/../output/';
-		$this->source_file_path = $this->output_directory . urlencode($source_url);
-		$this->target_file_path = $this->output_directory . urlencode($target_url);
+		$this->source_file_path = $this->output_directory . 'source/' . urlencode($source_url);
+		$this->target_file_path = $this->output_directory . urlencode($source_url);
 
 		$this->replace_rule = $replace_rule;
 		$this->insert_rule = $insert_rule;

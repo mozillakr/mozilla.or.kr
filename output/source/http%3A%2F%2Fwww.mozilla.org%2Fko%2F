@@ -48,7 +48,7 @@ help support Mozilla.-->
     <meta name="twitter:app:id:googleplay" content="org.mozilla.firefox">
     <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
         <link rel="canonical" hreflang="ko" href="http://www.mozilla.org/ko/">
-    <link rel="alternate" hreflang="x-default" href="http://www.mozilla.or.kr/">
+    <link rel="alternate" hreflang="x-default" href="http://www.mozilla.org/">
     <link rel="alternate" hreflang="af" href="http://www.mozilla.org/af/" title="Afrikaans">
     <link rel="alternate" hreflang="an" href="http://www.mozilla.org/an/" title="aragonés">
     <link rel="alternate" hreflang="ar" href="http://www.mozilla.org/ar/" title="عربي">
@@ -133,17 +133,26 @@ help support Mozilla.-->
             <script src="//cdn.optimizely.com/js/246059135.js"></script>
     
               <script>
-        var _gaq = _gaq || [];
-       _gaq.push(['_setAccount', 'UA-53785-1']);
-       _gaq.push(['_setDomainName', 'mozilla.or.kr']);
-       _gaq.push(['_trackPageview']);
+var _gaq = _gaq || [];
+var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+_gaq.push(['_setAccount', 'UA-36116321-1']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_setAllowAnchor', true]);
+_gaq.push(['_trackPageview']);
 
-       (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-     </script>      </head>
+(function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+
+    var prefix = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www');
+    ga.src = prefix + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>      </head>
 
   <body id="home" class="html-ltr sand lang-ko">
     <div id="strings" data-global-close="닫기"     data-news-next='다음글'
@@ -154,7 +163,7 @@ help support Mozilla.-->
 
           <header id="masthead">
         <a href="/ko/" id="tabzilla" data-infobar="translation">Mozilla</a>
-                <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">주요 메뉴</span>
+                <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>
         <nav id="nav-main" role="navigation">
           <ul id="nav-main-menu">
             <li class="first mission-item"><a href="/ko/mission/">사명</a></li>
@@ -185,7 +194,7 @@ help support Mozilla.-->
                 <h2 class="panel-title">감시자를 <i>감시</i></h2>
         <div class="panel-inner">
           <div class="panel-content">
-            <a href="//www.mozilla.org/en-US/lightbeam/">
+            <a href="/ko/lightbeam/">
               <h3>온라인에서 누가 나를 지켜보는지 확인</h3>
               <p>나의 온라인 활동 데이터를 수집하는 제 3자들을 밝혀봅시다.</p>
               <p class="go">Lightbeam 부가기능 설치</p>
@@ -311,14 +320,14 @@ help support Mozilla.-->
       </li>
       </ul>
       <small class="download-other os_android">
-      <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |
-              <a href="//www.mozilla.org/en-US/mobile/notes">새로운 기능</a> |
-            <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인 정보 정책</a>
+      <a href="https://support.mozilla.org/kb/will-firefox-work-my-mobile-device">지원 기기</a> |
+              <a href="/en-US/mobile/notes">새로운 기능</a> |
+            <a href="/en-US/legal/privacy/firefox.html">개인 정보 정책</a>
     </small>
         <small class="download-other os_linux os_osx os_windows">
-              <a href="//www.mozilla.org/en-US/firefox/all">시스템 &amp; 언어선택</a> |
-        <a href="//www.mozilla.org/en-US/firefox/notes">새로운 기능</a> |
-            <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인 정보 정책</a>
+              <a href="/en-US/firefox/all">시스템 &amp; 언어선택</a> |
+        <a href="/en-US/firefox/notes">새로운 기능</a> |
+            <a href="/en-US/legal/privacy/firefox.html">개인 정보 정책</a>
     </small>
   </div>
     </div>
@@ -612,7 +621,7 @@ help support Mozilla.-->
           <label for="id_fmt_0"><input checked="checked" type="radio" id="id_fmt_0" value="H" name="fmt" /> HTML</label><label for="id_fmt_1"><input type="radio" id="id_fmt_1" value="T" name="fmt" /> 내용</label>
         </div>
         <div class="field field-privacy ">
-          <label for="id_privacy" class="privacy-check-label"><input required="required" type="checkbox" name="privacy" id="id_privacy" /> <span class="title">Mozilla가 <a href="//www.mozilla.org/en-US/privacy-policy">Privacy Policy</a>에 설명된 대로 나의 정보를 다루는 것에 동의합니다.</span></label>
+          <label for="id_privacy" class="privacy-check-label"><input required="required" type="checkbox" name="privacy" id="id_privacy" /> <span class="title">Mozilla가 <a href="/en-US/privacy-policy">Privacy Policy</a>에 설명된 대로 나의 정보를 다루는 것에 동의합니다.</span></label>
         </div>
       </div>
     </div>
@@ -660,19 +669,19 @@ help support Mozilla.-->
               </p>
           </div>
           <ul class="footer-nav">
-            <li><a href="//www.mozilla.org/en-US/contact/spaces/">연락처</a></li>
-            <li><a href="//www.mozilla.org/en-US/about/partnerships/">제휴하기</a></li>
+            <li><a href="/ko/contact/spaces/">연락처</a></li>
+            <li><a href="/ko/about/partnerships/">제휴하기</a></li>
             <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">기부하기</a></li>
-            <li><a href="//www.mozilla.org/en-US/privacy/">개인 정보 보호 정책</a></li>
-            <li><a href="//www.mozilla.org/en-US/about/legal.html">법적 고지</a></li>
-            <li><a href="//www.mozilla.org/en-US/legal/fraud-report/">상표권 침해 신고</a></li>
+            <li><a href="/ko/privacy/">개인 정보 보호 정책 (영문)</a></li>
+            <li><a href="/ko/about/legal.html">법적 고지 (영문)</a></li>
+            <li><a href="/ko/legal/fraud-report/index.html">상표권 침해 신고 (영문)</a></li>
           </ul>
                     <ul class="footer-nav">
             <li><a href="https://twitter.com/mozilla">Mozilla 트위터</a></li>
             <li><a href="https://twitter.com/firefox">Firefox 트위터</a></li>
             <li><a href="https://www.facebook.com/mozilla">Mozilla 페이스북</a></li>
             <li><a href="https://www.facebook.com/Firefox">Firefox 페이스북</a></li>
-            <li><a href="http://forums.mozilla.or.kr/">한국커뮤니티</a></li>
+            <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
           </ul>
                               <div class="footer-lang">
             <form id="lang_form" dir="ltr" method="get" action="#">
