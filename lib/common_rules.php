@@ -1,9 +1,5 @@
 <?php
 $common_rule = array(
-  // resource path
-  array(
-    'source' => 'href="/en-US/', 
-    'target' => 'href="//www.mozilla.org/en-US/'), 
   array(
     'source' => 'href="/includes/', 
     'target' => 'href="//www.mozilla.org/includes/'), 
@@ -223,6 +219,9 @@ $common_rule = array(
     'source' => 'Portions of this content are ©1998–2013 by individual mozilla.org contributors. Content available under a <a href="/en-US/foundation/licensing/website-content/">Creative Commons license</a>.', 
     'target' => '&copy;1998–2013 콘텐츠의 일부는 개별 mozilla.org 공헌자에게 저작권이 있습니다. 콘텐츠는 <a href="//www.mozilla.org/foundation/licensing/website-content.html">Creative Commons license</a>에 의해 사용할 수 있습니다.'), 
   array(
+    'source' => 'Portions of this content are ©1998–2014 by individual mozilla.org contributors. Content available under a <a href="/en-US/foundation/licensing/website-content/">Creative Commons license</a>.', 
+    'target' => '&copy;1998–2014 콘텐츠의 일부는 개별 mozilla.org 공헌자에게 저작권이 있습니다. 콘텐츠는 <a href="//www.mozilla.org/foundation/licensing/website-content.html">Creative Commons license</a>에 의해 사용할 수 있습니다.'), 
+  array(
     'source' => '<a href="/en-US/contribute/page/">Contribute to this page</a>', 
     'target' => '<a href="/ko/contribute/page/">이 페이지에 기여하기</a>'), 
   array(
@@ -239,6 +238,15 @@ $common_rule = array(
             <li><a href="//www.mozilla.org/en-US/about/legal.html">법적 고지(영문)</a></li>
             <li><a href="//www.mozilla.org/en-US/legal/fraud-report/index.html">상표권 침해 신고(영문)</a></li>
           </ul>'), 
+  array(
+    'source' => '<a href="/en-US/contact/spaces/">Contact Us</a>', 
+    'target' => '<a href="//www.mozilla.org/en-US/contact/spaces/">연락처</a>'), 
+  array(
+    'source' => '<a href="/en-US/about/partnerships/">Partner with Us</a>', 
+    'target' => '<a href="//www.mozilla.org/en-US/about/partnerships/">제휴하기</a>'), 
+  array(
+    'source' => 'class="donate">Donate</a>', 
+    'target' => 'class="donate">기부하기</a>'), 
   array(
     'source' => '<ul class="footer-nav">
             <li><a href="https://twitter.com/firefox">Twitter</a></li>

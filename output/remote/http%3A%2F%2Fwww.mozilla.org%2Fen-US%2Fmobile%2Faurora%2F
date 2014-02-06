@@ -219,7 +219,7 @@ if (gPlatform == 1) {
     <p>Download the pre-Beta build of Firefox.</p>
     <div id="download_aurora_button">
         <div class="home-download beta-download">
-            <a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/en-US/fennec-26.0a2.en-US.android-arm.apk"
+            <a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/en-US/fennec-28.0a2.en-US.android-arm.apk"
                class="download-link download-firefox">
                 <span class="download-content">
                 <span class="download-title">Firefox Aurora</span>
@@ -268,7 +268,7 @@ if (gPlatform == 1) {
         <p>Download Aurora directly to your Android device by scanning the QR code or by clicking the download button from your mobile Web browser.</p>
       </li>
       <li id="step4">
-        <p>Open the “<a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/fennec-26.0a2.en-US.android-arm.apk">.apk</a>” file when it finishes downloading.</p>
+        <p>Open the “<a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/fennec-28.0a2.en-US.android-arm.apk">.apk</a>” file when it finishes downloading.</p>
       </li>
     </ol>
 
@@ -955,6 +955,7 @@ if (gPlatform == 1) {
 			
 <select id="flang" name="flang" dir="ltr" onchange="this.form.submit()">    <option value="ach">Acholi</option>
     <option value="af">Afrikaans</option>
+    <option value="an">Aragonés</option>
     <option value="ak">Akan</option>
     <option value="ar">&#1593;&#1585;&#1576;&#1610;</option>
     <option value="as">&#2437;&#2488;&#2478;&#2496;&#2479;&#2492;&#2494;</option>
@@ -1014,6 +1015,7 @@ if (gPlatform == 1) {
     <option value="ml">&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;</option>
     <option value="mn">&#1052;&#1086;&#1085;&#1075;&#1086;&#1083;</option>
     <option value="mr">&#2350;&#2352;&#2366;&#2336;&#2368;</option>
+    <option value="ms">Bahasa Malaysia</option>
     <option value="nl">Nederlands</option>
     <option value="no">Norsk bokm&#229;l</option>
     <option value="nso">Sesotho sa leboa</option>

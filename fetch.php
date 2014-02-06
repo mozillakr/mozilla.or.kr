@@ -6,11 +6,15 @@ if ($_SERVER['HTTP_HOST'] != 'localhost:8000') {
 // fetch
 if ($_GET['action'] == 'fetch') {
 	$url = urldecode($_GET['url']);
+
 	unlink('output/' . urlencode($url));
-	unlink('output/' . urlencode(str_replace('http://www.mozilla.org/en-US/', 'http://www.mozilla.or.kr/ko/', $url)));
+	unlink('output/source/' . urlencode($url));
 	unlink('output/remote/' . urlencode($url));
 
-	file_get_contents(str_replace('http://www.mozilla.org/en-US/', 'http://localhost:8000/ko/', $url));
+	$local_url = str_replace('http://www.mozilla.org/en-US/', 'http://localhost:8000/ko/', $url);
+	$local_url = str_replace('http://www.mozilla.org/', 'http://localhost:8000/', $local_url);
+
+	file_get_contents($local_url);
 
 	header('Location: fetch.php');
 	exit();
@@ -25,7 +29,7 @@ if ($_GET['action'] == 'fetch') {
 	exit();
 }
 
-$file_list = scandir('output/');
+$file_list = scandir('output/source/');
 
 $result = array();
 foreach ($file_list as $item) {
@@ -39,7 +43,7 @@ foreach ($file_list as $item) {
 			fwrite(fopen($remote_file_name, 'w'), $remote_html);
 		}
 
-		$diff = shell_exec('diff output/' . $item . ' ' . $remote_file_name);
+		$diff = shell_exec('diff output/source/' . $item . ' ' . $remote_file_name);
 		$diff = htmlspecialchars($diff);
 		$diff = nl2br($diff);
 
@@ -113,7 +117,7 @@ h2 {
 <body>
 <h1><a href="http://www.mozilla.or.kr/">mozilla.or.kr</a> dashboard</h1>
 <h2>All files</h2>
-<p class="action"><a href="?action=flush" class="button">Refresh all caches</a></p>
+<p class="action"><a href="?action=flush" class="button">Refresh all remote caches</a></p>
 <?php
 foreach ($result as $item) {
 	echo('<h2>' . $item['url'] . '</h2>');

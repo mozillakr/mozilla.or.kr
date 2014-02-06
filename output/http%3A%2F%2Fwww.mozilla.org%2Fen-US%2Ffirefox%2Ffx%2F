@@ -1,21 +1,42 @@
 
-
-
 <!doctype html>
-<html class="windows no-js" lang="en-US" dir="ltr" data-latest-firefox="25.0" data-esr-versions="[10, 17, 24]">
+<html class="windows no-js" lang="en-US" dir="ltr" data-latest-firefox="27.0" data-esr-versions="[10, 17, 24]">
   <head>
-        <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"><!--
+             _.-~-.
+           7''  Q..\
+        _7         (_
+      _7  _/    _q.  /
+    _7 . ___  /VVvv-'_                                            .
+   7/ / /~- \_\\      '-._     .-'                      /       //
+  ./ ( /-~-/||'=.__  '::. '-~'' {             ___   /  //     ./{
+ V   V-~-~| ||   __''_   ':::.   ''~-~.___.-'' _/  // / {_   /  {  /
+  VV/-~-~-|/ \ .'__'. '.    '::                     _ _ _        ''.
+  / /~~~~||VVV/ /  \ )  \        _ __ ___   ___ ___(_) | | __ _   .::'
+ / (~-~-~\\.-' /    \'   \::::. | '_ ` _ \ / _ \_  / | | |/ _` | :::'
+/..\    /..\__/      '     '::: | | | | | | (_) / /| | | | (_| | ::'
+vVVv    vVVv                 ': |_| |_| |_|\___/___|_|_|_|\__,_| ''
+
+Hi there, nice to meet you!
+
+Interested in having a direct impact on hundreds of millions of users? Join
+Mozilla, and become part of a global community that’s helping to build a
+brighter future for the Web.
+
+Visit https://careers.mozilla.org to learn about our current job openings.
+Visit https://www.mozilla.org/contribute for more ways to get involved and
+help support Mozilla.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Mozilla Firefox Web Browser — Get More From Your Firefox — Mobile, Add-ons & Other Stuff — Mozilla</title>
-    <meta name="description" content="Mozilla Firefox, free web browser, is created by a global non-profit dedicated to putting individuals in control &amp; shaping the future of the web for the public good.">
+    <title>Mozilla Firefox Web Browser — Get More From Your Firefox — Mobile, Add-ons &amp; Other Stuff — Mozilla</title>
+    <meta name="description" content="Firefox 최신 버전을 사용해 보십시오. 빠르고 호환성이 좋으며 안전합니다.">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Mozilla">
     <meta property="og:locale" content="en_US">
     <meta property="og:url" content="http://www.mozilla.org/en-US/firefox/fx/">
     <meta property="og:image" content="https://mozorg.cdn.mozilla.net/media/img/firefox/firefox-256.jpg">
-    <meta property="og:title" content="Mozilla Firefox Web Browser — Get More From Your Firefox — Mobile, Add-ons & Other Stuff">
-    <meta property="og:description" content="Mozilla Firefox, free web browser, is created by a global non-profit dedicated to putting individuals in control &amp; shaping the future of the web for the public good.">
+    <meta property="og:title" content="Mozilla Firefox Web Browser — Get More From Your Firefox — Mobile, Add-ons &amp; Other Stuff">
+    <meta property="og:description" content="Firefox 최신 버전을 사용해 보십시오. 빠르고 호환성이 좋으며 안전합니다.">
     <meta property="fb:page_id" content="14696440021">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@firefox">
@@ -23,92 +44,87 @@
     <meta name="twitter:app:name:googleplay" content="Firefox">
     <meta name="twitter:app:id:googleplay" content="org.mozilla.firefox">
     <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/firefox/favicon.ico?2013-08">
-        <link rel="canonical" hreflang="en-US" href="http://www.mozilla.org/en-US/firefox/fx/">
-    <link rel="alternate" hreflang="x-default" href="http://www.mozilla.org/firefox/fx/">
+        <link rel="canonical" hreflang="ko" href="http://www.mozilla.or.kr/ko/firefox/fx/">
+    <link rel="alternate" hreflang="x-default" href="http://www.mozilla.or.kr/firefox/fx/">
     <link rel="alternate" hreflang="en-US" href="http://www.mozilla.org/en-US/firefox/fx/" title="English (US)">
         
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=c2bb3eb" />
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=4e55d23" />
     
     <!--[if lte IE 8]>
     <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
     <![endif]-->
 
-      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox_fx-min.css?build=c2bb3eb" />
+      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox_fx-min.css?build=4e55d23" />
 
     
-    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=c2bb3eb"></script>
+    
+    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=4e55d23"></script>
 
+            <script src="//cdn.optimizely.com/js/246059135.js"></script>
+    
               <script>
-var _gaq = _gaq || [];
-var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-_gaq.push(['_setAccount', 'UA-36116321-1']);
-_gaq.push(['_setAllowLinker', true]);
-_gaq.push(['_setAllowAnchor', true]);
-_gaq.push(['_trackPageview']);
+        var _gaq = _gaq || [];
+       _gaq.push(['_setAccount', 'UA-53785-1']);
+       _gaq.push(['_setDomainName', 'mozilla.or.kr']);
+       _gaq.push(['_trackPageview']);
 
-(function() {
-    var ga = document.createElement('script');
-    ga.type = 'text/javascript';
-    ga.async = true;
-
-    var prefix = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www');
-    ga.src = prefix + '.google-analytics.com/ga.js';
-
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(ga, s);
-})();
-</script>      </head>
+       (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+     </script>      </head>
 
   <body id="firefox-fx" class="html-ltr sky">
-    <div id="strings" ></div>
+    <div id="strings" data-global-close="Close" ></div>
     <div id="outer-wrapper">
     <div id="wrapper">
 
           <header id="masthead">
-        <a href="/en-US/" id="tabzilla">Mozilla</a>
-        <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>
+        <a href="/en-US/" id="tabzilla" data-infobar="translation">Mozilla</a>
+        <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">주요 메뉴</span>
 <nav id="nav-main" role="navigation">
   <ul id="nav-main-menu" class="has-submenus">
-    <li class="first" id="nav-main-features"><a href="/en-US/firefox/fx/#desktop" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">Desktop</a>
+    <li class="first" id="nav-main-features"><a href="/ko/firefox/fx/#desktop" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">데스크톱</a>
       <ul aria-expanded="false" id="nav-main-features-submenu" class="submenu">
-        <li class="first"><a href="/en-US/firefox/features/" tabindex="-1">Features</a></li>
-        <li><a href="/en-US/firefox/customize/" tabindex="-1">Customize</a></li>
-        <li><a href="/en-US/firefox/performance/" tabindex="-1">Performance</a></li>
-        <li><a href="/en-US/firefox/technology/" tabindex="-1">Technology</a></li>
-        <li class="last"><a href="/en-US/firefox/security/" tabindex="-1">Privacy &amp; Security</a></li>
+        <li class="first"><a href="/ko/firefox/features/" tabindex="-1">주요 기능</a></li>
+        <li><a href="/ko/firefox/customize/" tabindex="-1">맞춤 기능</a></li>
+        <li><a href="/ko/firefox/performance/" tabindex="-1">빠른 성능</a></li>
+        <li><a href="/ko/firefox/technology/" tabindex="-1">기술 혁신</a></li>
+        <li class="last"><a href="/ko/firefox/security/" tabindex="-1">정보 보호 및 보안</a></li>
       </ul>
     </li>
-    <li id="nav-main-mobile"><a href="/en-US/firefox/fx/" tabindex="0" aria-owns="nav-main-mobile-submenu" aria-haspopup="true">Mobile</a>
+    <li id="nav-main-mobile"><a href="/ko/firefox/fx/" tabindex="0" aria-owns="nav-main-mobile-submenu" aria-haspopup="true">모바일</a>
       <ul aria-expanded="false" id="nav-main-mobile-submenu" class="submenu">
-        <li class="first"><a href="/en-US/firefox/mobile/features/" tabindex="-1">Features</a></li>
-        <li><a href="https://addons.mozilla.org/en-US/mobile/?browse=featured" tabindex="-1">Customize</a></li>
-        <li class="last"><a href="/en-US/firefox/mobile/faq/" tabindex="-1">FAQ</a></li>
+        <li class="first"><a href="/ko/firefox/mobile/features/" tabindex="-1">주요 기능</a></li>
+        <li><a href="https://addons.mozilla.org/ko/mobile/?browse=featured" tabindex="-1">맞춤 기능</a></li>
+        <li class="last"><a href="/ko/firefox/mobile/faq/" tabindex="-1">FAQ</a></li>
       </ul>
     </li>
-    <li id="nav-main-releases" class=""><a href="/en-US/firefox/channel/" tabindex="0" aria-owns="nav-main-releases-submenu" aria-haspopup="true">Releases</a>
+    <li id="nav-main-releases" class=""><a href="/ko/firefox/channel/" tabindex="0" aria-owns="nav-main-releases-submenu" aria-haspopup="true">출시 현황</a>
       <ul aria-expanded="false" id="nav-main-releases-submenu" class="submenu">
-        <li class="first"><a href="/en-US/firefox/channel/" tabindex="-1">Overview</a></li>
-        <li><a href="/en-US/firefox/aurora/" tabindex="-1">Firefox Aurora</a></li>
+        <li class="first"><a href="/ko/firefox/channel/" tabindex="-1">전체 보기</a></li>
+        <li><a href="/ko/firefox/aurora/" tabindex="-1">Firefox Aurora</a></li>
         <li><a href="/beta/" tabindex="-1">Firefox Beta</a></li>
-        <li><a href="/en-US/firefox/" tabindex="-1">Firefox</a></li>
-        <li class="last"><a href="/en-US/firefox/organizations/" tabindex="-1">Firefox for Organizations</a></li>
+        <li><a href="/ko/firefox/" tabindex="-1">Firefox</a></li>
+        <li class="last"><a href="/ko/firefox/organizations/" tabindex="-1">기업용 Firefox</a></li>
       </ul>
     </li>
-    <li id="nav-main-addons"><a href="https://addons.mozilla.org/" tabindex="0" aria-owns="nav-main-addons-submenu" aria-haspopup="true">Add-ons</a>
+    <li id="nav-main-addons"><a href="https://addons.mozilla.org/" tabindex="0" aria-owns="nav-main-addons-submenu" aria-haspopup="true">부가 기능</a>
       <ul aria-expanded="false" id="nav-main-addons-submenu" class="submenu">
-        <li class="first"><a href="https://addons.mozilla.org/firefox/" tabindex="-1">Desktop Add-ons</a></li>
-        <li><a href="https://addons.mozilla.org/android/" tabindex="-1">Mobile Add-ons</a></li>
-        <li class="last"><a href="https://addons.mozilla.org/firefox/themes/" tabindex="-1">Themes</a></li>
+        <li class="first"><a href="https://addons.mozilla.org/firefox/" tabindex="-1">데스크톱용</a></li>
+        <li><a href="https://addons.mozilla.org/android/" tabindex="-1">모바일용</a></li>
+        <li class="last"><a href="https://addons.mozilla.org/firefox/themes/" tabindex="-1">테마</a></li>
       </ul>
       </li>
-      <li id="nav-main-support"><a href="https://support.mozilla.org/" tabindex="0" aria-owns="nav-main-support-submenu" aria-haspopup="true">Support</a>
+      <li id="nav-main-support"><a href="https://support.mozilla.org/" tabindex="0" aria-owns="nav-main-support-submenu" aria-haspopup="true">도움말</a>
       <ul aria-expanded="false" id="nav-main-support-submenu" class="submenu">
-        <li class="first"><a href="https://support.mozilla.org/products/firefox" tabindex="-1">Desktop Support</a></li>
-        <li class="last"><a href="https://support.mozilla.org/products/mobile" tabindex="-1">Mobile Support</a></li>
+        <li class="first"><a href="https://support.mozilla.org/products/firefox" tabindex="-1">데스크톱용</a></li>
+        <li><a href="https://support.mozilla.org/products/mobile" tabindex="-1">모바일용</a></li>
+        <li class="last"><a href="http://forums.mozilla.or.kr" tabindex="-1">사용자 포럼</a></li>
       </ul>
     </li>
-    <li class="last" id="nav-main-about"><a href="/en-US/firefox/about/" tabindex="0" aria-owns="nav-main-about-submenu" aria-haspopup="true">About</a>
+    <li class="last" id="nav-main-about"><a href="/ko/about/" tabindex="0" aria-owns="nav-main-about-submenu" aria-haspopup="true">소개</a>
       <ul aria-expanded="false" id="nav-main-about-submenu" class="submenu">
         <li class="first"><a href="https://blog.mozilla.org/" tabindex="-1">Blog</a></li>
         <li><a href="/en-US/firefox/about/" tabindex="-1">About Firefox</a></li>
@@ -116,15 +132,15 @@ _gaq.push(['_trackPageview']);
         <li><a href="/en-US/about/participate/" tabindex="-1">Participate</a></li>
         <li><a href="https://blog.mozilla.org/press/" tabindex="-1">Press Center</a></li>
         <li><a href="/en-US/firefox/brand/" tabindex="-1">Brand Toolkit</a></li>
-        <li><a href="/en-US/about/careers.html" tabindex="-1">Careers</a></li>
+        <li><a href="https://careers.mozilla.org" tabindex="-1">Careers</a></li>
         <li><a href="/en-US/about/partnerships.html" tabindex="-1">Partnerships</a></li>
-        <li class="last"><a href="/en-US/about/contact.html" tabindex="-1">Contact Us</a></li>
+        <li class="last"><a href="/en-US/contact/spaces/" tabindex="-1">Contact Us</a></li>
       </ul>
     </li>
   </ul>
 </nav>
 
-        <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/template/header-logo.png?2013-06" alt="Mozilla Firefox" height="70" width="185" data-inverse-src="//mozorg.cdn.mozilla.net/media/img/firefox/template/header-logo-inverse.png?2013-06"></h2>
+        <h2><a href="/en-US/firefox/"><img src="//mozorg.cdn.mozilla.net/media/img/firefox/template/header-logo.png?2013-06" alt="Mozilla Firefox" height="70" width="185" data-inverse-src="//mozorg.cdn.mozilla.net/media/img/firefox/template/header-logo-inverse.png?2013-06"></a></h2>
 
         
         
@@ -137,8 +153,8 @@ _gaq.push(['_trackPageview']);
 <div id="main-pager" class="pager pager-with-tabs">
 
   <ul class="pager-tabs">
-    <li><a href="#mobile">Mobile</a></li>
-    <li><a href="#desktop">Desktop</a></li>
+    <li><a href="#mobile">모바일</a></li>
+    <li><a href="#desktop">데스크톱</a></li>
   </ul>
 
   <div class="billboard">
@@ -150,52 +166,51 @@ _gaq.push(['_trackPageview']);
       // ]]></script>
       <section>
         <hgroup>
-          <h1>Firefox for Android</h1>
+          <h1>Firefox 안드로이드 버전</h1>
         </hgroup>
         <div id="download-column">
           
-
 
 <div id="download-button-mobile-release" class="download-button download-button-mobile download-button-small download-button-noicon">
     <ul class="download-list">
           <li class="os_android">
         <a class="download-link"
-           href="https://play.google.com/store/apps/details?id=org.mozilla.firefox">
+           href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org">
           <span class="download-content">
-                                          <strong class="download-title"><span>Firefox</span> for Android</strong>
-                                            <span class="download-subtitle">Get it free on Google Play</span>
+                                          <strong class="download-title"><span>Firefox</span> 안드로이드</strong>
+                                            <span class="download-subtitle">Google Play에서 무료 다운로드</span>
                                     </span>
         </a>
       </li>
       </ul>
       <small class="download-other os_android">
-      <a href="https://support.mozilla.org/kb/will-firefox-work-my-mobile-device">Supported Devices</a> |
-              <a href="/en-US/mobile/notes">What’s New</a> |
-            <a href="/en-US/legal/privacy/firefox.html">Privacy</a>
+      <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |
+              <a href="//www.mozilla.org/en-US/mobile/notes">변경내역</a> |
+            <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>
     </small>
     </div>
         </div>
         <aside id="phone-tablet-image">
-          <img alt="Android Phone and Tablet" src="/media/img/firefox/fx/android-phone-tablet.jpg?2013-06">
+          <img alt="Android Phone and Tablet" src="//www.mozilla.org/media/img/firefox/fx/android-phone-tablet.jpg?2013-06">
         </aside>
       </section>
       <ul class="sub-features">
         <li id="playstore-mobile">
-          <a class="mobile-link" href="https://market.android.com/details?id=org.mozilla.firefox">
-            <h3>Get Firefox for Android</h3>
-            <span class="link">Get the mobile browser that's got your back for free from Google Play&nbsp;»</span>
+          <a class="mobile-link" href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org">
+            <h3>Firefox 안드로이드 버전 다운로드</h3>
+            <span class="link">Google Play 혹은 모바일 브라우저에서 바로 다운로드 가능합니다.&nbsp;»</span>
           </a>
         </li>
         <li id="firefox-mobile">
-          <a class="mobile-link" href="/en-US/firefox/mobile/features/">
-            <h3>Learn More</h3>
-            <span class="link">Explore Firefox for Android features &nbsp;»</span>
+          <a class="mobile-link" href="/ko/firefox/mobile/features/">
+            <h3>주요 기능</h3>
+            <span class="link">모바일에 최적화된 혁신적인 기술을 살펴 보십시오. &nbsp;»</span>
           </a>
         </li>
         <li id="supported">
-          <a class="mobile-link" href="https://support.mozilla.org/kb/will-firefox-work-my-mobile-device">
-            <h3>Supported devices</h3>
-            <span class="link">Find out if your device is supported &nbsp;»</span>
+          <a class="mobile-link" href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">
+            <h3>지원 단말</h3>
+            <span class="link">여러분의 스마트폰을 지원하는지 알아 보십시오. &nbsp;»</span>
           </a>
         </li>
       </ul>
@@ -207,8 +222,8 @@ _gaq.push(['_trackPageview']);
       // ]]></script>
       <section id="up-to-date">
         <hgroup>
-          <h1>Hooray! Your Firefox is up to date.</h1>
-          <h2>See how the new features in Firefox help you browse faster and more efficiently.</h2>
+          <h1>만세! Firefox가 최신 버전입니다.</h1>
+          <h2>Firefox 신기능이 어떻게 웹 서핑을 더 빠르고 효율적으로 만들어 주는지 알아봅시다.</h2>
         </hgroup>
         <div id="video-player" class="mozilla-video-control mozilla-video-shadow">
           <video
@@ -222,166 +237,164 @@ _gaq.push(['_trackPageview']);
         </div>
         <ul class="sub-features">
           <li id="new-copy"><div class="wrap">
-            <h4>Need a fresh copy?</h4>
-            <p>You’ve come to the right place!</p>
+            <h4>하나 더 필요하세요?</h4>
+            <p>그럼 제대로 찾아오셨습니다!</p>
             
-
 
 <div id="download-button-desktop-release" class="download-button download-button-desktop download-button-small">
       <noscript>
         <div class="download download-dumb">
-    <h4>Download Firefox — English (US)</h4>
+    <h4>Firefox 무료 다운로드- 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=en-US" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=linux&amp;lang=en-US" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=osx&amp;lang=en-US" class="button-green">Mac OS X</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li>    </ul>
   </div>
 
     </noscript>
     <div class="unrecognized-download">
         <div class="download download-dumb">
-    <h4>Download Firefox — English (US)</h4>
+    <h4>Firefox 무료 다운로드- 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=en-US" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=linux&amp;lang=en-US" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=osx&amp;lang=en-US" class="button-green">Mac OS X</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li>    </ul>
   </div>
 
     </div>
         <p class="unsupported-download">
-      Your system doesn't meet the <a href="/en-US/firefox/25.0/system-requirements/">requirements</a> to run Firefox.
+      Firefox를 구동하기에 충분한 <a href="//www.mozilla.org/en-US/firefox/27.0/system-requirements/">시스템 사양</a>이 아닙니다.
     </p>
     <ul class="download-list">
           <li class="os_windows">
         <a class="download-link"
-           href="/en-US/products/download.html?product=firefox-stub&amp;os=win&amp;lang=en-US"           data-direct-link="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=en-US">
+           href="//www.mozilla.org/en-US/products/download.html?product=firefox-stub&amp;os=win&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
-                            <span class="download-subtitle">Free Download</span>
-              <span class="download-lang">English (US)</span>
+                            <span class="download-subtitle">무료 다운로드</span>
+              <span class="download-lang">한국어</span>
               <span class="download-platform">Windows</span>
                       </span>
         </a>
       </li>
           <li class="os_linux">
         <a class="download-link"
-           href="/en-US/products/download.html?product=firefox-25.0&amp;os=linux&amp;lang=en-US"           data-direct-link="https://download.mozilla.org/?product=firefox-25.0&amp;os=linux&amp;lang=en-US">
+           href="//www.mozilla.org/en-US/products/download.html?product=firefox-27.0&amp;os=linux&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
-                            <span class="download-subtitle">Free Download</span>
-              <span class="download-lang">English (US)</span>
+                            <span class="download-subtitle">무료 다운로드</span>
+              <span class="download-lang">한국어</span>
               <span class="download-platform">Linux</span>
                       </span>
         </a>
       </li>
           <li class="os_osx">
         <a class="download-link"
-           href="/en-US/products/download.html?product=firefox-25.0&amp;os=osx&amp;lang=en-US"           data-direct-link="https://download.mozilla.org/?product=firefox-25.0&amp;os=osx&amp;lang=en-US">
+           href="//www.mozilla.org/en-US/products/download.html?product=firefox-27.0&amp;os=osx&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
-                            <span class="download-subtitle">Free Download</span>
-              <span class="download-lang">English (US)</span>
+                            <span class="download-subtitle">무료 다운로드</span>
+              <span class="download-lang">한국어</span>
               <span class="download-platform">Mac OS X</span>
                       </span>
         </a>
       </li>
       </ul>
         <small class="download-other os_linux os_osx os_windows">
-              <a href="/en-US/firefox/all">Systems &amp; Languages</a> |
-        <a href="/en-US/firefox/notes">What’s New</a> |
-            <a href="/en-US/legal/privacy/firefox.html">Privacy</a>
+              <a href="/ko/firefox/all">시스템 &amp; 언어 선택</a> |
+        <a href="//www.mozilla.org/en-US/firefox/notes">변경내역</a> |
+            <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>
     </small>
   </div>
           </div></li>
           <li id="beta-promo"><div class="wrap">
-            <h4>Try Firefox Beta</h4>
-            <p>Get a sneak peek at the latest features and innovations coming soon to Firefox.
-            <a href="/en-US/firefox/beta/">Download now&nbsp;»</a></p>
+            <h4>Firefox 베타버전 써보기</h4>
+            <p>곧 나올 Firefox 새 버전에 탑재될 기능과 혁신을 미리 체험해 보십시오.
+            <a href="/ko/firefox/beta/">더 자세히 보기&nbsp;»</a></p>
           </div></li>
           <li id="android-promo"><div class="wrap">
-            <h4>Get Firefox for Android</h4><span class="icon"></span>
-            <p>Get the mobile browser that’s got your back free from the 
-            <a href="https://market.android.com/details?id=org.mozilla.firefox">Google Play Store&nbsp;»</a></p>
+            <h4>Firefox 안드로이드 버전</h4><span class="icon"></span>
+            <p>쾌적한 모바일 웹 브라우저를 이용해 보십시오.
+            <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org">Google Play Store&nbsp;»</a></p>
           </div></li>
         </ul>
       </section>
       <section id="out-of-date">
         <hgroup>
-          <h1>Different by Design</h1>
-          <h2>Get the latest version of Firefox. It’s fast, flexible and secure.</h2>
+          <h1>새로운 디자인</h1>
+          <h2>Firefox 최신 버전을 사용해 보십시오. 빠르고 호환성이 좋으며 안전합니다.</h2>
         </hgroup>
         
-
 
 <div id="download-button-desktop-release" class="download-button">
       <noscript>
         <div class="download download-dumb">
-    <h4>Download Firefox — English (US)</h4>
+    <h4>Firefox 무료 다운로드- 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=en-US" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=linux&amp;lang=en-US" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=osx&amp;lang=en-US" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org" class="button-green">Android</a></li>    </ul>
   </div>
 
     </noscript>
     <div class="unrecognized-download">
         <div class="download download-dumb">
-    <h4>Download Firefox — English (US)</h4>
+    <h4>Firefox 무료 다운로드- 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=en-US" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=linux&amp;lang=en-US" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=osx&amp;lang=en-US" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org" class="button-green">Android</a></li>    </ul>
   </div>
 
     </div>
         <p class="unsupported-download">
-      Your system doesn't meet the <a href="/en-US/firefox/25.0/system-requirements/">requirements</a> to run Firefox.
+      Firefox를 구동하기에 충분한 <a href="//www.mozilla.org/en-US/firefox/27.0/system-requirements/">시스템 사양</a>이 아닙니다.
     </p>
     <ul class="download-list">
           <li class="os_windows">
         <a class="download-link"
-           href="/en-US/products/download.html?product=firefox-stub&amp;os=win&amp;lang=en-US"           data-direct-link="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=en-US">
+           href="//www.mozilla.org/en-US/products/download.html?product=firefox-stub&amp;os=win&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
-                            <span class="download-subtitle">Free Download</span>
-              <span class="download-lang">English (US)</span>
+                            <span class="download-subtitle">무료 다운로드</span>
+              <span class="download-lang">한국어</span>
               <span class="download-platform">Windows</span>
                       </span>
         </a>
       </li>
           <li class="os_linux">
         <a class="download-link"
-           href="/en-US/products/download.html?product=firefox-25.0&amp;os=linux&amp;lang=en-US"           data-direct-link="https://download.mozilla.org/?product=firefox-25.0&amp;os=linux&amp;lang=en-US">
+           href="//www.mozilla.org/en-US/products/download.html?product=firefox-27.0&amp;os=linux&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
-                            <span class="download-subtitle">Free Download</span>
-              <span class="download-lang">English (US)</span>
+                            <span class="download-subtitle">무료 다운로드</span>
+              <span class="download-lang">한국어</span>
               <span class="download-platform">Linux</span>
                       </span>
         </a>
       </li>
           <li class="os_osx">
         <a class="download-link"
-           href="/en-US/products/download.html?product=firefox-25.0&amp;os=osx&amp;lang=en-US"           data-direct-link="https://download.mozilla.org/?product=firefox-25.0&amp;os=osx&amp;lang=en-US">
+           href="//www.mozilla.org/en-US/products/download.html?product=firefox-27.0&amp;os=osx&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
-                            <span class="download-subtitle">Free Download</span>
-              <span class="download-lang">English (US)</span>
+                            <span class="download-subtitle">무료 다운로드</span>
+              <span class="download-lang">한국어</span>
               <span class="download-platform">Mac OS X</span>
                       </span>
         </a>
       </li>
           <li class="os_android">
         <a class="download-link"
-           href="https://play.google.com/store/apps/details?id=org.mozilla.firefox">
+           href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org">
           <span class="download-content">
-                                          <strong class="download-title"><span>Firefox</span> for Android</strong>
-                                            <span class="download-subtitle">Get it free on Google Play</span>
+                                          <strong class="download-title"><span>Firefox</span> 안드로이드</strong>
+                                            <span class="download-subtitle">Google Play에서 무료 다운로드</span>
                                     </span>
         </a>
       </li>
       </ul>
       <small class="download-other os_android">
-      <a href="https://support.mozilla.org/kb/will-firefox-work-my-mobile-device">Supported Devices</a> |
-              <a href="/en-US/mobile/notes">What’s New</a> |
-            <a href="/en-US/legal/privacy/firefox.html">Privacy</a>
+      <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |
+              <a href="//www.mozilla.org/en-US/mobile/notes">변경내역</a> |
+            <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>
     </small>
         <small class="download-other os_linux os_osx os_windows">
-              <a href="/en-US/firefox/all">Systems &amp; Languages</a> |
-        <a href="/en-US/firefox/notes">What’s New</a> |
-            <a href="/en-US/legal/privacy/firefox.html">Privacy</a>
+              <a href="/ko/firefox/all">시스템 &amp; 언어 선택</a> |
+        <a href="//www.mozilla.org/en-US/firefox/notes">변경내역</a> |
+            <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>
     </small>
   </div>
         <figure id="firefox-screenshot">
@@ -389,13 +402,13 @@ _gaq.push(['_trackPageview']);
         </figure>
         <ul class="sub-features">
           <li id="features">
-            <a class="link" href="/en-US/firefox/features/">Learn more about the latest Firefox features&nbsp;»</a>
+            <a class="link" href="/ko/firefox/features/">Firefox 최신 버전의 기능 알아보기&nbsp;»</a>
           </li>
           <li id="customize">
-            <a class="link" href="/en-US/firefox/customize/">Customize your Firefox with add-ons&nbsp;»</a>
+            <a class="link" href="/ko/firefox/customize/">부가 기능으로 나만의 Firefox 만들기&nbsp;»</a>
           </li>
           <li id="playstore">
-            <a class="link" href="https://market.android.com/details?id=org.mozilla.firefox">Get Firefox for Android free from the Google Play Store&nbsp;»</a>
+            <a class="link" href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org">Get Firefox for Android free from the Google Play Store&nbsp;»</a>
           </li>
         </ul>
       </section>
@@ -410,24 +423,24 @@ _gaq.push(['_trackPageview']);
 </div>
 
 
-          
-    <form class="billboard newsletter-form"
-                       id="footer-email-form" action="http://www.mozilla.org/en-US/firefox/fx/#footer-email-form"
-                    method="post">
-              <input type="hidden" name="newsletter-footer" value="Y">
-            <input type="hidden" name="newsletter" value="mozilla-and-you">
-      <input type="hidden" name="source_url" value="http://www.mozilla.org/en-US/firefox/fx/">
+    
+  
+  <form class="billboard newsletter-form"
+            id="footer-email-form" action="http://www.mozilla.org/en-US/firefox/fx/#footer-email-form"
+            method="post">
+    <input type="hidden" name="newsletter" value="mozilla-and-you">
+    <input type="hidden" name="source_url" value="http://www.mozilla.org/en-US/firefox/fx/">
 
-              <h3>Get Firefox news</h3>
-      
-      <div class="form-contents">
-        <div class="field field-email ">
-          <input type="email" required="required" placeholder="YOUR EMAIL HERE" name="email" id="id_email" />
-        </div>
+          <h3>Get Firefox news</h3>
+    
+    <div class="form-contents">
+      <div class="field field-email ">
+        <input type="email" required="required" placeholder="YOUR EMAIL HERE" name="email" id="id_email" />
+      </div>
 
-        <div id="form-details">
-                      <div class="field field-country">
-              <select name="country" id="id_country">
+      <div id="form-details">
+                  <div class="field field-country">
+            <select required="required" name="country" aria-required="true" id="id_country">
 <option value="af">Afghanistan</option>
 <option value="al">Albania</option>
 <option value="dz">Algeria</option>
@@ -675,9 +688,9 @@ _gaq.push(['_trackPageview']);
 <option value="zw">Zimbabwe</option>
 <option value="ax">Åland Islands</option>
 </select>
-            </div>
-                                <div class="field field-language ">
-              <select required="required" name="lang" id="id_lang">
+          </div>
+                          <div class="field field-language ">
+            <select required="required" name="lang" aria-required="true" id="id_lang">
 <option value="id">Bahasa Indonesia</option>
 <option value="de">Deutsch</option>
 <option value="en" selected="selected">English</option>
@@ -688,57 +701,59 @@ _gaq.push(['_trackPageview']);
 <option value="hu">magyar</option>
 <option value="ru">Русский</option>
 </select>
-            </div>
-                    <div class="field field-format">
-            <label for="id_fmt_0"><input checked="checked" type="radio" id="id_fmt_0" value="H" name="fmt" /> HTML</label><label for="id_fmt_1"><input type="radio" id="id_fmt_1" value="T" name="fmt" /> Text</label>
           </div>
-          <div class="field field-privacy ">
-            <label for="id_privacy" class="privacy-check-label"><input required="required" type="checkbox" name="privacy" id="id_privacy" /> <span class="title">I’m okay with you handling this info as you explain in your <a href="/en-US/privacy-policy">Privacy Policy</a></span></label>
-          </div>
+                <div class="field field-format">
+          <label for="id_fmt_0"><input checked="checked" type="radio" id="id_fmt_0" value="H" name="fmt" /> HTML</label><label for="id_fmt_1"><input type="radio" id="id_fmt_1" value="T" name="fmt" /> Text</label>
+        </div>
+        <div class="field field-privacy ">
+          <label for="id_privacy" class="privacy-check-label"><input required="required" type="checkbox" name="privacy" id="id_privacy" /> <span class="title">I’m okay with Mozilla handling my info as explained in <a href="/en-US/privacy-policy">this Privacy Policy</a></span></label>
         </div>
       </div>
+    </div>
 
-      <div class="form-submit">
-        <input type="submit" id="footer_email_submit"
-               value="Sign me up »" class="button">
+    <div class="form-submit">
+      <input type="submit" id="footer_email_submit"
+             value="Sign me up »" class="button">
 
-        <p class="form-details">
-          <small>We will only send you Mozilla-related information.</small>
-        </p>
-      </div>
-    </form>
-  
+      <p class="form-details">
+        <small>We will only send you Mozilla-related information.</small>
+      </p>
+    </div>
+  </form>
+
     </div><!-- close #wrapper -->
 
           <footer id="colophon" class="">
       <div class="row">
 
           <div class="footer-logo">
-              <a href="/en-US/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+              <a href="/ko/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
           </div>
 
           <div class="footer-license">
               <p>
-                Portions of this content are ©1998–2013 by individual mozilla.org contributors. Content available under a <a href="/en-US/foundation/licensing/website-content/">Creative Commons license</a>.              </p>
+                &copy;1998–2014 콘텐츠의 일부는 개별 mozilla.org 공헌자에게 저작권이 있습니다. 콘텐츠는 <a href="//www.mozilla.org/foundation/licensing/website-content.html">Creative Commons license</a>에 의해 사용할 수 있습니다.              </p>
               <p>
-                <a href="/en-US/contribute/page/">Contribute to this page</a>
+                <a href="/ko/contribute/page/">이 페이지에 기여하기</a>
               </p>
           </div>
           <ul class="footer-nav">
-            <li><a href="/en-US/about/contact.html#map-mountain_view">Contact Us</a></li>
-            <li><a href="/en-US/about/partnerships/">Partner with Us</a></li>
-            <li><a href="/en-US/privacy/">Privacy Policy</a></li>
-            <li><a href="/en-US/about/legal.html">Legal Notices</a></li>
-            <li><a href="/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a></li>
+            <li><a href="//www.mozilla.org/en-US/contact/spaces/">연락처</a></li>
+            <li><a href="//www.mozilla.org/en-US/about/partnerships/">제휴하기</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">기부하기</a></li>
+            <li><a href="//www.mozilla.org/en-US/privacy/">개인 정보 보호 정책 (영문)</a></li>
+            <li><a href="//www.mozilla.org/en-US/about/legal.html">법적 고지 (영문)</a></li>
+            <li><a href="//www.mozilla.org/en-US/legal/fraud-report/index.html">상표권 침해 신고 (영문)</a></li>
           </ul>
                     <ul class="footer-nav">
-            <li><a href="https://twitter.com/firefox">Twitter</a></li>
-            <li><a href="https://facebook.com/Firefox">Facebook</a></li>
-            <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
+            <li><a href="https://twitter.com/mozilla">Mozilla on Twitter</a></li>
+            <li><a href="https://twitter.com/firefox">Firefox on Twitter</a></li>
+            <li><a href="https://www.facebook.com/mozilla">Mozilla on Facebook</a></li>
+            <li><a href="https://www.facebook.com/Firefox">Firefox on Facebook</a></li>
+            <li><a href="http://forums.mozilla.or.kr/">한국커뮤니티</a></li>
           </ul>
                               <div class="footer-lang">
-            
-          </div>
+                      </div>
           
       </div>
       </footer>
@@ -749,8 +764,8 @@ _gaq.push(['_trackPageview']);
       <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
     <![endif]-->
 
-      <script src="//mozorg.cdn.mozilla.net/media/js/firefox-resp-min.js?build=c2bb3eb"></script>
-          <script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js?build=c2bb3eb"></script>
-          <script src="//mozorg.cdn.mozilla.net/media/js/firefox_fx-min.js?build=c2bb3eb"></script>
-  </body>
+      <script src="//mozorg.cdn.mozilla.net/media/js/firefox-resp-min.js?build=4e55d23"></script>
+          <script src="/ko/tabzilla/tabzilla.js?build=4e55d23"></script>
+          <script src="//mozorg.cdn.mozilla.net/media/js/firefox_fx-min.js?build=4e55d23"></script>
+      </body>
 </html>

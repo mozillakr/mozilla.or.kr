@@ -3,22 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=1024">
-    <title>Mozilla Firefox 웹 브라우저 | Aurora 안드로이드 버전 다운로드</title>
-    <meta name="og:image" content="//www.mozilla.org/img/firefox-100.jpg?2013-06">
+    <title>Mozilla Firefox Web Browser | Download Firefox Aurora for Android - Free</title>
+    <meta name="og:image" content="/img/firefox-100.jpg?2013-06">
     <meta name="Description" content="Download and test Firefox future releases. Experience the newest innovations with the Aurora or Beta builds.">
     <style>
     /* MetaWebPro font family licensed from fontshop.com. WOFF-FTW! */
     @font-face {
         font-family: 'MetaBlack';
-        src: url('//www.mozilla.org/img/fonts/MetaWebPro-Black.eot');
-        src: local('☺'), url('//www.mozilla.org/img/fonts/MetaWebPro-Black.woff') format('woff');
+        src: url('/img/fonts/MetaWebPro-Black.eot');
+        src: local('☺'), url('/img/fonts/MetaWebPro-Black.woff') format('woff');
         font-weight: bold;
     }
     </style>
-    <link href="//www.mozilla.org/includes/min/min.css?g=css&_d=20120207" rel="stylesheet">
-    <link href="//www.mozilla.org/tabzilla/media/css/tabzilla.css" rel="stylesheet">
-    <script src="//www.mozilla.org/includes/min/min.js?g=js"></script>
-    <link rel="stylesheet" href="//www.mozilla.org/style/covehead/mobile-aurora.css" media="screen" />
+    <link href="/includes/min/min.css?g=css&_d=20120207" rel="stylesheet">
+    <link href="/tabzilla/media/css/tabzilla.css" rel="stylesheet">
+    <script src="/includes/min/min.js?g=js"></script>
+    <link rel="stylesheet" href="/style/covehead/mobile-aurora.css" media="screen" />
     <META name="WT.z_pdp" content="firefox_mobile_aurora" />
     <META name="WT.si_n" content="Firefox Aurora for Mobile" />
     <META name="WT.si_x" content="2" />
@@ -49,7 +49,7 @@
     width: 800px;
     display: inline-block;
     margin: 0 auto;
-    background: url(//www.mozilla.org/img/covehead/firefox/update-creature.png) 0 100% no-repeat;
+    background: url(/img/covehead/firefox/update-creature.png) 0 100% no-repeat;
     position: relative;
 }
 
@@ -114,7 +114,7 @@
     position: absolute;
     top: 12px;
     right: 0;
-    background: url(//www.mozilla.org/img/covehead/firefox/update-close.png) 0 0 no-repeat;
+    background: url(/img/covehead/firefox/update-close.png) 0 0 no-repeat;
     height: 25px;
     width: 25px;
     overflow: hidden;
@@ -129,17 +129,24 @@
 </style>
 
 <script>
-        var _gaq = _gaq || [];
-       _gaq.push(['_setAccount', 'UA-53785-1']);
-       _gaq.push(['_setDomainName', 'mozilla.or.kr']);
-       _gaq.push(['_trackPageview']);
-
-       (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-     </script>
+var _gaq = _gaq || [];
+var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+_gaq.push(['_setAccount', 'UA-36116321-1']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_setAllowAnchor', true]);
+_gaq.push(['_trackPageview']);
+(function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    var prefix = ('https:' == document.location.protocol ? 'https://ssl' :
+                  'http://www');
+    ga.src = prefix + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </head>
 
 <body id="aurora-mobile" class="darkbg">
@@ -169,28 +176,28 @@ if (gPlatform == 1) {
 <div id="doc">
 
     <div id="nav-access">
-        <a href="#nav-main">메뉴 건너뛰기</a>
-        <a href="#lang_form">언어설정</a>
+        <a href="#nav-main">skip to Navigation</a>
+        <a href="#lang_form">switch language</a>
     </div>
 
 	<!-- start #header -->
 	<div id="header">
 		<div>
 		<h1>
-                  <a href="/ko/firefox/" title="홈페이지">Mozilla Firefox</a>
+                  <a href="/en-US/firefox/" title="Back to home page">Mozilla Firefox</a>
                 </h1>
 
-		<a href="http://www.mozilla.or.kr/" class="mozilla" id="tabzilla">mozilla</a>
+		<a href="http://www.mozilla.org/" class="mozilla" id="tabzilla">mozilla</a>
 		
 <!-- start menu #nav-main -->
 <div id="nav-main" role="navigation">
   <ul role="menubar">
-    <li id="nav-main-features"  class="first"><a aria-haspopup="true" aria-owns="nav-main-features-submenu" tabindex="0" href="/ko/firefox/fx#desktop">데스크탑</a><ul id="nav-main-features-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="/ko/firefox/features/">주요 기능</a></li><li ><a tabindex="-1" href="/ko/firefox/customize/">부가 기능</a></li><li ><a tabindex="-1" href="/ko/firefox/performance/">성능 향상</a></li><li ><a tabindex="-1" href="/ko/firefox/technology/">웹 기술</a></li><li  class="last"><a tabindex="-1" href="/ko/firefox/security/">보안 및 정보 보호</a></li></ul></li>
-    <li id="nav-main-mobile" ><a aria-haspopup="true" aria-owns="nav-main-mobile-submenu" tabindex="0" href="/ko/firefox/fx/">모바일</a><ul id="nav-main-mobile-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="/ko/mobile/">다운로드</a></li><li ><a tabindex="-1" href="/ko/mobile/features/">주요 기능</a></li><li ><a tabindex="-1" href="https://addons.mozilla.org/ko/mobile/?browse=featured">부가 기능</a></li><li  class="last"><a tabindex="-1" href="/ko/mobile/faq/">FAQ &shy;</a></li></ul></li>
-    <li id="nav-main-releases" ><a aria-haspopup="true" aria-owns="nav-main-releases-submenu" tabindex="0" href="/ko/firefox/channel/">다운로드</a><ul id="nav-main-releases-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="/ko/firefox/channel/">채널별</a></li><li ><a tabindex="-1" href="/ko/firefox/aurora/">Firefox Aurora</a></li><li ><a tabindex="-1" href="/ko/firefox/beta/">Firefox Beta</a></li><li ><a tabindex="-1" href="/ko/firefox/fx/#desktop">Firefox</a></li><li  class="last"><a tabindex="-1" href="/ko/firefox/organizations/">Firefox 기관용</a></li></ul></li>
-    <li id="nav-main-addons" ><a aria-haspopup="true" aria-owns="nav-main-addons-submenu" tabindex="0" href="https://addons.mozilla.org/">부가 기능</a><ul id="nav-main-addons-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="https://addons.mozilla.org/ko/firefox/">PC용 부가기능</a></li><li ><a tabindex="-1" href="https://addons.mozilla.org/ko/android/">모바일용 부가기능</a></li><li  class="last"><a tabindex="-1" href="https://addons.mozilla.org/ko/firefox/themes/">테마</a></li></ul></li>
-    <li id="nav-main-support" ><a aria-haspopup="true" aria-owns="nav-main-support-submenu" tabindex="0" href="http://support.mozilla.org/">도움말</a><ul id="nav-main-support-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="http://support.mozilla.org/ko/">PC용 도움말</a></li><li  class="last"><a tabindex="-1" href="http://support.mozilla.org/ko/products/mobile">모바일 도움말</a></li></ul></li>
-    <li id="nav-main-about"  class="last"><a aria-haspopup="true" aria-owns="nav-main-about-submenu" tabindex="0" href="/ko/about/">소개</a><ul id="nav-main-about-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="/community/">블로그</a></li><li ><a tabindex="-1" href="/ko/about/">Firefox 소개</a></li><li ><a tabindex="-1" href="http://www.mozilla.org/join">Mozilla 후원(영문)</a></li><li ><a tabindex="-1" href="/ko/about/participate/">참여하기</a></li></ul></li>
+    <li id="nav-main-features"  class="first"><a aria-haspopup="true" aria-owns="nav-main-features-submenu" tabindex="0" href="/en-US/firefox/features/">Desktop</a><ul id="nav-main-features-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="/en-US/firefox/features/">Features</a></li><li ><a tabindex="-1" href="/en-US/firefox/customize/">Customize</a></li><li ><a tabindex="-1" href="/en-US/firefox/performance/">Performance</a></li><li ><a tabindex="-1" href="/en-US/firefox/technology/">Technology</a></li><li  class="last"><a tabindex="-1" href="/en-US/firefox/security/">Privacy &amp; Security</a></li></ul></li>
+    <li id="nav-main-mobile" ><a aria-haspopup="true" aria-owns="nav-main-mobile-submenu" tabindex="0" href="/en-US/mobile/">Mobile</a><ul id="nav-main-mobile-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="/en-US/mobile/">Download</a></li><li ><a tabindex="-1" href="/en-US/mobile/features/">Features</a></li><li ><a tabindex="-1" href="https://addons.mozilla.org/en-US/mobile/?browse=featured">Customize</a></li><li  class="last"><a tabindex="-1" href="/en-US/mobile/faq/">FAQ</a></li></ul></li>
+    <li id="nav-main-releases" ><a aria-haspopup="true" aria-owns="nav-main-releases-submenu" tabindex="0" href="/en-US/firefox/channel/">Releases</a><ul id="nav-main-releases-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="/en-US/firefox/channel/">Overview</a></li><li ><a tabindex="-1" href="/en-US/firefox/aurora/">Firefox Aurora</a></li><li ><a tabindex="-1" href="/beta/">Firefox Beta</a></li><li ><a tabindex="-1" href="/en-US/firefox/">Firefox</a></li><li  class="last"><a tabindex="-1" href="/en-US/firefox/organizations/">Firefox for Organizations</a></li></ul></li>
+    <li id="nav-main-addons" ><a aria-haspopup="true" aria-owns="nav-main-addons-submenu" tabindex="0" href="https://addons.mozilla.org/">Add-ons</a><ul id="nav-main-addons-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="https://addons.mozilla.org/firefox/">Desktop Add-ons</a></li><li ><a tabindex="-1" href="https://addons.mozilla.org/mobile/">Mobile Add-ons</a></li><li  class="last"><a tabindex="-1" href="http://www.getpersonas.com/">Personas</a></li></ul></li>
+    <li id="nav-main-support" ><a aria-haspopup="true" aria-owns="nav-main-support-submenu" tabindex="0" href="http://support.mozilla.org/">Support</a><ul id="nav-main-support-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="http://support.mozilla.org/en-US/kb/">Desktop Support</a></li><li  class="last"><a tabindex="-1" href="http://support.mozilla.org/mobile">Mobile Support</a></li></ul></li>
+    <li id="nav-main-about"  class="last"><a aria-haspopup="true" aria-owns="nav-main-about-submenu" tabindex="0" href="/en-US/firefox/about/">About</a><ul id="nav-main-about-submenu" aria-expanded="false"><li  class="first"><a tabindex="-1" href="http://blog.mozilla.com/">Blog</a></li><li ><a tabindex="-1" href="/en-US/firefox/about/">About Firefox</a></li><li ><a tabindex="-1" href="http://www.mozilla.org/join">Join Mozilla</a></li><li ><a tabindex="-1" href="/en-US/about/participate/">Participate</a></li><li ><a tabindex="-1" href="/en-US/press/">Press Center</a></li><li ><a tabindex="-1" href="/en-US/firefox/brand/">Brand Toolkit</a></li><li ><a tabindex="-1" href="/en-US/about/careers.html">Careers</a></li><li ><a tabindex="-1" href="/en-US/about/partnerships.html">Partnerships</a></li><li  class="last"><a tabindex="-1" href="/en-US/about/contact.html">Contact Us</a></li></ul></li>
   </ul>
 </div>
 <!-- end menu #nav-main -->
@@ -202,43 +209,43 @@ if (gPlatform == 1) {
     
 <div id="main-feature">
     <div id="switcher">
-        <h4>Firefox Aurora 버전:</h4>
+        <h4>Firefox Aurora for:</h4>
         <ul>
-          <li><a href="/ko/firefox/aurora/">데스크톱</a></li></li>
-          <li><span>모바일</span></li>
+          <li><a href="/en-US/firefox/aurora/">Desktop</a></li>
+          <li><span>Mobile</span></li>
         </ul>
     </div>
-    <h2><img src="//www.mozilla.org/img/covehead/firefox/aurora/title.png" alt="Firefox Aurora" height="69" width="486" /></h2>
-    <p>Firefox의 차기 버전이 될 Aurora 다운로드</p>
+    <h2><img src="/img/covehead/firefox/aurora/title.png" alt="Firefox Aurora" height="69" width="486" /></h2>
+    <p>Download the pre-Beta build of Firefox.</p>
     <div id="download_aurora_button">
         <div class="home-download beta-download">
-            <a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/en-US/fennec-26.0a2.en-US.android-arm.apk"
+            <a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/en-US/fennec-28.0a2.en-US.android-arm.apk"
                class="download-link download-firefox">
                 <span class="download-content">
                 <span class="download-title">Firefox Aurora</span>
-                <em>안드로이드 버전</em>
+                <em>for Android</em>
                 </span>
             </a>
             <div class="download-other">
-                <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인 정보 보호 정책</a> |
-                <a href="//www.mozilla.org/en-US/mobile/platforms/">지원 기기 목록</a> |
-                <a href="//www.mozilla.org/en-US/mobile/aurora/notes/">신규 기능</a>
+                <a href="/en-US/legal/privacy/firefox.html">Privacy Policy</a> |
+                <a href="/en-US/mobile/platforms/">List of Supported devices</a> |
+                <a href="/en-US/mobile/aurora/notes/">What’s New</a>
             </div>
         </div>
     </div>
     <div id="features">
     <ul id="feature-list" class="bjqs">
         <li>
-            <h3>1. 신규 기능 테스트</h3>
-            <p>최신 성능 향상 및 개인화, 보안 업데이트 등을 미리 경험해 보시고 의견을 주십시오.</p>
+            <h3>1. Preview Features</h3>
+            <p>Get the latest mobile and tablet UI, security features, HTML5 and other technologies first.</p>
         </li>
         <li>
-            <h3>2. 기존 기능 개선</h3>
-            <p>안정 환경에서 다양한 기능 및 성능을 테스트 하시고 저희에게 의견을 보내 주십시오.</p>
+            <h3>2. Share Feedback</h3>
+            <p>Test performance, file bugs and help us determine what features go on to Beta.</p>
         </li>
         <li>
-            <h3>3. 일반 사용자 돕기</h3>
-            <p>여러분의 테스트가 다음 버전에서 사용할 4억 5천만 사용자에게 큰 도움이 될 것입니다. 지금 참여해 주십시오.</p>
+            <h3>3. Shape Firefox</h3>
+            <p>Join a community of users, contributors and developers working to build Firefox.</p>
         </li>
     </ul>
     </div>
@@ -247,21 +254,21 @@ if (gPlatform == 1) {
 <div id="main-content">
 
   <div id="install" class="clearfix">
-    <h3>안드로이드용 Aurora 설치하기</h3>
+    <h3>How to install Aurora for Android</h3>
 
     <ol>
       <li id="step1">
-        <p><a href="/ko/mobile/platforms/">시스템 요구사항</a>을 확인하고 가지고 있는 안드로이드 기기와 Aurora가 호환되는지 확인합니다.</p>
+        <p>Check the <a href="/en-US/mobile/platforms/">system requirements</a> to see if Aurora is compatible with your Android device.</p>
       </li>
       <li id="step2">
-        <p>안드로이드 마켓에 올라가 있지 않은 앱을 설치할기 위해서 <em>설정 &gt; 어플리케이션에 가서 “알 수 없는 소스”</em>를 체크합니다.</p>
-        <p class="note">주의: 어떤 기기는 약간 다른 과정을 거칠 수도 있습니다.</p>
+        <p>Configure your device to install non–Android Market apps by going to <em>Settings > Applications & checking “Unknown sources”</em>.</p>
+        <p class="note">Note: Some devices may have a slightly different process</p>
       </li>
       <li id="step3">
-        <p>QR 코드를 이용하거나 모바일 브라우저의 다운로드 버튼을 눌러서 기기에 직접 Aurora를 다운 받으세요.</p>
+        <p>Download Aurora directly to your Android device by scanning the QR code or by clicking the download button from your mobile Web browser.</p>
       </li>
       <li id="step4">
-        <p>다운로드가 끝나면 “<a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/fennec-26.0a2.en-US.android-arm.apk">.apk</a>” 파일을 여세요.</p>
+        <p>Open the “<a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/fennec-28.0a2.en-US.android-arm.apk">.apk</a>” file when it finishes downloading.</p>
       </li>
     </ol>
 
@@ -605,16 +612,16 @@ if (gPlatform == 1) {
 	<!-- start #footer -->
 	<div id="sub-footer">
 		<div id="sub-footer-contents">
-                  <h3>소셜웹 <span>공식채널</span></h3>
+                  <h3>Let’s be <span>friends!</span></h3>
                   <ul>
                     <li id="footer-twitter">
-                      <a href="http://twitter.com/mozillakr">Twitter</a>
+                      <a href="http://twitter.com/firefox">Twitter</a>
                     </li>
                     <li id="footer-facebook">
-                      <a href="http://facebook.com/mozillakr">Facebook</a>
+                      <a href="http://facebook.com/Firefox">Facebook</a>
                     </li>
                     <li id="footer-affiliates">
-                      <a href="http://forums.mozilla.or.kr/">한국커뮤니티</a>
+                      <a href="https://affiliates.mozilla.org/">Firefox Affiliates</a>
                     </li>
                   </ul>
 		  <div id="sub-footer-newsletter">
@@ -944,10 +951,11 @@ if (gPlatform == 1) {
 		<div id="footer-right">
 
 		<form id="lang_form" dir="ltr" method="get"><div>
-			<label for="flang">다른 언어</label>
+			<label for="flang">Other Languages</label>
 			
 <select id="flang" name="flang" dir="ltr" onchange="this.form.submit()">    <option value="ach">Acholi</option>
     <option value="af">Afrikaans</option>
+    <option value="an">Aragonés</option>
     <option value="ak">Akan</option>
     <option value="ar">&#1593;&#1585;&#1576;&#1610;</option>
     <option value="as">&#2437;&#2488;&#2478;&#2496;&#2479;&#2492;&#2494;</option>
@@ -1007,6 +1015,7 @@ if (gPlatform == 1) {
     <option value="ml">&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;</option>
     <option value="mn">&#1052;&#1086;&#1085;&#1075;&#1086;&#1083;</option>
     <option value="mr">&#2350;&#2352;&#2366;&#2336;&#2368;</option>
+    <option value="ms">Bahasa Malaysia</option>
     <option value="nl">Nederlands</option>
     <option value="no">Norsk bokm&#229;l</option>
     <option value="nso">Sesotho sa leboa</option>
@@ -1049,21 +1058,21 @@ if (gPlatform == 1) {
 <!-- start menu #footer-menu -->
 <div id="footer-menu" role="navigation">
   <ul>
-    <li><a href="/ko/firefox/features/">데스크탑</a><ul><li><a href="/ko/firefox/features/">주요 기능</a></li><li><a href="/ko/firefox/customize/">부가 기능</a></li><li><a href="/ko/firefox/performance/">성능 향상</a></li><li><a href="/ko/firefox/technology/">웹 기술</a></li><li><a href="/ko/firefox/security/">보안 및 정보 보호</a></li></ul></li>
-    <li><a href="/ko/mobile/">모바일</a><ul><li><a href="/ko/mobile/">다운로드</a></li><li><a href="/ko/mobile/features/">주요 기능</a></li><li><a href="https://addons.mozilla.org/ko/mobile/?browse=featured">부가 기능</a></li><li><a href="/ko/mobile/faq/">FAQ &shy;</a></li></ul></li>
-    <li><a href="/ko/firefox/channel/">다운로드</a><ul><li><a href="/ko/firefox/channel/">채널별</a></li><li><a href="/ko/firefox/aurora/">Firefox Aurora</a></li><li><a href="/ko/firefox/beta/">Firefox Beta</a></li><li><a href="/ko/firefox/fx/#desktop">Firefox</a></li><li><a href="/ko/firefox/organizations/">Firefox 기관용</a></li></ul></li>
-    <li><a href="https://addons.mozilla.org/">부가 기능</a><ul><li><a href="https://addons.mozilla.org/ko/firefox/">PC용 부가기능</a></li><li><a href="https://addons.mozilla.org/ko/android/">모바일용 부가기능</a></li><li><a href="https://addons.mozilla.org/ko/firefox/themes/">테마</a></li></ul></li>
-    <li><a href="http://support.mozilla.org/">도움말</a><ul><li><a href="http://support.mozilla.org/ko/">PC용 도움말</a></li><li><a href="http://support.mozilla.org/ko/products/mobile">모바일 도움말</a></li></ul></li>
-    <li><a href="/ko/about/">소개</a><ul><li><a href="http://blog.mozilla.org/">블로그(영문)</a></li><li><a href="/ko/about/">Firefox 소개</a></li><li><a href="http://www.mozilla.org/join">Mozilla 후원(영문)</a></li><li><a href="/ko/about/participate/">참여하기</a></li><li><a href="http://blog.mozilla.org/press/">보도자료</a></li><li><a href="/ko/firefox/brand/">로고 이용(영문)</a></li><li><a href="/ko/about/careers.html">채용문의 (영문)</a></li><li><a href="/ko/about/partnerships.html">제휴 안내</a></li><li><a href="/ko/about/contact.html">연락처</a></li></ul></li>
+    <li><a href="/en-US/firefox/features/">Desktop</a><ul><li><a href="/en-US/firefox/features/">Features</a></li><li><a href="/en-US/firefox/customize/">Customize</a></li><li><a href="/en-US/firefox/performance/">Performance</a></li><li><a href="/en-US/firefox/technology/">Technology</a></li><li><a href="/en-US/firefox/security/">Privacy &amp; Security</a></li></ul></li>
+    <li><a href="/en-US/mobile/">Mobile</a><ul><li><a href="/en-US/mobile/">Download</a></li><li><a href="/en-US/mobile/features/">Features</a></li><li><a href="https://addons.mozilla.org/en-US/mobile/?browse=featured">Customize</a></li><li><a href="/en-US/mobile/faq/">FAQ</a></li></ul></li>
+    <li><a href="/en-US/firefox/channel/">Releases</a><ul><li><a href="/en-US/firefox/channel/">Overview</a></li><li><a href="/en-US/firefox/aurora/">Firefox Aurora</a></li><li><a href="/beta/">Firefox Beta</a></li><li><a href="/en-US/firefox/">Firefox</a></li><li><a href="/en-US/firefox/organizations/">Firefox for Organizations</a></li></ul></li>
+    <li><a href="https://addons.mozilla.org/">Add-ons</a><ul><li><a href="https://addons.mozilla.org/firefox/">Desktop Add-ons</a></li><li><a href="https://addons.mozilla.org/mobile/">Mobile Add-ons</a></li><li><a href="http://www.getpersonas.com/">Personas</a></li></ul></li>
+    <li><a href="http://support.mozilla.org/">Support</a><ul><li><a href="http://support.mozilla.org/en-US/kb/">Desktop Support</a></li><li><a href="http://support.mozilla.org/mobile">Mobile Support</a></li></ul></li>
+    <li><a href="/en-US/firefox/about/">About</a><ul><li><a href="http://blog.mozilla.com/">Blog</a></li><li><a href="/en-US/firefox/about/">About Firefox</a></li><li><a href="http://www.mozilla.org/join">Join Mozilla</a></li><li><a href="/en-US/about/participate/">Participate</a></li><li><a href="/en-US/press/">Press Center</a></li><li><a href="/en-US/firefox/brand/">Brand Toolkit</a></li><li><a href="/en-US/about/careers.html">Careers</a></li><li><a href="/en-US/about/partnerships.html">Partnerships</a></li><li><a href="/en-US/about/contact.html">Contact Us</a></li></ul></li>
   </ul>
 </div>
 <!-- end menu #footer-menu -->
 
 		<div id="copyright">
-			<p id="footer-links"><a href="/en-US/privacy-policy.html">개인 정보 보호 정책 (영문)</a> &nbsp;|&nbsp;
-			<a href="/en-US/about/legal.html">법적 고지 (영문)</a> &nbsp;|&nbsp;
-                        <a href="/en-US/legal/fraud-report/index.html">상표권 침해 신고 (영문)</a></p>
-			<p>별도로 <a href="/en-US/about/legal.html#site">명시</a>한 경우를 제외하고 이 사이트의 콘텐츠는 <br /><a href="http://creativecommons.org/licenses/by-sa/3.0/">크리에이티브 커먼즈 저작자표시-동일조건변경허락 v3.0</a> 라이센스나 그 이후 버전을 따르고 있습니다.</p>
+			<p id="footer-links"><a href="/en-US/privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp;
+			<a href="/en-US/about/legal.html">Legal Notices</a> &nbsp;|&nbsp;
+                        <a href="/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a></p>
+			<p>Except where otherwise <a href="/en-US/about/legal.html#site">noted</a>, content on this site is licensed under the <br /><a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.</p>
 		</div>
 
 	</div>
@@ -1075,8 +1084,8 @@ function dcsMultiTrack() {
 }
 </script>
 
-    <script src="/ko/tabzilla/tabzilla.js"></script>
-	    <script src="//www.mozilla.org/js/jquery/jquery-basic-slider.js"></script>
+    <script src="/en-US/tabzilla/media/js/tabzilla.js"></script>
+	    <script src="/js/jquery/jquery-basic-slider.js"></script>
     <script>
         $(document).ready(function(){
             $('#features').bjqs({

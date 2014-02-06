@@ -1,21 +1,42 @@
 
-
-
 <!doctype html>
-<html class="windows no-js" lang="en-US" dir="ltr" data-latest-firefox="25.0" data-esr-versions="[10, 17, 24]">
+<html class="windows no-js" lang="en-US" dir="ltr" data-latest-firefox="27.0" data-esr-versions="[10, 17, 24]">
   <head>
-        <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"><!--
+             _.-~-.
+           7''  Q..\
+        _7         (_
+      _7  _/    _q.  /
+    _7 . ___  /VVvv-'_                                            .
+   7/ / /~- \_\\      '-._     .-'                      /       //
+  ./ ( /-~-/||'=.__  '::. '-~'' {             ___   /  //     ./{
+ V   V-~-~| ||   __''_   ':::.   ''~-~.___.-'' _/  // / {_   /  {  /
+  VV/-~-~-|/ \ .'__'. '.    '::                     _ _ _        ''.
+  / /~~~~||VVV/ /  \ )  \        _ __ ___   ___ ___(_) | | __ _   .::'
+ / (~-~-~\\.-' /    \'   \::::. | '_ ` _ \ / _ \_  / | | |/ _` | :::'
+/..\    /..\__/      '     '::: | | | | | | (_) / /| | | | (_| | ::'
+vVVv    vVVv                 ': |_| |_| |_|\___/___|_|_|_|\__,_| ''
+
+Hi there, nice to meet you!
+
+Interested in having a direct impact on hundreds of millions of users? Join
+Mozilla, and become part of a global community that’s helping to build a
+brighter future for the Web.
+
+Visit https://careers.mozilla.org to learn about our current job openings.
+Visit https://www.mozilla.org/contribute for more ways to get involved and
+help support Mozilla.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Download Firefox — Free Web Browser — Mozilla</title>
-    <meta name="description" content="Mozilla Firefox, free web browser, is created by a global non-profit dedicated to putting individuals in control &amp; shaping the future of the web for the public good.">
+    <title>Firefox 다운로드 — 무료 웹 브라우저 — Mozilla</title>
+    <meta name="description" content="Download Mozilla Firefox, a free Web browser. Firefox is created by a global non-profit dedicated to putting individuals in control online. Get Firefox today!">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Mozilla">
     <meta property="og:locale" content="en_US">
     <meta property="og:url" content="http://www.mozilla.org/en-US/firefox/new/">
     <meta property="og:image" content="https://mozorg.cdn.mozilla.net/media/img/firefox/firefox-256.jpg">
     <meta property="og:title" content="Download Firefox — Free Web Browser">
-    <meta property="og:description" content="Mozilla Firefox, free web browser, is created by a global non-profit dedicated to putting individuals in control &amp; shaping the future of the web for the public good.">
+    <meta property="og:description" content="Download Mozilla Firefox, a free Web browser. Firefox is created by a global non-profit dedicated to putting individuals in control online. Get Firefox today!">
     <meta property="fb:page_id" content="14696440021">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@firefox">
@@ -23,16 +44,14 @@
     <meta name="twitter:app:name:googleplay" content="Firefox">
     <meta name="twitter:app:id:googleplay" content="org.mozilla.firefox">
     <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/firefox/favicon.ico?2013-08">
-        <link rel="canonical" hreflang="en-US" href="http://www.mozilla.org/en-US/firefox/new/">
-    <link rel="alternate" hreflang="x-default" href="http://www.mozilla.org/firefox/new/">
-    <link rel="alternate" hreflang="ach" href="http://www.mozilla.org/ach/firefox/new/" title="Acholi">
+        <link rel="canonical" hreflang="ko" href="http://www.mozilla.or.kr/ko/firefox/new/">
+    <link rel="alternate" hreflang="x-default" href="http://www.mozilla.or.kr/firefox/new/">
     <link rel="alternate" hreflang="af" href="http://www.mozilla.org/af/firefox/new/" title="Afrikaans">
     <link rel="alternate" hreflang="ak" href="http://www.mozilla.org/ak/firefox/new/" title="Akan">
     <link rel="alternate" hreflang="an" href="http://www.mozilla.org/an/firefox/new/" title="aragonés">
     <link rel="alternate" hreflang="ar" href="http://www.mozilla.org/ar/firefox/new/" title="عربي">
     <link rel="alternate" hreflang="ast" href="http://www.mozilla.org/ast/firefox/new/" title="Asturianu">
     <link rel="alternate" hreflang="bg" href="http://www.mozilla.org/bg/firefox/new/" title="Български">
-    <link rel="alternate" hreflang="bn-BD" href="http://www.mozilla.org/bn-BD/firefox/new/" title="বাংলা (বাংলাদেশ)">
     <link rel="alternate" hreflang="br" href="http://www.mozilla.org/br/firefox/new/" title="Brezhoneg">
     <link rel="alternate" hreflang="ca" href="http://www.mozilla.org/ca/firefox/new/" title="Català">
     <link rel="alternate" hreflang="cs" href="http://www.mozilla.org/cs/firefox/new/" title="Čeština">
@@ -51,12 +70,12 @@
     <link rel="alternate" hreflang="et" href="http://www.mozilla.org/et/firefox/new/" title="Eesti keel">
     <link rel="alternate" hreflang="eu" href="http://www.mozilla.org/eu/firefox/new/" title="Euskara">
     <link rel="alternate" hreflang="fa" href="http://www.mozilla.org/fa/firefox/new/" title="فارسی">
-    <link rel="alternate" hreflang="ff" href="http://www.mozilla.org/ff/firefox/new/" title="Pulaar-Fulfulde">
     <link rel="alternate" hreflang="fi" href="http://www.mozilla.org/fi/firefox/new/" title="suomi">
     <link rel="alternate" hreflang="fr" href="http://www.mozilla.org/fr/firefox/new/" title="Français">
     <link rel="alternate" hreflang="fy-NL" href="http://www.mozilla.org/fy-NL/firefox/new/" title="Frysk">
     <link rel="alternate" hreflang="ga-IE" href="http://www.mozilla.org/ga-IE/firefox/new/" title="Gaeilge">
     <link rel="alternate" hreflang="gd" href="http://www.mozilla.org/gd/firefox/new/" title="Gàidhlig">
+    <link rel="alternate" hreflang="gl" href="http://www.mozilla.org/gl/firefox/new/" title="Galego">
     <link rel="alternate" hreflang="hi-IN" href="http://www.mozilla.org/hi-IN/firefox/new/" title="हिन्दी (भारत)">
     <link rel="alternate" hreflang="hr" href="http://www.mozilla.org/hr/firefox/new/" title="Hrvatski">
     <link rel="alternate" hreflang="hu" href="http://www.mozilla.org/hu/firefox/new/" title="magyar">
@@ -64,10 +83,11 @@
     <link rel="alternate" hreflang="id" href="http://www.mozilla.org/id/firefox/new/" title="Bahasa Indonesia">
     <link rel="alternate" hreflang="is" href="http://www.mozilla.org/is/firefox/new/" title="íslenska">
     <link rel="alternate" hreflang="it" href="http://www.mozilla.org/it/firefox/new/" title="Italiano">
-    <link rel="alternate" hreflang="ja" href="http://www.mozilla.org/ja/firefox/new/" title="日本語">
     <link rel="alternate" hreflang="ka" href="http://www.mozilla.org/ka/firefox/new/" title="ქართული">
     <link rel="alternate" hreflang="kk" href="http://www.mozilla.org/kk/firefox/new/" title="Қазақ">
+    <link rel="alternate" hreflang="km" href="http://www.mozilla.org/km/firefox/new/" title="ខ្មែរ">
     <link rel="alternate" hreflang="ko" href="http://www.mozilla.org/ko/firefox/new/" title="한국어">
+    <link rel="alternate" hreflang="ku" href="http://www.mozilla.org/ku/firefox/new/" title="Kurdî">
     <link rel="alternate" hreflang="lg" href="http://www.mozilla.org/lg/firefox/new/" title="Luganda">
     <link rel="alternate" hreflang="lij" href="http://www.mozilla.org/lij/firefox/new/" title="Ligure">
     <link rel="alternate" hreflang="lt" href="http://www.mozilla.org/lt/firefox/new/" title="lietuvių kalba">
@@ -79,8 +99,8 @@
     <link rel="alternate" hreflang="my" href="http://www.mozilla.org/my/firefox/new/" title="မြန်မာဘာသာ">
     <link rel="alternate" hreflang="nb-NO" href="http://www.mozilla.org/nb-NO/firefox/new/" title="Norsk bokmål">
     <link rel="alternate" hreflang="nl" href="http://www.mozilla.org/nl/firefox/new/" title="Nederlands">
-    <link rel="alternate" hreflang="nn-NO" href="http://www.mozilla.org/nn-NO/firefox/new/" title="Norsk nynorsk">
     <link rel="alternate" hreflang="nso" href="http://www.mozilla.org/nso/firefox/new/" title="Sepedi">
+    <link rel="alternate" hreflang="oc" href="http://www.mozilla.org/oc/firefox/new/" title="occitan (lengadocian)">
     <link rel="alternate" hreflang="pa-IN" href="http://www.mozilla.org/pa-IN/firefox/new/" title="ਪੰਜਾਬੀ">
     <link rel="alternate" hreflang="pl" href="http://www.mozilla.org/pl/firefox/new/" title="Polski">
     <link rel="alternate" hreflang="pt-BR" href="http://www.mozilla.org/pt-BR/firefox/new/" title="Português (do Brasil)">
@@ -94,76 +114,56 @@
     <link rel="alternate" hreflang="sq" href="http://www.mozilla.org/sq/firefox/new/" title="Shqip">
     <link rel="alternate" hreflang="sr" href="http://www.mozilla.org/sr/firefox/new/" title="Српски">
     <link rel="alternate" hreflang="sv-SE" href="http://www.mozilla.org/sv-SE/firefox/new/" title="Svenska">
-    <link rel="alternate" hreflang="sw" href="http://www.mozilla.org/sw/firefox/new/" title="Kiswahili">
     <link rel="alternate" hreflang="ta" href="http://www.mozilla.org/ta/firefox/new/" title="தமிழ்">
     <link rel="alternate" hreflang="te" href="http://www.mozilla.org/te/firefox/new/" title="తెలుగు">
+    <link rel="alternate" hreflang="th" href="http://www.mozilla.org/th/firefox/new/" title="ไทย">
     <link rel="alternate" hreflang="tr" href="http://www.mozilla.org/tr/firefox/new/" title="Türkçe">
     <link rel="alternate" hreflang="uk" href="http://www.mozilla.org/uk/firefox/new/" title="Українська">
     <link rel="alternate" hreflang="ur" href="http://www.mozilla.org/ur/firefox/new/" title="اُردو">
     <link rel="alternate" hreflang="vi" href="http://www.mozilla.org/vi/firefox/new/" title="Tiếng Việt">
+    <link rel="alternate" hreflang="xh" href="http://www.mozilla.org/xh/firefox/new/" title="isiXhosa">
     <link rel="alternate" hreflang="zh-CN" href="http://www.mozilla.org/zh-CN/firefox/new/" title="中文 (简体)">
     <link rel="alternate" hreflang="zh-TW" href="http://www.mozilla.org/zh-TW/firefox/new/" title="正體中文 (繁體)">
         
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=c2bb3eb" />
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=4e55d23" />
     
     <!--[if lte IE 8]>
     <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
     <![endif]-->
 
-      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=c2bb3eb" />
+      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=4e55d23" />
 
-          <!-- Google Analytics Content Experiment code -->
-    <script>function utmx_section(){}function utmx(){}(function(){
-    if (! /[?&]f=[0-9]+/.test(window.location.search)){
-    var k='71153379-28',d=document,l=d.location,c=d.cookie;
-    if(l.search.indexOf('utm_expid='+k)>0)return;
-    function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-    indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-    length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-    '<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-    '://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-    '&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-    valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-    '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')}})();
-
-    </script><script>utmx('url','A/B');</script>
-    <!-- End of Google Analytics Content Experiment code -->
+    
+          
   
-    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=c2bb3eb"></script>
+    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=4e55d23"></script>
 
-      <script src="//mozorg.cdn.mozilla.net/media/js/common-resp-min.js?build=c2bb3eb"></script>
-  <script src="//mozorg.cdn.mozilla.net/media/js/firefox_new-min.js?build=c2bb3eb"></script>
+            <script src="//cdn.optimizely.com/js/246059135.js"></script>
+    
+      <script src="//mozorg.cdn.mozilla.net/media/js/common-resp-min.js?build=4e55d23"></script>
+  <script src="//mozorg.cdn.mozilla.net/media/js/firefox_new-min.js?build=4e55d23"></script>
           <script>
-var _gaq = _gaq || [];
-var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-_gaq.push(['_setAccount', 'UA-36116321-1']);
-_gaq.push(['_setAllowLinker', true]);
-_gaq.push(['_setAllowAnchor', true]);
-_gaq.push(['_trackPageview']);
+        var _gaq = _gaq || [];
+       _gaq.push(['_setAccount', 'UA-53785-1']);
+       _gaq.push(['_setDomainName', 'mozilla.or.kr']);
+       _gaq.push(['_trackPageview']);
 
-(function() {
-    var ga = document.createElement('script');
-    ga.type = 'text/javascript';
-    ga.async = true;
-
-    var prefix = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www');
-    ga.src = prefix + '.google-analytics.com/ga.js';
-
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(ga, s);
-})();
-</script>      </head>
+       (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+     </script>      </head>
 
   <body id="firefox-new" class="html-ltr sky">
-    <div id="strings" ></div>
+    <div id="strings" data-global-close="Close" ></div>
     <div id="outer-wrapper">
     <div id="wrapper">
 
           <header id="masthead">
-        <a href="/en-US/" id="tabzilla">Mozilla</a>
+        <a href="/en-US/" id="tabzilla" data-infobar="translation">Mozilla</a>
         
-          <h2><a href="/en-US/"><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox for desktop" /></a></h2>
+          <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox for desktop"></h2>
 
         
         
@@ -176,28 +176,28 @@ _gaq.push(['_trackPageview']);
 <main role="main">
   <div class="version-message-container">
     <div id="version-message-ios" class="version-message">
-      Sorry, Firefox is currently unsupported by iOS devices.
+      죄송합니다. 현재 iOS 기기는 지원하지 않고 있습니다.
     </div>
     <div id="version-message-android-latest" class="version-message">
-      Congrats! You’re using the latest version of Firefox.
+      축하합니다! 최신 버전의 Firefox를 사용하고 있습니다.
     </div>
     <div id="version-message-android-old" class="version-message">
-      Looks like you’re using an older version of Firefox. Update on Google Play.
+      이전 버전의 Firefox를 사용하고 계신 것 같습니다. 구글 플레이에서 업데이트 하세요.
     </div>
     <div id="version-message-desktop-latest" class="version-message">
-      Congrats! You’re using the latest version of Firefox.
+      축하합니다! 최신 버전의 Firefox를 사용하고 있습니다.
     </div>
     <div id="version-message-desktop-old" class="version-message">
-      Looks like you’re using an older version of Firefox.
+      이전 버전의 Firefox를 사용하고 계신 것 같습니다.
       <div class="version-message-secondary">
-        <a href="https://support.mozilla.org/kb/update-firefox-latest-version?esab=a&s=silent+download&r=0&as=s">Update to stay fast and safe.</a>
+        <a href="https://support.mozilla.org/ko/kb/update-firefox-latest-version">더 안전하고 빠른 버전으로 업데이트 하세요.</a>
       </div>
     </div>
   </div>
   <div id="main-feature">
     <div class="row">
       <img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/firefox-logo.png?2013-06" alt="Firefox" />
-      <h1 class="large">Different by design</h1>
+      <h1 class="large">내재된 차별성</h1>
     </div>
   </div>
 
@@ -206,160 +206,157 @@ _gaq.push(['_trackPageview']);
       <div class="scene" id="scene1">
         <div class="container" id="features-download">
           <ul id="features">
-            <li>Proudly<br />non-profit</li>
-            <li>Innovating<br />for you</li>
-            <li>Fast, flexible,<br />secure</li>
+            <li>비영리 <br />재단에 의한</li>
+            <li>혁신적인<br /> 기능</li>
+            <li>빠름, 유연함,<br /> 안전함</li>
           </ul>
 
           <div class="desktop download-button-wrapper">
             
 
-
 <div id="download-button-desktop-release" class="download-button">
       <noscript>
         <div class="download download-dumb">
-    <h4>Download Firefox — English (US)</h4>
+    <h4>Firefox 무료 다운로드- 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=en-US" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=linux&amp;lang=en-US" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=osx&amp;lang=en-US" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org" class="button-green">Android</a></li>    </ul>
   </div>
 
     </noscript>
     <div class="unrecognized-download">
         <div class="download download-dumb">
-    <h4>Download Firefox — English (US)</h4>
+    <h4>Firefox 무료 다운로드- 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=en-US" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=linux&amp;lang=en-US" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-25.0&amp;os=osx&amp;lang=en-US" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org" class="button-green">Android</a></li>    </ul>
   </div>
 
     </div>
         <p class="unsupported-download">
-      Your system doesn't meet the <a href="/en-US/firefox/25.0/system-requirements/">requirements</a> to run Firefox.
+      Firefox를 구동하기에 충분한 <a href="//www.mozilla.org/en-US/firefox/27.0/system-requirements/">시스템 사양</a>이 아닙니다.
     </p>
     <ul class="download-list">
           <li class="os_windows">
         <a class="download-link"
-           href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=en-US">
+           href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
-                            <span class="download-subtitle">Free Download</span>
-              <span class="download-lang">English (US)</span>
+                            <span class="download-subtitle">무료 다운로드</span>
+              <span class="download-lang">한국어</span>
               <span class="download-platform">Windows</span>
                       </span>
         </a>
       </li>
           <li class="os_linux">
         <a class="download-link"
-           href="https://download.mozilla.org/?product=firefox-25.0&amp;os=linux&amp;lang=en-US">
+           href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
-                            <span class="download-subtitle">Free Download</span>
-              <span class="download-lang">English (US)</span>
+                            <span class="download-subtitle">무료 다운로드</span>
+              <span class="download-lang">한국어</span>
               <span class="download-platform">Linux</span>
                       </span>
         </a>
       </li>
           <li class="os_osx">
         <a class="download-link"
-           href="https://download.mozilla.org/?product=firefox-25.0&amp;os=osx&amp;lang=en-US">
+           href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
-                            <span class="download-subtitle">Free Download</span>
-              <span class="download-lang">English (US)</span>
+                            <span class="download-subtitle">무료 다운로드</span>
+              <span class="download-lang">한국어</span>
               <span class="download-platform">Mac OS X</span>
                       </span>
         </a>
       </li>
           <li class="os_android">
         <a class="download-link"
-           href="https://play.google.com/store/apps/details?id=org.mozilla.firefox">
+           href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org">
           <span class="download-content">
-                                          <strong class="download-title"><span>Firefox</span> for Android</strong>
-                                            <span class="download-subtitle">Get it free on Google Play</span>
+                                          <strong class="download-title"><span>Firefox</span> 안드로이드</strong>
+                                            <span class="download-subtitle">Google Play에서 무료 다운로드</span>
                                     </span>
         </a>
       </li>
       </ul>
       <small class="download-other os_android">
-      <a href="https://support.mozilla.org/kb/will-firefox-work-my-mobile-device">Supported Devices</a> |
-              <a href="/en-US/mobile/notes">What’s New</a> |
-            <a href="/en-US/legal/privacy/firefox.html">Privacy</a>
+      <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |
+              <a href="//www.mozilla.org/en-US/mobile/notes">변경내역</a> |
+            <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>
     </small>
         <small class="download-other os_linux os_osx os_windows">
-              <a href="/en-US/firefox/all">Systems &amp; Languages</a> |
-        <a href="/en-US/firefox/notes">What’s New</a> |
-            <a href="/en-US/legal/privacy/firefox.html">Privacy</a>
+              <a href="/ko/firefox/all">시스템 &amp; 언어 선택</a> |
+        <a href="//www.mozilla.org/en-US/firefox/notes">변경내역</a> |
+            <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>
     </small>
   </div>
           </div>
           <div class="mobile download-button-wrapper">
             
 
-
 <div id="download-button-mobile-release" class="download-button download-button-mobile">
     <ul class="download-list">
           <li class="os_android">
         <a class="download-link"
-           href="https://play.google.com/store/apps/details?id=org.mozilla.firefox">
+           href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org">
           <span class="download-content">
-                                          <strong class="download-title"><span>Firefox</span> for Android</strong>
-                                            <span class="download-subtitle">Get it free on Google Play</span>
+                                          <strong class="download-title"><span>Firefox</span> 안드로이드</strong>
+                                            <span class="download-subtitle">Google Play에서 무료 다운로드</span>
                                     </span>
         </a>
       </li>
       </ul>
       <small class="download-other os_android">
-      <a href="https://support.mozilla.org/kb/will-firefox-work-my-mobile-device">Supported Devices</a> |
-              <a href="/en-US/mobile/notes">What’s New</a> |
-            <a href="/en-US/legal/privacy/firefox.html">Privacy</a>
+      <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |
+              <a href="//www.mozilla.org/en-US/mobile/notes">변경내역</a> |
+            <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>
     </small>
     </div>
           </div>
           <div class="android download-button-wrapper" data-upgrade-subtitle="Get it free on Google Play">
             
 
-
 <div id="download-button-android" class="download-button download-button-mobile download-button-small download-button-noicon">
     <ul class="download-list">
           <li class="os_android">
         <a class="download-link"
-           href="https://play.google.com/store/apps/details?id=org.mozilla.firefox">
+           href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org">
           <span class="download-content">
-                                          <strong class="download-title"><span>Firefox</span> for Android</strong>
-                                            <span class="download-subtitle">Get it free on Google Play</span>
+                                          <strong class="download-title"><span>Firefox</span> 안드로이드</strong>
+                                            <span class="download-subtitle">Google Play에서 무료 다운로드</span>
                                     </span>
         </a>
       </li>
       </ul>
       <small class="download-other os_android">
-      <a href="https://support.mozilla.org/kb/will-firefox-work-my-mobile-device">Supported Devices</a> |
-              <a href="/en-US/mobile/notes">What’s New</a> |
-            <a href="/en-US/legal/privacy/firefox.html">Privacy</a>
+      <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |
+              <a href="//www.mozilla.org/en-US/mobile/notes">변경내역</a> |
+            <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>
     </small>
     </div>
           </div>
           <div class="desktop-latest-links-wrapper latest-links-wrapper">
             <ul>
-              <li><a href="/en-US/firefox/central/">Learn more about Firefox for desktop</a></li>
-              <li><a href="https://support.mozilla.org/products/firefox">Need help?</a></li>
-              <li><a href="/en-US/mobile/">Looking for mobile?</a></li>
-              <li><a href="/en-US/firefox/all/">Download a fresh copy</a></li>
+              <li><a href="/ko/firefox/central/">데스크탑용 Firefox 자세히 살펴보기</a></li>
+              <li><a href="https://support.mozilla.org/products/firefox">도움이 필요하세요?</a></li>
+              <li><a href="/ko/mobile/">모바일 버전을 찾으세요?</a></li>
+              <li><a href="/ko/firefox/all/">새로 다운로드</a></li>
             </ul>
           </div>
           <div class="android-latest-links-wrapper latest-links-wrapper">
             <ul>
-              <li><a href="/en-US/firefox/mobile/features/">Learn more about Firefox for Mobile</a></li>
+              <li><a href="/ko/firefox/mobile/features/">모바일용 Firefox 자세히 살펴보기</a></li>
             </ul>
           </div>
           <div class="fxos-latest-links-wrapper latest-links-wrapper">
             <ul>
-              <li><a href="/en-US/firefox/os/">Learn more about Firefox OS?</a></li>
-              <li><a href="/en-US/mobile/">Discover all the ways to take Firefox on the go</a></li>
+              <li><a href="/ko/firefox/os/">Firefox OS에 대해서 궁금하세요?</a></li>
+              <li><a href="/ko/mobile/">Firefox를 계속 사용할 수 있는 방법을 살펴보세요.</a></li>
             </ul>
           </div>
           <div class="ios-links-wrapper latest-links-wrapper">
             <ul>
-              <li><a href="/en-US/mobile/">Looking for mobile?</a></li>
-              <li><a href="https://support.mozilla.org/kb/is-firefox-available-iphone-or-ipad">Why don’t we offer an iOS version?</a></li>
+              <li><a href="/ko/mobile/">모바일 버전을 찾으세요?</a></li>
+              <li><a href="https://support.mozilla.org/ko/kb/is-firefox-available-iphone-or-ipad">iOS 버전을 왜 제공하지 않나요?</a></li>
             </ul>
           </div>
         </div>
@@ -371,36 +368,39 @@ _gaq.push(['_trackPageview']);
 
       <div class="scene" id="scene2">
         <div class="thankyou" tabindex="0">
-          Thanks for downloading Firefox!
-          As a non-profit, we’re free to innovate on your behalf without any pressure to compromise. You’re going to love the difference.
+          Firefox를 다운받아 주셔서 감사합니다!
+          비영리 재단인 우리는 다양한 압력에 구애받지 않는 혁신을 보여드릴 수 있습니다. 차별성을 느끼실 수 있습니다.
           <div class="share-wrapper">
             <div class="socialshare" data-type="small-bubbles" data-label="Share" data-fb-lang="en_US"></div>          </div>
         </div>
 
         <ol class="installation">
-          <li id="install1">
+          <li class="install1">
+            <span class="screen"></span>
             <strong>1.</strong>
             <span class="install-win">
-              Start the process by clicking Run.
+              Run을 누르면 시작됩니다.
             </span>
-            Your download should begin automatically. If not, <a id="direct-download-link" href="">click here</a>. It could take a few minutes, but it’s worth the wait.
+            다운로드가 자동으로 시작됩니다. 그렇지 않으면 <a id="direct-download-link" href="">다운로드 링크</a>를 누르세요. 얼마 걸리지 않습니다.
           </li>
-          <li id="install2">
+          <li class="install2">
+            <span class="screen"></span>
             <strong>2.</strong>
             <span class="install-osx">
-              When prompted, drag the Firefox icon into the image of your Applications folder.
+              창이 뜨면 Firefox 아이콘을 Applications 폴더 이미지로 이동시키세요.
             </span>
             <span class="install-win">
-              Click Run to launch the Mozilla Firefox setup wizard. Then, just follow the steps (we've made the process as painless as possible).
+              Run을 누르면 Firefox 설치 마법사가 시작되니다. 그 다음은 화면에 나오는 과정을 따르면 됩니다(설치과정을 최대한 간단한게 만들었습니다).
             </span>
           </li>
-          <li id="install3">
+          <li class="install3">
+            <span class="screen"></span>
             <strong>3.</strong>
             <span class="install-osx">
-              Drag the Firefox icon from the Applications folder into the dock. Then, just click on Firefox whenever you want to use the web!
+              Firefox 아이콘을 독에 내려놓으세요. 웹을 사용할때마다 아이콘을 눌러주세요!
             </span>
             <span class="install-win">
-              Now you’re ready to leap boldly into a new era of Web surfing. Double-click on the Firefox icon whenever you want to go online.
+              새로운 시대의 웹서핑을 할 준비가 되었습니다. 언제든지 Firefox 아이콘을 더블클릭 하세요.
             </span>
           </li>
         </ol>
@@ -421,8 +421,8 @@ _gaq.push(['_trackPageview']);
   <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
     <meta itemprop="price" content="0">
   </div>
-  <meta itemprop="softwareVersion" content="25.0">
-  <meta itemprop="releaseNotes" content="http://www.mozilla.org/firefox/25.0/releasenotes/">
+  <meta itemprop="softwareVersion" content="27.0">
+  <meta itemprop="releaseNotes" content="http://www.mozilla.org/firefox/27.0/releasenotes/">
   <meta itemprop="applicationCategory" content="BrowserApplication">
   <meta itemprop="operatingSystem" content="Windows">
   <meta itemprop="operatingSystem" content="Mac">
@@ -451,26 +451,23 @@ _gaq.push(['_trackPageview']);
       <footer id="colophon">
   <div class="row">
     <ul class="primary">
-      <li><a href="/en-US/firefox/central/"><span>Tour</span></a></li>
-      <li><a href="/en-US/firefox/features/"><span>Desktop</span></a></li>
-      <li><a href="/en-US/firefox/fx/"><span>Mobile</span></a></li>
-      <li><a href="https://addons.mozilla.org"><span>Add-ons</span></a></li>
-      <li><a href="https://support.mozilla.org/"><span>Support</span></a></li>
-      <li><a href="/en-US/about/"><span>About</span></a></li>
+      <li><a href="/ko/firefox/central/"><span>살펴보기</span></a></li>
+      <li><a href="/ko/firefox/features/"><span>주요기능</span></a></li>
+      <li><a href="//www.mozilla.org/en-US/mobile/"><span>모바일</span></a></li>
+      <li><a href="https://addons.mozilla.org"><span>부가 기능</span></a></li>
+      <li><a href="http://support.mozilla.org"><span>도움말</span></a></li>
+      <li><a href="/ko/about/"><span>소개</span></a></li>
     </ul>
     <ul class="secondary footer-lang">
-      <li>
-<form id="lang_form" dir="ltr" method="get" action="#">
-  <label for="language">Other languages:</label>
+      <li><form id="lang_form" dir="ltr" method="get" action="#">
+  <label for="language">다른 언어:</label>
   <select id="language" name="lang" dir="ltr">
-          <option value="ach">Acholi</option>
           <option value="af">Afrikaans</option>
           <option value="ak">Akan</option>
           <option value="an">aragonés</option>
           <option value="ar">عربي</option>
           <option value="ast">Asturianu</option>
           <option value="bg">Български</option>
-          <option value="bn-BD">বাংলা (বাংলাদেশ)</option>
           <option value="br">Brezhoneg</option>
           <option value="ca">Català</option>
           <option value="cs">Čeština</option>
@@ -489,12 +486,12 @@ _gaq.push(['_trackPageview']);
           <option value="et">Eesti keel</option>
           <option value="eu">Euskara</option>
           <option value="fa">فارسی</option>
-          <option value="ff">Pulaar-Fulfulde</option>
           <option value="fi">suomi</option>
           <option value="fr">Français</option>
           <option value="fy-NL">Frysk</option>
           <option value="ga-IE">Gaeilge</option>
           <option value="gd">Gàidhlig</option>
+          <option value="gl">Galego</option>
           <option value="hi-IN">हिन्दी (भारत)</option>
           <option value="hr">Hrvatski</option>
           <option value="hu">magyar</option>
@@ -502,10 +499,11 @@ _gaq.push(['_trackPageview']);
           <option value="id">Bahasa Indonesia</option>
           <option value="is">íslenska</option>
           <option value="it">Italiano</option>
-          <option value="ja">日本語</option>
           <option value="ka">ქართული</option>
           <option value="kk">Қазақ</option>
+          <option value="km">ខ្មែរ</option>
           <option value="ko">한국어</option>
+          <option value="ku">Kurdî</option>
           <option value="lg">Luganda</option>
           <option value="lij">Ligure</option>
           <option value="lt">lietuvių kalba</option>
@@ -517,8 +515,8 @@ _gaq.push(['_trackPageview']);
           <option value="my">မြန်မာဘာသာ</option>
           <option value="nb-NO">Norsk bokmål</option>
           <option value="nl">Nederlands</option>
-          <option value="nn-NO">Norsk nynorsk</option>
           <option value="nso">Sepedi</option>
+          <option value="oc">occitan (lengadocian)</option>
           <option value="pa-IN">ਪੰਜਾਬੀ</option>
           <option value="pl">Polski</option>
           <option value="pt-BR">Português (do Brasil)</option>
@@ -532,13 +530,14 @@ _gaq.push(['_trackPageview']);
           <option value="sq">Shqip</option>
           <option value="sr">Српски</option>
           <option value="sv-SE">Svenska</option>
-          <option value="sw">Kiswahili</option>
           <option value="ta">தமிழ்</option>
           <option value="te">తెలుగు</option>
+          <option value="th">ไทย</option>
           <option value="tr">Türkçe</option>
           <option value="uk">Українська</option>
           <option value="ur">اُردو</option>
           <option value="vi">Tiếng Việt</option>
+          <option value="xh">isiXhosa</option>
           <option value="zh-CN">中文 (简体)</option>
           <option value="zh-TW">正體中文 (繁體)</option>
       </select>
@@ -549,8 +548,8 @@ _gaq.push(['_trackPageview']);
 </li>
     </ul>
     <ul class="secondary">
-      <li><a href="/en-US/privacy/">Privacy Policy</a></li>
-      <li><a href="/en-US/about/legal.html">Legal Notices</a></li>
+      <li><a href="//www.mozilla.org/en-US/privacy/">개인 정보 보호 정책 (영문)</a></li>
+      <li><a href="//www.mozilla.org/en-US/about/legal.html">법적 고지 (영문)</a></li>
     </ul>
   </div>
 </footer>
@@ -560,6 +559,6 @@ _gaq.push(['_trackPageview']);
       <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
     <![endif]-->
 
-              <script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js?build=c2bb3eb"></script>
-          </body>
+              <script src="/ko/tabzilla/tabzilla.js?build=4e55d23"></script>
+              </body>
 </html>
