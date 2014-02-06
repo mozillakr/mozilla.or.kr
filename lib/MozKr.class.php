@@ -58,14 +58,20 @@ class MozKr {
 	}
 
 	function insert_string($html) {
+		if (is_array($this->insert_rule)) {
+
 		foreach ($this->insert_rule as $key => $item) {
 			$html = $this->insert_text_by_string($item['before'], $item['after'], $item['insert'], $html);
+		}
+
 		}
 
 		return $html;
 	}
 
 	function remove_string($html) {
+		if (is_array($this->remove_rule)) {
+
 		foreach ($this->remove_rule as $key => $item) {
 			$head_position = strpos($html, $item['start']);
 			$tail_position = strpos($html, $item['end']);
@@ -77,6 +83,8 @@ class MozKr {
 			$head = substr($html, 0, $head_position);
 			$tail = substr($html, $tail_position + strlen($item['end']));
 			$html = $head . $tail;
+		}
+
 		}
 
 		return $html;
