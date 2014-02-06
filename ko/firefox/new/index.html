@@ -84,11 +84,11 @@ $replace_rule = array(
     'source' => '<a href="/en-US/firefox/central/"><span>Tour</span></a>', 
     'target' => '<a href="/ko/firefox/central/"><span>살펴보기</span></a>'), 
   array(
-    'source' => '<a href="/en-US/firefox/features/"><span>Desktop</span></a>', 
-    'target' => '<a href="/ko/firefox/features/"><span>데스크톱</span></a>'), 
+    'source' => '<a href="/en-US/firefox/features/"><span>Features</span></a>', 
+    'target' => '<a href="/ko/firefox/features/"><span>주요기능</span></a>'), 
   array(
-    'source' => '<a href="/en-US/firefox/fx/"><span>Mobile</span></a>', 
-    'target' => '<a href="/ko/firefox/fx/"><span>모바일</span></a>'), 
+    'source' => '<a href="/en-US/mobile/"><span>Mobile</span></a>', 
+    'target' => '<a href="//www.mozilla.org/en-US/mobile/"><span>모바일</span></a>'), 
   array(
     'source' => '<a href="https://addons.mozilla.org"><span>Add-ons</span></a>', 
     'target' => '<a href="https://addons.mozilla.org"><span>부가 기능</span></a>'), 
@@ -102,17 +102,6 @@ $replace_rule = array(
     'source' => 'Other languages:', 
     'target' => '다른 언어:'), 
 );
-
-$xml_source = file_get_contents("http://www.mozilla.or.kr/community/feed");
-$x = simplexml_load_string($xml_source);
-$i = 0;
-$news_html = '';
-foreach($x->channel->item as $item) {
-  if($i < 4) {
-    $news_html .= '<li><h4><a href="'.$item->link.'">'.$item->title.'</a></h4></li>';
-    $i++;
-  }
-}
 
 $remove_rule = array(
   array(
