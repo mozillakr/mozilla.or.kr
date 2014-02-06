@@ -1,9 +1,5 @@
 <?php
 $common_rule = array(
-  // resource path
-  array(
-    'source' => 'href="/en-US/', 
-    'target' => 'href="//www.mozilla.org/en-US/'), 
   array(
     'source' => 'href="/includes/', 
     'target' => 'href="//www.mozilla.org/includes/'), 
