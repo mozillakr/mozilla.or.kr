@@ -108,27 +108,27 @@ help support Mozilla.-->
     <link rel="alternate" hreflang="zh-CN" href="http://www.mozilla.org/zh-CN/" title="中文 (简体)">
     <link rel="alternate" hreflang="zh-TW" href="http://www.mozilla.org/zh-TW/" title="正體中文 (繁體)">
         
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=bc997b1" />
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=4e55d23" />
     
     <!--[if lte IE 8]>
     <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
     <![endif]-->
 
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/responsive-min.css?build=bc997b1" />
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/responsive-min.css?build=4e55d23" />
     
     
-      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/home-min.css?build=bc997b1" />
+      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/home-min.css?build=4e55d23" />
 <!--[if IE 9]>
-  <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/home-ie9-min.css?build=bc997b1" />
+  <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/home-ie9-min.css?build=4e55d23" />
 <![endif]-->
 <!--[if IE 8]>
-  <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/home-ie8-min.css?build=bc997b1" />
+  <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/home-ie8-min.css?build=4e55d23" />
 <![endif]-->
 <!--[if lt IE 8]>
-  <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/home-ie-min.css?build=bc997b1" />
+  <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/home-ie-min.css?build=4e55d23" />
 <![endif]-->
 
-    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=bc997b1"></script>
+    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=4e55d23"></script>
 
             <script src="//cdn.optimizely.com/js/246059135.js"></script>
     
@@ -168,7 +168,7 @@ _gaq.push(['_trackPageview']);
           <ul id="nav-main-menu">
             <li class="first mission-item"><a href="/ko/mission/">사명</a></li>
             <li class="about-item"><a href="/ko/about/">소개</a></li>
-            <li class="products-item"><a href="/ko/products/">제품소개</a></li>
+            <li class="products-item"><a href="/ko/products/">제품</a></li>
             <li class="last contribute-item"><a href="/ko/contribute/">참여하기</a></li>
           </ul>
         </nav>
@@ -190,7 +190,6 @@ _gaq.push(['_trackPageview']);
 
   <section class="pillars">
     <ul class="accordion">
-
           <li id="panel-lightbeam" class="panel" tabindex="0">
                 <h2 class="panel-title">감시자를 <i>감시</i></h2>
         <div class="panel-inner">
@@ -261,7 +260,7 @@ _gaq.push(['_trackPageview']);
         <div class="download download-dumb">
     <h4>Firefox 다운로드 — 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-26.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-26.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org" class="button-green">Android</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org" class="button-green">Android</a></li>    </ul>
   </div>
 
     </noscript>
@@ -269,12 +268,12 @@ _gaq.push(['_trackPageview']);
         <div class="download download-dumb">
     <h4>Firefox 다운로드 — 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-26.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-26.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org" class="button-green">Android</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org" class="button-green">Android</a></li>    </ul>
   </div>
 
     </div>
         <p class="unsupported-download">
-      Firefox 설치에 필요한 시스템 <a href="/ko/firefox/26.0/system-requirements/">요구 사항</a>을 충족하지 못했습니다.
+      Firefox 설치에 필요한 시스템 <a href="/ko/firefox/27.0/system-requirements/">요구 사항</a>을 충족하지 못했습니다.
     </p>
     <ul class="download-list">
           <li class="os_windows">
@@ -290,7 +289,7 @@ _gaq.push(['_trackPageview']);
       </li>
           <li class="os_linux">
         <a class="download-link"
-           href="/ko/products/download.html?product=firefox-26.0&amp;os=linux&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-26.0&amp;os=linux&amp;lang=ko">
+           href="/ko/products/download.html?product=firefox-27.0&amp;os=linux&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
                             <span class="download-subtitle">무료 다운로드</span>
@@ -301,7 +300,7 @@ _gaq.push(['_trackPageview']);
       </li>
           <li class="os_osx">
         <a class="download-link"
-           href="/ko/products/download.html?product=firefox-26.0&amp;os=osx&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-26.0&amp;os=osx&amp;lang=ko">
+           href="/ko/products/download.html?product=firefox-27.0&amp;os=osx&amp;lang=ko"           data-direct-link="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
                             <span class="download-subtitle">무료 다운로드</span>
@@ -678,10 +677,10 @@ _gaq.push(['_trackPageview']);
             <li><a href="/ko/legal/fraud-report/index.html">상표권 침해 신고 (영문)</a></li>
           </ul>
                     <ul class="footer-nav">
-            <li><a href="https://twitter.com/mozilla">트위터 Mozilla</a></li>
-            <li><a href="https://twitter.com/firefox">트위터 Firefox</a></li>
-            <li><a href="https://www.facebook.com/mozilla">페이스북 Mozilla</a></li>
-            <li><a href="https://www.facebook.com/Firefox">페이스북 Firefox</a></li>
+            <li><a href="https://twitter.com/mozilla">Mozilla 트위터</a></li>
+            <li><a href="https://twitter.com/firefox">Firefox 트위터</a></li>
+            <li><a href="https://www.facebook.com/mozilla">Mozilla 페이스북</a></li>
+            <li><a href="https://www.facebook.com/Firefox">Firefox 페이스북</a></li>
             <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
           </ul>
                               <div class="footer-lang">
@@ -762,10 +761,10 @@ _gaq.push(['_trackPageview']);
       <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
     <![endif]-->
 
-      <script src="//mozorg.cdn.mozilla.net/media/js/mozorg-resp-min.js?build=bc997b1"></script>
-          <script src="//mozorg.cdn.mozilla.net/ko/tabzilla/tabzilla.js?build=bc997b1"></script>
+      <script src="//mozorg.cdn.mozilla.net/media/js/mozorg-resp-min.js?build=4e55d23"></script>
+          <script src="//mozorg.cdn.mozilla.net/ko/tabzilla/tabzilla.js?build=4e55d23"></script>
         <!--[if gt IE 7]> <!-- -->
-  <script src="//mozorg.cdn.mozilla.net/media/js/home-min.js?build=bc997b1"></script>
+  <script src="//mozorg.cdn.mozilla.net/media/js/home-min.js?build=4e55d23"></script>
 <!-- <![endif]-->
       </body>
 </html>
