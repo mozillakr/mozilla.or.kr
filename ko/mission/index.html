@@ -1,140 +1,24 @@
-<?
- 	require $_SERVER['DOCUMENT_ROOT']."/ko/includes/common.inc";
-	
-	$Htitle="Mozilla — 보다 나은 인터넷을 만들고 있습니다 — mozilla.or.kr";
-	$Hid="mission";
-	$extra_css='<link rel="stylesheet" media="screen,projection,tv" href="http://www.mozilla.org/media/css/mission-min.css?build='.$build_code.'" />';
+<?php
+$replace_rule = array(
+  array(
+    'source' => 'href="/ko/about/history/"', 
+    'target' => 'href="//www.mozilla.org/ko/about/history/"'), 
+  array(
+    'source' => 'href="/about/forums/"', 
+    'target' => 'href="//www.mozilla.org/about/forums/"'), 
+  array(
+    'source' => 'href="/about/governance.html"', 
+    'target' => 'href="//www.mozilla.org/about/governance.html"'), 
+);
 
-	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/header.php";
-?>
-<div id="mosaic" class="ri-grid">
-  <ul>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/001.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/002.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/003.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/004.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/005.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/006.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/007.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/008.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/009.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/010.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/011.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/012.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/013.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/014.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/015.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/016.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/017.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/018.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/019.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/020.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/021.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/022.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/023.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/024.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/025.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/026.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/027.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/028.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/029.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/030.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/031.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/032.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/033.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/034.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/035.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/036.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/037.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/038.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/039.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/040.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/041.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/042.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/043.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/044.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/045.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/046.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/047.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/048.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/049.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/050.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/051.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/052.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/053.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/054.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/055.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/056.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/057.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/058.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/059.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/060.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/061.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/062.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/063.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/064.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/065.jpg" alt=""></a></li>
-      <li><a><img src="http://www.mozilla.org/media/img/mosaic/066.jpg" alt=""></a></li>
-    </ul>
-</div>
-    <article id="main-content">
-  <h1 class="title-banner">보다 나은 인터넷을 만들고 있습니다.</h1>
+$insert_rule = array(
+);
 
-  <div class="main">
-    <p class="lede">우리 사명은 웹에서의 개방과 혁신, 기회를 향상시키는 일입니다.</p>
-    <p>Mozilla는 웹의 힘을 사람들이 활용할 수 있도록 만들기위해 노력하는 비영리 재단입니다. 전세계의 사용자와 공헌자, 개발자들이 Mozilla에서 여러분을 위해서 노력하고 있습니다. Firefox를 사용하시면 이러한 커뮤니티의 일원이 되어서 보다 밝은 미래의 웹을 같이 만드는 것입니다.</p>
-    <p>우리의 사명이 추구하는 가치와 원칙에 대해서 더 자세히 알고 싶으시면 <a href="http://www.mozilla.org/about/manifesto.ko.html">Mozilla Manifesto</a>를 읽어보세요.</p>
-  </div>
-  
-  <div class="video">
-    <div id="welcome-video" class="mozilla-video-control mozilla-video-shadow">
-      <video 
-        width="460"
-        height="259"
-        poster="http://www.mozilla.org/media/img/mission/poster-mission.jpg"
-        controls="controls">
-        <source src="/media/video/brand/Mozilla_2011_Story-ko.webm" type="video/webm">
-        <source src="/media/video/brand/Mozilla_2011_Story-ko.mp4" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
-        <source src="/media/video/brand/Mozilla_2011_Story-ko.ogv" type="video/mp4">
-        <object type="application/x-shockwave-flash"
-          style="width: 460px; height: 259px;"
-          data="http://www.mozilla.org/media/flash/playerWithControls.swf?flv=brand/Mozilla_2011_Story.mp4&amp;autoplay=false&amp;msg=Play%20Video">
-          <param name="movie" value="http://www.mozilla.org/media/flash/playerWithControls.swf?flv=brand/Mozilla_2011_Story.mp4&amp;autoplay=false&amp;msg=Play%20Video">
-          <param name="wmode" value="transparent">
-    
-          <div class="video-player-no-flash">
-          현재 동영상은 오픈 동영상 코덱을 지원하지 않기 때문에 <a href="http://www.adobe.com/go/getflashplayer">Adobe 플래시 플레이어</a>를 사용하십시오.
-          </div>
-        </object>
-      </video>
-    </div>
-    <p class="caption">Mozilla가 어떤 사람들이며 어떻게 시작되었는지, 어떻게 사람들을 위해서 웹을 더 좋은 곳으로 만드려고 하는지를 비디오를 통해서 살펴보세요.</p>
-  </div>
- 
-  <ul class="links">
-    <li>
-      <h4><a href="/ko/contribute/">참여하기</a></h4>
-      <p>다양한 영역에서 참여할 수 있는 자원봉사 기회</p>
-    </li>    
-    <li>
-      <h4><a href="http://www.mozilla.org/about/history.html">역사(영문)</a></h4>
-      <p>어떻게 시작하게 되었으며 여기까지 어떻게 왔는지에 대한 역사</p>
-    </li>
-    <li>
-      <h4><a href="http://www.mozilla.org/about/forums/">포럼(영문)</a></h4>
-      <p>사용자 지원, 다양한 제품, 기술에 대한 주제를 다루는 포럼</p>
-    </li>
-    <li>
-      <h4><a href="http://www.mozilla.org/about/governance.html">조직(영문)</a></h4>
-      <p>Mozilla의 구조, 조직, 전세계적으로 광범위하게 펼쳐져 있는 커뮤니티</p>
-    </li>
-  </ul>
-  
-</article>
+$remove_rule = array(
+);
 
-<?
-  include $_SERVER['DOCUMENT_ROOT']."/ko/includes/newsletter.php";
-  
-	$extra_js='<script src="http://www.mozilla.org/media/js/video-min.js?build='.$build_code.'"></script><script src="http://www.mozilla.org/media/js/mosaic-min.js?build='.$build_code.'"></script>';
-	include $_SERVER['DOCUMENT_ROOT']."/ko/includes/footer.php";
+require_once($_SERVER['DOCUMENT_ROOT'] . '/lib/MozKr.class.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/lib/common_rules.php');
+$t = new MozKr('http://www.mozilla.org/ko/mission/', '', $replace_rule, $insert_rule, $remove_rule);
+echo($t->get_content());
 ?>
