@@ -1,0 +1,144 @@
+@media screen and (max-width: 1184px) {
+	.stripe {
+		right:0px;
+		width:2%;
+	}
+	
+	iframe {
+		max-width:100%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.contentsection .content {
+		width:90%;
+	}
+	
+	.footercontent {
+		width:90%;
+	}
+	
+	#navitems {
+		width:100%;
+	}
+	
+	#nav #navitems ul li {
+		margin-right:0px;
+		font-size:.8em;
+		margin-right:0px;
+	}
+	
+	.stripe {
+		display:none;
+	}
+	
+	#lineset {
+		margin-top:0px;
+	}
+	
+	#linesright, #linesleft {
+		display:none;
+	}
+	
+	#dates {
+		float:none;
+		margin:0 auto;
+	}
+	
+	.person {
+		width:269px;
+		height:329px;
+		float:none;
+		margin:0 auto 15px auto;
+	}
+	
+	#header h1 {
+		font:800 83px/85px "open sans";
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+	.contentsection .content h1 {
+		font-size:70px;
+	}
+	
+	.person {
+		float:none;
+	}
+	
+	#projects .project {
+		width:92%;
+		margin:0 auto 10px auto;
+		float:none;
+	}
+	
+	#projects .project img {
+		height:auto;
+	}
+	
+	.sectioninfo.relative {
+		position:relative;
+		width:100%;
+		margin-bottom:30px;
+		text-align:center;
+	}
+	
+	.normalcontent {
+		float:none;
+		width:100%;
+	}
+	
+	.contentsection {
+		text-align:center;
+	}
+	
+	#map_canvas {
+		width:94%;
+	}
+	
+	#nav #navitems ul li a {
+		padding:5px;
+	}
+	
+	#footer {
+		text-align:center;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	
+	#header.contentsection .content p {
+		font-size:23px;
+		line-height:34px;
+	}
+	
+	#header.contentsection {
+		padding-bottom:20px;
+	}
+	
+	#header .arrow {
+		top:5px;
+	}
+	
+	#nav #navitems ul li {
+		font-size:.6em;
+	}
+	#nav #navitems ul li a {
+		padding:4px;
+	}
+	
+	.normalcontent form input.submit {
+		width:102%;
+	}
+	
+	.sponsors img {
+		width:70%;
+		display:block;
+		margin:0 auto 10px auto;
+	}
+	
+	.normalcontent form input {
+		width:87%;
+	}
+}
