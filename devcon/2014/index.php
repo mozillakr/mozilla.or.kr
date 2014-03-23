@@ -207,14 +207,13 @@
 		<div class="normalcontent">
 			<h3>발표 신청</h3>
 			<ul>
-				<li>누구나 5분내에서 발표 가능한 주제를 선정하여 참여할 수 있습니다.
-				<li>주제는 Mozilla 활동, 웹 표준 기술, 웹 앱 개발 사례 등입니다.
-				<li>프리젠테이션은 HTML5 템플릿을 이용해야 합니다.
+				<li>누구나 5분내에서 발표 가능한 주제를 선정하여 참여할 수 있으며, 발표 주제는 Mozilla 커뮤니티 활동, 웹 표준 기술, 웹 앱 개발 사례 등입니다.
+				<li>발표 신청해 주시면, 선정 후 개별 연락 드리며 프리젠테이션은 HTML5 템플릿을 이용 합니다.
 			</ul>
 
 			<p><img src="images/devon_talk.jpg" alt=""></p>
 
-			<p><a href="#googleform"><strong>발표 신청 바로하기</strong></a></p>
+			<p><a href="https://docs.google.com/forms/d/1gu-K2_--9NOw04wigvBCvCvawAMYJQxe9lPYULo6w-M/viewform"><strong>지금 신청하기</strong></a></p>
 		</div>
 	</div>
 </div>
