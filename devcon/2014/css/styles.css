@@ -250,6 +250,11 @@ p {
 	line-height:33px;
 }
 
+li {
+	font-size:23px;
+	line-height:33px;
+}
+
 .contentsection a:hover {
 	text-decoration:underline;
 }
@@ -271,7 +276,8 @@ p {
 	color:#2A2A2A;
 }
 
-.yellow p {
+.yellow p, 
+.yellow li {
 	color:#2a2a2a;
 }
 
@@ -290,7 +296,8 @@ p {
 	color:#fff;
 }
 
-.red p {
+.red p, 
+.red li {
 	color:#fff;
 }
 
@@ -304,7 +311,8 @@ p {
 	color:#2A2A2A;
 }
 
-.beige p {
+.beige p, 
+.beige li {
 	color:#2a2a2a;
 }
 
@@ -347,7 +355,7 @@ p {
 
 .sectioninfo {
 	position:fixed;
-	top:112px;
+	top:150px;
 	width:350px;
 }
 

@@ -47,22 +47,21 @@
 		</div>
 		<p class="location">서울 강남 코엑스 콘퍼런스 센터 401호</p>
 		<!-- <p class="socialmedia"><a href="#"><img src="images/icons/facebook.png" alt=""></a> <a href="#"><img src="images/icons/twitter.png"  alt=""></a> <a href="#"><img src="images/icons/mail.png" alt=""></a></p> -->
-		<!-- <p class="intro">A fully responsive parallax theme created for workshops, mixers, expos and other social events. Make your next event known about with an interactive geo location map, video center, photos and much more!</p> -->
+		<p class="intro">Mozilla 한국 커뮤니티가 웹 탄생 25주년과 국내 도입 20주년을 맞아 <br>국내 처음으로 Firefox 개발자 콘퍼런스를 개최합니다.</p>
 		<p class="arrow"><a href="#intro"><img src="images/arrow.png" alt=""></a></p>
 	</div>
 	<div class="stripe"></div>
 </div>
 
 <a id="intro"></a>
-<div class="contentsection dark clearfix s1">
+<div class="contentsection yellow clearfix s1">
 	<div class="content">
 		<div class="sectioninfo relative">
 			<h2>행사소개</h2>
-			<p>Firefox 개발자 콘퍼런스에 초대합니다!</p>
+			<p>Firefox 개발자 콘퍼런스에 <br>초대합니다!</p>
 			<p><img src="images/loudspeaker.png" alt=""></p>
 		</div>
 		<div class="normalcontent">
-			<p>Mozilla 한국커뮤니티는 웹 탄생 25주년과 국내 도입 20주년을 맞아 국내 처음으로 Firefox 개발자 콘퍼런스를 개최합니다.</p>
 			<p>인터넷과 웹 세상의 개방성, 혁신 그리고 기회를 위해 최선을 다해 온 글로벌 비영리 커뮤니티인 Mozilla의 웹 브라우저인 Firefox와 모바일 웹 운영체제인 Firefox OS 그리고 HTML5를 비롯 최신 웹 표준 기술의 변화를 느낄 수 있는 기회입니다.</p>
 			<p>본 행사는 Mozilla 제품 및 웹 표준 기술에 관심있는 개발자와 디자이너, 고급 사용자를 대상으로 기술 데모와 강연, 정보 교환을 할 수 있습니다. 그리고, 국내외 Mozilla 커뮤니티 활동가와의 만남과 최신 Firefox  OS 단말기를 직접 접할 수 있습니다.  </p>
 			<p>관심 있는 분들의 많은 참여를 바랍니다!</p>
@@ -78,7 +77,6 @@
 			</ul>
 		</div>
 	</div>
-	<div class="filter"></div>
 </div>
 
 <a id="program"></a>
@@ -184,7 +182,7 @@
 </div>
 
 <a id="event"></a>
-<div class="contentsection yellow clearfix s2">
+<div class="contentsection yellow clearfix">
 	<div class="content">
 		<div class="sectioninfo relative">
 			<h2>이벤트 및 <br>전시 부스</h2>
@@ -195,12 +193,13 @@
 
 			<h3>전시 부스</h3>
 			<p>본 행사장 앞에는 Firefox OS의 출시 단말기 및 Mozilla 커뮤니티 활동 부스가 열리게 됩니다. 여러분의 많은 참여를 바랍니다.</p>
+			<p><img src="images/devon_booth.jpg" alt=""></p>
 		</div>
 	</div>
 </div>
 
 <a id="submit"></a>
-<div class="contentsection red clearfix s2">
+<div class="contentsection red clearfix">
 	<div class="content">
 		<div class="sectioninfo relative">
 			<h2>라이트닝 토크 <br>발표 신청</h2>
@@ -211,6 +210,8 @@
 				<li>5분내에서 발표 가능해야 합니다.
 				<li>프리젠테이션은 HTML5 템플릿을 이용해야 합니다.
 			</ul>
+
+			<p><img src="images/devon_talk.jpg" alt=""></p>
 
 			<p><a href="#googleform"><strong>발표 신청 바로하기<strong></a></p>
 		</div>
