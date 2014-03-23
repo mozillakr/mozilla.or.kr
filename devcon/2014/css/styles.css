@@ -90,7 +90,7 @@ input {
 }
 
 .contentsection#header {
-	background:url(../images/desk.jpg) repeat-x;
+    background:url(../images/overview-bg.png) center -15px no-repeat;
 	background-color:#FFFAE7;
 	padding-top:75px;
 	padding-bottom:120px;
@@ -98,7 +98,7 @@ input {
 
 #header h1 {
 	color: #A9071E;
-	font: 800 94px/94px "open sans";
+	font: 800 94px/94px "Open Sans";
 	margin: 0 0 32px 0;
 	text-align: center;
 	text-transform: uppercase;

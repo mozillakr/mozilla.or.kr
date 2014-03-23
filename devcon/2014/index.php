@@ -2,7 +2,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1">
-<title>Firefox 개발자콘퍼런스 2014</title>
+<title>Firefox 개발자 콘퍼런스 2014</title>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="js/jquery.sticky.js"></script>
 <script src="js/jquery.sticky.js"></script>
@@ -23,7 +23,7 @@
 <div id="nav">
 	<div id="navitems">
 		<ul>
-			<li><a href="#Home">Home</a></li>
+			<li><a href="#Home">FxDevCon</a></li>
 			<li><a href="#intro">행사소개</a></li>
 			<li><a href="#program">프로그램</a></li>
 			<li><a href="#event">이벤트</a></li>
@@ -35,8 +35,8 @@
 
 <div class="contentsection" id="header">
 	<div class="content">
-		<h1>Firefox <br>개발자콘퍼런스 2014<span class="stripe">_</span></h1>
-		<p class="subtext">함께 개방웹 기술 변화를 느껴보세요!</p>
+		<h1>Firefox <br>개발자 콘퍼런스 2014<span class="stripe">_</span></h1>
+		<p class="subtext">개방웹 기술 변화를 함께 느껴보세요!</p>
 		<div id="lineset" class="clearfix">
 			<div id="linesleft"></div>
 			<div id="dates">
@@ -69,11 +69,11 @@
 			<ul>
 				<li>일시: 2014년 4 월 10 일(목) 오전 10:00~ 18:20
 				<li>장소: 서울 강남 코엑스 콘퍼런스 센터 401호 (약도보기)
-				<li>참가비: 5,000원 (점심 식사 제공)
-				<li>인원수: 400명 (정원이 되는 대로 마감합니다!)
+				<li>참가비: 5,000원 
+				<li>인원수: 450명 (결제 선착순 마감!)
 				<li>주최: Mozilla 한국 커뮤니티
 				<li>후원: 다음커뮤니케이션, Mozilla Corp.
-				<li>해시태그: #fxdevconkr 
+				<li>해시태그: #fxdevconkr
 			</ul>
 		</div>
 	</div>
@@ -98,7 +98,7 @@
 							<h3>Mozilla's Open Web Strategy</h3>
 							<p class="time">10:10 - 10:50</p>
 							<p class="description">For closed Internet and mobile environments, we discuss Mozilla's mission and future plan for web developers.</p>
-							<p class="speaker">Gen Kanai(Mozilla Corp.)</p>
+							<p class="speaker">TBD (Mozilla Corp.)</p>
 						</div>
 						<div class="session">
 							<h3>Firefox Developer Tools</h3>
@@ -128,9 +128,8 @@
 							<p class="description">Mozilla 커뮤니티 활동 및 HTML5 웹 앱 기술에 대한 일반 참가자들의 5분 토크가 펼쳐집니다.</p>
 							<p class="speaker">사회: 설수웅(Mozilla 한국커뮤니티, 와이즈넛)</p>
 							<ul>
-								<li>참가 신청은 '발표 신청'을 이용해 주세요.
-								<li>5분내에서 발표 가능해야 합니다.
-								<li>주제는 Mozilla 활동, 웹 표준 기술, 웹 앱 개발 사례 등입니다.
+								<li>누구나 5분내 발표 가능한 주제라면, 지금 '발표 신청'을 이용해 주세요
+								<li>발표 주제는 Mozilla 활동, 웹 표준 기술, 웹 앱 개발 사례 등입니다.
 							</ul>
 						</div>
 						<div class="session">
@@ -140,18 +139,19 @@
 						<div class="session">
     						<h3>HTML5 Web Standardization</h3>
 							<p class="time">15:00~15:30</p>
-							<p class="description"></p>
-    						<p class="speaker">David Daniel (W3C)
+							<p class="description">How's going HTML evolution from W3C and WHATWG and new future technologies in open web standards</p>
+    						<p class="speaker">Daniel Davis (W3C)
 						</div>
 						<div class="session">
     						<h3>HTML5 게임 엔진 개발 사례</h3>
 							<p class="time">15:30~16:00</p>
+							<p class="description">모바일 HTML5 기반 캐주얼 게임 개발을 위한 그래픽 및 제어 방법 그리고 각종 오픈 소스 게임 엔진을 소개하고 사례를 공유합니다.</p>
     						<p class="speaker">김준기 (SK플래닛)
 						</div>
 						<div class="session">
-    						<h3>미래 웹 기술</h3>
+    						<h3>다가오는 미래 웹 기술</h3>
 							<p class="time">16:00~16:30</p>
-							<p class="description">서버 없는 WebRTC, Emscripten을 통한 asm.js 기반 게임 엔진 등 Mozilla가 선도하는 웹표준 기술을 소개합니다.</p>
+							<p class="description">WebRTC와 서버 없는 웹, WebGL과 Emscripten을 통한 asm.js 기반 게임 엔진 등 Mozilla가 선도하는 웹표준 기술을 소개합니다.</p>
     						<p class="speaker">윤석찬 (Mozilla 한국커뮤니티, Daum)
 						</div>
 						<div class="session">
@@ -202,18 +202,19 @@
 <div class="contentsection red clearfix">
 	<div class="content">
 		<div class="sectioninfo relative">
-			<h2>라이트닝 토크 <br>발표 신청</h2>
+			<h2>라이트닝 토크</h2>
 		</div>
 		<div class="normalcontent">
+			<h3>발표 신청</h3>
 			<ul>
+				<li>누구나 5분내에서 발표 가능한 주제를 선정하여 참여할 수 있습니다.
 				<li>주제는 Mozilla 활동, 웹 표준 기술, 웹 앱 개발 사례 등입니다.
-				<li>5분내에서 발표 가능해야 합니다.
 				<li>프리젠테이션은 HTML5 템플릿을 이용해야 합니다.
 			</ul>
 
 			<p><img src="images/devon_talk.jpg" alt=""></p>
 
-			<p><a href="#googleform"><strong>발표 신청 바로하기<strong></a></p>
+			<p><a href="#googleform"><strong>발표 신청 바로하기</strong></a></p>
 		</div>
 	</div>
 </div>
@@ -228,8 +229,8 @@
 		<div class="normalcontent">
 			<ul>
 				<li>참가비(5,000원)는 다른 분들의 참여 기회를 높히기 위해 받는 것임을 양해해 주시고, 전액 Mozilla 재단에 기부됩니다.
-				<li>참가자에게는 점심 식사와 Mozilla와 메인 후원사인 Daum이 준비한 각종 기념물품을 선물로 드립니다.
-				<li>참가 정원은 400명이며, 결제자 선착순으로 마감됩니다.
+				<li>참가자에게는 Mozilla와 메인 후원사인 Daum이 준비한 각종 기념물품을 선물로 드립니다.
+				<li>참가 정원은 450명이며, 결제 선착순으로 마감됩니다.
 			</ul>
 
 			<p><a href="#onoffmix"><strong>참가 신청 바로하기</strong></a></p>
