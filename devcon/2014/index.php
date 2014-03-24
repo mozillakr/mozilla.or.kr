@@ -16,6 +16,19 @@
 <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" media="screen" />	
 <link rel="stylesheet" href="css/styles.css" type="text/css">
 <link rel="stylesheet" href="css/layout.css" type="text/css">
+<!-- Facebook Open Graph -->
+<meta property="og:description" content="웹 개발자를 위한 Firefox 기술, Firefox OS 및 앱 개발 사례 등 Mozilla의 개방형 웹 기술 변화를 살펴 보실 수 있습니다.">
+<meta property="og:url" content="http://www.mozilla.or.kr/devcon/2014">
+<meta property="og:image" content="http://www.mozilla.or.kr/devcon/2014/images/event-shot.png">
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Firefox 개발자 콘퍼런스 2014 - 4월 10일(목) COEX 401호">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="Firefox 개발자 콘퍼런스 2014 - 4월 10일(목) COEX 401호">
+<meta name="twitter:site" content="@mozillakr">
+<meta name="twitter:title" content= "Firefox 개발자 콘퍼런스 2014 - 4월 10일(목) COEX 401호">
+<meta name="twitter:description" content="웹 개발자를 위한 Firefox 기술, Firefox OS 및 앱 개발 사례 등 Mozilla의 개방형 웹 기술 변화를 살펴 보실 수 있습니다.">
+<meta name="twitter:creator" content="eg:author name">
+<meta name="twitter:image:src" content="http://www.mozilla.or.kr/devcon/2014/images/event-shot.png">
 </head>
 
 <body>
