@@ -59,15 +59,15 @@
 			<div id="linesright"></div>
 		</div>
 		<p class="location">서울 강남 코엑스 콘퍼런스 센터 401호</p>
-                <p align="center">
+ 		<p class="intro">Mozilla 한국 커뮤니티가 웹 탄생 25주년과 국내 도입 20주년을 맞아 <br>국내 처음으로 Firefox 개발자 콘퍼런스를 개최합니다.</p>
+                <div align="center" style="padding:10px;">
                                 <div id="fb-root"></div>
                                 <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=169923666403595"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
                                 <div class="fb-like" data-href="http://www.mozilla.or.kr/devcon/2014" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
                                 <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.mozilla.or.kr/devcon/2014" data-text="Firefox 개발자 콘
 퍼런스 2014- Firefox OS와 미래 웹 기술을 직접 만나보세요!" data-via="mozillakr" data-lang="ko" data-hashtags="fxdevconkr">트윗하기</a>
                                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                </p>
- 		<p class="intro">Mozilla 한국 커뮤니티가 웹 탄생 25주년과 국내 도입 20주년을 맞아 <br>국내 처음으로 Firefox 개발자 콘퍼런스를 개최합니다.</p>
+                </div>
 		<p class="arrow"><a href="#intro"><img src="images/arrow.png" alt=""></a></p>
 	</div>
 	<div class="stripe"></div>
