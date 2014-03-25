@@ -59,8 +59,15 @@
 			<div id="linesright"></div>
 		</div>
 		<p class="location">서울 강남 코엑스 콘퍼런스 센터 401호</p>
-		<!-- <p class="socialmedia"><a href="#"><img src="images/icons/facebook.png" alt=""></a> <a href="#"><img src="images/icons/twitter.png"  alt=""></a> <a href="#"><img src="images/icons/mail.png" alt=""></a></p> -->
-		<p class="intro">Mozilla 한국 커뮤니티가 웹 탄생 25주년과 국내 도입 20주년을 맞아 <br>국내 처음으로 Firefox 개발자 콘퍼런스를 개최합니다.</p>
+                <p class="socialmedia">
+                                <div id="fb-root"></div>
+                                <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=169923666403595"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+                                <div class="fb-like" data-href="http://www.mozilla.or.kr/devcon/2014" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.mozilla.or.kr/devcon/2014" data-text="Firefox 개발자 콘
+퍼런스 2014- Firefox OS와 미래 웹 기술을 직접 만나보세요!" data-via="mozillakr" data-lang="ko" data-hashtags="fxdevconkr">트윗하기</a>
+                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                </p>
+ 		<p class="intro">Mozilla 한국 커뮤니티가 웹 탄생 25주년과 국내 도입 20주년을 맞아 <br>국내 처음으로 Firefox 개발자 콘퍼런스를 개최합니다.</p>
 		<p class="arrow"><a href="#intro"><img src="images/arrow.png" alt=""></a></p>
 	</div>
 	<div class="stripe"></div>
@@ -86,7 +93,7 @@
 				<li>인원수: 450명 <small>(결제 선착순 마감!)</small>
 				<li>주최: <a href="http://www.mozilla.or.kr/community/join" target="new">Mozilla 한국 커뮤니티</a>
 				<li>후원: <a href="http://www.daum.net" target="new">다음커뮤니케이션</a>, <a href="http://www.mozilla.org" target="new">Mozilla 재단</a>
-				<li>해시태그: #fxdevconkr
+				<li>해시태그: <b>#fxdevconkr</b>
 			</ul>
 		</div>
 	</div>
@@ -224,15 +231,16 @@
 			<h2>라이트닝 토크</h2>
 		</div>
 		<div class="normalcontent">
-			<h3>발표 신청</h3>
+			<h3>발표 및 자원 봉사 신청</h3>
 			<ul>
-				<li>누구나 5분내에서 발표 가능한 주제를 선정하여 참여할 수 있으며, 발표 주제는 Mozilla 커뮤니티 활동, 웹 표준 기술, 웹 앱 개발 사례 등입니다.
+				<li>라이트닝 토크는 누구나 5분내에서 발표 가능한 주제를 선정하여 참여할 수 있으며, 발표 주제는 Mozilla 커뮤니티 활동, 웹 표준 기술, 웹 앱 개발 사례 등입니다.
 				<li>발표 신청해 주시면, 선정 후 개별 연락 드리며 프리젠테이션은 HTML5 템플릿을 이용 합니다.
+				<li>본 행사를 돕고 싶으시면, 자원 봉사 신청을 해주시면 등록 및 안내, 전시 부스 도우미로 활약 하실 수 있습니다.
 			</ul>
 
 			<p><img src="images/devon_talk.jpg" alt=""></p>
 
-			<p><a href="https://docs.google.com/forms/d/1gu-K2_--9NOw04wigvBCvCvawAMYJQxe9lPYULo6w-M/viewform"><strong>"지금 신청하기"</strong></a></p>
+			<p><a href="https://docs.google.com/forms/d/1gu-K2_--9NOw04wigvBCvCvawAMYJQxe9lPYULo6w-M/viewform"><strong>"발표 및 자원 봉사 신청하기"</strong></a></p>
 		</div>
 	</div>
 </div>
@@ -253,7 +261,7 @@
 				<li>참가 정원은 450명이며, 결제 선착순으로 마감됩니다.
 			</ul>
 
-			<p><a href="#paygate"><strong>참가 신청 바로하기</strong></a> - 3월 31일(월) 부터 접수 예정</p>
+			<p><a href="#paygate"><strong>참가 신청 바로하기</strong></a> <small>3월 31일(월) 부터 접수 예정</small></p>
 		</div>
 	</div>
 </div>
