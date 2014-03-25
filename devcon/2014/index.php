@@ -138,7 +138,7 @@
 						<div class="session">
 							<h3>라이트닝 토크</h3>
 							<p class="time">14:00 - 14:30</p>
-							<p class="description">Mozilla 커뮤니티 활동 및 HTML5 웹 앱 기술에 대한 참가자들의 5분 토크가 펼쳐집니다. 참여를 원하시는 분은 <a href="#submit"발표 신청</a>을 해주시기 바랍니다.</p>
+							<p class="description">Mozilla 커뮤니티 활동 및 HTML5 웹 앱 기술에 대한 참가자들의 5분 토크가 펼쳐집니다. 참여를 원하시는 분은 <a href="#submit">발표 신청</a>을 해주시기 바랍니다.</p>
 							<p class="speaker">사회: 설수웅(Mozilla 한국커뮤니티, 와이즈넛)</p>
 						</div>
 						<div class="session">
