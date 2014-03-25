@@ -81,11 +81,11 @@
 
 			<ul>
 				<li>일시: 2014년 4 월 10 일(목) 오전 10:00~ 18:20
-				<li>장소: 서울 강남 코엑스 콘퍼런스 센터 401호 (약도보기)
+				<li>장소: 서울 강남 코엑스 콘퍼런스 센터 401호 <a href="http://dmaps.kr/iaps" target="new">약도보기</a>
 				<li>참가비: 5,000원 
-				<li>인원수: 450명 (결제 선착순 마감!)
-				<li>주최: Mozilla 한국 커뮤니티
-				<li>후원: 다음커뮤니케이션, Mozilla Corp.
+				<li>인원수: 450명 <small>(결제 선착순 마감!)</small>
+				<li>주최: <a href="http://www.mozilla.or.kr/community/join" target="new">Mozilla 한국 커뮤니티</a>
+				<li>후원: <a href="http://www.daum.net" target="new">다음커뮤니케이션</a>, <a href="http://www.mozilla.org" target="new">Mozilla 재단</a>
 				<li>해시태그: #fxdevconkr
 			</ul>
 		</div>
@@ -130,7 +130,7 @@
 							<p class="speaker">신현석(Mozilla 한국커뮤니티, Daum)</p>
 						</div>
 						<div class="session">
-							<h3>Firefox OS 한국어 키보드 개발 사례</h3>
+							<h3>Firefox OS 한글 키보드 개발 사례</h3>
 							<p class="time">13:30 - 14:00</p>
 							<p class="description">Firefox OS의 오픈 소스 구조 소개 및 한국어 키보드 개발 사례 및 소감을 발표합니다.</p>
 							<p class="speaker">변상필(다음커뮤니케이션)</p>
@@ -158,7 +158,7 @@
     						<p class="speaker">김준기 (SK플래닛)
 						</div>
 						<div class="session">
-    						<h3>다가오는 미래 웹 기술</h3>
+    						<h3>HTML5 미래 웹 기술</h3>
 							<p class="time">16:00~16:30</p>
 							<p class="description">WebRTC와 서버 없는 웹, WebGL과 Emscripten을 통한 asm.js 기반 게임 엔진 등 Mozilla가 선도하는 웹표준 기술을 소개합니다.</p>
     						<p class="speaker">윤석찬 (Mozilla 한국커뮤니티, Daum)
@@ -168,7 +168,7 @@
 							<p class="time">16:30~16:40</p>
 						</div>
 						<div class="session">
-    						<h3>Firexweb 단말기 제조 사례</h3>
+    						<h3>Fireweb 단말기 제조 사례</h3>
 							<p class="time">16:40~17:00</p>
 							<p class="description">브라질에 시판 중인 Firefox OS 단말기인 Fireweb의 기기 제조 경험을 공유합니다.</p>
     						<p class="speaker">TBD (LG전자)
@@ -199,10 +199,19 @@
 		</div>
 		<div class="normalcontent">
 			<h3>공유 이벤트</h3>
-			<p>본 행사를 소셜 서비스에 공유해 주세요! 공유하신 분을 추첨하여 Firefox OS 단말기 등 푸짐한 상품을 드립니다.</p>
+			<p>본 행사를 소셜 서비스에 공유해 주세요! 해쉬태크 <b>#fxdevconkr</b>으로 공유하신 분을 추첨하여 Firefox OS 단말기 및 독특한 Mozilla 기념품을 등 푸짐한 상품을 현장에서 선정해 드립니다.</p>
+                        <div id="socialshare">
+                                <div id="fb-root"></div>
+                                <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=169923666403595"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+                                <div class="fb-like" data-href="http://www.mozilla.or.kr/devcon/2014" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.mozilla.or.kr/devcon/2014" data-text="Firefox 개발자 콘
+퍼런스 2014- Firefox OS와 미래 웹 기술을 직접 만나보세요!" data-via="mozillakr" data-lang="ko" data-hashtags="fxdevconkr">트윗하기</a>
+                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                <div class="fb-comments" style="margin-top:10px" data-href="http://www.mozilla.or.kr/devcon/2014" data-numposts="10" data-colorscheme="light"></div>
+                        </div>
 
 			<h3>전시 부스</h3>
-			<p>본 행사장 앞에는 Firefox OS의 출시 단말기 및 Mozilla 커뮤니티 활동 부스가 열리게 됩니다. 여러분의 많은 참여를 바랍니다.</p>
+			<p>본 행사장 앞에는 Firefox OS의 출시 단말기 체험 전시 및 Mozilla 커뮤니티 활동 부스가 열리게 됩니다. Firefox 스티커, 버튼, 볼펜 등 기념품도 얻을 수 있으니 여러분의 많은 참여를 바랍니다.</p>
 			<p><img src="images/devon_booth.jpg" alt=""></p>
 		</div>
 	</div>
@@ -223,7 +232,7 @@
 
 			<p><img src="images/devon_talk.jpg" alt=""></p>
 
-			<p><a href="https://docs.google.com/forms/d/1gu-K2_--9NOw04wigvBCvCvawAMYJQxe9lPYULo6w-M/viewform"><strong>지금 신청하기</strong></a></p>
+			<p><a href="https://docs.google.com/forms/d/1gu-K2_--9NOw04wigvBCvCvawAMYJQxe9lPYULo6w-M/viewform"><strong>"지금 신청하기"</strong></a></p>
 		</div>
 	</div>
 </div>
@@ -236,13 +245,15 @@
 			<p><img src="images/notepad.png" alt=""></p>
 		</div>
 		<div class="normalcontent">
+		        <h3>등록 안내</h3>
 			<ul>
 				<li>참가비(5,000원)는 다른 분들의 참여 기회를 높히기 위해 받는 것임을 양해해 주시고, 전액 Mozilla 재단에 기부됩니다.
+				<li>참가 등록 및 결제는 100% 액티브X Free인 <a href="http://paygate.net">페이게이트</a>에서 후원합니다.
 				<li>참가자에게는 Mozilla와 메인 후원사인 Daum이 준비한 각종 기념물품을 선물로 드립니다.
 				<li>참가 정원은 450명이며, 결제 선착순으로 마감됩니다.
 			</ul>
 
-			<p><a href="#onoffmix"><strong>참가 신청 바로하기</strong></a> (3월 31일(월) 부터 접수 예정)</p>
+			<p><a href="#paygate"><strong>참가 신청 바로하기</strong></a> - 3월 31일(월) 부터 접수 예정</p>
 		</div>
 	</div>
 </div>
@@ -252,5 +263,24 @@
 		<p>Copyright&copy;, Mozilla 한국커뮤니티. Creative Commons</p>
 	</div>
 </div>
+<!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520b0b6c71b86f74"></script>
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'right',
+      'numPreferredServices' : 5
+    }, 
+    'follow' : {
+      'services' : [
+        {'service': 'facebook', 'id': 'mozillakr'},
+        {'service': 'twitter', 'id': 'mozillakr'},
+      ]
+    }   
+  });
+</script>
+<!-- AddThis Smart Layers END -->
 </body>
 </html>
