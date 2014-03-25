@@ -36,7 +36,7 @@
 <div id="nav">
 	<div id="navitems">
 		<ul>
-			<li><a href="#Home">FxDevCon</a></li>
+			<li><a href="#Home">첫화면</a></li>
 			<li><a href="#intro">행사소개</a></li>
 			<li><a href="#program">프로그램</a></li>
 			<li><a href="#event">이벤트</a></li>
@@ -138,12 +138,8 @@
 						<div class="session">
 							<h3>라이트닝 토크</h3>
 							<p class="time">14:00 - 14:30</p>
-							<p class="description">Mozilla 커뮤니티 활동 및 HTML5 웹 앱 기술에 대한 일반 참가자들의 5분 토크가 펼쳐집니다.</p>
+							<p class="description">Mozilla 커뮤니티 활동 및 HTML5 웹 앱 기술에 대한 참가자들의 5분 토크가 펼쳐집니다. 참여를 원하시는 분은 <a href="#submit"발표 신청</a>을 해주시기 바랍니다.</p>
 							<p class="speaker">사회: 설수웅(Mozilla 한국커뮤니티, 와이즈넛)</p>
-							<ul>
-								<li>누구나 5분내 발표 가능한 주제라면, 지금 '발표 신청'을 이용해 주세요
-								<li>발표 주제는 Mozilla 활동, 웹 표준 기술, 웹 앱 개발 사례 등입니다.
-							</ul>
 						</div>
 						<div class="session">
 							<h3>휴식 및 전시 부스 관람</h3>
@@ -172,10 +168,10 @@
 							<p class="time">16:30~16:40</p>
 						</div>
 						<div class="session">
-    						<h3>Firefoxweb 단말기 제조 사례</h3>
+    						<h3>Firexweb 단말기 제조 사례</h3>
 							<p class="time">16:40~17:00</p>
 							<p class="description">브라질에 시판 중인 Firefox OS 단말기인 Fireweb의 기기 제조 경험을 공유합니다.</p>
-    						<p class="speaker"> OOO (LG전자)
+    						<p class="speaker">TBD (LG전자)
 						</div>
 						<div class="session">
     						<h3>Firefox OS용 라인앱 개발 사례</h3>
@@ -184,8 +180,9 @@
     						<p class="speaker">차기용 (라인플러스)
 						</div>
 						<div class="session">
-    						<h3>폐회 및 행운권 추첨(Firefox OS 단말기)</h3>
+    						<h3>폐회 및 행운권 추첨</h3>
 							<p class="time">17:40~18:00</p>
+							<p class="description">행사 중 이벤트에 참여하시면, Firefox OS 단말기를 직접 취득할 수 있는 기회입니다!</p>
 						</div>
 					</div>
 				</div>
@@ -245,17 +242,13 @@
 				<li>참가 정원은 450명이며, 결제 선착순으로 마감됩니다.
 			</ul>
 
-			<p><a href="#onoffmix"><strong>참가 신청 바로하기</strong></a></p>
+			<p><a href="#onoffmix"><strong>참가 신청 바로하기</strong></a> (3월 31일(월) 부터 접수 예정)</p>
 		</div>
 	</div>
 </div>
 
 <div id="footer">
 	<div class="footercontent">
-		<ul>
-			<li>오시는 길
-			<li>FAQ
-		</ul>
 		<p>Copyright&copy;, Mozilla 한국커뮤니티. Creative Commons</p>
 	</div>
 </div>
