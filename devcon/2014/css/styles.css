@@ -231,6 +231,12 @@ input {
 	font-weight:700;
 }
 
+a {
+	color:#305891;
+	font-weight:bold;
+	text-decoration:none;
+}
+
 h2 {
 	font-size:50px;
 	margin-bottom:20px;
@@ -311,6 +317,10 @@ li {
 	color:#fff;
 }
 
+.red a {
+	color:yellow;
+}
+
 /* Beige */
 
 .beige {
@@ -373,12 +383,6 @@ li {
 	position:absolute;
 	left:0;
 	top:0;
-}
-
-a {
-	color:#305891;
-	font-weight:bold;
-	text-decoration:none;
 }
 
 .normalcontent {
