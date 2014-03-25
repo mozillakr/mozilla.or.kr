@@ -80,6 +80,16 @@ input {
 	z-index:100;
 }
 
+.content ul { 
+	margin: 20px;
+	padding: 20px;
+	list-style-type:square
+}
+
+.content li {
+	font-size: 80%;
+}
+
 .filter {
 	background:url(../images/spec1.png) repeat;
 	width:100%;
