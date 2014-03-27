@@ -1,5 +1,5 @@
 $(function() {
-	var sw = document.body.clientWidth, breakpoint = 700, mobile = true;
+	var sw = document.body.clientWidth, breakpoint = 800, mobile = true;
 	var checkMobile = function() {
 		mobile = (sw > breakpoint) ? false : true;
 	};
