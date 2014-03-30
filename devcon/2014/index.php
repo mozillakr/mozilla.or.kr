@@ -260,7 +260,9 @@
 				<li>참가 정원은 450명이며, 결제 선착순으로 마감됩니다.
 			</ul>
 
-			<p><a href="#paygate"><strong>참가 신청 바로하기</strong></a> <small>3월 31일(월) 부터 접수 예정</small></p>
+			<p><a href="https://service.paygate.net/INTL/gips.jsp?m=shoppingbutton&memNo=M000017229&goodsNo=20140410" target="new"><strong>참가 신청 하기</strong></a><br>
+			   <small>지불 수단은 CreditCard(신용카드), MobileSmallPay(휴대폰 결제) 중 하나를 고릅니다. 이름과 이메일 주소를 입력후 배송 Memo에는 소속(회사 or 학교)를 기입해 주세요.</small>
+			</p>
 		</div>
 	</div>
 </div>
