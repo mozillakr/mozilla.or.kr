@@ -21,11 +21,11 @@
 <meta property="og:url" content="http://www.mozilla.or.kr/devcon/2014">
 <meta property="og:image" content="http://www.mozilla.or.kr/devcon/2014/images/event-shot.png">
 <meta property="og:type" content="website"/>
-<meta property="og:site_name" content="Firefox 개발자 콘퍼런스 2014 - 4월 10일(목) COEX 401호">
+<meta property="og:site_name" content="Firefox 개발자 콘퍼런스 2014 - 4월 10일(목) COEX 317호">
 <!-- Twitter Card -->
-<meta name="twitter:card" content="Firefox 개발자 콘퍼런스 2014 - 4월 10일(목) COEX 401호">
+<meta name="twitter:card" content="Firefox 개발자 콘퍼런스 2014 - 4월 10일(목) COEX 317호">
 <meta name="twitter:site" content="@mozillakr">
-<meta name="twitter:title" content= "Firefox 개발자 콘퍼런스 2014 - 4월 10일(목) COEX 401호">
+<meta name="twitter:title" content= "Firefox 개발자 콘퍼런스 2014 - 4월 10일(목) COEX 317호">
 <meta name="twitter:description" content="웹 개발자를 위한 Firefox 기술, Firefox OS 및 앱 개발 사례 등 Mozilla의 개방형 웹 기술 변화를 살펴 보실 수 있습니다.">
 <meta name="twitter:creator" content="eg:author name">
 <meta name="twitter:image:src" content="http://www.mozilla.or.kr/devcon/2014/images/event-shot.png">
@@ -58,9 +58,12 @@
 			</div>
 			<div id="linesright"></div>
 		</div>
-		<p class="location">서울 강남 코엑스 콘퍼런스 센터 401호</p>
+		<p class="location">서울 강남 코엑스 콘퍼런스 센터 317호</p>
  		<p class="intro">Mozilla 한국 커뮤니티가 웹 탄생 25주년과 국내 도입 20주년을 맞아 <br>국내 처음으로 Firefox 개발자 콘퍼런스를 개최합니다.</p>
- 		<p class="logo">Sponsored by <img src="images/mozilla_logo.png" alt="Mozilla" align="absmiddle"> <img src="images/daum_logo.png" alt="Daum" style="margin-left:15px;" align="absmiddle"></p>
+ 		<p class="logo">Sponsored by <img src="images/mozilla_logo.png" alt="Mozilla" align="absmiddle"> 
+ 						<img src="images/daum_logo.png" alt="Daum" style="margin-left:15px;" align="absmiddle">
+ 						<img src="images/lge_logo.png" alt="LG전자" style="margin-left:15px;" align="absmiddle">
+ 		</p>
                 <div align="center" style="padding:10px;">
                                 <div id="fb-root"></div>
                                 <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=169923666403595"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
@@ -88,11 +91,11 @@
 
 			<ul>
 				<li>일시: 2014년 4 월 10 일(목) 오전 10:00~ 18:20
-				<li>장소: 서울 강남 코엑스 콘퍼런스 센터 401호 <a href="http://dmaps.kr/iaps" target="new">약도보기</a>
+				<li>장소: 서울 강남 코엑스 콘퍼런스 센터 317호 <a href="http://dmaps.kr/iaps" target="new">약도보기</a>
 				<li>참가비: 5,000원 
-				<li>인원수: 450명 <small>(결제 선착순 마감!)</small>
+				<li>인원수: 250명 <small>(결제 선착순 마감!)</small>
 				<li>주최: <a href="http://www.mozilla.or.kr/community/join" target="new">Mozilla 한국 커뮤니티</a>
-				<li>후원: <a href="http://www.daum.net" target="new">다음커뮤니케이션</a>, <a href="http://www.mozilla.org" target="new">Mozilla 재단</a>
+				<li>후원: <a href="http://www.mozilla.org" target="new">Mozilla 재단</a>, <a href="http://www.daum.net" target="new">다음커뮤니케이션</a>, <a href="http://www.lge.co.kr" target="new">LG전자</a>
 				<li>해시태그: <b>#fxdevconkr</b>
 			</ul>
 		</div>
@@ -178,7 +181,7 @@
     						<h3>Fireweb 단말기 제조 사례</h3>
 							<p class="time">16:40~17:00</p>
 							<p class="description">브라질에 시판 중인 Firefox OS 단말기인 Fireweb의 기기 제조 경험을 공유합니다.</p>
-    						<p class="speaker">TBD (LG전자)
+    						<p class="speaker">오종수 (LG전자)
 						</div>
 						<div class="session">
     						<h3>Firefox OS용 라인앱 개발 사례</h3>
