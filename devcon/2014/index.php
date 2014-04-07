@@ -121,13 +121,13 @@
 							<h3>Mozilla's Open Web Strategy</h3>
 							<p class="time">10:10 - 10:50</p>
 							<p class="description">For closed Internet and mobile environments, we discuss Mozilla's mission and future plan for web developers.</p>
-							<p class="speaker">TBD (Mozilla Corp.)</p>
+							<p class="speaker">Thomas Ho(Mozilla Corp.) - 통역없음</p>
 						</div>
 						<div class="session">
 							<h3>Firefox Developer Tools</h3>
 							<p class="time">10:50 - 11:40</p>
 							<p class="description">Developing for any devices is a challenge. We will go through some of Web developement tools for Firefox to make your job easier.</p>
-							<p class="speaker">Karl Dubost(Mozilla Corp.)</p>
+							<p class="speaker">Karl Dubost(Mozilla Corp.) - 통역없음</p>
 						</div>
 						<div class="session">
 							<h3>점심 식사</h3>
@@ -159,7 +159,7 @@
     						<h3>HTML5 Web Standardization</h3>
 							<p class="time">15:00~15:30</p>
 							<p class="description">How's going HTML evolution from W3C and WHATWG and new future technologies in open web standards</p>
-    						<p class="speaker">Daniel Davis (W3C)
+    						<p class="speaker">Daniel Davis (W3C) - 통역없음</p>
 						</div>
 						<div class="session">
     						<h3>HTML5 게임 엔진 개발 사례</h3>
@@ -263,8 +263,8 @@
 				<li>참가 정원은 450명이며, 결제 선착순으로 마감됩니다.
 			</ul>
 
-			<p><a href="https://service.paygate.net/INTL/gips.jsp?m=shoppingbutton&memNo=M000017229&goodsNo=20140410" target="new"><strong>참가 신청 하기</strong></a><br>
-			   <small>지불 수단은 CreditCard(신용카드), MobileSmallPay(휴대폰 결제) 중 하나를 고릅니다. 이름과 이메일 주소를 입력후 배송 Memo에는 소속(회사 or 학교)를 기입해 주세요.</small>
+			<p><a href="#" target="new"><strong>참가 신청 (Sold Out!)</strong></a><br>
+			   <small>행사 전날 SMS 문자를 전송해 드리면, 등록시 보여주시면 바로 입장 가능합니다.</small>
 			</p>
 		</div>
 	</div>
