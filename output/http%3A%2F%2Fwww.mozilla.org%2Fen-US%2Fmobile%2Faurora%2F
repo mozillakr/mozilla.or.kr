@@ -212,7 +212,7 @@ if (gPlatform == 1) {
     <p>Firefox의 차기 버전이 될 Aurora 다운로드</p>
     <div id="download_aurora_button">
         <div class="home-download beta-download">
-            <a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/en-US/fennec-28.0a2.en-US.android-arm.apk"
+            <a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/en-US/fennec-30.0a2.en-US.android-arm.apk"
                class="download-link download-firefox">
                 <span class="download-content">
                 <span class="download-title">Firefox Aurora</span>
@@ -261,7 +261,7 @@ if (gPlatform == 1) {
         <p>QR 코드를 이용하거나 모바일 브라우저의 다운로드 버튼을 눌러서 기기에 직접 Aurora를 다운 받으세요.</p>
       </li>
       <li id="step4">
-        <p>다운로드가 끝나면 “<a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/fennec-28.0a2.en-US.android-arm.apk">.apk</a>” 파일을 여세요.</p>
+        <p>다운로드가 끝나면 “<a href="https://ftp.mozilla.org/pub/mozilla.org/mobile/nightly/latest-mozilla-aurora-android/en-US/fennec-30.0a2.en-US.android-arm.apk">.apk</a>” 파일을 여세요.</p>
       </li>
     </ol>
 

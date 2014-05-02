@@ -1,8 +1,9 @@
 
 <!doctype html>
-<html class="windows no-js" lang="en-US" dir="ltr" data-latest-firefox="27.0" data-esr-versions="[10, 17, 24]">
+<html class="windows x86 no-js" lang="en-US" dir="ltr" data-latest-firefox="29.0" data-esr-versions="[24]">
   <head>
-    <meta charset="utf-8"><!--
+    <meta charset="utf-8">
+<!--
              _.-~-.
            7''  Q..\
         _7         (_
@@ -26,6 +27,7 @@ brighter future for the Web.
 Visit https://careers.mozilla.org to learn about our current job openings.
 Visit https://www.mozilla.org/contribute for more ways to get involved and
 help support Mozilla.-->
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex">
     <title>Mozilla Firefox 웹 브라우저 — Firefox 다국어 버전 다운로드 — Mozilla</title>
@@ -48,32 +50,50 @@ help support Mozilla.-->
     <link rel="alternate" hreflang="x-default" href="http://www.mozilla.or.kr/firefox/all/">
     <link rel="alternate" hreflang="en-US" href="http://www.mozilla.org/en-US/firefox/all/" title="English (US)">
         
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=4e55d23" />
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=9826e22" />
     
     <!--[if lte IE 8]>
-    <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
+            <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
     <![endif]-->
 
-      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox_all-min.css?build=4e55d23" />
+    <!--[if lte IE 7]>
+            <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/oldIE-min.css?build=9826e22" />
+    <![endif]-->
 
+    <!--[if !lte IE 7]><!-->
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox_all-min.css?build=9826e22" />
+
+            <!--<![endif]-->
+
+              
     
-    
-    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=4e55d23"></script>
+    <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=9826e22"></script>
 
             <script src="//cdn.optimizely.com/js/246059135.js"></script>
     
               <script>
-        var _gaq = _gaq || [];
-       _gaq.push(['_setAccount', 'UA-53785-1']);
-       _gaq.push(['_setDomainName', 'mozilla.or.kr']);
-       _gaq.push(['_trackPageview']);
+var _gaq = _gaq || [];
+var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+_gaq.push(['_setAccount', 'UA-36116321-1']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_setAllowAnchor', true]);
+_gaq.push(['_gat._anonymizeIp']);
+_gaq.push(['_trackPageview']);
 
-       (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-     </script>      </head>
+(function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+
+    var prefix = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www');
+    ga.src = prefix + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>      </head>
 
   <body id="firefox-all" class="html-ltr sky firefox-all-release ">
     <div id="strings" data-global-close="Close" ></div>
@@ -82,23 +102,24 @@ help support Mozilla.-->
 
           <header id="masthead">
         <a href="/en-US/" id="tabzilla" data-infobar="translation">Mozilla</a>
-        <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">주요 메뉴</span>
-<nav id="nav-main" role="navigation">
+
+        <nav id="nav-main" role="navigation">
+  <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">주요 메뉴</span>
   <ul id="nav-main-menu" class="has-submenus">
-    <li class="first" id="nav-main-features"><a href="/ko/firefox/fx/#desktop" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">데스크톱</a>
+    <li class="first" id="nav-main-features"><a href="/en-US/firefox/desktop/" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">Desktop</a>
       <ul aria-expanded="false" id="nav-main-features-submenu" class="submenu">
-        <li class="first"><a href="/ko/firefox/features/" tabindex="-1">주요 기능</a></li>
-        <li><a href="/ko/firefox/customize/" tabindex="-1">맞춤 기능</a></li>
-        <li><a href="/ko/firefox/performance/" tabindex="-1">빠른 성능</a></li>
-        <li><a href="/ko/firefox/technology/" tabindex="-1">기술 혁신</a></li>
-        <li class="last"><a href="/ko/firefox/security/" tabindex="-1">정보 보호 및 보안</a></li>
+        <li class="first"><a href="/en-US/firefox/desktop/" tabindex="-1">Features</a></li>
+        <li><a href="/en-US/firefox/desktop/customize/" tabindex="-1">Customize</a></li>
+        <li><a href="/en-US/firefox/desktop/fast/" tabindex="-1">Performance</a></li>
+        <li><a href="https://developer.mozilla.org/docs/Tools" tabindex="-1">Technology</a></li>
+        <li class="last"><a href="/en-US/firefox/desktop/trust/" tabindex="-1">Privacy &amp; Security</a></li>
       </ul>
     </li>
-    <li id="nav-main-mobile"><a href="/ko/firefox/fx/" tabindex="0" aria-owns="nav-main-mobile-submenu" aria-haspopup="true">모바일</a>
+    <li id="nav-main-mobile"><a href="/en-US/firefox/android/" tabindex="0" aria-owns="nav-main-mobile-submenu" aria-haspopup="true">Mobile</a>
       <ul aria-expanded="false" id="nav-main-mobile-submenu" class="submenu">
-        <li class="first"><a href="/ko/firefox/mobile/features/" tabindex="-1">주요 기능</a></li>
-        <li><a href="https://addons.mozilla.org/ko/mobile/?browse=featured" tabindex="-1">맞춤 기능</a></li>
-        <li class="last"><a href="/ko/firefox/mobile/faq/" tabindex="-1">FAQ</a></li>
+        <li class="first"><a href="/en-US/firefox/android/" tabindex="-1">Features</a></li>
+        <li><a href="https://addons.mozilla.org/android/" tabindex="-1">Customize</a></li>
+        <li class="last"><a href="/en-US/firefox/android/faq/" tabindex="-1">FAQ</a></li>
       </ul>
     </li>
     <li id="nav-main-releases" class=""><a href="/ko/firefox/channel/" tabindex="0" aria-owns="nav-main-releases-submenu" aria-haspopup="true">출시 현황</a>
@@ -154,7 +175,7 @@ help support Mozilla.-->
     <h1>Firefox 다국어 버전 다운로드</h1>
     <h2>      Firefox는 80여개 언어 이상을 지원하며, 전 세계의 지역 커뮤니티의 공헌자들이 함께 만들어 가고 있습니다.
   </h2>
-    <p><a class="sysreq" href="//www.mozilla.org/en-US/firefox/system-requirements">시스템 요구사항 확인</a></p>
+    <p><a class="sysreq" href="/en-US/firefox/system-requirements/">시스템 요구사항 확인</a></p>
   </hgroup>
 
   <form id="language-search" method="get">
@@ -219,6 +240,7 @@ help support Mozilla.-->
                               <option value="Lithuanian, lietuvių kalba"></option>
                               <option value="Macedonian, Македонски"></option>
                               <option value="Maithili, मैथिली মৈথিলী"></option>
+                              <option value="Malay, Melayu"></option>
                               <option value="Malayalam, മലയാളം"></option>
                               <option value="Marathi, मराठी"></option>
                               <option value="Norwegian (Bokmål), Norsk bokmål"></option>
@@ -267,919 +289,1099 @@ help support Mozilla.-->
             <th scope="col">Windows</th>
             <th scope="col">Mac OS X</th>
             <th scope="col">Linux</th>
+            <th scope="col">Linux 64-bit</th>
           </tr>
         </thead>
         <tbody>
-                        <tr id="ach" data-search="acholi acholi">
+                        <tr id="ach" data-search="acholi, acholi">
     <th scope="row">Acholi</th>
     <td lang="ach">Acholi</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=ach" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=ach" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ach" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ach" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ach" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ach" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ach" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="af" data-search="afrikaans afrikaans">
+                        <tr id="af" data-search="afrikaans, afrikaans">
     <th scope="row">Afrikaans</th>
     <td lang="af">Afrikaans</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=af" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=af" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=af" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=af" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=af" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=af" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=af" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="sq" data-search="albanian shqip">
+                        <tr id="sq" data-search="albanian, shqip">
     <th scope="row">Albanian</th>
     <td lang="sq">Shqip</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=sq" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=sq" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=sq" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=sq" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=sq" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=sq" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=sq" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="ar" data-search="arabic عربي">
+                        <tr id="ar" data-search="arabic, عربي">
     <th scope="row">Arabic</th>
     <td lang="ar">عربي</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=ar" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=ar" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ar" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ar" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ar" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ar" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ar" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="an" data-search="aragonese aragonés">
+                        <tr id="an" data-search="aragonese, aragonés">
     <th scope="row">Aragonese</th>
     <td lang="an">aragonés</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=an" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=an" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=an" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=an" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=an" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=an" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=an" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="hy-AM" data-search="armenian հայերեն">
+                        <tr id="hy-AM" data-search="armenian, հայերեն">
     <th scope="row">Armenian</th>
     <td lang="hy-AM">Հայերեն</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=hy-AM" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=hy-AM" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=hy-AM" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=hy-AM" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=hy-AM" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=hy-AM" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=hy-AM" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="as" data-search="assamese অসমীয়া">
+                        <tr id="as" data-search="assamese, অসমীয়া">
     <th scope="row">Assamese</th>
     <td lang="as">অসমীয়া</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=as" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=as" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=as" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=as" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=as" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=as" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=as" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="ast" data-search="asturian asturianu">
+                        <tr id="ast" data-search="asturian, asturianu">
     <th scope="row">Asturian</th>
     <td lang="ast">Asturianu</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=ast" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=ast" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ast" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ast" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ast" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ast" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ast" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="eu" data-search="basque euskara">
+                        <tr id="eu" data-search="basque, euskara">
     <th scope="row">Basque</th>
     <td lang="eu">Euskara</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=eu" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=eu" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=eu" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=eu" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=eu" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=eu" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=eu" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="be" data-search="belarusian беларуская">
+                        <tr id="be" data-search="belarusian, беларуская">
     <th scope="row">Belarusian</th>
     <td lang="be">Беларуская</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=be" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=be" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=be" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=be" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=be" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=be" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=be" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="bn-BD" data-search="bengali (bangladesh) বাংলা (বাংলাদেশ)">
+                        <tr id="bn-BD" data-search="bengali (bangladesh), বাংলা (বাংলাদেশ)">
     <th scope="row">Bengali (Bangladesh)</th>
     <td lang="bn-BD">বাংলা (বাংলাদেশ)</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=bn-BD" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=bn-BD" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=bn-BD" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=bn-BD" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=bn-BD" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=bn-BD" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=bn-BD" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="bs" data-search="bosnian bosanski">
+                        <tr id="bs" data-search="bosnian, bosanski">
     <th scope="row">Bosnian</th>
     <td lang="bs">Bosanski</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=bs" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=bs" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=bs" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=bs" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=bs" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=bs" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=bs" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="br" data-search="breton brezhoneg">
+                        <tr id="br" data-search="breton, brezhoneg">
     <th scope="row">Breton</th>
     <td lang="br">Brezhoneg</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=br" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=br" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=br" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=br" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=br" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=br" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=br" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="bg" data-search="bulgarian български">
+                        <tr id="bg" data-search="bulgarian, български">
     <th scope="row">Bulgarian</th>
     <td lang="bg">Български</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=bg" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=bg" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=bg" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=bg" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=bg" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=bg" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=bg" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="ca" data-search="catalan català">
+                        <tr id="ca" data-search="catalan, català">
     <th scope="row">Catalan</th>
     <td lang="ca">Català</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=ca" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=ca" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ca" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ca" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ca" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ca" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ca" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="zh-CN" data-search="chinese (simplified) 中文 (简体)">
+                        <tr id="zh-CN" data-search="chinese (simplified), 中文 (简体)">
     <th scope="row">Chinese (Simplified)</th>
     <td lang="zh-CN">中文 (简体)</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=zh-CN" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=zh-CN" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=zh-CN" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=zh-CN" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=zh-CN" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=zh-CN" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=zh-CN" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="zh-TW" data-search="chinese (traditional) 正體中文 (繁體)">
+                        <tr id="zh-TW" data-search="chinese (traditional), 正體中文 (繁體)">
     <th scope="row">Chinese (Traditional)</th>
     <td lang="zh-TW">正體中文 (繁體)</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=zh-TW" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=zh-TW" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=zh-TW" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=zh-TW" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=zh-TW" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=zh-TW" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=zh-TW" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="hr" data-search="croatian hrvatski">
+                        <tr id="hr" data-search="croatian, hrvatski">
     <th scope="row">Croatian</th>
     <td lang="hr">Hrvatski</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=hr" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=hr" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=hr" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=hr" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=hr" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=hr" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=hr" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="cs" data-search="czech čeština">
+                        <tr id="cs" data-search="czech, čeština">
     <th scope="row">Czech</th>
     <td lang="cs">Čeština</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=cs" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=cs" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=cs" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=cs" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=cs" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=cs" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=cs" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="da" data-search="danish dansk">
+                        <tr id="da" data-search="danish, dansk">
     <th scope="row">Danish</th>
     <td lang="da">Dansk</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=da" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=da" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=da" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=da" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=da" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=da" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=da" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="nl" data-search="dutch nederlands">
+                        <tr id="nl" data-search="dutch, nederlands">
     <th scope="row">Dutch</th>
     <td lang="nl">Nederlands</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=nl" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=nl" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=nl" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=nl" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=nl" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=nl" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=nl" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="en-GB" data-search="english (british) english (british)">
+                        <tr id="en-GB" data-search="english (british), english (british)">
     <th scope="row">English (British)</th>
     <td lang="en-GB">English (British)</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=en-GB" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=en-GB" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=en-GB" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=en-GB" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=en-GB" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=en-GB" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=en-GB" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="en-ZA" data-search="english (south african) english (south african)">
+                        <tr id="en-ZA" data-search="english (south african), english (south african)">
     <th scope="row">English (South African)</th>
     <td lang="en-ZA">English (South African)</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=en-ZA" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=en-ZA" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=en-ZA" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=en-ZA" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=en-ZA" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=en-ZA" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=en-ZA" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="en-US" data-search="english (us) english (us)">
+                        <tr id="en-US" data-search="english (us), english (us)">
     <th scope="row">English (US)</th>
     <td lang="en-US">English (US)</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=ko" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=ko" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ko" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ko" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ko" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ko" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ko" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="eo" data-search="esperanto esperanto">
+                        <tr id="eo" data-search="esperanto, esperanto">
     <th scope="row">Esperanto</th>
     <td lang="eo">Esperanto</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=eo" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=eo" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=eo" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=eo" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=eo" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=eo" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=eo" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="et" data-search="estonian eesti keel">
+                        <tr id="et" data-search="estonian, eesti keel">
     <th scope="row">Estonian</th>
     <td lang="et">Eesti keel</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=et" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=et" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=et" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=et" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=et" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=et" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=et" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="fi" data-search="finnish suomi">
+                        <tr id="fi" data-search="finnish, suomi">
     <th scope="row">Finnish</th>
     <td lang="fi">suomi</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=fi" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=fi" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=fi" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=fi" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=fi" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=fi" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=fi" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="fr" data-search="french français">
+                        <tr id="fr" data-search="french, français">
     <th scope="row">French</th>
     <td lang="fr">Français</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=fr" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=fr" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=fr" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=fr" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=fr" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=fr" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=fr" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="fy-NL" data-search="frisian frysk">
+                        <tr id="fy-NL" data-search="frisian, frysk">
     <th scope="row">Frisian</th>
     <td lang="fy-NL">Frysk</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=fy-NL" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=fy-NL" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=fy-NL" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=fy-NL" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=fy-NL" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=fy-NL" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=fy-NL" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="ff" data-search="fulah pulaar-fulfulde">
+                        <tr id="ff" data-search="fulah, pulaar-fulfulde">
     <th scope="row">Fulah</th>
     <td lang="ff">Pulaar-Fulfulde</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=ff" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=ff" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ff" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ff" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ff" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ff" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ff" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="gd" data-search="gaelic (scotland) gàidhlig">
+                        <tr id="gd" data-search="gaelic (scotland), gàidhlig">
     <th scope="row">Gaelic (Scotland)</th>
     <td lang="gd">Gàidhlig</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=gd" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=gd" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=gd" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=gd" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=gd" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=gd" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=gd" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="gl" data-search="galician galego">
+                        <tr id="gl" data-search="galician, galego">
     <th scope="row">Galician</th>
     <td lang="gl">Galego</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=gl" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=gl" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=gl" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=gl" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=gl" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=gl" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=gl" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="de" data-search="german deutsch">
+                        <tr id="de" data-search="german, deutsch">
     <th scope="row">German</th>
     <td lang="de">Deutsch</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=de" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=de" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=de" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=de" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=de" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=de" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=de" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="el" data-search="greek ελληνικά">
+                        <tr id="el" data-search="greek, ελληνικά">
     <th scope="row">Greek</th>
     <td lang="el">Ελληνικά</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=el" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=el" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=el" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=el" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=el" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=el" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=el" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="gu-IN" data-search="gujarati ગુજરાતી">
+                        <tr id="gu-IN" data-search="gujarati, ગુજરાતી">
     <th scope="row">Gujarati</th>
     <td lang="gu-IN">ગુજરાતી</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=gu-IN" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=gu-IN" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=gu-IN" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=gu-IN" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=gu-IN" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=gu-IN" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=gu-IN" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="he" data-search="hebrew עברית">
+                        <tr id="he" data-search="hebrew, עברית">
     <th scope="row">Hebrew</th>
     <td lang="he">עברית</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=he" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=he" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=he" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=he" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=he" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=he" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=he" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="hi-IN" data-search="hindi (india) हिन्दी (भारत)">
+                        <tr id="hi-IN" data-search="hindi (india), हिन्दी (भारत)">
     <th scope="row">Hindi (India)</th>
     <td lang="hi-IN">हिन्दी (भारत)</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=hi-IN" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=hi-IN" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=hi-IN" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=hi-IN" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=hi-IN" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=hi-IN" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=hi-IN" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="hu" data-search="hungarian magyar">
+                        <tr id="hu" data-search="hungarian, magyar">
     <th scope="row">Hungarian</th>
     <td lang="hu">magyar</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=hu" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=hu" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=hu" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=hu" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=hu" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=hu" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=hu" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="is" data-search="icelandic íslenska">
+                        <tr id="is" data-search="icelandic, íslenska">
     <th scope="row">Icelandic</th>
     <td lang="is">íslenska</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=is" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=is" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=is" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=is" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=is" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=is" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=is" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="id" data-search="indonesian bahasa indonesia">
+                        <tr id="id" data-search="indonesian, bahasa indonesia">
     <th scope="row">Indonesian</th>
     <td lang="id">Bahasa Indonesia</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=id" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=id" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=id" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=id" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=id" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=id" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=id" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="ga-IE" data-search="irish gaeilge">
+                        <tr id="ga-IE" data-search="irish, gaeilge">
     <th scope="row">Irish</th>
     <td lang="ga-IE">Gaeilge</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=ga-IE" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=ga-IE" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ga-IE" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ga-IE" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ga-IE" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ga-IE" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ga-IE" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="it" data-search="italian italiano">
+                        <tr id="it" data-search="italian, italiano">
     <th scope="row">Italian</th>
     <td lang="it">Italiano</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=it" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=it" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=it" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=it" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=it" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=it" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=it" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="ja" data-search="japanese 日本語">
+                        <tr id="ja" data-search="japanese, 日本語">
     <th scope="row">Japanese</th>
     <td lang="ja">日本語</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=ja" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=ja" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ja-JP-mac" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ja-JP-mac" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ja" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ja" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ja" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="kn" data-search="kannada ಕನ್ನಡ">
+                        <tr id="kn" data-search="kannada, ಕನ್ನಡ">
     <th scope="row">Kannada</th>
     <td lang="kn">ಕನ್ನಡ</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=kn" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=kn" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=kn" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=kn" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=kn" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=kn" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=kn" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="csb" data-search="kashubian kaszëbsczi">
+                        <tr id="csb" data-search="kashubian, kaszëbsczi">
     <th scope="row">Kashubian</th>
     <td lang="csb">Kaszëbsczi</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=csb" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=csb" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=csb" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=csb" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=csb" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=csb" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=csb" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="kk" data-search="kazakh қазақ">
+                        <tr id="kk" data-search="kazakh, қазақ">
     <th scope="row">Kazakh</th>
     <td lang="kk">Қазақ</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=kk" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=kk" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=kk" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=kk" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=kk" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=kk" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=kk" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="km" data-search="khmer ខ្មែរ">
+                        <tr id="km" data-search="khmer, ខ្មែរ">
     <th scope="row">Khmer</th>
     <td lang="km">ខ្មែរ</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=km" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=km" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=km" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=km" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=km" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=km" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=km" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="ko" data-search="korean 한국어">
+                        <tr id="ko" data-search="korean, 한국어">
     <th scope="row">Korean</th>
     <td lang="ko">한국어</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=ko" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=ko" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ko" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ko" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ko" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ko" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ko" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="lv" data-search="latvian latviešu">
+                        <tr id="lv" data-search="latvian, latviešu">
     <th scope="row">Latvian</th>
     <td lang="lv">Latviešu</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=lv" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=lv" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=lv" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=lv" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=lv" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=lv" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=lv" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="lij" data-search="ligurian ligure">
+                        <tr id="lij" data-search="ligurian, ligure">
     <th scope="row">Ligurian</th>
     <td lang="lij">Ligure</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=lij" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=lij" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=lij" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=lij" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=lij" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=lij" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=lij" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="lt" data-search="lithuanian lietuvių kalba">
+                        <tr id="lt" data-search="lithuanian, lietuvių kalba">
     <th scope="row">Lithuanian</th>
     <td lang="lt">lietuvių kalba</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=lt" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=lt" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=lt" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=lt" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=lt" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=lt" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=lt" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="mk" data-search="macedonian македонски">
+                        <tr id="mk" data-search="macedonian, македонски">
     <th scope="row">Macedonian</th>
     <td lang="mk">Македонски</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=mk" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=mk" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=mk" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=mk" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=mk" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=mk" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=mk" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="mai" data-search="maithili मैथिली মৈথিলী">
+                        <tr id="mai" data-search="maithili, मैथिली মৈথিলী">
     <th scope="row">Maithili</th>
     <td lang="mai">मैथिली মৈথিলী</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=mai" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=mai" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=mai" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=mai" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=mai" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=mai" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=mai" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="ml" data-search="malayalam മലയാളം">
+                        <tr id="ms" data-search="malay, melayu">
+    <th scope="row">Malay</th>
+    <td lang="ms">Melayu</td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=ms" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ms" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ms" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ms" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
+  
+  </tr>
+
+                        <tr id="ml" data-search="malayalam, മലയാളം">
     <th scope="row">Malayalam</th>
     <td lang="ml">മലയാളം</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=ml" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=ml" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ml" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ml" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ml" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ml" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ml" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="mr" data-search="marathi मराठी">
+                        <tr id="mr" data-search="marathi, मराठी">
     <th scope="row">Marathi</th>
     <td lang="mr">मराठी</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=mr" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=mr" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=mr" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=mr" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=mr" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=mr" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=mr" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="nb-NO" data-search="norwegian (bokmål) norsk bokmål">
+                        <tr id="nb-NO" data-search="norwegian (bokmål), norsk bokmål">
     <th scope="row">Norwegian (Bokmål)</th>
     <td lang="nb-NO">Norsk bokmål</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=nb-NO" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=nb-NO" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=nb-NO" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=nb-NO" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=nb-NO" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=nb-NO" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=nb-NO" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="nn-NO" data-search="norwegian (nynorsk) norsk nynorsk">
+                        <tr id="nn-NO" data-search="norwegian (nynorsk), norsk nynorsk">
     <th scope="row">Norwegian (Nynorsk)</th>
     <td lang="nn-NO">Norsk nynorsk</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=nn-NO" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=nn-NO" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=nn-NO" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=nn-NO" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=nn-NO" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=nn-NO" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=nn-NO" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="or" data-search="oriya ଓଡ଼ିଆ">
+                        <tr id="or" data-search="oriya, ଓଡ଼ିଆ">
     <th scope="row">Oriya</th>
     <td lang="or">ଓଡ଼ିଆ</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=or" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=or" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=or" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=or" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=or" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=or" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=or" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="fa" data-search="persian فارسی">
+                        <tr id="fa" data-search="persian, فارسی">
     <th scope="row">Persian</th>
     <td lang="fa">فارسی</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=fa" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=fa" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=fa" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=fa" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=fa" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=fa" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=fa" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="pl" data-search="polish polski">
+                        <tr id="pl" data-search="polish, polski">
     <th scope="row">Polish</th>
     <td lang="pl">Polski</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=pl" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=pl" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=pl" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=pl" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=pl" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=pl" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=pl" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="pt-BR" data-search="portuguese (brazilian) português (do brasil)">
+                        <tr id="pt-BR" data-search="portuguese (brazilian), português (do brasil)">
     <th scope="row">Portuguese (Brazilian)</th>
     <td lang="pt-BR">Português (do Brasil)</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=pt-BR" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=pt-BR" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=pt-BR" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=pt-BR" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=pt-BR" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=pt-BR" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=pt-BR" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="pt-PT" data-search="portuguese (portugal) português (europeu)">
+                        <tr id="pt-PT" data-search="portuguese (portugal), português (europeu)">
     <th scope="row">Portuguese (Portugal)</th>
     <td lang="pt-PT">Português (Europeu)</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=pt-PT" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=pt-PT" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=pt-PT" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=pt-PT" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=pt-PT" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=pt-PT" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=pt-PT" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="pa-IN" data-search="punjabi ਪੰਜਾਬੀ">
+                        <tr id="pa-IN" data-search="punjabi, ਪੰਜਾਬੀ">
     <th scope="row">Punjabi</th>
     <td lang="pa-IN">ਪੰਜਾਬੀ</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=pa-IN" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=pa-IN" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=pa-IN" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=pa-IN" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=pa-IN" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=pa-IN" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=pa-IN" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="ro" data-search="romanian română">
+                        <tr id="ro" data-search="romanian, română">
     <th scope="row">Romanian</th>
     <td lang="ro">română</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=ro" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=ro" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ro" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ro" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ro" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ro" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ro" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="rm" data-search="romansh rumantsch">
+                        <tr id="rm" data-search="romansh, rumantsch">
     <th scope="row">Romansh</th>
     <td lang="rm">rumantsch</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=rm" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=rm" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=rm" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=rm" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=rm" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=rm" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=rm" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="ru" data-search="russian русский">
+                        <tr id="ru" data-search="russian, русский">
     <th scope="row">Russian</th>
     <td lang="ru">Русский</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=ru" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=ru" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ru" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ru" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ru" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ru" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ru" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="sr" data-search="serbian српски">
+                        <tr id="sr" data-search="serbian, српски">
     <th scope="row">Serbian</th>
     <td lang="sr">Српски</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=sr" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=sr" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=sr" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=sr" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=sr" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=sr" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=sr" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="si" data-search="sinhala සිංහල">
+                        <tr id="si" data-search="sinhala, සිංහල">
     <th scope="row">Sinhala</th>
     <td lang="si">සිංහල</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=si" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=si" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=si" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=si" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=si" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=si" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=si" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="sk" data-search="slovak slovenčina">
+                        <tr id="sk" data-search="slovak, slovenčina">
     <th scope="row">Slovak</th>
     <td lang="sk">slovenčina</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=sk" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=sk" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=sk" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=sk" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=sk" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=sk" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=sk" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="sl" data-search="slovenian slovenščina">
+                        <tr id="sl" data-search="slovenian, slovenščina">
     <th scope="row">Slovenian</th>
     <td lang="sl">Slovenščina</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=sl" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=sl" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=sl" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=sl" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=sl" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=sl" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=sl" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="es-AR" data-search="spanish (argentina) español (de argentina)">
+                        <tr id="es-AR" data-search="spanish (argentina), español (de argentina)">
     <th scope="row">Spanish (Argentina)</th>
     <td lang="es-AR">Español (de Argentina)</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=es-AR" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=es-AR" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=es-AR" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=es-AR" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=es-AR" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=es-AR" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=es-AR" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="es-CL" data-search="spanish (chile) español (de chile)">
+                        <tr id="es-CL" data-search="spanish (chile), español (de chile)">
     <th scope="row">Spanish (Chile)</th>
     <td lang="es-CL">Español (de Chile)</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=es-CL" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=es-CL" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=es-CL" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=es-CL" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=es-CL" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=es-CL" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=es-CL" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="es-MX" data-search="spanish (mexico) español (de méxico)">
+                        <tr id="es-MX" data-search="spanish (mexico), español (de méxico)">
     <th scope="row">Spanish (Mexico)</th>
     <td lang="es-MX">Español (de México)</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=es-MX" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=es-MX" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=es-MX" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=es-MX" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=es-MX" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=es-MX" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=es-MX" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="es-ES" data-search="spanish (spain) español (de españa)">
+                        <tr id="es-ES" data-search="spanish (spain), español (de españa)">
     <th scope="row">Spanish (Spain)</th>
     <td lang="es-ES">Español (de España)</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=es-ES" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=es-ES" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=es-ES" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=es-ES" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=es-ES" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=es-ES" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=es-ES" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="sv-SE" data-search="swedish svenska">
+                        <tr id="sv-SE" data-search="swedish, svenska">
     <th scope="row">Swedish</th>
     <td lang="sv-SE">Svenska</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=sv-SE" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=sv-SE" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=sv-SE" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=sv-SE" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=sv-SE" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=sv-SE" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=sv-SE" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="ta" data-search="tamil தமிழ்">
+                        <tr id="ta" data-search="tamil, தமிழ்">
     <th scope="row">Tamil</th>
     <td lang="ta">தமிழ்</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=ta" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=ta" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ta" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ta" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ta" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ta" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ta" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="te" data-search="telugu తెలుగు">
+                        <tr id="te" data-search="telugu, తెలుగు">
     <th scope="row">Telugu</th>
     <td lang="te">తెలుగు</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=te" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=te" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=te" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=te" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=te" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=te" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=te" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="th" data-search="thai ไทย">
+                        <tr id="th" data-search="thai, ไทย">
     <th scope="row">Thai</th>
     <td lang="th">ไทย</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=th" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=th" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=th" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=th" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=th" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=th" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=th" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="tr" data-search="turkish türkçe">
+                        <tr id="tr" data-search="turkish, türkçe">
     <th scope="row">Turkish</th>
     <td lang="tr">Türkçe</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=tr" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=tr" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=tr" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=tr" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=tr" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=tr" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=tr" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="uk" data-search="ukrainian українська">
+                        <tr id="uk" data-search="ukrainian, українська">
     <th scope="row">Ukrainian</th>
     <td lang="uk">Українська</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=uk" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=uk" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=uk" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=uk" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=uk" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=uk" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=uk" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="vi" data-search="vietnamese tiếng việt">
+                        <tr id="vi" data-search="vietnamese, tiếng việt">
     <th scope="row">Vietnamese</th>
     <td lang="vi">Tiếng Việt</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=vi" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=vi" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=vi" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=vi" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=vi" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=vi" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=vi" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="cy" data-search="welsh cymraeg">
+                        <tr id="cy" data-search="welsh, cymraeg">
     <th scope="row">Welsh</th>
     <td lang="cy">Cymraeg</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=cy" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=cy" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=cy" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=cy" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=cy" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=cy" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=cy" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
-                        <tr id="xh" data-search="xhosa isixhosa">
+                        <tr id="xh" data-search="xhosa, isixhosa">
     <th scope="row">Xhosa</th>
     <td lang="xh">isiXhosa</td>
-          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=win&amp;lang=xh" title="Download for Windows" style="white-space: pre">다운로드</a></td>
+          <td class="download win"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=win&amp;lang=xh" title="Download for Windows" style="white-space: pre">다운로드</a></td>
   
-          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=xh" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
+          <td class="download mac"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=xh" title="Download for Mac OS X" style="white-space: pre">다운로드</a></td>
   
-          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=xh" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+          <td class="download linux"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=xh" title="Download for Linux" style="white-space: pre">다운로드</a></td>
+  
+          <td class="download linux64"><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=xh" title="Download for 64-bit Linux" style="white-space: pre">다운로드</a></td>
   
   </tr>
 
@@ -1204,12 +1406,12 @@ help support Mozilla.-->
     
     <div class="form-contents">
       <div class="field field-email ">
-        <input type="email" required="required" placeholder="YOUR EMAIL HERE" name="email" id="id_email" />
+        <input id="id_email" name="email" placeholder="YOUR EMAIL HERE" required="required" type="email" />
       </div>
 
       <div id="form-details">
                   <div class="field field-country">
-            <select required="required" name="country" aria-required="true" id="id_country">
+            <select aria-required="true" id="id_country" name="country" required="required">
 <option value="af">Afghanistan</option>
 <option value="al">Albania</option>
 <option value="dz">Algeria</option>
@@ -1459,7 +1661,7 @@ help support Mozilla.-->
 </select>
           </div>
                           <div class="field field-language ">
-            <select required="required" name="lang" aria-required="true" id="id_lang">
+            <select aria-required="true" id="id_lang" name="lang" required="required">
 <option value="id">Bahasa Indonesia</option>
 <option value="de">Deutsch</option>
 <option value="en" selected="selected">English</option>
@@ -1472,10 +1674,10 @@ help support Mozilla.-->
 </select>
           </div>
                 <div class="field field-format">
-          <label for="id_fmt_0"><input checked="checked" type="radio" id="id_fmt_0" value="H" name="fmt" /> HTML</label><label for="id_fmt_1"><input type="radio" id="id_fmt_1" value="T" name="fmt" /> Text</label>
+          <label for="id_fmt_0"><input checked="checked" id="id_fmt_0" name="fmt" type="radio" value="H" /> HTML</label><label for="id_fmt_1"><input id="id_fmt_1" name="fmt" type="radio" value="T" /> Text</label>
         </div>
         <div class="field field-privacy ">
-          <label for="id_privacy" class="privacy-check-label"><input required="required" type="checkbox" name="privacy" id="id_privacy" /> <span class="title">I’m okay with Mozilla handling my info as explained in <a href="/en-US/privacy-policy">this Privacy Policy</a></span></label>
+          <label for="id_privacy" class="privacy-check-label"><input id="id_privacy" name="privacy" required="required" type="checkbox" /> <span class="title">I’m okay with Mozilla handling my info as explained in <a href="/privacy/">this Privacy Policy</a></span></label>
         </div>
       </div>
     </div>
@@ -1492,49 +1694,57 @@ help support Mozilla.-->
 
     </div><!-- close #wrapper -->
 
-          <footer id="colophon" class="">
-      <div class="row">
-
-          <div class="footer-logo">
-              <a href="/ko/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+                <footer id="colophon" class="">
+        <nav class="row">
+          <div class="col col-1">
+            <h1 class="logo"><a href="/en-US/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="Mozilla"></a></h1>
+            <p class="license">&copy;1998–2014 콘텐츠의 일부는 개별 mozilla.org 공헌자에게 저작권이 있습니다. 콘텐츠는 <a href="//www.mozilla.org/foundation/licensing/website-content.html">Creative Commons license</a>에 의해 사용할 수 있습니다.</p>
           </div>
-
-          <div class="footer-license">
-              <p>
-                &copy;1998–2014 콘텐츠의 일부는 개별 mozilla.org 공헌자에게 저작권이 있습니다. 콘텐츠는 <a href="//www.mozilla.org/foundation/licensing/website-content.html">Creative Commons license</a>에 의해 사용할 수 있습니다.              </p>
-              <p>
-                <a href="/ko/contribute/page/">이 페이지에 기여하기</a>
-              </p>
+          <div class="col col-2">
+            <ul class="links-join">
+              <li><a href="//www.mozilla.org/en-US/contact/spaces/">연락처</a></li>
+              <li class="wrap"><a href="//www.mozilla.org/en-US/about/partnerships/">제휴하기</a></li>
+              <li class="clear"><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-newdefault?source=mozillaorg_footer" class="donate">기부하기</a></li>
+              <li class="wrap"><a href="http://forums.mozilla.or.kr/">한국커뮤니티</a></li>
+              <li class="clear"><a href="/ko/contribute/page/">이 페이지에 기여하기</a></li>
+            </ul>
+            <ul class="links-legal">
+              <li><a href="//www.mozilla.org/en-US/privacy/">개인 정보 보호 정책 (영문)</a></li>
+              <li class="wrap"><a href="//www.mozilla.org/en-US/about/legal.html">법적 고지 (영문)</a></li>
+              <li class="clear"><a href="/en-US/legal/fraud-report/">Report Trademark Abuse</a></li>
+            </ul>
           </div>
-          <ul class="footer-nav">
-            <li><a href="//www.mozilla.org/en-US/contact/spaces/">연락처</a></li>
-            <li><a href="//www.mozilla.org/en-US/about/partnerships/">제휴하기</a></li>
-            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">기부하기</a></li>
-            <li><a href="//www.mozilla.org/en-US/privacy/">개인 정보 보호 정책 (영문)</a></li>
-            <li><a href="//www.mozilla.org/en-US/about/legal.html">법적 고지 (영문)</a></li>
-            <li><a href="//www.mozilla.org/en-US/legal/fraud-report/index.html">상표권 침해 신고 (영문)</a></li>
-          </ul>
-                    <ul class="footer-nav">
-            <li><a href="https://twitter.com/mozilla">Mozilla on Twitter</a></li>
-            <li><a href="https://twitter.com/firefox">Firefox on Twitter</a></li>
-            <li><a href="https://www.facebook.com/mozilla">Mozilla on Facebook</a></li>
-            <li><a href="https://www.facebook.com/Firefox">Firefox on Facebook</a></li>
-            <li><a href="http://forums.mozilla.or.kr/">한국커뮤니티</a></li>
-          </ul>
-                              <div class="footer-lang">
-                      </div>
-          
-      </div>
-      </footer>
-    
+          <div class="col col-3">
+            <ul class="links-social">
+              <li>
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="lang-switcher">
+                          </div>
+          </div>
+        </nav>
+      </footer>    
     </div><!-- close #outer-wrapper -->
 
     <!--[if IE 9]>
       <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
     <![endif]-->
 
-      <script src="//mozorg.cdn.mozilla.net/media/js/firefox-resp-min.js?build=4e55d23"></script>
-          <script src="/ko/tabzilla/tabzilla.js?build=4e55d23"></script>
-                <script src="//mozorg.cdn.mozilla.net/media/js/firefox_all-min.js?build=4e55d23"></script>
+      <script src="//mozorg.cdn.mozilla.net/media/js/firefox-resp-min.js?build=9826e22"></script>
+          <script src="/ko/tabzilla/tabzilla.js?build=9826e22"></script>
+                <script src="//mozorg.cdn.mozilla.net/media/js/firefox_all-min.js?build=9826e22"></script>
         </body>
 </html>

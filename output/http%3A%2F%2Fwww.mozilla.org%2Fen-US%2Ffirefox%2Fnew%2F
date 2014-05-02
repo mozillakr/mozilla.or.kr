@@ -1,8 +1,9 @@
 
 <!doctype html>
-<html class="windows no-js" lang="en-US" dir="ltr" data-latest-firefox="27.0" data-esr-versions="[10, 17, 24]">
+<html class="windows x86 no-js" lang="en-US" dir="ltr" data-latest-firefox="29.0" data-esr-versions="[24]">
   <head>
-    <meta charset="utf-8"><!--
+    <meta charset="utf-8">
+<!--
              _.-~-.
            7''  Q..\
         _7         (_
@@ -26,6 +27,7 @@ brighter future for the Web.
 Visit https://careers.mozilla.org to learn about our current job openings.
 Visit https://www.mozilla.org/contribute for more ways to get involved and
 help support Mozilla.-->
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>Firefox 다운로드 — 무료 웹 브라우저 — Mozilla</title>
@@ -50,7 +52,9 @@ help support Mozilla.-->
     <link rel="alternate" hreflang="ak" href="http://www.mozilla.org/ak/firefox/new/" title="Akan">
     <link rel="alternate" hreflang="an" href="http://www.mozilla.org/an/firefox/new/" title="aragonés">
     <link rel="alternate" hreflang="ar" href="http://www.mozilla.org/ar/firefox/new/" title="عربي">
+    <link rel="alternate" hreflang="as" href="http://www.mozilla.org/as/firefox/new/" title="অসমীয়া">
     <link rel="alternate" hreflang="ast" href="http://www.mozilla.org/ast/firefox/new/" title="Asturianu">
+    <link rel="alternate" hreflang="be" href="http://www.mozilla.org/be/firefox/new/" title="Беларуская">
     <link rel="alternate" hreflang="bg" href="http://www.mozilla.org/bg/firefox/new/" title="Български">
     <link rel="alternate" hreflang="br" href="http://www.mozilla.org/br/firefox/new/" title="Brezhoneg">
     <link rel="alternate" hreflang="ca" href="http://www.mozilla.org/ca/firefox/new/" title="Català">
@@ -76,13 +80,16 @@ help support Mozilla.-->
     <link rel="alternate" hreflang="ga-IE" href="http://www.mozilla.org/ga-IE/firefox/new/" title="Gaeilge">
     <link rel="alternate" hreflang="gd" href="http://www.mozilla.org/gd/firefox/new/" title="Gàidhlig">
     <link rel="alternate" hreflang="gl" href="http://www.mozilla.org/gl/firefox/new/" title="Galego">
+    <link rel="alternate" hreflang="he" href="http://www.mozilla.org/he/firefox/new/" title="עברית">
     <link rel="alternate" hreflang="hi-IN" href="http://www.mozilla.org/hi-IN/firefox/new/" title="हिन्दी (भारत)">
     <link rel="alternate" hreflang="hr" href="http://www.mozilla.org/hr/firefox/new/" title="Hrvatski">
+    <link rel="alternate" hreflang="hsb" href="http://www.mozilla.org/hsb/firefox/new/" title="Hornjoserbsce">
     <link rel="alternate" hreflang="hu" href="http://www.mozilla.org/hu/firefox/new/" title="magyar">
     <link rel="alternate" hreflang="hy-AM" href="http://www.mozilla.org/hy-AM/firefox/new/" title="Հայերեն">
     <link rel="alternate" hreflang="id" href="http://www.mozilla.org/id/firefox/new/" title="Bahasa Indonesia">
     <link rel="alternate" hreflang="is" href="http://www.mozilla.org/is/firefox/new/" title="íslenska">
     <link rel="alternate" hreflang="it" href="http://www.mozilla.org/it/firefox/new/" title="Italiano">
+    <link rel="alternate" hreflang="ja" href="http://www.mozilla.org/ja/firefox/new/" title="日本語">
     <link rel="alternate" hreflang="ka" href="http://www.mozilla.org/ka/firefox/new/" title="ქართული">
     <link rel="alternate" hreflang="kk" href="http://www.mozilla.org/kk/firefox/new/" title="Қазақ">
     <link rel="alternate" hreflang="km" href="http://www.mozilla.org/km/firefox/new/" title="ខ្មែរ">
@@ -125,35 +132,55 @@ help support Mozilla.-->
     <link rel="alternate" hreflang="zh-CN" href="http://www.mozilla.org/zh-CN/firefox/new/" title="中文 (简体)">
     <link rel="alternate" hreflang="zh-TW" href="http://www.mozilla.org/zh-TW/firefox/new/" title="正體中文 (繁體)">
         
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=4e55d23" />
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=9826e22" />
     
     <!--[if lte IE 8]>
-    <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
+            <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
     <![endif]-->
 
-      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=4e55d23" />
+    <!--[if lte IE 7]>
+            <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/oldIE-min.css?build=9826e22" />
+    <![endif]-->
 
-    
-          
+    <!--[if !lte IE 7]><!-->
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox-resp-min.css?build=9826e22" />
+
+            <!--<![endif]-->
+
+      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=9826e22" />
+
+      
   
-    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=4e55d23"></script>
+    
+    <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=9826e22"></script>
 
             <script src="//cdn.optimizely.com/js/246059135.js"></script>
     
-      <script src="//mozorg.cdn.mozilla.net/media/js/common-resp-min.js?build=4e55d23"></script>
-  <script src="//mozorg.cdn.mozilla.net/media/js/firefox_new-min.js?build=4e55d23"></script>
+      <script src="//mozorg.cdn.mozilla.net/media/js/common-resp-min.js?build=9826e22"></script>
+  <script src="//mozorg.cdn.mozilla.net/media/js/firefox_new-min.js?build=9826e22"></script>
           <script>
-        var _gaq = _gaq || [];
-       _gaq.push(['_setAccount', 'UA-53785-1']);
-       _gaq.push(['_setDomainName', 'mozilla.or.kr']);
-       _gaq.push(['_trackPageview']);
+var _gaq = _gaq || [];
+var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+_gaq.push(['_setAccount', 'UA-36116321-1']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_setAllowAnchor', true]);
+_gaq.push(['_gat._anonymizeIp']);
+_gaq.push(['_trackPageview']);
 
-       (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-     </script>      </head>
+(function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+
+    var prefix = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www');
+    ga.src = prefix + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>      </head>
 
   <body id="firefox-new" class="html-ltr sky">
     <div id="strings" data-global-close="Close" ></div>
@@ -162,6 +189,7 @@ help support Mozilla.-->
 
           <header id="masthead">
         <a href="/en-US/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
         
           <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox for desktop"></h2>
 
@@ -197,7 +225,7 @@ help support Mozilla.-->
   <div id="main-feature">
     <div class="row">
       <img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/firefox-logo.png?2013-06" alt="Firefox" />
-      <h1 class="large">내재된 차별성</h1>
+      <h1 class="large"><span>Committed to you,</span> <span>your privacy</span> <span>and an open Web</span></h1>
     </div>
   </div>
 
@@ -205,12 +233,6 @@ help support Mozilla.-->
     <div class="stage" id="stage-firefox">
       <div class="scene" id="scene1">
         <div class="container" id="features-download">
-          <ul id="features">
-            <li>비영리 <br />재단에 의한</li>
-            <li>혁신적인<br /> 기능</li>
-            <li>빠름, 유연함,<br /> 안전함</li>
-          </ul>
-
           <div class="desktop download-button-wrapper">
             
 
@@ -219,7 +241,7 @@ help support Mozilla.-->
         <div class="download download-dumb">
     <h4>Firefox 무료 다운로드- 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org" class="button-green">Android</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ko" class="button-green">Linux 64-bit</a></li><li><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org" class="button-green">Android</a></li>    </ul>
   </div>
 
     </noscript>
@@ -227,12 +249,12 @@ help support Mozilla.-->
         <div class="download download-dumb">
     <h4>Firefox 무료 다운로드- 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org" class="button-green">Android</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ko" class="button-green">Linux 64-bit</a></li><li><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org" class="button-green">Android</a></li>    </ul>
   </div>
 
     </div>
-        <p class="unsupported-download">
-      Firefox를 구동하기에 충분한 <a href="//www.mozilla.org/en-US/firefox/27.0/system-requirements/">시스템 사양</a>이 아닙니다.
+    <p class="unsupported-download">
+      Firefox를 구동하기에 충분한 <a href="//www.mozilla.org/en-US/firefox/system-requirements/">시스템 사양</a>이 아닙니다.
     </p>
     <ul class="download-list">
           <li class="os_windows">
@@ -248,7 +270,7 @@ help support Mozilla.-->
       </li>
           <li class="os_linux">
         <a class="download-link"
-           href="https://download.mozilla.org/?product=firefox-27.0&amp;os=linux&amp;lang=ko">
+           href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
                             <span class="download-subtitle">무료 다운로드</span>
@@ -257,9 +279,20 @@ help support Mozilla.-->
                       </span>
         </a>
       </li>
+          <li class="os_linux64">
+        <a class="download-link"
+           href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ko">
+          <span class="download-content">
+                                          <strong class="download-title">Firefox</strong>
+                            <span class="download-subtitle">무료 다운로드</span>
+              <span class="download-lang">한국어</span>
+              <span class="download-platform">Linux 64-bit</span>
+                      </span>
+        </a>
+      </li>
           <li class="os_osx">
         <a class="download-link"
-           href="https://download.mozilla.org/?product=firefox-27.0&amp;os=osx&amp;lang=ko">
+           href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
                             <span class="download-subtitle">무료 다운로드</span>
@@ -280,13 +313,13 @@ help support Mozilla.-->
       </ul>
       <small class="download-other os_android">
       <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |
-              <a href="//www.mozilla.org/en-US/mobile/notes">변경내역</a> |
-            <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>
+      <a href="/en-US/mobile/notes/">What’s New</a> |
+      <a href="/en-US/privacy/firefox/">Privacy</a>
     </small>
-        <small class="download-other os_linux os_osx os_windows">
-              <a href="/ko/firefox/all">시스템 &amp; 언어 선택</a> |
-        <a href="//www.mozilla.org/en-US/firefox/notes">변경내역</a> |
-            <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>
+        <small class="download-other os_linux os_linux64 os_osx os_windows">
+      <a href="/en-US/firefox/all/">Systems &amp; Languages</a> |
+      <a href="/en-US/firefox/notes/">What’s New</a> |
+      <a href="/en-US/privacy/firefox/">Privacy</a>
     </small>
   </div>
           </div>
@@ -307,8 +340,8 @@ help support Mozilla.-->
       </ul>
       <small class="download-other os_android">
       <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |
-              <a href="//www.mozilla.org/en-US/mobile/notes">변경내역</a> |
-            <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>
+      <a href="/en-US/mobile/notes/">What’s New</a> |
+      <a href="/en-US/privacy/firefox/">Privacy</a>
     </small>
     </div>
           </div>
@@ -329,40 +362,342 @@ help support Mozilla.-->
       </ul>
       <small class="download-other os_android">
       <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |
-              <a href="//www.mozilla.org/en-US/mobile/notes">변경내역</a> |
-            <a href="//www.mozilla.org/en-US/legal/privacy/firefox.html">개인정보 정책</a>
+      <a href="/en-US/mobile/notes/">What’s New</a> |
+      <a href="/en-US/privacy/firefox/">Privacy</a>
     </small>
     </div>
           </div>
           <div class="desktop-latest-links-wrapper latest-links-wrapper">
             <ul>
-              <li><a href="/ko/firefox/central/">데스크탑용 Firefox 자세히 살펴보기</a></li>
+              <li><a href="/en-US/firefox/desktop/">Learn more about Firefox for desktop</a></li>
               <li><a href="https://support.mozilla.org/products/firefox">도움이 필요하세요?</a></li>
-              <li><a href="/ko/mobile/">모바일 버전을 찾으세요?</a></li>
-              <li><a href="/ko/firefox/all/">새로 다운로드</a></li>
+                            <li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org">Get Firefox on your Android device</a></li>
+              <li><a href="/en-US/firefox/os/">Learn about Firefox OS</a></li>
+                            <li><a href="/ko/firefox/all/">새로 다운로드</a></li>
             </ul>
           </div>
           <div class="android-latest-links-wrapper latest-links-wrapper">
             <ul>
-              <li><a href="/ko/firefox/mobile/features/">모바일용 Firefox 자세히 살펴보기</a></li>
+              <li><a href="/en-US/firefox/android/">Learn more about Firefox for Mobile</a></li>
             </ul>
           </div>
           <div class="fxos-latest-links-wrapper latest-links-wrapper">
             <ul>
               <li><a href="/ko/firefox/os/">Firefox OS에 대해서 궁금하세요?</a></li>
-              <li><a href="/ko/mobile/">Firefox를 계속 사용할 수 있는 방법을 살펴보세요.</a></li>
+              <li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org">Discover all the ways to take Firefox on the go</a></li>
             </ul>
           </div>
           <div class="ios-links-wrapper latest-links-wrapper">
             <ul>
-              <li><a href="/ko/mobile/">모바일 버전을 찾으세요?</a></li>
+              <li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org">Looking for mobile?</a></li>
               <li><a href="https://support.mozilla.org/ko/kb/is-firefox-available-iphone-or-ipad">iOS 버전을 왜 제공하지 않나요?</a></li>
             </ul>
           </div>
         </div>
 
         <div class="desktop" id="firefox-screenshot">
-          <img class="platform-img js" src="" data-src="//mozorg.cdn.mozilla.net/media/img/firefox/new/browser.png?2013-08-27" alt="Firefox screenshot" data-additional-platforms="android ios"><noscript><img class="platform-img win" src="//mozorg.cdn.mozilla.net/media/img/firefox/new/browser.png?2013-08-27" alt="Firefox screenshot" data-additional-platforms="android ios"></noscript>
+          <img class="platform-img js" src="" data-src="//mozorg.cdn.mozilla.net/media/img/firefox/new/browser.png?2014-04-29" data-high-res="true" alt="Firefox screenshot" data-additional-platforms="android ios"><noscript><img class="platform-img win" src="//mozorg.cdn.mozilla.net/media/img/firefox/new/browser.png?2014-04-29" data-high-res="true" alt="Firefox screenshot" data-additional-platforms="android ios"></noscript>
+        </div>
+
+        <div id="newsletter-latest">
+          
+  
+  <form class="billboard newsletter-form"
+            id="footer-email-form" action="http://www.mozilla.org/en-US/firefox/new/#footer-email-form"
+            method="post">
+    <input type="hidden" name="newsletter" value="mozilla-and-you">
+    <input type="hidden" name="source_url" value="http://www.mozilla.org/en-US/firefox/new/">
+
+          <h3>Get Firefox news</h3>
+    
+    <div class="form-contents">
+      <div class="field field-email ">
+        <input id="id_email" name="email" placeholder="YOUR EMAIL HERE" required="required" type="email" />
+      </div>
+
+      <div id="form-details">
+                  <div class="field field-country">
+            <select aria-required="true" id="id_country" name="country" required="required">
+<option value="af">Afghanistan</option>
+<option value="al">Albania</option>
+<option value="dz">Algeria</option>
+<option value="as">American Samoa</option>
+<option value="ad">Andorra</option>
+<option value="ao">Angola</option>
+<option value="ai">Anguilla</option>
+<option value="aq">Antarctica</option>
+<option value="ag">Antigua and Barbuda</option>
+<option value="ar">Argentina</option>
+<option value="am">Armenia</option>
+<option value="aw">Aruba</option>
+<option value="au">Australia</option>
+<option value="at">Austria</option>
+<option value="az">Azerbaijan</option>
+<option value="bs">Bahamas</option>
+<option value="bh">Bahrain</option>
+<option value="bd">Bangladesh</option>
+<option value="bb">Barbados</option>
+<option value="by">Belarus</option>
+<option value="be">Belgium</option>
+<option value="bz">Belize</option>
+<option value="bj">Benin</option>
+<option value="bm">Bermuda</option>
+<option value="bt">Bhutan</option>
+<option value="bo">Bolivia</option>
+<option value="ba">Bosnia and Herzegovina</option>
+<option value="bw">Botswana</option>
+<option value="bv">Bouvet Island</option>
+<option value="br">Brazil</option>
+<option value="io">British Indian Ocean Territory</option>
+<option value="vg">British Virgin Islands</option>
+<option value="bn">Brunei Darussalam</option>
+<option value="bg">Bulgaria</option>
+<option value="bf">Burkina Faso</option>
+<option value="bi">Burundi</option>
+<option value="kh">Cambodia</option>
+<option value="cm">Cameroon</option>
+<option value="ca">Canada</option>
+<option value="cv">Cape Verde</option>
+<option value="ky">Cayman Islands</option>
+<option value="cf">Central African Republic</option>
+<option value="td">Chad</option>
+<option value="cl">Chile</option>
+<option value="cn">China</option>
+<option value="cx">Christmas Island</option>
+<option value="cc">Cocos (Keeling) Islands</option>
+<option value="co">Colombia</option>
+<option value="km">Comoros</option>
+<option value="cg">Congo-Brazzaville</option>
+<option value="cd">Congo-Kinshasa</option>
+<option value="ck">Cook Islands</option>
+<option value="cr">Costa Rica</option>
+<option value="hr">Croatia</option>
+<option value="cu">Cuba</option>
+<option value="cy">Cyprus</option>
+<option value="cz">Czech Republic</option>
+<option value="dk">Denmark</option>
+<option value="dj">Djibouti</option>
+<option value="dm">Dominica</option>
+<option value="do">Dominican Republic</option>
+<option value="ec">Ecuador</option>
+<option value="eg">Egypt</option>
+<option value="sv">El Salvador</option>
+<option value="gq">Equatorial Guinea</option>
+<option value="er">Eritrea</option>
+<option value="ee">Estonia</option>
+<option value="et">Ethiopia</option>
+<option value="fk">Falkland Islands (Malvinas)</option>
+<option value="fo">Faroe Islands</option>
+<option value="fj">Fiji</option>
+<option value="fi">Finland</option>
+<option value="fr">France</option>
+<option value="gf">French Guiana</option>
+<option value="pf">French Polynesia</option>
+<option value="tf">French Southern Territories</option>
+<option value="ga">Gabon</option>
+<option value="gm">Gambia</option>
+<option value="ge">Georgia</option>
+<option value="de">Germany</option>
+<option value="gh">Ghana</option>
+<option value="gi">Gibraltar</option>
+<option value="gr">Greece</option>
+<option value="gl">Greenland</option>
+<option value="gd">Grenada</option>
+<option value="gp">Guadeloupe</option>
+<option value="gu">Guam</option>
+<option value="gt">Guatemala</option>
+<option value="gg">Guernsey</option>
+<option value="gn">Guinea</option>
+<option value="gw">Guinea-Bissau</option>
+<option value="gy">Guyana</option>
+<option value="ht">Haiti</option>
+<option value="hm">Heard Island and McDonald Islands</option>
+<option value="hn">Honduras</option>
+<option value="hk">Hong Kong</option>
+<option value="hu">Hungary</option>
+<option value="is">Iceland</option>
+<option value="in">India</option>
+<option value="id">Indonesia</option>
+<option value="ir">Iran</option>
+<option value="iq">Iraq</option>
+<option value="ie">Ireland</option>
+<option value="im">Isle of Man</option>
+<option value="il">Israel</option>
+<option value="it">Italy</option>
+<option value="ci">Ivory Coast</option>
+<option value="jm">Jamaica</option>
+<option value="jp">Japan</option>
+<option value="je">Jersey</option>
+<option value="jo">Jordan</option>
+<option value="kz">Kazakhstan</option>
+<option value="ke">Kenya</option>
+<option value="ki">Kiribati</option>
+<option value="kw">Kuwait</option>
+<option value="kg">Kyrgyzstan</option>
+<option value="la">Laos</option>
+<option value="lv">Latvia</option>
+<option value="lb">Lebanon</option>
+<option value="ls">Lesotho</option>
+<option value="lr">Liberia</option>
+<option value="ly">Libya</option>
+<option value="li">Liechtenstein</option>
+<option value="lt">Lithuania</option>
+<option value="lu">Luxembourg</option>
+<option value="mo">Macao</option>
+<option value="mk">Macedonia, F.Y.R. of</option>
+<option value="mg">Madagascar</option>
+<option value="mw">Malawi</option>
+<option value="my">Malaysia</option>
+<option value="mv">Maldives</option>
+<option value="ml">Mali</option>
+<option value="mt">Malta</option>
+<option value="mh">Marshall Islands</option>
+<option value="mq">Martinique</option>
+<option value="mr">Mauritania</option>
+<option value="mu">Mauritius</option>
+<option value="yt">Mayotte</option>
+<option value="mx">Mexico</option>
+<option value="fm">Micronesia</option>
+<option value="md">Moldova</option>
+<option value="mc">Monaco</option>
+<option value="mn">Mongolia</option>
+<option value="me">Montenegro</option>
+<option value="ms">Montserrat</option>
+<option value="ma">Morocco</option>
+<option value="mz">Mozambique</option>
+<option value="mm">Myanmar</option>
+<option value="na">Namibia</option>
+<option value="nr">Nauru</option>
+<option value="np">Nepal</option>
+<option value="nl">Netherlands</option>
+<option value="an">Netherlands Antilles</option>
+<option value="nc">New Caledonia</option>
+<option value="nz">New Zealand</option>
+<option value="ni">Nicaragua</option>
+<option value="ne">Niger</option>
+<option value="ng">Nigeria</option>
+<option value="nu">Niue</option>
+<option value="nf">Norfolk Island</option>
+<option value="kp">North Korea</option>
+<option value="mp">Northern Mariana Islands</option>
+<option value="no">Norway</option>
+<option value="ps">Occupied Palestinian Territory</option>
+<option value="om">Oman</option>
+<option value="pk">Pakistan</option>
+<option value="pw">Palau</option>
+<option value="pa">Panama</option>
+<option value="pg">Papua New Guinea</option>
+<option value="py">Paraguay</option>
+<option value="pe">Peru</option>
+<option value="ph">Philippines</option>
+<option value="pn">Pitcairn</option>
+<option value="pl">Poland</option>
+<option value="pt">Portugal</option>
+<option value="pr">Puerto Rico</option>
+<option value="qa">Qatar</option>
+<option value="re">Reunion</option>
+<option value="ro">Romania</option>
+<option value="ru">Russian Federation</option>
+<option value="rw">Rwanda</option>
+<option value="bl">Saint Barthélemy</option>
+<option value="sh">Saint Helena</option>
+<option value="kn">Saint Kitts and Nevis</option>
+<option value="lc">Saint Lucia</option>
+<option value="mf">Saint Martin</option>
+<option value="pm">Saint Pierre and Miquelon</option>
+<option value="vc">Saint Vincent and the Grenadines</option>
+<option value="ws">Samoa</option>
+<option value="sm">San Marino</option>
+<option value="st">Sao Tome and Principe</option>
+<option value="sa">Saudi Arabia</option>
+<option value="sn">Senegal</option>
+<option value="rs">Serbia</option>
+<option value="sc">Seychelles</option>
+<option value="sl">Sierra Leone</option>
+<option value="sg">Singapore</option>
+<option value="sk">Slovakia</option>
+<option value="si">Slovenia</option>
+<option value="sb">Solomon Islands</option>
+<option value="so">Somalia</option>
+<option value="za">South Africa</option>
+<option value="gs">South Georgia and the South Sandwich Islands</option>
+<option value="kr">South Korea</option>
+<option value="es">Spain</option>
+<option value="lk">Sri Lanka</option>
+<option value="sd">Sudan</option>
+<option value="sr">Suriname</option>
+<option value="sj">Svalbard and Jan Mayen</option>
+<option value="sz">Swaziland</option>
+<option value="se">Sweden</option>
+<option value="ch">Switzerland</option>
+<option value="sy">Syria</option>
+<option value="tw">Taiwan</option>
+<option value="tj">Tajikistan</option>
+<option value="tz">Tanzania</option>
+<option value="th">Thailand</option>
+<option value="tl">Timor-Leste</option>
+<option value="tg">Togo</option>
+<option value="tk">Tokelau</option>
+<option value="to">Tonga</option>
+<option value="tt">Trinidad and Tobago</option>
+<option value="tn">Tunisia</option>
+<option value="tr">Turkey</option>
+<option value="tm">Turkmenistan</option>
+<option value="tc">Turks and Caicos Islands</option>
+<option value="tv">Tuvalu</option>
+<option value="ae">U.A.E.</option>
+<option value="vi">U.S. Virgin Islands</option>
+<option value="ug">Uganda</option>
+<option value="ua">Ukraine</option>
+<option value="gb">United Kingdom</option>
+<option value="us" selected="selected">United States</option>
+<option value="um">United States Minor Outlying Islands</option>
+<option value="uy">Uruguay</option>
+<option value="uz">Uzbekistan</option>
+<option value="vu">Vanuatu</option>
+<option value="va">Vatican City</option>
+<option value="ve">Venezuela</option>
+<option value="vn">Vietnam</option>
+<option value="wf">Wallis and Futuna</option>
+<option value="eh">Western Sahara</option>
+<option value="ye">Yemen</option>
+<option value="zm">Zambia</option>
+<option value="zw">Zimbabwe</option>
+<option value="ax">Åland Islands</option>
+</select>
+          </div>
+                          <div class="field field-language ">
+            <select aria-required="true" id="id_lang" name="lang" required="required">
+<option value="id">Bahasa Indonesia</option>
+<option value="de">Deutsch</option>
+<option value="en" selected="selected">English</option>
+<option value="es">Español</option>
+<option value="fr">Français</option>
+<option value="pl">Polski</option>
+<option value="pt">Português</option>
+<option value="hu">magyar</option>
+<option value="ru">Русский</option>
+</select>
+          </div>
+                <div class="field field-format">
+          <label for="id_fmt_0"><input checked="checked" id="id_fmt_0" name="fmt" type="radio" value="H" /> HTML</label><label for="id_fmt_1"><input id="id_fmt_1" name="fmt" type="radio" value="T" /> Text</label>
+        </div>
+        <div class="field field-privacy ">
+          <label for="id_privacy" class="privacy-check-label"><input id="id_privacy" name="privacy" required="required" type="checkbox" /> <span class="title">I’m okay with Mozilla handling my info as explained in <a href="/privacy/">this Privacy Policy</a></span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-submit">
+      <input type="submit" id="footer_email_submit"
+             value="Sign me up »" class="button">
+
+      <p class="form-details">
+        <small>We will only send you Mozilla-related information.</small>
+      </p>
+    </div>
+  </form>
+
         </div>
       </div> <!-- /#scene1 -->
 
@@ -421,8 +756,8 @@ help support Mozilla.-->
   <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
     <meta itemprop="price" content="0">
   </div>
-  <meta itemprop="softwareVersion" content="27.0">
-  <meta itemprop="releaseNotes" content="http://www.mozilla.org/firefox/27.0/releasenotes/">
+  <meta itemprop="softwareVersion" content="29.0">
+  <meta itemprop="releaseNotes" content="http://www.mozilla.org/firefox/29.0/releasenotes/">
   <meta itemprop="applicationCategory" content="BrowserApplication">
   <meta itemprop="operatingSystem" content="Windows">
   <meta itemprop="operatingSystem" content="Mac">
@@ -451,95 +786,100 @@ help support Mozilla.-->
       <footer id="colophon">
   <div class="row">
     <ul class="primary">
-      <li><a href="/ko/firefox/central/"><span>살펴보기</span></a></li>
-      <li><a href="/ko/firefox/features/"><span>주요기능</span></a></li>
-      <li><a href="//www.mozilla.org/en-US/mobile/"><span>모바일</span></a></li>
+      <li><a href="https://support.mozilla.org/ko/kb/get-started-firefox-overview-main-features"><span>Tour</span></a></li>
+      <li><a href="/en-US/firefox/desktop/"><span>Features</span></a></li>
+      <li><a href="/en-US/firefox/partners/"><span>Mobile</span></a></li>
       <li><a href="https://addons.mozilla.org"><span>부가 기능</span></a></li>
       <li><a href="http://support.mozilla.org"><span>도움말</span></a></li>
       <li><a href="/ko/about/"><span>소개</span></a></li>
     </ul>
     <ul class="secondary footer-lang">
-      <li><form id="lang_form" dir="ltr" method="get" action="#">
+      <li><form id="lang_form" method="get" action="#">
   <label for="language">다른 언어:</label>
   <select id="language" name="lang" dir="ltr">
-          <option value="af">Afrikaans</option>
-          <option value="ak">Akan</option>
-          <option value="an">aragonés</option>
-          <option value="ar">عربي</option>
-          <option value="ast">Asturianu</option>
-          <option value="bg">Български</option>
-          <option value="br">Brezhoneg</option>
-          <option value="ca">Català</option>
-          <option value="cs">Čeština</option>
-          <option value="csb">Kaszëbsczi</option>
-          <option value="cy">Cymraeg</option>
-          <option value="da">Dansk</option>
-          <option value="de">Deutsch</option>
-          <option value="el">Ελληνικά</option>
-          <option value="en-GB">English (British)</option>
-          <option value="en-US" selected>English (US)</option>
-          <option value="eo">Esperanto</option>
-          <option value="es-AR">Español (de Argentina)</option>
-          <option value="es-CL">Español (de Chile)</option>
-          <option value="es-ES">Español (de España)</option>
-          <option value="es-MX">Español (de México)</option>
-          <option value="et">Eesti keel</option>
-          <option value="eu">Euskara</option>
-          <option value="fa">فارسی</option>
-          <option value="fi">suomi</option>
-          <option value="fr">Français</option>
-          <option value="fy-NL">Frysk</option>
-          <option value="ga-IE">Gaeilge</option>
-          <option value="gd">Gàidhlig</option>
-          <option value="gl">Galego</option>
-          <option value="hi-IN">हिन्दी (भारत)</option>
-          <option value="hr">Hrvatski</option>
-          <option value="hu">magyar</option>
-          <option value="hy-AM">Հայերեն</option>
-          <option value="id">Bahasa Indonesia</option>
-          <option value="is">íslenska</option>
-          <option value="it">Italiano</option>
-          <option value="ka">ქართული</option>
-          <option value="kk">Қазақ</option>
-          <option value="km">ខ្មែរ</option>
-          <option value="ko">한국어</option>
-          <option value="ku">Kurdî</option>
-          <option value="lg">Luganda</option>
-          <option value="lij">Ligure</option>
-          <option value="lt">lietuvių kalba</option>
-          <option value="lv">Latviešu</option>
-          <option value="mk">Македонски</option>
-          <option value="ml">മലയാളം</option>
-          <option value="mr">मराठी</option>
-          <option value="ms">Melayu</option>
-          <option value="my">မြန်မာဘာသာ</option>
-          <option value="nb-NO">Norsk bokmål</option>
-          <option value="nl">Nederlands</option>
-          <option value="nso">Sepedi</option>
-          <option value="oc">occitan (lengadocian)</option>
-          <option value="pa-IN">ਪੰਜਾਬੀ</option>
-          <option value="pl">Polski</option>
-          <option value="pt-BR">Português (do Brasil)</option>
-          <option value="pt-PT">Português (Europeu)</option>
-          <option value="rm">rumantsch</option>
-          <option value="ro">română</option>
-          <option value="ru">Русский</option>
-          <option value="sk">slovenčina</option>
-          <option value="sl">Slovenščina</option>
-          <option value="son">Soŋay</option>
-          <option value="sq">Shqip</option>
-          <option value="sr">Српски</option>
-          <option value="sv-SE">Svenska</option>
-          <option value="ta">தமிழ்</option>
-          <option value="te">తెలుగు</option>
-          <option value="th">ไทย</option>
-          <option value="tr">Türkçe</option>
-          <option value="uk">Українська</option>
-          <option value="ur">اُردو</option>
-          <option value="vi">Tiếng Việt</option>
-          <option value="xh">isiXhosa</option>
-          <option value="zh-CN">中文 (简体)</option>
-          <option value="zh-TW">正體中文 (繁體)</option>
+          <option lang="af" value="af">Afrikaans</option>
+          <option lang="ak" value="ak">Akan</option>
+          <option lang="an" value="an">aragonés</option>
+          <option lang="ar" value="ar">عربي</option>
+          <option lang="as" value="as">অসমীয়া</option>
+          <option lang="ast" value="ast">Asturianu</option>
+          <option lang="be" value="be">Беларуская</option>
+          <option lang="bg" value="bg">Български</option>
+          <option lang="br" value="br">Brezhoneg</option>
+          <option lang="ca" value="ca">Català</option>
+          <option lang="cs" value="cs">Čeština</option>
+          <option lang="csb" value="csb">Kaszëbsczi</option>
+          <option lang="cy" value="cy">Cymraeg</option>
+          <option lang="da" value="da">Dansk</option>
+          <option lang="de" value="de">Deutsch</option>
+          <option lang="el" value="el">Ελληνικά</option>
+          <option lang="en-GB" value="en-GB">English (British)</option>
+          <option lang="en-US" value="en-US" selected>English (US)</option>
+          <option lang="eo" value="eo">Esperanto</option>
+          <option lang="es-AR" value="es-AR">Español (de Argentina)</option>
+          <option lang="es-CL" value="es-CL">Español (de Chile)</option>
+          <option lang="es-ES" value="es-ES">Español (de España)</option>
+          <option lang="es-MX" value="es-MX">Español (de México)</option>
+          <option lang="et" value="et">Eesti keel</option>
+          <option lang="eu" value="eu">Euskara</option>
+          <option lang="fa" value="fa">فارسی</option>
+          <option lang="fi" value="fi">suomi</option>
+          <option lang="fr" value="fr">Français</option>
+          <option lang="fy-NL" value="fy-NL">Frysk</option>
+          <option lang="ga-IE" value="ga-IE">Gaeilge</option>
+          <option lang="gd" value="gd">Gàidhlig</option>
+          <option lang="gl" value="gl">Galego</option>
+          <option lang="he" value="he">עברית</option>
+          <option lang="hi-IN" value="hi-IN">हिन्दी (भारत)</option>
+          <option lang="hr" value="hr">Hrvatski</option>
+          <option lang="hsb" value="hsb">Hornjoserbsce</option>
+          <option lang="hu" value="hu">magyar</option>
+          <option lang="hy-AM" value="hy-AM">Հայերեն</option>
+          <option lang="id" value="id">Bahasa Indonesia</option>
+          <option lang="is" value="is">íslenska</option>
+          <option lang="it" value="it">Italiano</option>
+          <option lang="ja" value="ja">日本語</option>
+          <option lang="ka" value="ka">ქართული</option>
+          <option lang="kk" value="kk">Қазақ</option>
+          <option lang="km" value="km">ខ្មែរ</option>
+          <option lang="ko" value="ko">한국어</option>
+          <option lang="ku" value="ku">Kurdî</option>
+          <option lang="lg" value="lg">Luganda</option>
+          <option lang="lij" value="lij">Ligure</option>
+          <option lang="lt" value="lt">lietuvių kalba</option>
+          <option lang="lv" value="lv">Latviešu</option>
+          <option lang="mk" value="mk">Македонски</option>
+          <option lang="ml" value="ml">മലയാളം</option>
+          <option lang="mr" value="mr">मराठी</option>
+          <option lang="ms" value="ms">Melayu</option>
+          <option lang="my" value="my">မြန်မာဘာသာ</option>
+          <option lang="nb-NO" value="nb-NO">Norsk bokmål</option>
+          <option lang="nl" value="nl">Nederlands</option>
+          <option lang="nso" value="nso">Sepedi</option>
+          <option lang="oc" value="oc">occitan (lengadocian)</option>
+          <option lang="pa-IN" value="pa-IN">ਪੰਜਾਬੀ</option>
+          <option lang="pl" value="pl">Polski</option>
+          <option lang="pt-BR" value="pt-BR">Português (do Brasil)</option>
+          <option lang="pt-PT" value="pt-PT">Português (Europeu)</option>
+          <option lang="rm" value="rm">rumantsch</option>
+          <option lang="ro" value="ro">română</option>
+          <option lang="ru" value="ru">Русский</option>
+          <option lang="sk" value="sk">slovenčina</option>
+          <option lang="sl" value="sl">Slovenščina</option>
+          <option lang="son" value="son">Soŋay</option>
+          <option lang="sq" value="sq">Shqip</option>
+          <option lang="sr" value="sr">Српски</option>
+          <option lang="sv-SE" value="sv-SE">Svenska</option>
+          <option lang="ta" value="ta">தமிழ்</option>
+          <option lang="te" value="te">తెలుగు</option>
+          <option lang="th" value="th">ไทย</option>
+          <option lang="tr" value="tr">Türkçe</option>
+          <option lang="uk" value="uk">Українська</option>
+          <option lang="ur" value="ur">اُردو</option>
+          <option lang="vi" value="vi">Tiếng Việt</option>
+          <option lang="xh" value="xh">isiXhosa</option>
+          <option lang="zh-CN" value="zh-CN">中文 (简体)</option>
+          <option lang="zh-TW" value="zh-TW">正體中文 (繁體)</option>
       </select>
   <noscript>
     <button type="submit">Go</button>
@@ -559,6 +899,6 @@ help support Mozilla.-->
       <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
     <![endif]-->
 
-              <script src="/ko/tabzilla/tabzilla.js?build=4e55d23"></script>
+              <script src="/ko/tabzilla/tabzilla.js?build=9826e22"></script>
               </body>
 </html>
