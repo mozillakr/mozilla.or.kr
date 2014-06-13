@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html class="windows x86 no-js" lang="en-US" dir="ltr" data-latest-firefox="29.0" data-esr-versions="[24]">
+<html class="windows x86 no-js" lang="en-US" dir="ltr" data-latest-firefox="30.0" data-esr-versions="[24]">
   <head>
     <meta charset="utf-8">
 <!--
@@ -50,25 +50,25 @@ help support Mozilla.-->
     <link rel="alternate" hreflang="x-default" href="http://www.mozilla.org/firefox/android/">
     <link rel="alternate" hreflang="en-US" href="http://www.mozilla.org/en-US/firefox/android/" title="English (US)">
         
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=9826e22" />
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=4e72a9f" />
     
     <!--[if lte IE 8]>
             <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
     <![endif]-->
 
     <!--[if lte IE 7]>
-            <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/oldIE-min.css?build=9826e22" />
+            <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/oldIE-min.css?build=4e72a9f" />
     <![endif]-->
 
     <!--[if !lte IE 7]><!-->
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/mobile_features-min.css?build=9826e22" />
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/mobile_features-min.css?build=4e72a9f" />
 
             <!--<![endif]-->
 
               
     
     <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
-    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=9826e22"></script>
+    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=4e72a9f"></script>
 
             <script src="//cdn.optimizely.com/js/246059135.js"></script>
     
@@ -101,75 +101,14 @@ _gaq.push(['_trackPageview']);
     <div id="wrapper">
 
           <header id="masthead">
-        <a href="/en-US/" id="tabzilla" data-infobar="translation">Mozilla</a>
+        <a href="/en-US/" id="tabzilla" data-infobar="">Mozilla</a>
 
-        <nav id="nav-main" role="navigation">
-  <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>
-  <ul id="nav-main-menu" class="has-submenus">
-    <li class="first" id="nav-main-features"><a href="/en-US/firefox/desktop/" tabindex="0" aria-owns="nav-main-features-submenu" aria-haspopup="true">Desktop</a>
-      <ul aria-expanded="false" id="nav-main-features-submenu" class="submenu">
-        <li class="first"><a href="/en-US/firefox/desktop/" tabindex="-1">Features</a></li>
-        <li><a href="/en-US/firefox/desktop/customize/" tabindex="-1">Customize</a></li>
-        <li><a href="/en-US/firefox/desktop/fast/" tabindex="-1">Performance</a></li>
-        <li><a href="https://developer.mozilla.org/docs/Tools" tabindex="-1">Technology</a></li>
-        <li class="last"><a href="/en-US/firefox/desktop/trust/" tabindex="-1">Privacy &amp; Security</a></li>
-      </ul>
-    </li>
-    <li id="nav-main-mobile"><a href="/en-US/firefox/android/" tabindex="0" aria-owns="nav-main-mobile-submenu" aria-haspopup="true">Mobile</a>
-      <ul aria-expanded="false" id="nav-main-mobile-submenu" class="submenu">
-        <li class="first"><a href="/en-US/firefox/android/" tabindex="-1">Features</a></li>
-        <li><a href="https://addons.mozilla.org/android/" tabindex="-1">Customize</a></li>
-        <li class="last"><a href="/en-US/firefox/android/faq/" tabindex="-1">FAQ</a></li>
-      </ul>
-    </li>
-    <li id="nav-main-releases" class=""><a href="/en-US/firefox/channel/" tabindex="0" aria-owns="nav-main-releases-submenu" aria-haspopup="true">Releases</a>
-      <ul aria-expanded="false" id="nav-main-releases-submenu" class="submenu">
-        <li class="first"><a href="/en-US/firefox/channel/" tabindex="-1">Overview</a></li>
-        <li><a href="/en-US/firefox/aurora/" tabindex="-1">Firefox Aurora</a></li>
-        <li><a href="/beta/" tabindex="-1">Firefox Beta</a></li>
-        <li><a href="/en-US/firefox/" tabindex="-1">Firefox</a></li>
-        <li class="last"><a href="/en-US/firefox/organizations/" tabindex="-1">Firefox for Organizations</a></li>
-      </ul>
-    </li>
-    <li id="nav-main-addons"><a href="https://addons.mozilla.org/" tabindex="0" aria-owns="nav-main-addons-submenu" aria-haspopup="true">Add-ons</a>
-      <ul aria-expanded="false" id="nav-main-addons-submenu" class="submenu">
-        <li class="first"><a href="https://addons.mozilla.org/firefox/" tabindex="-1">Desktop Add-ons</a></li>
-        <li><a href="https://addons.mozilla.org/android/" tabindex="-1">Mobile Add-ons</a></li>
-        <li class="last"><a href="https://addons.mozilla.org/firefox/themes/" tabindex="-1">Themes</a></li>
-      </ul>
-      </li>
-      <li id="nav-main-support"><a href="https://support.mozilla.org/" tabindex="0" aria-owns="nav-main-support-submenu" aria-haspopup="true">Support</a>
-      <ul aria-expanded="false" id="nav-main-support-submenu" class="submenu">
-        <li class="first"><a href="https://support.mozilla.org/products/firefox" tabindex="-1">Desktop Support</a></li>
-        <li class="last"><a href="https://support.mozilla.org/products/mobile" tabindex="-1">Mobile Support</a></li>
-      </ul>
-    </li>
-    <li class="last" id="nav-main-about"><a href="/en-US/firefox/about/" tabindex="0" aria-owns="nav-main-about-submenu" aria-haspopup="true">About</a>
-      <ul aria-expanded="false" id="nav-main-about-submenu" class="submenu">
-        <li class="first"><a href="https://blog.mozilla.org/" tabindex="-1">Blog</a></li>
-        <li><a href="/en-US/firefox/about/" tabindex="-1">About Firefox</a></li>
-        <li><a href="/join" tabindex="-1">Join Mozilla</a></li>
-        <li><a href="/en-US/about/participate/" tabindex="-1">Participate</a></li>
-        <li><a href="https://blog.mozilla.org/press/" tabindex="-1">Press Center</a></li>
-        <li><a href="/en-US/firefox/brand/" tabindex="-1">Brand Toolkit</a></li>
-        <li><a href="https://careers.mozilla.org" tabindex="-1">Careers</a></li>
-        <li><a href="/en-US/about/partnerships.html" tabindex="-1">Partnerships</a></li>
-        <li class="last"><a href="/en-US/contact/spaces/" tabindex="-1">Contact Us</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
+        
         <h2><a href="/en-US/firefox/"><img src="//mozorg.cdn.mozilla.net/media/img/firefox/template/header-logo.png?2013-06" alt="Mozilla Firefox" height="70" width="185" data-inverse-src="//mozorg.cdn.mozilla.net/media/img/firefox/template/header-logo-inverse.png?2013-06"></a></h2>
 
         
         
-          <nav class="breadcrumbs">
-    <a href="/en-US/">Home</a> &gt;
-    <a href="/en-US/firefox/">Firefox</a> &gt;
-    <span>Mobile</span>
-  </nav>
-
+        
       </header>
     
     
@@ -191,8 +130,7 @@ _gaq.push(['_trackPageview']);
       </li>
       </ul>
       <small class="download-other os_android">
-      <a href="https://support.mozilla.org/kb/will-firefox-work-my-mobile-device">Supported Devices</a> |
-      <a href="/en-US/mobile/notes/">What’s New</a> |
+      <a href="https://support.mozilla.org/kb/will-firefox-work-my-mobile-device">Supported Devices</a> |      <a href="/en-US/mobile/notes/">What’s New</a> |
       <a href="/en-US/privacy/firefox/">Privacy</a>
     </small>
     </div>
@@ -538,7 +476,7 @@ _gaq.push(['_trackPageview']);
                 <footer id="colophon" class="">
         <nav class="row">
           <div class="col col-1">
-            <h1 class="logo"><a href="/en-US/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="Mozilla"></a></h1>
+            <h1 class="logo"><a href="/en-US/">Mozilla</a></h1>
             <p class="license">Portions of this content are ©1998–2014 by individual mozilla.org contributors. Content available under a <a href="/en-US/foundation/licensing/website-content/">Creative Commons license</a>.</p>
           </div>
           <div class="col col-2">
@@ -584,7 +522,7 @@ _gaq.push(['_trackPageview']);
       <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
     <![endif]-->
 
-      <script src="//mozorg.cdn.mozilla.net/media/js/firefox-resp-min.js?build=9826e22"></script>
-          <script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js?build=9826e22"></script>
+      <script src="//mozorg.cdn.mozilla.net/media/js/firefox-resp-min.js?build=4e72a9f"></script>
+          <script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js?build=4e72a9f"></script>
               </body>
 </html>

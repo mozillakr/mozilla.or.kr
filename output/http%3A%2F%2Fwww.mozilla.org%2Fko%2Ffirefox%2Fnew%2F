@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html class="windows x86 no-js" lang="ko" dir="ltr" data-latest-firefox="29.0" data-esr-versions="[24]">
+<html class="windows x86 no-js" lang="ko" dir="ltr" data-latest-firefox="30.0" data-esr-versions="[24]">
   <head>
     <meta charset="utf-8">
 <!--
@@ -63,6 +63,7 @@ help support Mozilla.-->
     <link rel="alternate" hreflang="cy" href="http://www.mozilla.org/cy/firefox/new/" title="Cymraeg">
     <link rel="alternate" hreflang="da" href="http://www.mozilla.org/da/firefox/new/" title="Dansk">
     <link rel="alternate" hreflang="de" href="http://www.mozilla.org/de/firefox/new/" title="Deutsch">
+    <link rel="alternate" hreflang="dsb" href="http://www.mozilla.org/dsb/firefox/new/" title="Dolnoserbšćina">
     <link rel="alternate" hreflang="el" href="http://www.mozilla.org/el/firefox/new/" title="Ελληνικά">
     <link rel="alternate" hreflang="en-GB" href="http://www.mozilla.org/en-GB/firefox/new/" title="English (British)">
     <link rel="alternate" hreflang="en-US" href="http://www.mozilla.org/en-US/firefox/new/" title="English (US)">
@@ -74,6 +75,7 @@ help support Mozilla.-->
     <link rel="alternate" hreflang="et" href="http://www.mozilla.org/et/firefox/new/" title="Eesti keel">
     <link rel="alternate" hreflang="eu" href="http://www.mozilla.org/eu/firefox/new/" title="Euskara">
     <link rel="alternate" hreflang="fa" href="http://www.mozilla.org/fa/firefox/new/" title="فارسی">
+    <link rel="alternate" hreflang="ff" href="http://www.mozilla.org/ff/firefox/new/" title="Pulaar-Fulfulde">
     <link rel="alternate" hreflang="fi" href="http://www.mozilla.org/fi/firefox/new/" title="suomi">
     <link rel="alternate" hreflang="fr" href="http://www.mozilla.org/fr/firefox/new/" title="Français">
     <link rel="alternate" hreflang="fy-NL" href="http://www.mozilla.org/fy-NL/firefox/new/" title="Frysk">
@@ -132,32 +134,32 @@ help support Mozilla.-->
     <link rel="alternate" hreflang="zh-CN" href="http://www.mozilla.org/zh-CN/firefox/new/" title="中文 (简体)">
     <link rel="alternate" hreflang="zh-TW" href="http://www.mozilla.org/zh-TW/firefox/new/" title="正體中文 (繁體)">
         
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=9826e22" />
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css?build=4e72a9f" />
     
     <!--[if lte IE 8]>
             <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
     <![endif]-->
 
     <!--[if lte IE 7]>
-            <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/oldIE-min.css?build=9826e22" />
+            <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/oldIE-min.css?build=4e72a9f" />
     <![endif]-->
 
     <!--[if !lte IE 7]><!-->
-          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox-resp-min.css?build=9826e22" />
+          <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox-resp-min.css?build=4e72a9f" />
 
             <!--<![endif]-->
 
-      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=9826e22" />
+      <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=4e72a9f" />
 
   
     
     <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
-    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=9826e22"></script>
+    <script src="//mozorg.cdn.mozilla.net/media/js/site-min.js?build=4e72a9f"></script>
 
             <script src="//cdn.optimizely.com/js/246059135.js"></script>
     
-      <script src="//mozorg.cdn.mozilla.net/media/js/common-resp-min.js?build=9826e22"></script>
-  <script src="//mozorg.cdn.mozilla.net/media/js/firefox_new-min.js?build=9826e22"></script>
+      <script src="//mozorg.cdn.mozilla.net/media/js/firefox-resp-min.js?build=4e72a9f"></script>
+  <script src="//mozorg.cdn.mozilla.net/media/js/firefox_new-min.js?build=4e72a9f"></script>
           <script>
 var _gaq = _gaq || [];
 var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
@@ -187,7 +189,7 @@ _gaq.push(['_trackPageview']);
     <div id="wrapper">
 
           <header id="masthead">
-        <a href="/ko/" id="tabzilla" data-infobar="translation">Mozilla</a>
+        <a href="/ko/" id="tabzilla" data-infobar="">Mozilla</a>
 
         
           <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox 데스크톱"></h2>
@@ -240,7 +242,7 @@ _gaq.push(['_trackPageview']);
         <div class="download download-dumb">
     <h4>Firefox 다운로드 — 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ko" class="button-green">Linux 64-bit</a></li><li><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org" class="button-green">Android</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-30.0-SSL&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-30.0-SSL&amp;os=linux64&amp;lang=ko" class="button-green">Linux 64-bit</a></li><li><a href="https://download.mozilla.org/?product=firefox-30.0-SSL&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org" class="button-green">Android</a></li>    </ul>
   </div>
 
     </noscript>
@@ -248,7 +250,7 @@ _gaq.push(['_trackPageview']);
         <div class="download download-dumb">
     <h4>Firefox 다운로드 — 한국어</h4>
     <ul>
-      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ko" class="button-green">Linux 64-bit</a></li><li><a href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org" class="button-green">Android</a></li>    </ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-stub&amp;os=win&amp;lang=ko" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-30.0-SSL&amp;os=linux&amp;lang=ko" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-30.0-SSL&amp;os=linux64&amp;lang=ko" class="button-green">Linux 64-bit</a></li><li><a href="https://download.mozilla.org/?product=firefox-30.0-SSL&amp;os=osx&amp;lang=ko" class="button-green">Mac OS X</a></li><li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org" class="button-green">Android</a></li>    </ul>
   </div>
 
     </div>
@@ -269,7 +271,7 @@ _gaq.push(['_trackPageview']);
       </li>
           <li class="os_linux">
         <a class="download-link"
-           href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux&amp;lang=ko">
+           href="https://download.mozilla.org/?product=firefox-30.0-SSL&amp;os=linux&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
                             <span class="download-subtitle">무료 다운로드</span>
@@ -280,7 +282,7 @@ _gaq.push(['_trackPageview']);
       </li>
           <li class="os_linux64">
         <a class="download-link"
-           href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=linux64&amp;lang=ko">
+           href="https://download.mozilla.org/?product=firefox-30.0-SSL&amp;os=linux64&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
                             <span class="download-subtitle">무료 다운로드</span>
@@ -291,7 +293,7 @@ _gaq.push(['_trackPageview']);
       </li>
           <li class="os_osx">
         <a class="download-link"
-           href="https://download.mozilla.org/?product=firefox-29.0-SSL&amp;os=osx&amp;lang=ko">
+           href="https://download.mozilla.org/?product=firefox-30.0-SSL&amp;os=osx&amp;lang=ko">
           <span class="download-content">
                                           <strong class="download-title">Firefox</strong>
                             <span class="download-subtitle">무료 다운로드</span>
@@ -311,8 +313,7 @@ _gaq.push(['_trackPageview']);
       </li>
       </ul>
       <small class="download-other os_android">
-      <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |
-      <a href="/ko/mobile/notes/">새로운 기능</a> |
+      <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |      <a href="/ko/mobile/notes/">새로운 기능</a> |
       <a href="/ko/privacy/firefox/">개인 정보 정책</a>
     </small>
         <small class="download-other os_linux os_linux64 os_osx os_windows">
@@ -338,8 +339,7 @@ _gaq.push(['_trackPageview']);
       </li>
       </ul>
       <small class="download-other os_android">
-      <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |
-      <a href="/ko/mobile/notes/">새로운 기능</a> |
+      <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |      <a href="/ko/mobile/notes/">새로운 기능</a> |
       <a href="/ko/privacy/firefox/">개인 정보 정책</a>
     </small>
     </div>
@@ -360,8 +360,7 @@ _gaq.push(['_trackPageview']);
       </li>
       </ul>
       <small class="download-other os_android">
-      <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |
-      <a href="/ko/mobile/notes/">새로운 기능</a> |
+      <a href="https://support.mozilla.org/ko/kb/will-firefox-work-my-mobile-device">지원 기기</a> |      <a href="/ko/mobile/notes/">새로운 기능</a> |
       <a href="/ko/privacy/firefox/">개인 정보 정책</a>
     </small>
     </div>
@@ -382,7 +381,7 @@ _gaq.push(['_trackPageview']);
           </div>
           <div class="fxos-latest-links-wrapper latest-links-wrapper">
             <ul>
-              <li><a href="/ko/firefox/os/">Learn more about Firefox OS?</a></li>
+              <li><a href="/ko/firefox/os/">Firefox OS 살펴보기</a></li>
               <li><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&amp;utm_source=mozilla&amp;utm_medium=Referral&amp;utm_campaign=mozilla-org">Firefox를 받을 수 있는 모든 방법</a></li>
             </ul>
           </div>
@@ -703,11 +702,11 @@ _gaq.push(['_trackPageview']);
       </div> <!-- /#scene1 -->
 
       <div class="scene" id="scene2">
+        <div class="share-wrapper">
+          <div class="socialshare" data-type="small-bubbles" data-label="공유" data-fb-lang="ko_KR"></div>        </div>
         <div class="thankyou" tabindex="0">
           Firefox를 다운받아 주셔서 감사합니다!
           비영리 커뮤니티로서 우리는 어떠한 외부 압력에서도 여러분의 편에서 혁신을 이루어 나갑니다. 우리는 차이와 독특함을 사랑합니다.
-          <div class="share-wrapper">
-            <div class="socialshare" data-type="small-bubbles" data-label="공유" data-fb-lang="ko_KR"></div>          </div>
         </div>
 
         <ol class="installation">
@@ -757,8 +756,8 @@ _gaq.push(['_trackPageview']);
   <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
     <meta itemprop="price" content="0">
   </div>
-  <meta itemprop="softwareVersion" content="29.0">
-  <meta itemprop="releaseNotes" content="http://www.mozilla.org/firefox/29.0/releasenotes/">
+  <meta itemprop="softwareVersion" content="30.0">
+  <meta itemprop="releaseNotes" content="http://www.mozilla.org/firefox/30.0/releasenotes/">
   <meta itemprop="applicationCategory" content="BrowserApplication">
   <meta itemprop="operatingSystem" content="Windows">
   <meta itemprop="operatingSystem" content="Mac">
@@ -813,6 +812,7 @@ _gaq.push(['_trackPageview']);
           <option lang="cy" value="cy">Cymraeg</option>
           <option lang="da" value="da">Dansk</option>
           <option lang="de" value="de">Deutsch</option>
+          <option lang="dsb" value="dsb">Dolnoserbšćina</option>
           <option lang="el" value="el">Ελληνικά</option>
           <option lang="en-GB" value="en-GB">English (British)</option>
           <option lang="en-US" value="en-US">English (US)</option>
@@ -824,6 +824,7 @@ _gaq.push(['_trackPageview']);
           <option lang="et" value="et">Eesti keel</option>
           <option lang="eu" value="eu">Euskara</option>
           <option lang="fa" value="fa">فارسی</option>
+          <option lang="ff" value="ff">Pulaar-Fulfulde</option>
           <option lang="fi" value="fi">suomi</option>
           <option lang="fr" value="fr">Français</option>
           <option lang="fy-NL" value="fy-NL">Frysk</option>
@@ -900,6 +901,6 @@ _gaq.push(['_trackPageview']);
       <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
     <![endif]-->
 
-              <script src="//mozorg.cdn.mozilla.net/ko/tabzilla/tabzilla.js?build=9826e22"></script>
+              <script src="//mozorg.cdn.mozilla.net/ko/tabzilla/tabzilla.js?build=4e72a9f"></script>
               </body>
 </html>
