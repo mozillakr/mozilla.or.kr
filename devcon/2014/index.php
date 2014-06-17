@@ -6,9 +6,9 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="js/jquery.sticky.js"></script>
 <script src="js/jquery.sticky.js"></script>
-<script type="text/javascript" src="js/jquery.mousewheel-3.0.4.pack.js"></script>
 <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
 <script src="js/jqueryeasing.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.4.pack.js"></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaXBe4RxtbrU2clirhC4fpzY4E6riZC_Y&amp;sensor=false"></script>
 <script src="js/site.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
@@ -60,6 +60,7 @@
 		</div>
 		<p class="location">서울 강남 코엑스 콘퍼런스 센터 317호</p>
  		<p class="intro">Mozilla 한국 커뮤니티가 웹 탄생 25주년과 국내 도입 20주년을 맞아 <br>국내 처음으로 Firefox 개발자 콘퍼런스를 개최합니다.</p>
+		<p class="video"><iframe width="560" height="315" src="//www.youtube.com/embed/r7LxmJGfX7M" frameborder="0" allowfullscreen></iframe></p>
  		<p class="logo">Sponsored by <img src="images/mozilla_logo.png" alt="Mozilla" align="absmiddle"> 
  						<img src="images/daum_logo.png" alt="Daum" style="margin-left:15px;" align="absmiddle">
  						<img src="images/lge_logo.png" alt="LG전자" style="margin-left:15px;" align="absmiddle">
@@ -122,12 +123,14 @@
 							<p class="time">10:10 - 10:50</p>
 							<p class="description">For closed Internet and mobile environments, we discuss Mozilla's mission and future plan for web developers.</p>
 							<p class="speaker">Thomas Ho(Mozilla Corp.) - 통역없음</p>
+							<p class="video"><a class="iframe" href="http://www.youtube.com/embed/2JwEJpoDYQc?autoplay=1"><img src="images/play.png" width="40" alt="play" align="absmiddle"> 동영상 보기</a></p>
 						</div>
 						<div class="session">
 							<h3>Firefox Developer Tools</h3>
 							<p class="time">10:50 - 11:40</p>
 							<p class="description">Developing for any devices is a challenge. We will go through some of Web developement tools for Firefox to make your job easier.</p>
 							<p class="speaker">Karl Dubost(Mozilla Corp.) - 통역없음</p>
+							<p class="video"><a class="iframe" href="http://www.youtube.com/embed/NRQPuF4wLG0?autoplay=1"><img src="images/play.png" width="40" alt="play" align="absmiddle"> 동영상 보기</a></p>
 						</div>
 						<div class="session">
 							<h3>점심 식사</h3>
@@ -138,18 +141,23 @@
 							<p class="time">13:00 - 13:30</p>
 							<p class="description">Firefox OS에 대한 개략적 소개와 구조와 웹앱 생태계에 대해 소개합니다.</p>
 							<p class="speaker">신현석(Mozilla 한국커뮤니티, Daum)</p>
+							<p class="video"><a class="iframe" href="http://www.youtube.com/embed/QieJHL7tYT0?autoplay=1"><img src="images/play.png" width="40" alt="play" align="absmiddle"> 동영상 보기</a></p>
 						</div>
 						<div class="session">
 							<h3>Firefox OS 한글 키보드 개발 사례</h3>
 							<p class="time">13:30 - 14:00</p>
 							<p class="description">Firefox OS의 오픈 소스 구조 소개 및 한국어 키보드 개발 사례 및 소감을 발표합니다.</p>
 							<p class="speaker">변상필(다음커뮤니케이션)</p>
+							<p class="video"><a class="iframe" href="http://www.youtube.com/embed/U_1yRKxIRYI?autoplay=1"><img src="images/play.png" width="40" alt="play" align="absmiddle"> 동영상 보기</a></p>
 						</div>
 						<div class="session">
 							<h3>라이트닝 토크</h3>
 							<p class="time">14:00 - 14:30</p>
 							<p class="description">Mozilla 커뮤니티 활동 및 HTML5 웹 앱 기술에 대한 참가자들의 5분 토크가 펼쳐집니다. 참여를 원하시는 분은 <a href="#submit">발표 신청</a>을 해주시기 바랍니다.</p>
 							<p class="speaker">사회: 설수웅(Mozilla 한국커뮤니티, 와이즈넛)</p>
+							<p class="video"><a class="iframe" href="http://www.youtube.com/embed/hl1K7dO_AWA?autoplay=1"><img src="images/play.png" width="40" alt="play" align="absmiddle"> 1. Mozilla 지역화 현황 - 양명권</a></p>
+							<p class="video"><a class="iframe" href="http://www.youtube.com/embed/J8WnJ5H2Oeg?autoplay=1"><img src="images/play.png" width="40" alt="play" align="absmiddle"> 2. Mozilla Hacks 참여 방법 - 장승훈</a></p>
+							<p class="video"><a class="iframe" href="http://www.youtube.com/embed/ClCuQJ39sqI?autoplay=1"><img src="images/play.png" width="40" alt="play" align="absmiddle"> 3. WebMaker 소개 및 참여 - 설수웅</a></p>
 						</div>
 						<div class="session">
 							<h3>휴식 및 전시 부스 관람</h3>
@@ -165,13 +173,14 @@
     						<h3>HTML5 게임 엔진 개발 사례</h3>
 							<p class="time">15:30~16:00</p>
 							<p class="description">모바일 HTML5 기반 캐주얼 게임 개발을 위한 그래픽 및 제어 방법 그리고 각종 오픈 소스 게임 엔진을 소개하고 사례를 공유합니다.</p>
-    						<p class="speaker">김준기 (SK플래닛)
+    							<p class="speaker">김준기 (SK플래닛)
+							<p class="video"><a class="iframe" href="http://www.youtube.com/embed/dW_ZaZhKZZI?autoplay=1"><img src="images/play.png" width="40" alt="play" align="absmiddle"> 동영상 보기</a></p>
 						</div>
 						<div class="session">
     						<h3>HTML5 미래 웹 기술</h3>
 							<p class="time">16:00~16:30</p>
 							<p class="description">WebRTC와 서버 없는 웹, WebGL과 Emscripten을 통한 asm.js 기반 게임 엔진 등 Mozilla가 선도하는 웹표준 기술을 소개합니다.</p>
-    						<p class="speaker">윤석찬 (Mozilla 한국커뮤니티, Daum)
+    							<p class="speaker">윤석찬 (Mozilla 한국커뮤니티, Daum)
 						</div>
 						<div class="session">
 							<h3>휴식</h3>
@@ -181,13 +190,15 @@
     						<h3>Fireweb 단말기 제조 사례</h3>
 							<p class="time">16:40~17:00</p>
 							<p class="description">브라질에 시판 중인 Firefox OS 단말기인 Fireweb의 기기 제조 경험을 공유합니다.</p>
-    						<p class="speaker">오종수 (LG전자)
+    							<p class="speaker">오종수 (LG전자)
+							<p class="video"><a class="iframe" href="http://www.youtube.com/embed/sFjeoP3LJIM?autoplay=1"><img src="images/play.png" width="40" alt="play" align="absmiddle"> 동영상 보기</a></p>
 						</div>
 						<div class="session">
     						<h3>Firefox OS용 라인앱 개발 사례</h3>
 							<p class="time">17:00~17:40</p>
 							<p class="description">글로벌 모바일 메신저인 Line앱을 개발을 위한 HTML5 및 Mozilla Web API 사용 경험 및 문제 해결 사례를 공유합니다.</p>
-    						<p class="speaker">차기용 (라인플러스)
+    							<p class="speaker">차기용 (라인플러스)
+							<p class="video"><a class="iframe" href="http://www.youtube.com/embed/j_g5GiPn964?autoplay=1"><img src="images/play.png" width="40" alt="play" align="absmiddle"> 동영상 보기</a></p>
 						</div>
 						<div class="session">
     						<h3>폐회 및 행운권 추첨</h3>
@@ -275,6 +286,22 @@
 		<p>Copyright&copy;, Mozilla 한국커뮤니티. Creative Commons</p>
 	</div>
 </div>
+
+<script>
+$(document).ready(function() {
+	/* Apply fancybox to multiple items */
+	$("a.iframe").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	300, 
+		'speedOut'		:	200, 
+		'width'			:	$(window).width() * 0.8, 
+		'height'		:	$(window).height() * 0.8, 
+		'overlayShow'	:	true
+	});
+});
+</script>
+
 <!-- AddThis Smart Layers BEGIN -->
 <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520b0b6c71b86f74"></script>
