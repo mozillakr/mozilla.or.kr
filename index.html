@@ -1,1 +1,234 @@
-<? Header("Location: /ko"); ?>
+<!DOCTYPE html>
+<html lang="ko-KR" xmlns:fb="http://ogp.me/ns/fb#" xmlns:addthis="http://www.addthis.com/help/api-spec"  id="mozilla-blog">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- For Facebook -->
+  <meta property="og:site_name" content="Mozilla 한국 커뮤니티">
+  <meta property="og:title" content="Mozilla 한국 커뮤니티">
+  <meta property="og:url" content="http://www.mozilla.or.kr/">
+  <meta property="og:description" content="Firefox, Thunderbird 사용자 및 Mozilla 활동가 모임">
+  <meta name="Rating" content="General">
+
+  <!--[if IE]>
+  <meta name="MSSmartTagsPreventParsing" content="true">
+  <meta http-equiv="imagetoolbar" content="no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script src="http://www.mozilla.or.kr/wp/wp-content/themes/OneMozilla/js/html5.js"></script>
+  <![endif]-->
+
+  <link rel="copyright" href="#colophon">
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link rel="shortcut icon" type="image/ico" href="http://www.mozilla.or.kr/wp/wp-content/themes/OneMozilla/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="all" href="http://www.mozilla.or.kr/wp/wp-content/themes/OneMozilla/css/socialshare.css">
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="http://www.mozilla.or.kr/wp/wp-content/themes/OneMozilla/style.css">
+  <link rel="stylesheet" type="text/css" media="all" href="https://www.mozilla.org/tabzilla/media/css/tabzilla.css">
+  <link rel="stylesheet" type="text/css" media="print" href="http://www.mozilla.or.kr/wp/wp-content/themes/OneMozilla/css/print.css">
+  <!--[if lte IE 7]><link rel="stylesheet" type="text/css" media="all" href="http://www.mozilla.or.kr/wp/wp-content/themes/OneMozilla/css/ie7.css"><![endif]-->
+  <link href="http://www.mozilla.or.kr/wp/wp-content/themes/OneMozilla/css/custom.css" rel="stylesheet" type="text/css" media="screen" />
+
+  <link rel="alternate" type="application/rss+xml" title="Mozilla 한국 커뮤니티 RSS Feed" href="http://www.mozilla.or.kr/community/feed">
+
+  <title>Mozilla 한국 커뮤니티 | Firefox, Thunderbird 사용자 및 Mozilla 활동가 모임</title>
+    <link rel='stylesheet' id='output-css'  href='http://www.mozilla.or.kr/wp/wp-content/plugins/addthis/css/output.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='sand-css'  href='http://www.mozilla.or.kr/wp/wp-content/themes/OneMozilla/colors/sand/sand.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.mozilla.or.kr/wp/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://www.mozilla.or.kr/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.mozilla.or.kr/wp/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.mozilla.or.kr/wp/wp-includes/wlwmanifest.xml" />
+<style>
+#firefox-download, 
+#community-about, 
+#community-join, 
+#community-forum {
+	margin: 0 0 1em;
+	float: left;
+	width: 50%;
+}
+@media only screen and (min-width: 768px) {
+	#firefox-download, 
+	#community-about, 
+	#community-join, 
+	#community-forum {
+		width: 25%;
+	}
+}
+#firefox-download a, 
+#community-about a, 
+#community-join a, 
+#community-forum a {
+	display: block;
+	padding: 60px 0.5em 1em;
+	font-size: 1em;
+	color: #555;
+	text-align: center;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+}
+@media only screen and (min-width: 768px) {
+	#firefox-download a, 
+	#community-about a, 
+	#community-join a, 
+	#community-forum a {
+		min-height: 2.5em;
+		padding: 80% 0.5em 0;
+		font-size: 1.5em;
+	}
+}
+#firefox-download a {
+	background-image: url(media/img/firefox-logo.png);
+	background-size: auto 50px;
+}
+#community-about a {
+	background-image: url(media/img/moko.png);
+	background-size: auto 50px;
+}
+#community-join a {
+	background-image: url(media/img/git-branch.png);
+	background-size: auto 50px;
+}
+#community-forum a {
+	background-image: url(media/img/chat.png);
+	background-size: auto 50px;
+}
+@media only screen and (min-width: 768px) {
+	#firefox-download a {
+		background-position: 50% 20px;
+		background-size: 60% auto;
+	}
+	#community-about a {
+		background-position: 50% 0;
+		background-size: 55% auto;
+	}
+	#community-join a {
+		background-position: 50% 15px;
+		background-size: 40% auto;
+	}
+	#community-forum a {
+		background-position: 50% 20px;
+		background-size: 60% auto;
+	}
+}
+#community-news, 
+#hacks-blog {
+	clear: both;
+	margin: 0 0 1em;
+}
+#hacks-blog {
+}
+@media only screen and (min-width: 768px) {
+	#community-news, 
+	#hacks-blog {
+		width: 49%;
+		float: left;
+	}
+	#hacks-blog {
+		clear: none;
+		float: right;
+	}
+}
+#community-news a, 
+#hacks-blog a {
+	display: block;
+	font-size: 1em;
+	padding: 0.5em 1em;
+	background: #c00;
+	color: #fff;
+	text-align: center;
+}
+@media only screen and (min-width: 768px) {
+	#community-news a, 
+	#hacks-blog a {
+		font-size: 1.2em;
+	}
+}
+</style>
+</head>
+
+<body class="home blog sand" role="document">
+<div id="page"><div class="wrap">
+  <nav id="nav-access">
+    <ul role="navigation">
+      <li><a href="#content-main" tabindex="1">주 콘텐츠로</a></li>
+      <li><a href="#content-sub" tabindex="2">사이드바로</a></li>
+          <li><a href="#search" tabindex="3">블로그 검색으로</a></li>
+        </ul>
+  </nav>
+
+    <header id="masthead" role="banner" >
+		<nav id="nav-main">
+			<span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0" onclick="toggleMainMenu(this)">Menu</span>
+			<ul id="nav-main-menu">
+				<li class="current"><a href="http://forums.mozilla.or.kr/">사용자 포럼</a></li>
+				<li><a href="http://www.mozilla.or.kr/community/">블로그</a></li>
+				<li><a href="http://www.mozilla.or.kr/community/about">소개</a></li>
+				<li><a href="http://www.mozilla.or.kr/community/join">참여하기</a></li>
+				<li><a href="http://www.mozilla.or.kr/community/guide">가이드</a></li>
+			</ul>
+		</nav>
+
+    <hgroup>
+          <h1 id="site-title">Mozilla 한국 커뮤니티</h1>
+              <h2 id="site-description">Firefox, Thunderbird 사용자 및 Mozilla 활동가 모임</h2>
+        </hgroup>
+    <a href="http://www.mozilla.org/" id="tabzilla">Mozilla</a>
+  </header><!-- #masthead -->
+
+  
+  <div id="content">
+
+	<p id="firefox-download"><a href="//www.mozilla.org/ko/">Firefox 다운로드</a></p>
+	<p id="community-about"><a href="/community/about">커뮤니티 소개</a></p>
+	<p id="community-join"><a href="/community/join">활동 참여 방법</a></p>
+	<p id="community-forum"><a href="http://forums.mozilla.or.kr/">사용자 포럼</a></p>
+	<p id="community-news"><a href="/community/">Mozilla 한국 커뮤니티 뉴스</a></p>
+	<p id="hacks-blog"><a href="http://hacks.mozilla.or.kr/">Mozilla 웹 기술 블로그</a></p>
+
+ </div><!-- #content -->
+</div></div><!-- /.wrap /#page -->
+
+<footer id="site-info" role="contentinfo">
+  <div class="wrap">
+    <p id="foot-logo">
+      <a class="top" href="#page">상위로</a>
+      <a class="logo" href="http://mozilla.org" rel="external">Mozilla</a>
+    </p>
+
+    <p id="colophon">
+      Except where otherwise <a href="http://www.mozilla.org/en-US/about/legal.html#site" rel="external">noted</a>, content on this site is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="external license">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.    </p>
+
+    <nav id="nav-meta">
+      <ul role="navigation">
+        <li><a href="http://www.mozilla.org/contact/" rel="external">연락하기</a></li>
+        <li><a href="http://www.mozilla.org/en-US/privacy" rel="external">개인 정보 정책</a></li>
+        <li><a href="http://www.mozilla.org/ko-KR/about/legal.html" rel="external">법적 고지</a></li>
+        <li><a href="http://www.mozilla.org/ko-KR/legal/fraud-report/index.html" rel="external">상표권 침해 신고</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<script src="/tabzilla/tabzilla.js"></script>
+
+<script type="text/javascript">
+
+var addthis_config = {"data_track_clickback":false,"data_track_addressbar":false,"data_track_textcopy":false,"ui_atversion":"300"};
+var addthis_product = 'wpp-3.5.9';
+</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520b0b6c71b86f74"></script><!--wp_footer--><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-53785-1']);
+  _gaq.push(['_setDomainName', 'mozilla.or.kr']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
