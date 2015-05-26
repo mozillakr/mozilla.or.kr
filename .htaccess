@@ -1,5 +1,4 @@
-RedirectMatch ^/ko/firefox/$ /ko/firefox/new/
-
+RedirectMatch ^/ko/(.*)$ https://www.mozilla.org/ko/$1
 RedirectMatch ^/about$ /ko/about/
 RedirectMatch ^/about/$ /ko/about/
 
